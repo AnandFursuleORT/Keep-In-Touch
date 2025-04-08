@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drip - Wallet</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0 layout">
+        <div class="sidebar" id="sidebar">
+            <div class="menu-div1">
+                <div class="logo">
+                    <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
+                    <i class="toggle-btn" id="toggleBtn">
+                        <img src="Assets/images/left-red-arrow.svg" alt="">
+                    </i>
+                </div>
+                <div class="sidebar-menu p-4">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="Assets/images/dashboard-menu.svg" alt="dashboard-icon">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="">
+                                <img src="assets/images/wallet-menu.svg" alt="dashboard-icon">
+                                <span>Wallet</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="assets/images/contact-menu.svg" alt="dashboard-icon">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="assets/images/dashboard-menu.svg" alt="dashboard-icon">
+                                <span>Drip</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="assets/images/reports-menu.svg" alt="dashboard-icon">
+                                <span>Reports</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-div2">
+                <div class="sidebar-menu p-4">
+                    <ul class="menu-list2">
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="Assets/images/help.svg" alt="dashboard-icon">
+                                <span>Help & Support</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="assets/images/setting-menu.svg" alt="dashboard-icon">
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile-menu mt-auto p-4">
+                    <div class="profile">
+                        <img src="assets/images/profile.svg" alt="profile-img">
+                        <span class="profile-name">Atharva Mohurle</span>
+                    </div>
+                </div>
+                <div class="app-section-menu">
+                    <h6 class="app-text">Get the app</h6>
+                    <a class="apple-store">
+                        <img src="assets/images/apple.svg" alt="apple-icon">
+                        <img src="assets/images/appleText.svg" alt="apple-text">
+                    </a>
+                    <a class="play-store">
+                        <img src="assets/images/google-play-logo.svg" alt="google-play-icon">
+                        <img src="assets/images/playText.svg" alt="google-play-text">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="topbar d-flex align-items-center justify-content-between">
+                <div>
+                    <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Home</li>
+                            <li class="breadcrumb-item"><a href="#" class="drip-link-item">Wallet</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="topbar-widgets d-flex align-items-center gap-2">
+                    <input type="search" class="form-control search" placeholder="Search">
+                    <div class="notification">
+                        <img src="assets/images/notification.svg" alt="notification">
+                    </div>
+                    <div class="drip-count">
+                        <img src="assets/images/Drips.svg" alt="drip">
+                        <span class="topbar-widgets-text">0</span>
+                    </div>
+                    <div class="credits">
+                        <img src="assets/images/Coins.svg" alt="coins">
+                        <span class="topbar-widgets-text">200/200</span>
+                        <img src="assets/images/alert-circle.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="page-content d-flex flex-column gap-4">
+                <div class="content-hdg d-flex justify-content-between align-items-center">
+                    <h4 class="drip-wallet">Wallet</h4>
+                    <div class="btns-sect d-flex align-items-center gap-2">
+                        <a href="#" class="download-btn">
+                            <img src="assets/images/download-icon.svg" alt="d-icon">
+                            Download History
+                        </a>
+                        <a href="#" class="credit-btn">
+                            <img src="assets/images/add.svg" alt="add-icon">
+                            Add Credits
+                        </a>
+                    </div>
+                </div>
+
+                <div class="wallet-info-div">
+                    <div class="row gx-4">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="balance-main-div">
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12"></div>
+                        <div class="col-lg-2 col-md-12 col-sm-12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

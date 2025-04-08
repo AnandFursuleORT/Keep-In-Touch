@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drip</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+</head>
+
+<body>
+    <div class="container-fluid p-0 layout">
+        <div class="sidebar" id="sidebar">
+            <div class="menu-div1">
+                <div class="logo">
+                    <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
+                    <i class="toggle-btn" id="toggleBtn">
+                        <img src="Assets/images/left-red-arrow.svg" alt="">
+                    </i>
+                </div>
+                <div class="sidebar-menu p-4">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="Assets/images/dashboard-menu.svg" alt="dashboard-icon">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="assets/images/wallet-menu.svg" alt="dashboard-icon">
+                                <span>Wallet</span>
+                            </a>
+                        </li>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Contact
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div> 
+                          </div>
+                        <li class="menu-item ">
+                            <a href="">
+                                <img src="assets/images/drip-selected.svg" alt="dashboard-icon">
+                                <span>Drip</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="assets/images/reports-menu.svg" alt="dashboard-icon">
+                                <span>Reports</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="menu-div2">
+                <div class="sidebar-menu p-4">
+                    <ul class="menu-list2">
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="Assets/images/help.svg" alt="dashboard-icon">
+                                <span>Help & Support</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">
+                                <img src="assets/images/setting-menu.svg" alt="dashboard-icon">
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile-menu mt-auto p-4">
+                    <div class="profile">
+                        <img src="assets/images/profile.svg" alt="">
+                        <span class="profile-name">Atharva Mohurle</span>
+                    </div>
+                </div>
+                <div class="app-section-menu">
+                    <h6 class="app-text">Get the app</h6>
+                    <a class="apple-store">
+                        <img src="assets/images/apple.svg" alt="apple-icon">
+                        <img src="assets/images/appleText.svg" alt="apple-text">
+                    </a>
+                    <a class="play-store">
+                        <img src="assets/images/google-play-logo.svg" alt="google-play-icon">
+                        <img src="assets/images/playText.svg" alt="google-play-text">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="topbar d-flex align-items-center justify-content-between">
+                <div>
+                    <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="drip-link-item">Home</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Contact Listing</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="topbar-widgets d-flex align-items-center gap-2">
+                    <input type="search" class="form-control search" placeholder="Search">
+                    <div class="notification">
+                        <img src="assets/images/notification.svg" alt="notification">
+                    </div>
+                    <div class="drip-count">
+                        <img src="assets/images/Drips.svg" alt="drip">
+                        <span class="topbar-widgets-text">0</span>
+                    </div>
+                    <div class="credits">
+                        <img src="assets/images/Coins.svg" alt="coins">
+                        <span class="topbar-widgets-text">200/200</span>
+                        <img src="assets/images/alert-circle.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="page-content d-flex flex-column gap-4">
+                <div class="drip-header d-flex align-items-center justify-content-between gap-5">
+                    <div class="heading">
+                        <h4>Contact Listing</h4>
+                    </div>
+                
+
+                    <button class="add-drip-btn" data-bs-toggle="modal" data-bs-target="#customModal"> <img
+                            src="assets/images/add.svg" alt="">Add Drip</button>
+                </div>
+                <div class="table-div">
+                    <div class="table-head d-flex align-items-center justify-content-between mb-4">
+                        <div class="table-tabs">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link table-tabs-link active" id="pills-active-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-active" role="tab"
+                                        aria-controls="pills-active" aria-selected="true">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link table-tabs-link" id="pills-event-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-event" role="tab" aria-controls="pills-event"
+                                        aria-selected="false">Event Based</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link table-tabs-link" href="#" id="pills-draft-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-draft" role="tab"
+                                        aria-controls="pills-draft" aria-selected="false">Draft</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="table-search d-flex align-items-center gap-3">
+                            <div class="table-filter">
+                                <img src="assets/images/filter.svg" alt="filter">
+                                <span>Filter</span>
+                            </div>
+                            <input type="search" class="form-control search " id="dt-search" placeholder="Search">
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-active" role="tabpanel"
+                            aria-labelledby="pills-active-tab" tabindex="0">
+                            <div class="table-responsive">
+                                <table id="example" class="table" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </th>
+                                            <th>Sr.No</th>
+                                            <th>Name</th>
+                                            <th>Code</th>
+                                            <th>Date</th>
+                                            <th>Time</th>
+                                            <th>No. Steps</th>
+                                            <th>No. Contact</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge  badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>3</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-warning">Inactive</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>4</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-warning">Inactive</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>5</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-pending">Pending</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>6</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-pending">Pending</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>7</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>8</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>9</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>10</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-danger">Expired</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>11</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>12</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>13</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>14</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>15</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>16</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>17</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>18</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>19</td>
+                                            <td>Samuel Schmidt</td>
+                                            <td>#573d7d</td>
+                                            <td>23-02-24</td>
+                                            <td>00:00PM</td>
+                                            <td>3</td>
+                                            <td>3</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit"
+                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                        data-bs-title="Edit Drip">
+                                                    <img src="assets/images/Group.png" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Stop Drip">
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-event" role="tabpanel" aria-labelledby="pills-event-tab"
+                            tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-draft" role="tabpanel" aria-labelledby="pills-draft-tab"
+                            tabindex="0">...</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- add-drip Modal -->
+    <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Larger & Centered -->
+            <div class="modal-content add-drip-modal">
+                <div class="modal-body p-0">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Left Side Image -->
+                            <div class="col-md-6 text-center">
+                                <img src="assets/images/add-drip-modal.png" alt="Illustration">
+                            </div>
+                            <!-- Right Side Text -->
+                            <div class="col-md-6">
+                                <div class="modal-main-content d-flex flex-column gap-4">
+                                    <h4 class="modal-heading mb-0">Create your first drip!</h4>
+                                    <p class="modal-text mb-0">
+                                        Pick any editor and design a campaign in minutes, then enhance it with these
+                                        advanced features.
+                                    </p>
+                                    <ul class="modal-list">
+                                        <li class="modal-text">A/B testing makes it easy to find which elements
+                                            work best</li>
+                                        <li class="modal-text">Auto resend gives subscribers a second chance to
+                                            open</li>
+                                        <li class="modal-text">RSS campaigns automatically send emails with new
+                                            content updates</li>
+                                        <li class="modal-text">Pre-designed templates let you craft emails that
+                                            match your goals</li>
+                                        <li class="modal-text">Surveys, dynamic content, and social media blocks
+                                            increase engagement</li>
+                                    </ul>
+                                    <div class="d-flex justify-content-end gap-3">
+                                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn-create" data-bs-toggle="modal"
+                                            data-bs-target="#dripDetailsModal">Create</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--add-drip-details Modal -->
+    <div class="modal fade" id="dripDetailsModal" aria-labelledby="Dripmodal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="drip.html" class="drip-link-item">Drips</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Drip Details</li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-cont">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <h2 class="drip-modal-hdg">Drip Details</h2>
+                                <p class="drip-modal-p">Effectively automate your messaging and engage your audience by
+                                    customizing your drip
+                                    campaign and choosing the communication channels: Email, SMS, or WhatsApp.</p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="drip-form-div">
+                                    <form action="" class="drip-form">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="drip-input-div">
+                                                    <label for="dripInput1" class="form-label drip-label mb-1">Drip
+                                                        Name</label>
+                                                    <input type="text" class="form-control drip-text-input"
+                                                        id="dripInput1" placeholder="Enter your drip name">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="drip-select-div">
+                                                    <label for="dripInput1" class="form-label drip-label mb-1">Drip
+                                                        Type</label>
+                                                    <select id="dripInput1" class="form-select drip-select">
+                                                        <option selected>Select your drip type</option>
+                                                        <option value="1">Type1</option>
+                                                        <option value="2">Type2</option>
+                                                        <option value="3">Type3</option>
+                                                    </select>
+                                                    <img src="assets/images/Drips.svg" class="drips-image" alt="drips">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="drip-tag-div">
+                                                    <label for="dripInput2"
+                                                        class="form-label drip-label mb-1">Tags</label>
+                                                    <select id="dripInput2" class="form-select drip-select1">
+                                                        <option selected>Select tags</option>
+                                                        <option value="1">Tag1</option>
+                                                        <option value="2">Tag2</option>
+                                                        <option value="3">Tag3</option>
+                                                    </select>
+                                                    <img src="assets/images/contact-01.svg" class="drips-image1"
+                                                        alt="drips">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="drip-condition-div">
+                                                    <label for="dripInput3" class="form-label drip-label mb-1">Tag
+                                                        Condition
+                                                        <a data-bs-toggle="modal" data-bs-target="#detailsModal"><img
+                                                                src="assets/images/info-circle.svg" alt="info"></a>
+                                                    </label>
+                                                    <div class="drip-check-div d-flex align-items-center">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input drip-check-inp" type="radio"
+                                                                name="inlineRadioOptions" id="inlineRadio1"
+                                                                value="option1">
+                                                            <label class="form-check-label drip-check-label ms-1"
+                                                                for="inlineRadio1">Flexible Match</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input drip-check-inp" type="radio"
+                                                                name="inlineRadioOptions" id="inlineRadio2"
+                                                                value="option2">
+                                                            <label class="form-check-label drip-check-label ms-1"
+                                                                for="inlineRadio2">Strict Match</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="drip-date-inp">
+                                                    <label for="dripInput3" class="form-label drip-label mb-1">Start
+                                                        Date</label>
+                                                    <input type="date" class="drip-input-date"
+                                                        placeholder="Select start date" name="startDate"
+                                                        id="start-date">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="drip-date-inp">
+                                                    <label for="dripInput3" class="form-label drip-label mb-1">End
+                                                        Date</label>
+                                                    <input type="date" class="drip-input-date"
+                                                        placeholder="Select end date" name="endDate" id="end-date">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="drip-select-div">
+                                                    <label for="dripInput1" class="form-label drip-label mb-1">
+                                                        Event</label>
+                                                    <select id="dripInput1" class="form-select drip-event-select">
+                                                        <option selected>Choose Event</option>
+                                                        <option value="1">Event1</option>
+                                                        <option value="2">Event2</option>
+                                                        <option value="3">Event3</option>
+                                                    </select>
+                                                    <img src="assets/images/event-icon.svg" class="drips-image"
+                                                        alt="drips">
+                                                </div>
+                                                <div class="form-check mt-3">
+                                                    <input class="form-check-input details-check" type="checkbox"
+                                                        value="" id="flexCheckDefault">
+                                                    <label class="form-check-label drip-check-label ms-1"
+                                                        for="flexCheckDefault">
+                                                        Send to all numbers
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div
+                                    class="detail-img-div d-flex align-items-center justify-content-center flex-column gap-3">
+                                    <h6 class="detail-hdg">Engage Your Audience Through
+                                        Multiple Channels</h6>
+                                    <img src="assets/images/audience.png" alt="drip-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <a role="button" href="channel.html" class="channel-btn">Automation Setup
+                        <img src="assets/images/modal-arrow.svg" alt="modal-arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add-drip Modal -->
+    <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content add-drip-modal">
+                <div class="modal-header p-0 border-0">
+                    <h4 class="modal-dt-hdg">Drip Execution Tag Conditions</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Left Side Image -->
+                            <div class="col-md-12 col-sm-12">
+                                <div class="details-modal-div">
+                                    <ol class="detail-list p-0">
+                                        <li>
+                                            Match All Tags (Strict Match)
+                                            The drip will execute only if the contact has all selected tags.
+                                        </li>
+                                        <li class="pt-4">
+                                            Match Any Tag (Flexible Match)
+                                            The drip will execute if the contact has at least one of the
+                                            selected tags.
+                                        </li>
+                                    </ol>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
+        document.getElementById('toggleBtn').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        });
+    </script>
+    <script>new DataTable('#example', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
+
+    <!-- ============ script for active drip-bar toggle ============ -->
+
+    <script>
+        document.getElementById("toggle-btn").addEventListener("click", function () {
+            document.getElementById("full-content").classList.add("hidden");
+            document.getElementById("collapsed-content").classList.remove("hidden");
+        });
+
+        document.getElementById("expand-btn").addEventListener("click", function () {
+            document.getElementById("full-content").classList.remove("hidden");
+            document.getElementById("collapsed-content").classList.add("hidden");
+        });
+    </script>
+</body>
+
+</html>

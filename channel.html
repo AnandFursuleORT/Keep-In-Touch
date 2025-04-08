@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <style>
+        /* Input form Style */
+
+        input[type="text"] {
+            border: 2px solid #afbdcf;
+            border-radius: 5px;
+            height: 47px;
+            width: 300px;
+            color: #000000;
+            font-size: 14px;
+            padding-left: 20px;
+            box-shadow: none;
+        }
+
+        /* Label style after Input feild is in focus. Can also use input:focus ~ label to select sibling. */
+
+        input:focus+label,
+        input:valid+label {
+            font-size: 12px;
+            color: #afbdcf;
+            top: -5px;
+            left: 10px;
+            background: #ffffff;
+            padding: 0px 5px 0px 5px;
+        }
+
+        .input_wrap {
+            width: auto;
+            height: auto;
+            position: relative;
+        }
+
+        .input_wrap label {
+            font-family: arial;
+            font-size: 16px;
+            color: #afbdcf;
+            padding: 14px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+            pointer-events: none;
+
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input_wrap">
+        <input type="text" required />
+        <label>Your Name</label>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
