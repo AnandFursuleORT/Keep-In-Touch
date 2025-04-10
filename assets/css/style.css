@@ -25,6 +25,13 @@ body {
     height: 100vh;
 }
 
+.heading h4 {
+    color: #0E285E;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
 .img-text h4 {
     color: #0E285E;
     text-align: center;
@@ -597,6 +604,25 @@ input:not(:placeholder-shown)+label {
     padding-left: 0px !important;
 }
 
+.menu-list2 .menu-item.active {
+    border-radius: 12px;
+    border: 1px solid #E94B50;
+    background-color: #FAFAFC !important;
+    display: flex;
+    align-items: center;
+}
+
+.menu-list2 .menu-item.active span {
+    color: #E94B50 !important;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.menu-list2 .menu-item.active svg path {
+    stroke: #E94B50 !important;
+}
+
 .topbar {
     display: flex;
     padding: 16px 24px;
@@ -667,7 +693,6 @@ input:not(:placeholder-shown)+label {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 0px;
 }
 
 .apple-store {
@@ -769,7 +794,6 @@ input:not(:placeholder-shown)+label {
     font-size: 16px;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 0px;
     padding: 12px;
 }
 
@@ -779,7 +803,6 @@ input:not(:placeholder-shown)+label {
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 0px;
     transition: all 1s ease-in-out;
     padding: 12px;
 }
@@ -789,7 +812,6 @@ input:not(:placeholder-shown)+label {
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 0px;
 }
 
 .table-div {
@@ -817,7 +839,7 @@ table.dataTable thead>tr>td.dt-orderable-desc:hover {
     border-radius: 12px;
     border: 1px solid #DEE2E9;
     background: #FFF;
-    padding: 11px 16px;
+    padding: 12px 16px;
 }
 
 /* Add border radius to the table head */
@@ -902,20 +924,21 @@ table td {
 }
 
 .drip-link-item {
-    color: #E94B50;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0px;
-    text-decoration: none;
-}
-
-.breadcrumb-item.active {
     color: #67779A;
     font-size: 14px;
     font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+.drip-active-item.active {
+    color: #E94B50;
+    font-size: 14px;
+    font-weight: 600;
     padding-top: 2px;
+}
+
+.drip-link-item:hover {
+    color: #E94B50;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -931,7 +954,6 @@ table td {
     font-size: 26px;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 0px;
 }
 
 .drip-modal-p {
@@ -952,7 +974,7 @@ table td {
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0px;
+    background: none !important;
 }
 
 .channel-btn {
@@ -974,7 +996,6 @@ table td {
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
-    letter-spacing: 0px;
     max-width: 400px;
 }
 
@@ -1030,7 +1051,6 @@ table td {
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 0px;
 }
 
 .detail-list li {
@@ -1038,7 +1058,6 @@ table td {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 0px;
 }
 
 /* ========================  Add Drip Modal  ======================= */
@@ -1109,12 +1128,13 @@ table td {
     background: #E31E24;
 }
 
-.modal.fade .modal-dialog {
+
+.modal.fade .dripModal {
     transform: translateY(100px) translateX(0);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
-.modal.show .modal-dialog {
+.modal.show .dripModal {
     transform: translateY(0) translateX(0);
 }
 
@@ -1176,7 +1196,6 @@ table td {
     font-size: 14px !important;
     font-weight: 600 !important;
     line-height: 24px !important;
-    letter-spacing: 0px;
     background: none !important;
     padding: 0px !important;
 }
@@ -1229,21 +1248,12 @@ table td {
     background-position: 50% 50%;
 }
 
-/* .info-modal.fade .modal-dialog {
-    transition: transform .3s ease-out;
-    transform: translate(0, 50%);
-} */
-
 .modal-dialog {
     position: fixed !important;
     bottom: 0 !important;
     left: 0% !important;
     right: 0% !important;
     margin-bottom: 0 !important;
-}
-
-.info-modal.show .modal-dialog {
-    transform: none;
 }
 
 /* Wallet page css */
@@ -1253,7 +1263,6 @@ table td {
     font-size: 26px;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 0px;
 }
 
 .download-btn {
@@ -1269,7 +1278,6 @@ table td {
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0px;
 }
 
 .credit-btn {
@@ -1284,7 +1292,6 @@ table td {
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0px;
     text-decoration: none;
 }
 
