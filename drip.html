@@ -915,7 +915,7 @@
                     </div>
                 </div>
                 <div class="modal-footer border-0">
-                    <a role="button" href="channel.html" class="channel-btn">Automation Setup
+                    <a role="button" href="channel.html" class="channel-btn" data-bs-toggle="modal" data-bs-target="#automationModal">Automation Setup
                         <img src="assets/images/modal-arrow.svg" alt="modal-arrow">
                     </a>
                 </div>
@@ -957,6 +957,104 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="automationModal" aria-labelledby="automationModal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="drip.html" class="drip-link-item">Drips</a></li>
+                            <li class="breadcrumb-item"><a href="drip.html" class="drip-link-item">Drip Details</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Automation Setup
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-cont">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="auto-main-div d-flex justify-content-between align-items-baseline">
+                                    <div class="at-hdg-div">
+                                        <h2 class="drip-modal-hdg">Automation Setup</h2>
+                                        <p class="drip-modal-p">Arrange and customize the sequence of actions in your
+                                            automation.</p>
+                                    </div>
+
+                                    <div class="at-add-div">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle add-step-btn" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/add.svg" alt="add-step">
+                                                Add Step
+                                            </a>
+
+                                            <ul class="dropdown-menu add-step-menu">
+                                                <li class="add-step-li">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        WhatsApp
+                                                    </a>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/sms-icon.svg" alt="sms-icon">
+                                                        SMS
+                                                    </a>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" data-bs-toggle="modal"
+                                                        data-bs-target="#EmailautomationModal">
+                                                        <img src="assets/images/email-icon.svg" alt="email-icon">
+                                                        Email
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-2 col-md-12 col-sm-12">
+                                <div class="auto-step-div">
+                                    <span>No Steps</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-12 col-sm-12">
+                                <div class="auto-insert-div">
+                                    <div class="auto-setup">
+                                        <img src="assets/images/Insert-img.png" alt="insert">
+                                        <div class="insert-text d-flex flex-column align-items-center gap-3">
+                                            <h6>Add Steps</h6>
+                                            <p>
+                                                To build your drip campaign, add steps for different communication
+                                                channels
+                                                (SMS, WhatsApp, Email). Use the 'Add Step' button located in the top
+                                                right.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#dripDetailsModal" class="back-btn">
+                        <img src="assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
