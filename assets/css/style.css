@@ -329,11 +329,6 @@ input:not(:placeholder-shown)+label {
     position: relative;
 }
 
-.step.active {
-    color: #E94B50;
-    font-weight: bold;
-}
-
 .form-step {
     display: none;
 }
@@ -468,21 +463,18 @@ input:not(:placeholder-shown)+label {
 }
 
 /* =======================  Side Bar ============================== */
+
 .layout {
-    display: flex;
-    width: 100%;
-    height: auto;
-    background-color: #F5F6F8;
+    background: #F5F6F8;
 }
 
 .sidebar {
-    width: 250px;
-    transition: width 0.4s;
     background: #FFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-right: 1px solid #DEE2E9;
+    border-bottom: 1px solid #DEE2E9;
 }
 
 .main-content {
@@ -490,11 +482,9 @@ input:not(:placeholder-shown)+label {
     height: 100%;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 }
 
 .page-content {
-    flex-grow: 1;
     padding: 24px;
 }
 
@@ -624,7 +614,6 @@ input:not(:placeholder-shown)+label {
 }
 
 .topbar {
-    display: flex;
     padding: 16px 24px;
     height: 72px;
     border-bottom: 1px solid #DEE2E9;
@@ -728,6 +717,7 @@ input:not(:placeholder-shown)+label {
     justify-content: space-between;
     transition: all 0.3s ease;
     width: auto;
+    gap: 8px;
 }
 
 .content2 {
@@ -1257,7 +1247,7 @@ table td {
 }
 
 /* automation setup css */
- 
+
 .add-step-btn {
     display: flex;
     padding: 8px 32px 8px 16px;
@@ -1273,28 +1263,30 @@ table td {
     background-repeat: no-repeat;
     background-position: 94% center;
 }
- 
+
 .add-step-btn::after {
     display: none;
 }
- 
+
 .add-step-menu {
     border: none !important;
     min-width: 9rem !important;
+    background-color: transparent !important;
 }
- 
+
 .add-step-li {
     display: flex;
     padding: 8px 10px 8px 16px;
     align-items: center;
     border-radius: 12px;
     border: 1px solid #DEE2E9;
+    background-color: #FFFFFF;
 }
- 
+
 .add-step-li:hover {
     background-color: #E9F0FF;
 }
- 
+
 .add-step-li .dropdown-item {
     padding: 0 !important;
     color: #0E285E;
@@ -1304,15 +1296,15 @@ table td {
     font-size: 16px;
     font-weight: 500;
 }
- 
+
 .add-step-li .dropdown-item:hover {
     background-color: transparent !important;
 }
- 
+
 .btn-close:focus {
     box-shadow: none;
 }
- 
+
 .back-btn {
     display: flex;
     align-items: center;
@@ -1327,7 +1319,7 @@ table td {
     font-weight: 500;
     text-decoration: none;
 }
- 
+
 .auto-step-div {
     display: flex;
     padding: 24px;
@@ -1338,7 +1330,7 @@ table td {
     background: #FAFAFC;
     height: 100%;
 }
- 
+
 .auto-insert-div {
     display: flex;
     padding: 24px;
@@ -1350,7 +1342,7 @@ table td {
     background: #FAFAFC;
     height: 100%;
 }
- 
+
 .auto-setup {
     display: flex;
     flex-direction: column;
@@ -1359,7 +1351,7 @@ table td {
     width: 50%;
     gap: 16px;
 }
- 
+
 .auto-step-div span {
     color: #67779A;
     text-align: center;
@@ -1367,7 +1359,7 @@ table td {
     font-weight: 500;
     line-height: 24px;
 }
- 
+
 .insert-text h6 {
     color: #0E285E;
     text-align: center;
@@ -1376,13 +1368,35 @@ table td {
     line-height: 32px;
     margin-bottom: 0;
 }
- 
+
 .insert-text p {
     color: #67779A;
     text-align: center;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
+}
+
+.summary-btn {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: #FAFAFC;
+    color: #B0B9CB;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.summary-btn:hover {
+    color: #FFFFFF;
+    background: #E94B50;
+}
+
+.summary-btn:hover svg path {
+    stroke: #FFFFFF;
 }
 
 /* Wallet page css */
@@ -1767,7 +1781,6 @@ table td {
 
 /* ========================== Tag Master =========================== */
 
-
 .tag-name-count {
     padding: 4px 8px;
     color: #67779A;
@@ -1823,7 +1836,6 @@ table td {
     line-height: 20px;
 }
 
-
 .text-area::placeholder {
     color: #67779A;
     font-size: 14px;
@@ -1836,7 +1848,6 @@ table td {
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
-
 }
 
 .contact-detail {
@@ -1861,4 +1872,124 @@ table td {
 .contact-count-offcanvas {
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
+}
+
+/* Settings page css */
+
+.settings-tab-div {
+    border-radius: 12px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+}
+
+.tabs-div {
+    padding: 16px;
+}
+
+.nav-pills .settings-tab-btn {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #67779A;
+}
+
+.nav-pills .settings-tab-btn.active {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #0E285E;
+    background: #0E285E;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profile-hdg h4 {
+    color: #0E285E;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.line-div {
+    background: #EBEDF1;
+    height: 1px;
+}
+
+/* automation wizard css */
+
+.stepper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.stepper .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.step.active .step-circle {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.step.completed .step-circle {
+    background-color: #198754;
+    color: white;
+}
+
+.step-text {
+    font-size: 0.9rem;
+}
+
+.step-subtext {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.template-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.template-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.email-design-preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.step-div {
+    max-width: 400px;
+    margin: auto;
 }

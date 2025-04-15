@@ -1,0 +1,33 @@
+@media screen and (max-width: 480px) {
+    .drip-header {
+        flex-direction: column;
+        gap: 1rem !important;
+        align-items: flex-start !important;
+        margin-top: 24px;
+    }
+
+    .table-head {
+        flex-direction: column;
+        gap: 1rem !important;
+        align-items: flex-start !important;
+    }
+
+    .topbar {
+        flex-direction: column;
+        gap: 1rem !important;
+        align-items: flex-start !important;
+    }
+
+    .details-header {
+        padding: 16px;
+    }
+
+    .drip-name {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    
+    .content2 {
+        gap: 8px;
+    }
+}
