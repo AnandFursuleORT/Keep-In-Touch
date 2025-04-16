@@ -614,10 +614,10 @@ input:not(:placeholder-shown)+label {
 }
 
 .topbar {
-    padding: 16px 24px;
-    height: 72px;
+    padding: 10px 24px;
     border-bottom: 1px solid #DEE2E9;
     background: #FFFFFF;
+    height: 72px;
 }
 
 .notification {
