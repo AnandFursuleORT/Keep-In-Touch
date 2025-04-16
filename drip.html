@@ -13,112 +13,7 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0 layout">
-        <div class="sidebar" id="sidebar">
-            <div class="menu-div1">
-                <div class="logo">
-                    <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
-                    <i class="toggle-btn" id="toggleBtn">
-                        <img src="Assets/images/left-red-arrow.svg" alt="">
-                    </i>
-                </div>
-                <div class="sidebar-menu p-4">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="">
-                                <img src="Assets/images/dashboard-menu.svg" alt="dashboard-icon">
-                                <span>Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">
-                                <img src="assets/images/wallet-menu.svg" alt="dashboard-icon">
-                                <span>Wallet</span>
-                            </a>
-                        </li>
-                      <li class="menu-item ">
-                            <div class="accordion" id="accordionContact">
-                                <div class="accordion-item sibar-accdn">
-                                    <div class="accordion-header">
-
-                                        <button class="accordion-button sidebar-accordion" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                                            aria-controls="collapseOne">
-                                            <img src="assets/images/contact-menu.svg" alt="">
-                                            <span class="ps-3">Contact</span>
-                                        </button>
-                                    </div>
-                                    <div id="collapseOne" class="accordion-collapse collapse">
-                                        <div class="accordion-body contact-sub-items">
-                                            <ul class="menu-list">
-                                                <li class="menu-item">
-                                                    <a href="contact-listing.html">
-                                                        <img src="assets/images/contact-listing.svg"
-                                                            alt="dashboard-icon">
-                                                        <span>Contact Listing</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="tag-master.html">
-                                                        <img src="assets/images/tags.svg" alt="dashboard-icon">
-                                                        <span>Tags</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-item active">
-                            <a href="#">
-                                <img src="assets/images/drip-selected.svg" alt="dashboard-icon">
-                                <span>Drip</span>
-                            </a>
-                        </li>
-                        <li class="menu-item ">
-                            <div class="accordion" id="accordionProduct">
-                                <div class="accordion-item sibar-accdn">
-                                    <div class="accordion-header">
-
-                                        <button class="accordion-button sidebar-accordion" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseaccordionProduct" aria-expanded="false"
-                                            aria-controls="accordionProduct">
-                                            <img src="assets/images/contact-menu.svg" alt="">
-                                            <span class="ps-3">Product Management</span>
-                                        </button>
-                                    </div>
-                                    <div id="collapseaccordionProduct" class="accordion-collapse collapse">
-                                        <div class="accordion-body contact-sub-items">
-                                            <ul class="menu-list">
-                                                <li class="menu-item">
-                                                    <a href="products.html">
-                                                        <img src="assets/images/contact-listing.svg"
-                                                            alt="dashboard-icon">
-                                                        <span>Products</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="product-category.html">
-                                                        <img src="assets/images/tags.svg" alt="dashboard-icon">
-                                                        <span class="text-nowrap">Product Category</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">
-                                <img src="assets/images/reports-menu.svg" alt="dashboard-icon">
-                                <span>Reports</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="container-fluid p-0 layout">      
         <div class="row g-0">
             <div class="col-lg-2 col-md-12 col-sm-12 d-none d-lg-block d-md-block sidebar-col">
                 <div class="sidebar" id="sidebar">
@@ -143,17 +38,79 @@
                                         <span>Wallet</span>
                                     </a>
                                 </li>
-                                <li class="menu-item">
-                                    <a href="contact-listing.html">
-                                        <img src="assets/images/contact-menu.svg" alt="dashboard-icon">
-                                        <span>Contact</span>
-                                    </a>
+                                <li class="menu-item ">
+                                    <div class="accordion" id="accordionContact">
+                                        <div class="accordion-item sidebar-accdn">
+                                            <div class="accordion-header">
+        
+                                                <button class="accordion-button sidebar-accordion" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="false" aria-controls="collapseOne">
+                                                    <img src="assets/images/contact-menu.svg" alt="">
+                                                    <span class="ps-3">Contact</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseOne" class="accordion-collapse collapse">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="contact-listing.html">
+                                                                <img src="assets/images/contact-listing.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Contact Listing</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="tag-master.html">
+                                                                <img src="assets/images/tags.svg" alt="dashboard-icon">
+                                                                <span>Tags</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="menu-item active">
                                     <a href="#">
                                         <img src="assets/images/drip-selected.svg" alt="dashboard-icon">
                                         <span>Drip</span>
                                     </a>
+                                </li>
+                                <li class="menu-item ">
+                                    <div class="accordion" id="accordionProduct">
+                                        <div class="accordion-item sidebar-accdn">
+                                            <div class="accordion-header">
+        
+                                                <button class="accordion-button sidebar-accordion" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseaccordionProduct"
+                                                    aria-expanded="false" aria-controls="accordionProduct">
+                                                    <img src="assets/images/contact-menu.svg" alt="">
+                                                    <span class="ps-3">Product Management</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseaccordionProduct" class="accordion-collapse collapse">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="products.html">
+                                                                <img src="assets/images/contact-listing.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Products</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="product-category.html">
+                                                                <img src="assets/images/tags.svg" alt="dashboard-icon">
+                                                                <span>Product Category</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="menu-item">
                                     <a href="">
@@ -164,7 +121,7 @@
                             </ul>
                         </div>
                     </div>
-
+        
                     <div class="menu-div2">
                         <div class="sidebar-menu p-4">
                             <ul class="menu-list2">
@@ -263,40 +220,97 @@
                                 <div class="offcanvas-body p-0">
                                     <div class="sidebar">
                                         <div class="menu-div1">
-                                            <div class="sidebar-menu p-3">
+                                            <div class="sidebar-menu p-4">
                                                 <ul class="menu-list">
                                                     <li class="menu-item">
                                                         <a href="">
-                                                            <img src="assets/images/dashboard-menu.svg"
-                                                                alt="dashboard-icon">
+                                                            <img src="assets/images/dashboard-menu.svg" alt="dashboard-icon">
                                                             <span>Dashboard</span>
                                                         </a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="">
-                                                            <img src="assets/images/wallet-menu.svg"
-                                                                alt="dashboard-icon">
+                                                            <img src="assets/images/wallet-menu.svg" alt="dashboard-icon">
                                                             <span>Wallet</span>
                                                         </a>
                                                     </li>
-                                                    <li class="menu-item">
-                                                        <a href="contact-listing.html">
-                                                            <img src="assets/images/contact-menu.svg"
-                                                                alt="dashboard-icon">
-                                                            <span>Contact</span>
-                                                        </a>
+                                                    <li class="menu-item ">
+                                                        <div class="accordion" id="accordionContact">
+                                                            <div class="accordion-item sidebar-accdn">
+                                                                <div class="accordion-header">
+                            
+                                                                    <button class="accordion-button sidebar-accordion" type="button"
+                                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                                        aria-expanded="false" aria-controls="collapseOne">
+                                                                        <img src="assets/images/contact-menu.svg" alt="">
+                                                                        <span class="ps-3">Contact</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseOne" class="accordion-collapse collapse">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="menu-list">
+                                                                            <li class="menu-item">
+                                                                                <a href="contact-listing.html">
+                                                                                    <img src="assets/images/contact-listing.svg"
+                                                                                        alt="dashboard-icon">
+                                                                                    <span>Contact Listing</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="tag-master.html">
+                                                                                    <img src="assets/images/tags.svg" alt="dashboard-icon">
+                                                                                    <span>Tags</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </li>
                                                     <li class="menu-item active">
                                                         <a href="#">
-                                                            <img src="assets/images/drip-selected.svg"
-                                                                alt="dashboard-icon">
+                                                            <img src="assets/images/drip-selected.svg" alt="dashboard-icon">
                                                             <span>Drip</span>
                                                         </a>
                                                     </li>
+                                                    <li class="menu-item ">
+                                                        <div class="accordion" id="accordionProduct">
+                                                            <div class="accordion-item sidebar-accdn">
+                                                                <div class="accordion-header">
+                            
+                                                                    <button class="accordion-button sidebar-accordion" type="button"
+                                                                        data-bs-toggle="collapse" data-bs-target="#collapseaccordionProduct"
+                                                                        aria-expanded="false" aria-controls="accordionProduct">
+                                                                        <img src="assets/images/contact-menu.svg" alt="">
+                                                                        <span class="ps-3">Product Management</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseaccordionProduct" class="accordion-collapse collapse">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="menu-list">
+                                                                            <li class="menu-item">
+                                                                                <a href="products.html">
+                                                                                    <img src="assets/images/contact-listing.svg"
+                                                                                        alt="dashboard-icon">
+                                                                                    <span>Products</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="product-category.html">
+                                                                                    <img src="assets/images/tags.svg" alt="dashboard-icon">
+                                                                                    <span>Product Category</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
                                                     <li class="menu-item">
                                                         <a href="">
-                                                            <img src="assets/images/reports-menu.svg"
-                                                                alt="dashboard-icon">
+                                                            <img src="assets/images/reports-menu.svg" alt="dashboard-icon">
                                                             <span>Reports</span>
                                                         </a>
                                                     </li>

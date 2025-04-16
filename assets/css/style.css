@@ -1459,7 +1459,6 @@ table td {
     line-height: 24px;
     background-color: transparent !important;
     box-shadow: none !important;
-
 }
 
 .sidebar-accordion {
@@ -1482,12 +1481,12 @@ table td {
     box-shadow: none !important;
 }
 
-.sibar-accdn {
+.sidebar-accdn {
     border: none !important;
 
 }
 
-.sibar-accdn-active {
+.sidebar-accdn-active {
     border: 1px solid #E94B50 !important;
     border-radius: 12px !important;
     background-color: #FAFAFC;
