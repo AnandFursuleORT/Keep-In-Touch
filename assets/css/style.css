@@ -1890,7 +1890,7 @@ table td {
     background: #FAFAFC;
 }
 
-.add-tags-modal {
+.add-modal {
     padding: 24px !important;
     display: flex;
     flex-direction: column;
@@ -1898,22 +1898,22 @@ table td {
     border-radius: 24px !important;
 }
 
-.add-tags-modal .modal-footer {
+.add-modal .modal-footer {
     border-top: none !important;
     padding: 0px !important;
 }
 
-.add-tags-modal .modal-body {
+.add-modal .modal-body {
     padding: 0px !important;
 }
 
-.add-tags-modal .modal-header {
+.add-modal .modal-header {
     border-bottom: none !important;
     margin-bottom: 8px;
     padding: 0px !important;
 }
 
-.add-tag-modal-title {
+.add-modal-title {
     color: #001747;
     font-size: 22px;
     font-weight: 600;
