@@ -766,7 +766,6 @@ input:not(:placeholder-shown)+label {
     color: #FAFAFC;
     font-size: 16px;
     font-weight: 500;
-    line-height: 22px
 }
 
 .add-button:hover {
@@ -783,7 +782,6 @@ input:not(:placeholder-shown)+label {
     color: #B0B9CB;
     font-size: 16px;
     font-weight: 600;
-    line-height: 32px;
     padding: 12px;
 }
 
@@ -792,9 +790,7 @@ input:not(:placeholder-shown)+label {
     color: #0E285E;
     font-size: 22px;
     font-weight: 600;
-    line-height: 32px;
     transition: all 1s ease-in-out;
-    padding: 12px;
 }
 
 .table-tabs-link:hover {
@@ -1259,7 +1255,7 @@ table td {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
-    background-image: url('/assets/images/down-arrow.svg');
+    background-image: url('/assets/images/step-down-arrow.svg');
     background-repeat: no-repeat;
     background-position: 94% center;
 }

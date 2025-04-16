@@ -27,12 +27,20 @@
     }
 
     .drip-name {
-        font-size: 10px;
-        line-height: 16px;
+        font-size: 8px;
     }
 
     .content2 {
-        gap: 8px;
+        gap: 4px;
+    }
+
+    .cancel-drip-btn {
+        width: 12px;
+        height: 12px;
+    }
+
+    .indicator {
+        font-size: 10px;
     }
 
     .sidebar {
@@ -75,5 +83,33 @@
 
     .table-div {
         padding: 16px;
+    }
+    
+    .table-tabs-link {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .table-tabs-link:hover {
+        font-size: 16px;
+    }
+
+    .nav-pills .table-tabs-link.active {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .active-drip-bar {
+        margin: 0 !important;
+    }
+
+    .heading h4 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .add-button {
+        font-size: 12px;
+        padding: 8px 12px;
     }
 }
