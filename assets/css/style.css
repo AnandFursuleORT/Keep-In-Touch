@@ -1067,7 +1067,7 @@ table td {
     padding: 24px !important;
 }
 
-.modal-body img {
+.add-drip-modal .modal-body img {
     max-width: 100%;
     border-radius: 10px;
 }
@@ -1257,7 +1257,7 @@ table td {
 }
 
 /* automation setup css */
- 
+
 .add-step-btn {
     display: flex;
     padding: 8px 32px 8px 16px;
@@ -1273,16 +1273,16 @@ table td {
     background-repeat: no-repeat;
     background-position: 94% center;
 }
- 
+
 .add-step-btn::after {
     display: none;
 }
- 
+
 .add-step-menu {
     border: none !important;
     min-width: 9rem !important;
 }
- 
+
 .add-step-li {
     display: flex;
     padding: 8px 10px 8px 16px;
@@ -1290,11 +1290,11 @@ table td {
     border-radius: 12px;
     border: 1px solid #DEE2E9;
 }
- 
+
 .add-step-li:hover {
     background-color: #E9F0FF;
 }
- 
+
 .add-step-li .dropdown-item {
     padding: 0 !important;
     color: #0E285E;
@@ -1304,15 +1304,15 @@ table td {
     font-size: 16px;
     font-weight: 500;
 }
- 
+
 .add-step-li .dropdown-item:hover {
     background-color: transparent !important;
 }
- 
+
 .btn-close:focus {
     box-shadow: none;
 }
- 
+
 .back-btn {
     display: flex;
     align-items: center;
@@ -1327,7 +1327,7 @@ table td {
     font-weight: 500;
     text-decoration: none;
 }
- 
+
 .auto-step-div {
     display: flex;
     padding: 24px;
@@ -1338,7 +1338,7 @@ table td {
     background: #FAFAFC;
     height: 100%;
 }
- 
+
 .auto-insert-div {
     display: flex;
     padding: 24px;
@@ -1350,7 +1350,7 @@ table td {
     background: #FAFAFC;
     height: 100%;
 }
- 
+
 .auto-setup {
     display: flex;
     flex-direction: column;
@@ -1359,7 +1359,7 @@ table td {
     width: 50%;
     gap: 16px;
 }
- 
+
 .auto-step-div span {
     color: #67779A;
     text-align: center;
@@ -1367,7 +1367,7 @@ table td {
     font-weight: 500;
     line-height: 24px;
 }
- 
+
 .insert-text h6 {
     color: #0E285E;
     text-align: center;
@@ -1376,7 +1376,7 @@ table td {
     line-height: 32px;
     margin-bottom: 0;
 }
- 
+
 .insert-text p {
     color: #67779A;
     text-align: center;
@@ -1441,12 +1441,20 @@ table td {
 .accordion-button:not(.collapsed) {
     color: #0E285E;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+
 }
 
 .sidebar-accordion {
     padding: 12px !important;
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 12px !important;
 }
 
 .accordion-button::after {
@@ -1454,20 +1462,19 @@ table td {
     background-repeat: no-repeat;
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-
 .accordion-button:focus {
     z-index: 3;
     outline: 0;
     box-shadow: none !important;
 }
-
-.sibar-contact-accdn {
+.sibar-accdn {
+    border: none!important;
+   
+}
+.sibar-accdn-active {
     border: 1px solid #E94B50 !important;
     border-radius: 12px !important;
+    background-color: #FAFAFC;
 }
 
 .export,
@@ -1765,6 +1772,99 @@ table td {
     box-shadow: none !important;
 }
 
+
+/* ========================== upload modal =========================== */
+
+.uploadMdal-title h4 {
+    color: #0E285E;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.uploadMdal-title p {
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.file-upload-div {
+    border-radius: 10px;
+    border: 1px dashed #0062FF;
+    padding: 30px;
+
+}
+
+.file-upload-circle1 {
+    border-radius: 57px;
+    background: #FAD8D8;
+    padding: 8px;
+}
+
+.file-upload-circle2 {
+    border-radius: 75px;
+    background: #F7C4C4;
+    padding: 10px;
+}
+
+.file-upload-circle3 {
+    border-radius: 53px;
+    border: 1px solid #E53A3A;
+    padding: 10px;
+}
+
+
+.browse-file-div {
+    border-radius: 12px;
+    border: 1px solid #E5EFFF;
+    background: #F7FAFF;
+    padding: 14px 20px;
+}
+
+
+.file-upload-text {
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    gap: 12px;
+}
+
+.uploadModal {
+    padding: 24px !important;
+    gap: 24px;
+    border-radius: 24px !important
+}
+
+.uploadModal .modal-footer {
+    border-top: none !important;
+    padding: 0px !important;
+}
+
+.uploadModal .modal-body {
+    padding: 0px !important;
+}
+
+.uploadModal .modal-header {
+    border-bottom: none !important;
+    padding: 0px !important;
+}
+
+.file-size {
+    color: #67779A;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.dowmload-file {
+    color: #67779A;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
 /* ========================== Tag Master =========================== */
 
 
@@ -1861,4 +1961,56 @@ table td {
 .contact-count-offcanvas {
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
+}
+
+/* Tag Delete Modal */
+
+.deleteModal .modal-header {
+    border-bottom: none !important;
+}
+
+.deleteModal .modal-footer {
+    border-top: none !important;
+}
+
+
+.delete-modal-title h4 {
+    color: #0E285E;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.delete-modal-text p {
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.delete-img-div {
+    display: flex;
+    border-radius: 50%;
+    background: #FFEBE0;
+    padding: 6px;
+}
+
+/* ========================== successfully Modal ============================== */
+
+.successfullyModal .modal-header {
+    border-bottom: none !important;
+}
+.successfully-title h4 {
+    color: #0E285E;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.successfully-text p {
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
 }
