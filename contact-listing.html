@@ -12,204 +12,211 @@
 
 <body>
     <div class="container-fluid p-0 layout">
-        <div class="sidebar" id="sidebar">
-            <div class="menu-div1">
-                <div class="logo">
-                    <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
-                    <i class="toggle-btn" id="toggleBtn">
-                        <img src="Assets/images/left-red-arrow.svg" alt="">
-                    </i>
-                </div>
-                <div class="sidebar-menu p-4">
-                    <ul class="menu-list">
-                        <li class="menu-item">
-                            <a href="">
-                                <img src="Assets/images/dashboard-menu.svg" alt="dashboard-icon">
-                                <span>Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">
-                                <img src="assets/images/wallet-menu.svg" alt="dashboard-icon">
-                                <span>Wallet</span>
-                            </a>
-                        </li>
-                        <li class="menu-item ">
-                            <div class="accordion" id="accordionContact">
-                                <div class="accordion-item sibar-accdn sibar-accdn-active ">
-                                    <div class="accordion-header">
+        <div class="row">
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <div class="sidebar" id="sidebar">
+                    <div class="menu-div1">
+                        <div class="logo">
+                            <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
+                            <i class="toggle-btn" id="toggleBtn">
+                                <img src="Assets/images/left-red-arrow.svg" alt="">
+                            </i>
+                        </div>
+                        <div class="sidebar-menu p-4">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="">
+                                        <img src="Assets/images/dashboard-menu.svg" alt="dashboard-icon">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        <img src="assets/images/wallet-menu.svg" alt="dashboard-icon">
+                                        <span>Wallet</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item ">
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item sibar-contact-accdn">
+                                            <div class="accordion-header">
 
-                                        <button class="accordion-button sidebar-accordion" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            <img src="assets/images/contact-menu.svg" alt="">
-                                            <span class="ps-3">Contact</span>
-                                        </button>
-                                    </div>
-                                    <div id="collapseOne" class="accordion-collapse collapse show">
-                                        <div class="accordion-body contact-sub-items">
-                                            <ul class="menu-list">
-                                                <li class="menu-item active">
-                                                    <a href="contact-listing.html">
-                                                        <img src="assets/images/contact-listing.svg"
-                                                            alt="dashboard-icon">
-                                                        <span>Contact Listing</span>
-                                                    </a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="tag-master.html">
-                                                        <img src="assets/images/tags.svg" alt="dashboard-icon">
-                                                        <span>Tags</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                                <button class="accordion-button sidebar-accordion" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                    aria-controls="panelsStayOpen-collapseOne">
+                                                    <img src="assets/images/contact-menu.svg" alt="">
+                                                    <span class="ps-3">Contact</span>
+                                                </button>
+                                            </div>
+                                            <div id="panelsStayOpen-collapseOne"
+                                                class="accordion-collapse collapse show">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="menu-list">
+                                                        <li class="menu-item active">
+                                                            <a href="">
+                                                                <img src="assets/images/contact-listing.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Contact Listing</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="tag-master.html">
+                                                                <img src="assets/images/tags.svg" alt="dashboard-icon">
+                                                                <span>Tags</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="drip.html">
-                                <img src="assets/images/drip-selected.svg" alt="dashboard-icon">
-                                <span>Drip</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">
-                                <img src="assets/images/reports-menu.svg" alt="dashboard-icon">
-                                <span>Reports</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="menu-div2">
-                <div class="sidebar-menu p-4">
-                    <ul class="menu-list2">
-                        <li class="menu-item">
-                            <a href="">
-                                <img src="Assets/images/help.svg" alt="dashboard-icon">
-                                <span>Help & Support</span>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="">
-                                <img src="assets/images/setting-menu.svg" alt="dashboard-icon">
-                                <span>Settings</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="profile-menu mt-auto p-4">
-                    <div class="profile">
-                        <img src="assets/images/profile.svg" alt="">
-                        <span class="profile-name">Atharva Mohurle</span>
-                    </div>
-                </div>
-                <div class="app-section-menu">
-                    <h6 class="app-text">Get the app</h6>
-                    <a class="apple-store">
-                        <img src="assets/images/apple.svg" alt="apple-icon">
-                        <img src="assets/images/appleText.svg" alt="apple-text">
-                    </a>
-                    <a class="play-store">
-                        <img src="assets/images/google-play-logo.svg" alt="google-play-icon">
-                        <img src="assets/images/playText.svg" alt="google-play-text">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="main-content">
-            <div class="topbar d-flex align-items-center justify-content-between">
-                <div>
-                    <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
-                        aria-label="breadcrumb">
-                        <ol class="breadcrumb drip-breadcrumb">
-                            <li class="breadcrumb-item"><a href="#" class="drip-link-item">Home</a></li>
-                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Contact Listing</li>
-                        </ol>
-                    </nav>
-                </div>
-                <div class="topbar-widgets d-flex align-items-center gap-2">
-                    <input type="search" class="form-control search" placeholder="Search">
-                    <div class="notification">
-                        <img src="assets/images/notification.svg" alt="notification">
-                    </div>
-                    <div class="drip-count">
-                        <img src="assets/images/Drips.svg" alt="drip">
-                        <span class="topbar-widgets-text">0</span>
-                    </div>
-                    <div class="credits">
-                        <img src="assets/images/Coins.svg" alt="coins">
-                        <span class="topbar-widgets-text">200/200</span>
-                        <img src="assets/images/alert-circle.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="page-content d-flex flex-column gap-4">
-                <div class="drip-header d-flex align-items-center justify-content-between gap-5">
-                    <div class="heading">
-                        <h4>Contact Listing</h4>
-                    </div>
-
-
-                    <button class="add-button" data-bs-toggle="modal" data-bs-target="#customModal"> <img
-                            src="assets/images/add.svg" alt="">Add Contact</button>
-                </div>
-                <div class="table-div">
-                    <div class="table-head  mb-4">
-                        <div class="table-div1 d-flex align-items-center justify-content-between mb-3">
-                            <div class="table-heading">
-                                <h4 class="mb-0">
-                                    Contact
-                                </h4>
-                            </div>
-                            <div class="table-div1-tabs d-flex align-items-center gap-3 ">
-                                <div class="export">
-                                    <img src="assets/images/export.svg" alt="export">
-                                    <span>Export</span>
-                                </div>
-                                <div class="import" data-bs-toggle="modal" data-bs-target="#uploadModal">
-                                    <img src="assets/images/import.svg" alt="import">
-                                    <span>Import</span>
-                                </div>
-                                <div class="table-search d-flex align-items-center gap-3">
-                                    <input type="search" class="form-control search " id="dt-search"
-                                        placeholder="Search">
-                                </div>
-                            </div>
-
+                                </li>
+                                <li class="menu-item ">
+                                    <a href="drip.html">
+                                        <img src="assets/images/drip-selected.svg" alt="dashboard-icon">
+                                        <span>Drip</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        <img src="assets/images/reports-menu.svg" alt="dashboard-icon">
+                                        <span>Reports</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <div class="table-div2 d-flex align-items-center justify-content-between ">
-                            <div class="d-flex align-items-center gap-3">
-                                <div class="table-filter" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                                    aria-controls="offcanvasRight">
-                                    <img src="assets/images/filter.svg" alt="filter">
-                                    <span>Filter</span>
-                                </div>
-                                <div class="filtered-date">
-
-                                </div>
-                            </div>
-
-
-                            <div class="select-tag-div d-flex align-items-center gap-3">
-                                <span class="select-tag-text">Assign to</span>
-                                <div>
-                                    <select class="form-select select-tag" aria-label="Default select example">
-                                        <option selected>Select Tag</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-
+                    <div class="menu-div2">
+                        <div class="sidebar-menu p-4">
+                            <ul class="menu-list2">
+                                <li class="menu-item">
+                                    <a href="">
+                                        <img src="Assets/images/help.svg" alt="dashboard-icon">
+                                        <span>Help & Support</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        <img src="assets/images/setting-menu.svg" alt="dashboard-icon">
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profile-menu mt-auto p-4">
+                            <div class="profile">
+                                <img src="assets/images/profile.svg" alt="">
+                                <span class="profile-name">Atharva Mohurle</span>
                             </div>
                         </div>
-
+                        <div class="app-section-menu">
+                            <h6 class="app-text">Get the app</h6>
+                            <a class="apple-store">
+                                <img src="assets/images/apple.svg" alt="apple-icon">
+                                <img src="assets/images/appleText.svg" alt="apple-text">
+                            </a>
+                            <a class="play-store">
+                                <img src="assets/images/google-play-logo.svg" alt="google-play-icon">
+                                <img src="assets/images/playText.svg" alt="google-play-text">
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="main-content">
+                    <div class="topbar d-flex align-items-center justify-content-between">
+                        <div>
+                            <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
+                                aria-label="breadcrumb">
+                                <ol class="breadcrumb drip-breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#" class="drip-link-item">Home</a></li>
+                                    <li class="breadcrumb-item active drip-active-item" aria-current="page">Contact
+                                        Listing</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="topbar-widgets d-flex align-items-center gap-2">
+                            <input type="search" class="form-control search" placeholder="Search">
+                            <div class="notification">
+                                <img src="assets/images/notification.svg" alt="notification">
+                            </div>
+                            <div class="drip-count">
+                                <img src="assets/images/Drips.svg" alt="drip">
+                                <span class="topbar-widgets-text">0</span>
+                            </div>
+                            <div class="credits">
+                                <img src="assets/images/Coins.svg" alt="coins">
+                                <span class="topbar-widgets-text">200/200</span>
+                                <img src="assets/images/alert-circle.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content d-flex flex-column gap-4">
+                        <div class="drip-header d-flex align-items-center justify-content-between gap-5">
+                            <div class="heading">
+                                <h4>Contact Listing</h4>
+                            </div>
+
+
+                            <button class="add-button" data-bs-toggle="modal" data-bs-target="#customModal"> <img
+                                    src="assets/images/add.svg" alt="">Add Contact</button>
+                        </div>
+                        <div class="table-div">
+                            <div class="table-head  mb-4">
+                                <div class="table-div1 d-flex align-items-center justify-content-between mb-3">
+                                    <div class="table-heading">
+                                        <h4 class="mb-0">
+                                            Contact
+                                        </h4>
+                                    </div>
+                                    <div class="table-div1-tabs d-flex align-items-center gap-3 ">
+                                        <div class="export">
+                                            <img src="assets/images/export.svg" alt="export">
+                                            <span>Export</span>
+                                        </div>
+                                        <div class="import">
+                                            <img src="assets/images/import.svg" alt="import">
+                                            <span>Import</span>
+                                        </div>
+                                        <div class="table-search d-flex align-items-center gap-3">
+                                            <input type="search" class="form-control search " id="dt-search"
+                                                placeholder="Search">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="table-div2 d-flex align-items-center justify-content-between ">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="table-filter" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <img src="assets/images/filter.svg" alt="filter">
+                                            <span>Filter</span>
+                                        </div>
+                                        <div class="filtered-date">
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="select-tag-div d-flex align-items-center gap-3">
+                                        <span class="select-tag-text">Assign to</span>
+                                        <div>
+                                            <select class="form-select select-tag" aria-label="Default select example">
+                                                <option selected>Select Tag</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
 
                     <table id="example" class="table" style="width:100%">
                         <thead>
@@ -672,11 +679,490 @@
         </div>
 
 
+                            <div class="contact-table-div table-responsive">
+                                <table id="example" class="table" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </th>
+                                            <th>Sr.No</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone No</th>
+                                            <th>Company</th>
+                                            <th>Date Created</th>
+                                            <th>Tags</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>3</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>4</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>5</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>6</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>7</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>8</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>9</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>10</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>11</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>12</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>13</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </td>
+                                            <td>14</td>
+                                            <td class="name-table">Samuel Schmidt</td>
+                                            <td>bess@gmail.com</td>
+                                            <td>0932 555 5656</td>
+                                            <td>Payroll Ease</td>
+                                            <td>17 Oct, 2020</td>
+                                            <td>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="badge  badge-light-success" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom"
+                                                        data-bs-title="Tag Name 1 <br>Tag Name 2 <br> Tag Name 3">Tag
+                                                        Name</span>
+                                                    <span class="tag-name-count">+3</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                                    <img src="assets/images/edit.svg" alt="edit" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Edit">
+                                                    <img src="assets/images/delete.svg" alt="" data-bs-toggle="tooltip"
+                                                        data-bs-placement="bottom" data-bs-title="Delete">
+                                                </div>
+    
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- =============================== Filter-offcanvas =========================== -->
 
     <div class="offcanvas offcanvas-end filter-offcanvas " tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end filter-offcanvas" tabindex="-1" id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header d-flex align-items-center justify-content-between">
             <h5 class="offcanvas-title title-offcanvas" id="offcanvasRightLabel">Filter</h5>

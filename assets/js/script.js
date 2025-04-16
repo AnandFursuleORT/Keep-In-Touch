@@ -46,6 +46,48 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Steps wizard js code in automation modal
+
+const steps = document.querySelectorAll('.step');
+const contents = document.querySelectorAll('.step-content');
+
+function setActiveStep(stepNum) {
+    steps.forEach((step, index) => {
+        const circle = step.querySelector('.step-circle');
+        const text = step.querySelector('.step-subtext');
+        if (index < stepNum - 1) {
+            step.classList.add('completed');
+            step.classList.remove('active');
+            text.textContent = 'Completed';
+            circle.textContent = index + 1;
+        } else if (index === stepNum - 1) {
+            step.classList.add('active');
+            step.classList.remove('completed');
+            text.textContent = 'In Progress';
+            circle.textContent = index + 1;
+        } else {
+            step.classList.remove('active', 'completed');
+            text.textContent = 'Pending';
+            circle.textContent = index + 1;
+        }
+    });
+    contents.forEach((content, idx) => {
+        content.classList.toggle('hidden', idx !== stepNum - 1);
+    });
+}
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+    setActiveStep(2);
+});
+
+document.getElementById('to-preview').addEventListener('click', () => {
+    setActiveStep(3);
+});
+
+document.getElementById('create-own').addEventListener('click', () => {
+    setActiveStep(3);
+});
+
 // Filter Dropdown code
 
 function setupSearchAndCheckboxBehavior(searchInputId, listId) {
