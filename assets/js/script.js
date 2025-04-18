@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Steps wizard js code in automation modal
 
-const steps = document.querySelectorAll('.step');
+const steps = document.querySelectorAll('.email-step');
 const contents = document.querySelectorAll('.step-content');
 
 function setActiveStep(stepNum) {

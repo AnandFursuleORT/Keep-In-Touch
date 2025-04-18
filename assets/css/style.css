@@ -289,8 +289,8 @@ input:not(:placeholder-shown)+label {
 
 .step {
     position: relative;
-    display: flex;
     flex-direction: column;
+    display: flex;
     align-items: center;
     z-index: 1;
 }
@@ -2073,16 +2073,22 @@ table td {
 
 /* automation wizard css */
 
-.stepper {
+.email-stepper {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
 }
 
-.stepper .step {
+.email-step {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 1rem;
+}
+
+.stepper-main-div {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #FAFAFC;
 }
 
 .step-circle {
@@ -2092,17 +2098,30 @@ table td {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5px;
+    border: 1px solid #A4AEC2;
 }
 
-.step.active .step-circle {
-    background-color: #0d6efd;
-    color: white;
+.email-step.active .step-subtext {
+    color: #246BFD;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
 }
 
-.step.completed .step-circle {
-    background-color: #198754;
-    color: white;
+.email-step.completed .step-circle {
+    background-color: #0E285E;
+    color: #FFFFFF;
+}
+
+.email-step.completed .step-subtext {
+    color: #18BB54;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.progress-line {
+    background: #EBEDF1;
 }
 
 .step-text {
@@ -2118,12 +2137,13 @@ table td {
     display: none;
 }
 
-.card {
-    border-radius: 1rem;
+.step-content {
+    border-radius: 12px;
+    border: 1px solid #E9E9E9;
 }
 
 .template-box {
-    border: 1px solid #ddd;
+    border: 1px solid #DDD;
     padding: 20px;
     text-align: center;
 }
@@ -2134,12 +2154,52 @@ table td {
 }
 
 .email-design-preview {
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #f9f9f9;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    border-right: 1px solid #EBEDF1;
+    border-bottom: 1px solid #EBEDF1;
+    border-left: 1px solid #EBEDF1;
 }
 
 .step-div {
     max-width: 400px;
     margin: auto;
+}
+
+.step3-div {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #E9E9E9;
+    background: #FFF;
+}
+
+.email-design-text {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 12px;
+}
+
+.reset-text {
+    color: #E53A3A;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.edit-text {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.reset-div {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }

@@ -223,7 +223,7 @@
                                             <div class="sidebar-menu p-4">
                                                 <ul class="menu-list">
                                                     <li class="menu-item">
-                                                        <a href="">
+                                                        <a href="#">
                                                             <img src="assets/images/dashboard-menu.svg"
                                                                 alt="dashboard-icon">
                                                             <span>Dashboard</span>
@@ -1457,122 +1457,125 @@
                                 </div>
                             </div>
                             <div class="col-lg-10 col-md-12 col-sm-12">
-                                <!-- Step Indicator -->
-                                <div class="step-div">
-                                    <div class="stepper mb-4">
-                                        <div class="step" data-step="1">
-                                            <div class="step-circle border">1</div>
-
-                                            <div class="step-text">Configure</div>
-                                            <div class="step-subtext">In Progress</div>
-                                        </div>
-                                        <div class="mx-3 align-self-center border-top flex-grow-1"></div>
-                                        <div class="step" data-step="2">
-                                            <div class="step-circle border">2</div>
-                                            <div class="step-text">Design</div>
-                                            <div class="step-subtext">Pending</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Step 1 Content -->
-                                <div id="step-1" class="step-content">
-                                    <div class="card p-4">
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label>Drip Execution Date</label>
-                                                <input type="date" class="form-control">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label>Execution Time</label>
-                                                <input type="time" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-4">
-                                                <label>Sender Email</label>
-                                                <input type="email" class="form-control">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label>Sender Email Alias</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label>Reply To</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label>Domain</label>
-                                                <select class="form-select">
-                                                    <option selected>Select Domain</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label>Mail Subject</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label>Attachment</label>
-                                            <input type="file" class="form-control">
-                                            <small class="text-muted">25MB limit: PDF, JPG, JPEG, PNG.</small>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label>Media History</label>
-                                            <div class="d-flex gap-2 flex-wrap">
-                                                <div class="badge bg-light border px-3 py-2">Media 1 (567kb)</div>
-                                                <div class="badge bg-light border px-3 py-2">Media 2 (1mb)</div>
-                                                <div class="badge bg-light border px-3 py-2">Media 3 (111kb)</div>
-                                                <div class="badge bg-light border px-3 py-2">Media 4 (245kb)</div>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-danger float-end" id="nextBtn">Design →</button>
-                                    </div>
-                                </div>
-
-                                <!-- Step 2 Content -->
-                                <div id="step-2" class="step-content hidden">
-                                    <div class="card p-4">
-                                        <h5>Templates</h5>
-                                        <div class="row row-cols-2 row-cols-md-5 g-3">
-                                            <div class="col">
-                                                <div class="template-box" id="create-own">
-                                                    <p>+<br>Create your own</p>
+                                <div class="stepper-main-div">
+                                    <!-- Step Indicator -->
+                                    <div class="step-div">
+                                        <div class="email-stepper mb-4">
+                                            <div class="email-step" data-step="1">
+                                                <div class="step-circle">1</div>
+                                                <div class="progress-step-div">
+                                                    <div class="step-text">Configure</div>
+                                                    <div class="step-subtext">In Progress</div>
                                                 </div>
                                             </div>
-                                            <div class="col">
-                                                <img src="https://via.placeholder.com/100x100.png?text=Nike+1"
-                                                    class="img-fluid">
-                                                <div class="text-center">Template Name</div>
+                                            <div class="progress-line mx-3 align-self-center border-top flex-grow-1">
                                             </div>
-                                            <div class="col">
-                                                <img src="https://via.placeholder.com/100x100.png?text=St+Patrick"
-                                                    class="img-fluid">
-                                                <div class="text-center">Template Name</div>
+                                            <div class="email-step" data-step="2">
+                                                <div class="step-circle">2</div>
+                                                <div class="progress-step-div">
+                                                    <div class="step-text">Design</div>
+                                                    <div class="step-subtext">Pending</div>
+                                                </div>
                                             </div>
-                                            <!-- Add more templates as needed -->
                                         </div>
-                                        <button class="btn btn-danger mt-3 float-end" id="to-preview">Design</button>
                                     </div>
-                                </div>
 
-                                <!-- Step 3: Email Design Preview -->
-                                <div id="step-3" class="step-content hidden">
-                                    <div class="card p-4">
-                                        <h4>Email Design</h4>
+                                    <!-- Step 1 Content -->
+
+                                    <div id="step-1" class="step-content">
+                                        <div class="step1-div p-4">
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label>Drip Execution Date</label>
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Execution Time</label>
+                                                    <input type="time" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-4">
+                                                    <label>Sender Email</label>
+                                                    <input type="email" class="form-control">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label>Sender Email Alias</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label>Reply To</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label>Domain</label>
+                                                    <select class="form-select">
+                                                        <option selected>Select Domain</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label>Mail Subject</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Attachment</label>
+                                                <input type="file" class="form-control">
+                                                <small class="text-muted">25MB limit: PDF, JPG, JPEG, PNG.</small>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label>Media History</label>
+                                                <div class="d-flex gap-2 flex-wrap">
+                                                    <div class="badge bg-light border px-3 py-2">Media 1 (567kb)</div>
+                                                    <div class="badge bg-light border px-3 py-2">Media 2 (1mb)</div>
+                                                    <div class="badge bg-light border px-3 py-2">Media 3 (111kb)</div>
+                                                    <div class="badge bg-light border px-3 py-2">Media 4 (245kb)</div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-danger float-end" id="nextBtn">Design →</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 2 Content -->
+                                    <div id="step-2" class="step-content hidden">
+                                        <div class="step2-div p-4">
+                                            <h5>Templates</h5>
+                                            <div class="row row-cols-2 row-cols-md-5 g-3">
+                                                <div class="col">
+                                                    <div class="template-box" id="create-own">
+                                                        <p>+<br>Create your own</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="https://via.placeholder.com/100x100.png?text=Nike+1"
+                                                        class="img-fluid">
+                                                    <div class="text-center">Template Name</div>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="https://via.placeholder.com/100x100.png?text=St+Patrick"
+                                                        class="img-fluid">
+                                                    <div class="text-center">Template Name</div>
+                                                </div>
+                                                <!-- Add more templates as needed -->
+                                            </div>
+                                            <button class="btn btn-danger mt-3 float-end"
+                                                id="to-preview">Design</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 3: Email Design Preview -->
+                                    <div id="step-3" class="step-content hidden">
+                                        <div class="step3-div">
+                                            <h4 class="email-design-text mb-0">Email Design</h4>
+                                            <div class="reset-div">
+                                                <span class="reset-text">Reset</span>
+                                                <span class="edit-text">Edit</span>
+                                            </div>
+                                        </div>
                                         <div class="email-design-preview">
-                                            <p>Use this area to offer a short teaser of your email’s content...</p>
-                                            <div class="my-2 border p-4 text-center">Image 600 x any height</div>
-                                            <div class="d-flex justify-content-between">
-                                                <div class="border p-3">Image</div>
-                                                <div class="border p-3">Image</div>
-                                                <div class="border p-3">Image</div>
-                                            </div>
-                                            <div class="mt-2 text-end">
-                                                <a href="#" class="text-danger">Reset</a> | <a href="#">Edit</a>
-                                            </div>
+                                            <img src="assets/images/email-design.png" alt="emailDesignImg">
                                         </div>
                                     </div>
                                 </div>
@@ -1608,11 +1611,15 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+
+    <!-- ============ sidebar menu toggle ============ -->
     <script>
         document.getElementById('toggleBtn').addEventListener('click', function () {
             document.getElementById('sidebar').classList.toggle('collapsed');
         });
     </script>
+
+    <!-- ============ datable ============ -->
     <script>
         new DataTable('#example', {
             layout: {
@@ -1628,7 +1635,6 @@
     </script>
 
     <!-- ============ script for active drip-bar toggle ============ -->
-
     <script>
         document.getElementById("toggle-btn").addEventListener("click", function () {
             document.getElementById("full-content").classList.add("hidden");
