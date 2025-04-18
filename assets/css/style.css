@@ -807,6 +807,13 @@ input:not(:placeholder-shown)+label {
     padding: 24px;
 }
 
+.table-heading h4 {
+    color: #0E285E;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
 table.dataTable thead>tr>th.dt-orderable-asc:hover,
 table.dataTable thead>tr>th.dt-orderable-desc:hover,
 table.dataTable thead>tr>td.dt-orderable-asc:hover,
@@ -2165,6 +2172,23 @@ table td {
 .step-div {
     max-width: 400px;
     margin: auto;
+}
+
+/* =========================== Events ============================== */
+
+.start-date {
+    color: #0E285E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    background: #F5F6F8;
+    padding: 8px 16px;
 }
 
 .step3-div {
