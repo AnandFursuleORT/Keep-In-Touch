@@ -1529,37 +1529,48 @@
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="email-form-label">Execution Time</label>
-                                                    <input type="time" class="form-control">
+                                                    <input type="time" class="form-control execution-time">
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="email-form-label">Sender Email</label>
-                                                    <input type="email" class="form-control">
+                                                    <input type="email" class="form-control email-input"
+                                                        placeholder="Enter sender email id">
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="email-form-label">Sender Email</label>
-                                                    <input type="email" class="form-control">
+                                                    <input type="email" class="form-control email-input"
+                                                        placeholder="Enter sender email id">
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="email-form-label">Sender Email Alias</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control email-alias"
+                                                        placeholder="Enter sender email alias">
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="email-form-label">Reply To</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control email-input"
+                                                        placeholder="Enter reply to">
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
                                                 <div class="col-md-4 col-sm-12">
                                                     <label class="email-form-label">Domain</label>
-                                                    <select class="form-select">
-                                                        <option selected>Select Domain</option>
-                                                    </select>
+                                                    <div class="domain-select-div">
+                                                        <select class="form-select domain-input">
+                                                            <option selected>Select Domain</option>
+                                                            <option>Domain1</option>
+                                                            <option>Domain2</option>
+                                                        </select>
+                                                        <img src="assets/images/time-schedule.svg" class="time-img"
+                                                            alt="clock-img">
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-8 col-sm-12">
                                                     <label class="email-form-label">Mail Subject</label>
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" class="form-control mail-sub-input"
+                                                        placeholder="Enter your mail subject">
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -1862,8 +1873,9 @@
                             <div class="file-upload-text d-flex flex-column align-items-center">
                                 <div>Drag and Drop here</div>
                                 <div>or</div>
-                                <div class="browse-file-div">
-                                    <span>Browse File</span>
+                                <div class="file-upload-wrapper">
+                                    <div class="file-upload-button">Browse File</div>
+                                    <input type="file" />
                                 </div>
                             </div>
                         </div>

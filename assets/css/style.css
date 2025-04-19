@@ -1035,7 +1035,7 @@ table td {
 .drips-image {
     position: absolute;
     top: 58%;
-    left: 3%;
+    left: 4%;
 }
 
 .modal-dt-hdg {
@@ -1816,7 +1816,6 @@ table td {
     border-radius: 10px;
     border: 1px dashed #0062FF;
     padding: 30px;
-
 }
 
 .file-upload-circle1 {
@@ -1838,13 +1837,34 @@ table td {
 }
 
 
-.browse-file-div {
-    border-radius: 12px;
-    border: 1px solid #E5EFFF;
-    background: #F7FAFF;
-    padding: 14px 20px;
+.file-upload-wrapper {
+    position: relative;
+    display: inline-block;
 }
 
+.file-upload-button {
+    border-radius: 12px;
+    border: 1px solid #E5EFFF;
+    background-color: #F7FAFF;
+    padding: 14px 20px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.file-upload-wrapper input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
 
 .file-upload-text {
     color: #67779A;
@@ -2096,12 +2116,100 @@ table td {
 }
 
 .execution-input {
-    padding: 12px 16px;
+    padding: 12px 16px 12px 42px;
     border-radius: 12px;
     border: 1px solid #DEE2E9;
     color: #67779A;
     font-size: 14px;
     font-weight: 400;
+    background-image: url("/assets/images/calendar-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    position: relative;
+}
+
+.execution-input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.execution-time {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("/assets/images/time-schedule.svg");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    position: relative;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.email-input {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("/assets/images/mail-send.svg");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+}
+
+.email-alias {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("/assets/images/mail-account.svg");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+}
+
+.domain-input {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.domain-select-div {
+    position: relative;
+}
+
+.time-img {
+    position: absolute;
+    top: 32%;
+    left: 5%;
+}
+
+.mail-sub-input {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("/assets/images/mail-open.svg");
+    background-repeat: no-repeat;
+    background-position: 2.5% center;
 }
 
 .stepper-main-div {
