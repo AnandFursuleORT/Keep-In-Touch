@@ -80,12 +80,24 @@ document.getElementById('nextBtn').addEventListener('click', () => {
     setActiveStep(2);
 });
 
-document.getElementById('to-preview').addEventListener('click', () => {
-    setActiveStep(3);
+document.getElementById('backBtn').addEventListener('click', () => {
+    setActiveStep(1);
 });
 
 document.getElementById('create-own').addEventListener('click', () => {
     setActiveStep(3);
+});
+
+// script for active drip-bar toggle 
+
+document.getElementById("toggle-btn").addEventListener("click", function () {
+    document.getElementById("full-content").classList.add("hidden");
+    document.getElementById("collapsed-content").classList.remove("hidden");
+});
+
+document.getElementById("expand-btn").addEventListener("click", function () {
+    document.getElementById("full-content").classList.remove("hidden");
+    document.getElementById("collapsed-content").classList.add("hidden");
 });
 
 // Filter Dropdown code
