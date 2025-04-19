@@ -69,8 +69,7 @@
     }
 
     .dripMailImg {
-        width: 100%;
-        height: 40vh;
+        display: none;
     }
 
     .modal-main-content {
@@ -109,7 +108,12 @@
     }
 
     .add-button {
-        font-size: 12px;
-        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* drip modal css */
+
+    .detail-img-div {
+        display: none;
     }
 }
