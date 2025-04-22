@@ -277,6 +277,9 @@ input:not(:placeholder-shown)+label {
     border: 1px solid #67779A;
 }
 
+
+
+
 /* ==================SIGN UP STEPPER======================== */
 
 .step-indicator {
@@ -858,6 +861,10 @@ table th {
     background-color: #FCE9E9 !important;
     padding: 16px !important;
     text-align: center !important;
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
 }
 
 
@@ -868,6 +875,72 @@ table td {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.dt-length select {
+    color: #0E285E;
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 26px;
+    border-radius: 12px !important;
+}
+
+
+.dt-length label {
+    color: #0E285E;
+    font-size: 0.88rem;
+    font-weight: 400 !important;
+    line-height: 24px;
+}
+
+.pagination {
+    gap: 4px;
+}
+
+.page-link {
+    padding: 8px 16px;
+    color: #0E285E;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    background: transparent;
+}
+
+.disabled>.page-link,
+.page-link.disabled {
+    color: #0E285E;
+    pointer-events: none;
+    border-radius: 12px;
+    border: none;
+    background: transparent;
+}
+
+.page-link:hover {
+    color: #E94B50;
+    border-radius: 12px !important;
+    border: 1px solid #E94B50 !important;
+    background: #FCE9E9 !important;
+}
+
+.page-link:focus {
+    box-shadow: none !important;
+}
+
+.page-link:focus-visible {
+    outline: none !important;
+}
+
+.active>.page-link,
+.page-link.active {
+    z-index: 3;
+    color: #E94B50;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 12px;
+    border: 1px solid #E94B50;
+    background: #FCE9E9;
 }
 
 .table-text-dark {
@@ -914,7 +987,7 @@ table td {
     padding: 16px 80px;
 }
 
-.drip-link-item {
+.link-item {
     color: #67779A;
     font-size: 14px;
     font-weight: 500;
@@ -928,7 +1001,7 @@ table td {
     padding-top: 2px;
 }
 
-.drip-link-item:hover {
+.link-item:hover {
     color: #E94B50;
 }
 
@@ -1791,6 +1864,78 @@ table td {
     outline: 0;
     box-shadow: none !important;
 }
+
+
+/* ========================== add Contact modal =========================== */
+.addContactModal .modal-body {
+    background-color: #fafafc;
+}
+
+.step-indicator {
+    max-width: 400px;
+    margin: auto;
+}
+
+.addContact-modal-hdg h2 {
+    color: #0E285E;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.addContactModal .main-container {
+    border-radius: 24px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addContact-personal-form-wrapper,
+.addContact-business-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addContact-Personal,
+.addContact-business {
+    border-radius: 24px;
+    border: 1px solid #DEE2E9;
+    background: #FAFAFC;
+    padding: 24px;
+}
+
+.addContact-email-input {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("/assets/images/message.svg");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+}
+
+
+.add-email {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
 
 /* ========================== upload modal =========================== */
 
@@ -2698,4 +2843,205 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .table.dataTable thead>tr>th.dt-orderable-desc span.dt-column-order:after {
     display: none;
+}
+
+
+/* =========================== Wallet =============================== */
+
+.download-history-wrapper {
+    border-radius: 12px;
+    border: 1px solid #E53A3A;
+    background: #FFF;
+    padding: 8px 16px;
+}
+
+.download-history {
+    color: #E53A3A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.wallet-div1 {
+    border-radius: 24px;
+    background: #FFF;
+    padding: 24px;
+}
+
+.balance-card {
+    background-image: url("/assets/images/balance-card.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    padding: 24px;
+
+}
+
+.card-logo h4 {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.credit-left {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.overall-credit {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.acct-holder-text,
+.Expiry-date-text {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.acct-holder-name,
+.Expiry-date {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.credit-usage-card,
+.credit-info-card,
+.plan-details-card {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 24px;
+}
+
+.credit-usage-div h4 {
+    color: #0E285E;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.credit-usage-div span {
+    color: #67779A;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.credit-usage-select {
+    border-radius: 8px;
+    border: 1px solid #DEE2E9;
+    background-color: #FAFAFC;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.sms {
+    border-radius: 8px;
+    border: 1px solid #EBEDF1;
+    background: rgba(243, 213, 91, 0.10);
+    padding: 12px 16px;
+    position: relative;
+    min-height: 98px;
+}
+
+.sms-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.credit h6 {
+    color: #8492B5;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.credit span {
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.whatsapp {
+    border-radius: 8px;
+    border: 1px solid #EBEDF1;
+    background: rgba(71, 248, 104, 0.10);
+    padding: 12px 16px;
+    position: relative;
+    min-height: 98px;
+}
+
+.whatsapp-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.email {
+    border-radius: 8px;
+    border: 1px solid #EBEDF1;
+    background: rgba(33, 150, 243, 0.10);
+    padding: 12px 16px;
+    position: relative;
+    min-height: 98px;
+}
+
+.email-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.credit-info,
+.plan-details,
+h4 {
+    color: #0E285E;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.credit-per-sms,
+.credit-per-email,
+.credit-per-whatsapp,
+.details-plan {
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.sms-credit,
+.email-credit,
+.whatsapp-credit,
+.details {
+    color: #0E285E;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.plan-view-details a {
+    color: #E31E24;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 32px;
+    text-decoration: none;
 }
