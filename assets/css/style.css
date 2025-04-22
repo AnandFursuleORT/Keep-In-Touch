@@ -420,7 +420,6 @@ input:not(:placeholder-shown)+label {
     border-radius: 12px;
     border: 1px solid #DEE2E9;
     margin-bottom: 16px;
-
 }
 
 .send-code-btn {
@@ -1034,8 +1033,8 @@ table td {
 
 .drips-image {
     position: absolute;
-    top: 58%;
-    left: 4%;
+    top: 57%;
+    left: 2.5%;
 }
 
 .modal-dt-hdg {
@@ -1127,7 +1126,6 @@ table td {
     background: #E31E24;
 }
 
-
 .modal.fade .dripModal {
     transform: translateY(100px) translateX(0);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
@@ -1146,7 +1144,6 @@ table td {
     border-radius: 6px;
     background: #67779A;
     padding: 6px 20px;
-
 }
 
 .tooltip .tooltip-arrow::before {
@@ -1795,7 +1792,6 @@ table td {
     box-shadow: none !important;
 }
 
-
 /* ========================== upload modal =========================== */
 
 .uploadMdal-title h4 {
@@ -2109,10 +2105,136 @@ table td {
     margin-bottom: 2rem;
 }
 
+.sms-stepper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
 .email-step {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.stepper-main-div {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #FAFAFC;
+}
+
+.step-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #A4AEC2;
+}
+
+.email-step.active .step-subtext {
+    color: #246BFD;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.email-step.completed .step-circle {
+    background-color: #0E285E;
+    color: #FFFFFF;
+}
+
+.email-step.completed .step-subtext {
+    color: #18BB54;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* sms modal wizard css */
+
+.sms-step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stepper-main-div {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #FAFAFC;
+}
+
+.step-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #A4AEC2;
+}
+
+.sms-step.active .step-subtext {
+    color: #246BFD;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.sms-step.completed .step-circle {
+    background-color: #0E285E;
+    color: #FFFFFF;
+}
+
+.sms-step.completed .step-subtext {
+    color: #18BB54;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.progress-line {
+    background: #EBEDF1;
+}
+
+.step-text {
+    font-size: 0.9rem;
+}
+
+.step-subtext {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.hidden {
+    display: none;
+}
+
+.template-box {
+    border: 1px solid #DDD;
+    padding: 20px;
+    text-align: center;
+}
+
+.template-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.email-design-preview {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    border-right: 1px solid #EBEDF1;
+    border-bottom: 1px solid #EBEDF1;
+    border-left: 1px solid #EBEDF1;
+}
+
+.step-div {
+    max-width: 400px;
+    margin: auto;
 }
 
 .execution-input {
@@ -2188,6 +2310,52 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     color: #67779A;
     font-size: 14px;
     font-weight: 400;
+    background-image: url("/assets/images/dropdown-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.sms-input {
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    background: #FFF;
+    padding: 16px;
+    resize: none;
+}
+
+.sms-text-div {
+    position: absolute;
+    top: 25%;
+    left: 1.5%;
+}
+
+.sms-place-text {
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sms-fill {
+    color: #E6343A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sms-div {
+    position: relative;
+    max-width: 100%;
+}
+
+.flash-div {
+    position: absolute;
+    left: 1.5%;
+    bottom: 6%;
+}
+
+.messages-text {
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .domain-select-div {
@@ -2212,81 +2380,33 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-position: 2.5% center;
 }
 
-.stepper-main-div {
-    padding: 24px;
-    border-radius: 24px;
+.sender-input {
+    display: flex;
+    width: 240px;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
     background-color: #FAFAFC;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
+    background-image: url("/assets/images/dropdown-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
-.step-circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+
+/* template modal css */
+
+.templates {
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid #DEE2E9;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid #A4AEC2;
-}
-
-.email-step.active .step-subtext {
-    color: #246BFD;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.email-step.completed .step-circle {
-    background-color: #0E285E;
-    color: #FFFFFF;
-}
-
-.email-step.completed .step-subtext {
-    color: #18BB54;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.progress-line {
-    background: #EBEDF1;
-}
-
-.step-text {
-    font-size: 0.9rem;
-}
-
-.step-subtext {
-    font-size: 0.8rem;
-    color: #6c757d;
-}
-
-.hidden {
-    display: none;
-}
-
-.template-box {
-    border: 1px solid #DDD;
-    padding: 20px;
-    text-align: center;
-}
-
-.template-box img {
-    max-width: 100%;
-    height: auto;
-}
-
-.email-design-preview {
-    display: flex;
-    padding: 24px;
-    flex-direction: column;
-    border-right: 1px solid #EBEDF1;
-    border-bottom: 1px solid #EBEDF1;
-    border-left: 1px solid #EBEDF1;
-}
-
-.step-div {
-    max-width: 400px;
-    margin: auto;
+    gap: 24px;
 }
 
 .custom-file-wrapper {
@@ -2430,6 +2550,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background: #FFF;
 }
 
+.template-main-div {
+    display: flex;
+    flex-direction: column;
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
 .template-div p {
     color: #0E285E;
     font-size: 16px;
@@ -2442,7 +2569,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     display: flex;
     align-items: center;
     gap: 24px;
-    padding: 16px;
+    padding: 16px 0px;
 }
 
 .back-btn-template {
@@ -2458,6 +2585,36 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
+}
+
+.template-hdg {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.template-text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.status-text {
+    color: #18BB54;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.status-text2 {
+    color: #FACC15;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.status-text3 {
+    color: #246BFD;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .step3-div {

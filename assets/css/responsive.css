@@ -116,4 +116,12 @@
     .detail-img-div {
         display: none;
     }
+
+    .drip-event-select {
+        width: 100%;
+    }
+
+    .drips-image {
+        left: 6%;
+    }
 }

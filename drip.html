@@ -1296,7 +1296,7 @@
     </div>
 
     <!-- add-drip Modal -->
-    <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal" id="detailsModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered dripModal">
             <div class="modal-content add-drip-modal">
                 <div class="modal-header p-0 border-0">
@@ -1373,7 +1373,8 @@
                                                     </a>
                                                 </li>
                                                 <li class="add-step-li mt-1">
-                                                    <a class="dropdown-item" href="#">
+                                                    <a class="dropdown-item" data-bs-toggle="modal"
+                                                        data-bs-target="#SMSautomationModal">
                                                         <img src="assets/images/sms-icon.svg" alt="sms-icon">
                                                         SMS
                                                     </a>
@@ -1895,6 +1896,427 @@
                     <div class="d-flex justify-content-end  gap-3">
                         <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
                         <button type="button" class="btn-red">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- automation modal 2 -->
+    <div class="modal fade" id="SMSautomationModal" aria-labelledby="SMSModal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
+                                    class="drip-link-item">Drip Details</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Automation Setup
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-cont">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="auto-main-div d-flex justify-content-between align-items-baseline">
+                                    <div class="at-hdg-div">
+                                        <h2 class="drip-modal-hdg">Automation Setup</h2>
+                                        <p class="drip-modal-p">Arrange and customize the sequence of actions in your
+                                            automation.</p>
+                                    </div>
+
+                                    <div class="at-add-div">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle add-step-btn" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/add.svg" alt="add-step">
+                                                Add Step
+                                            </a>
+
+                                            <ul class="dropdown-menu add-step-menu">
+                                                <li class="add-step-li">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        WhatsApp
+                                                    </a>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/sms-icon.svg" alt="sms-icon">
+                                                        SMS
+                                                    </a>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" data-bs-toggle="modal"
+                                                        data-bs-target="#EmailautomationModal">
+                                                        <img src="assets/images/email-icon.svg" alt="email-icon">
+                                                        Email
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-2 col-md-12 col-sm-12">
+                                <div class="auto-step-div">
+                                    <span>No Steps</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-12 col-sm-12">
+                                <div class="stepper-main-div">
+                                    <!-- Step Indicator -->
+                                    <div class="step-div">
+                                        <div class="sms-stepper mb-4">
+                                            <div class="sms-step" data-step="1">
+                                                <div class="step-circle">1</div>
+                                                <div class="progress-step-div">
+                                                    <div class="step-text">Configure</div>
+                                                    <div class="step-subtext">In Progress</div>
+                                                </div>
+                                            </div>
+                                            <div class="progress-line mx-3 align-self-center border-top flex-grow-1">
+                                            </div>
+                                            <div class="sms-step" data-step="2">
+                                                <div class="step-circle">2</div>
+                                                <div class="progress-step-div">
+                                                    <div class="step-text">Design</div>
+                                                    <div class="step-subtext">Pending</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 1 Content -->
+                                    <div id="step-1" class="step-content1">
+                                        <div class="step1-div">
+                                            <div class="row mb-3">
+                                                <div class="col-md-4 col-sm-12">
+                                                    <label class="email-form-label">Drip Execution Date</label>
+                                                    <input type="date" class="form-control execution-input">
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <label class="email-form-label">Execution Time</label>
+                                                    <input type="time" class="form-control execution-time">
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <label class="email-form-label">Sender Id</label>
+                                                    <div class="domain-select-div">
+                                                        <select class="form-select domain-input">
+                                                            <option selected>Select sender ID</option>
+                                                            <option>sender ID 1</option>
+                                                            <option>sender ID 2</option>
+                                                        </select>
+                                                        <img src="assets/images/user-account.svg" class="time-img"
+                                                            alt="sender-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-md-4 col-sm-12">
+                                                    <label class="email-form-label">Flash SMS</label>
+                                                    <div class="domain-select-div">
+                                                        <select class="form-select domain-input">
+                                                            <option selected>Select sender ID</option>
+                                                            <option>sender ID 1</option>
+                                                            <option>sender ID 2</option>
+                                                        </select>
+                                                        <img src="assets/images/user-account.svg" class="time-img"
+                                                            alt="sender-img">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12"></div>
+                                                <div class="col-md-4 col-sm-12"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tnext-div">
+                                            <a role="button" class="next-btn-template" id="smsnextBtn">
+                                                Design
+                                                <img src="assets/images/modal-arrow.svg" alt="right-arrow">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 2 Content -->
+                                    <div id="step-2" class="step-content1 hidden">
+                                        <div class="row mb-3">
+                                            <div class="col-md-4 col-sm-12">
+                                                <label class="email-form-label">Template</label>
+                                                <div class="custom-file-wrapper">
+                                                    <div class="custom-file-label">
+                                                        <span>Template 1</span>
+                                                        <span data-bs-toggle="modal"
+                                                            data-bs-target="#templateModal">Choose Template</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12"></div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="sms-div">
+                                                    <label class="email-form-label">Message Content
+                                                        <span data-bs-toggle="modal" data-bs-target="#dripDetailsModal">
+                                                            <img src="assets/images/info-circle.svg" alt="info-img">
+                                                        </span>
+                                                    </label>
+                                                    <textarea class="form-control sms-input" name="customer"
+                                                        id="customerSms" rows="3"></textarea>
+                                                    <div class="sms-text-div">
+                                                        <span class="sms-place-text">Dear Valued Customer. We have
+                                                            launched a new product
+                                                            called <span class="sms-fill">(#var#)</span> if you require
+                                                            demo please
+                                                            register on
+                                                            <span class="sms-fill">(#var#)</span>. -Bhavana Televentures
+                                                            Limited.</span>
+                                                    </div>
+                                                    <div class="flash-div d-flex gap-2">
+                                                        <img src="assets/images/variable.svg" alt="variable">
+                                                        <img src="assets/images/emoji.svg" alt="emoji">
+                                                    </div>
+                                                </div>
+                                                <span
+                                                    class="messages-text d-flex justify-content-between align-items-center">
+                                                    <span>Messages over 100 characters will show 'Read More' or cost 2
+                                                        credits for 2 SMS.</span>
+                                                    <span>54/100</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-4 col-sm-12">
+                                                <label class="email-form-label">Flash SMS</label>
+                                                <div class="domain-select-div">
+                                                    <select class="form-select domain-input">
+                                                        <option selected>Select sender ID</option>
+                                                        <option>sender ID 1</option>
+                                                        <option>sender ID 2</option>
+                                                    </select>
+                                                    <img src="assets/images/user-account.svg" class="time-img"
+                                                        alt="clock-img">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <input type="text" class="form-control email-input mt-4"
+                                                    placeholder="Enter reply to">
+                                            </div>
+                                            <div class="col-md-4 col-sm-12"></div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-4 col-sm-12">
+                                                <label class="email-form-label">Flash SMS</label>
+                                                <div class="domain-select-div">
+                                                    <select class="form-select domain-input">
+                                                        <option selected>Select sender ID</option>
+                                                        <option>sender ID 1</option>
+                                                        <option>sender ID 2</option>
+                                                    </select>
+                                                    <img src="assets/images/user-account.svg" class="time-img"
+                                                        alt="clock-img">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <input type="text" class="form-control email-input mt-4"
+                                                    placeholder="Enter reply to">
+                                            </div>
+                                            <div class="col-md-4 col-sm-12"></div>
+                                        </div>
+                                        <div class="tback-div">
+                                            <a role="button" class="back-btn-template" id="smsbackBtn">
+                                                <img src="assets/images/arrow-left.svg" alt="left-arrow">
+                                                Back
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-between">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#dripDetailsModal" class="back-btn">
+                        <img src="assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#summaryModal" class="summary-btn">
+                        View Summary
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="arrow-left">
+                                <path id="Icon" d="M4 9L14 9M14 9L9 14M14 9L9 4" stroke="#B0B9CB" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ Template Modal ======================= -->
+
+    <div class="modal fade" id="templateModal" tabindex="-1" aria-labelledby="templateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Choose Template</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="domain-select-div">
+                            <select class="form-select sender-input">
+                                <option selected>Select sender ID</option>
+                                <option>sender ID 1</option>
+                                <option>sender ID 2</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="template-main-div mt-3 gap-3">
+                        <div class="templates">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            </div>
+                            <div class="temp w-100">
+                                <div class="row template-inner-div1">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-1">Template ID</p>
+                                        <h6 class="template-text mb-0">#HSA543149AS</h6>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-status-sect">
+                                        <p class="template-hdg mb-1">Status</p>
+                                        <h6 class="status-text mb-0">Active</h6>
+                                    </div>
+                                </div>
+
+                                <div class="row template-inner-div1 mt-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-0">Template</p>
+                                        <h6 class="template-text mb-0">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit.Lorem ipsum dolor sit amet.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="templates">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            </div>
+                            <div class="temp w-100">
+                                <div class="row template-inner-div1">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-1">Template ID</p>
+                                        <h6 class="template-text mb-0">#HSA543149AS</h6>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-status-sect">
+                                        <p class="template-hdg mb-1">Status</p>
+                                        <h6 class="status-text2 mb-0">Inactive</h6>
+                                    </div>
+                                </div>
+
+                                <div class="row template-inner-div1 mt-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-1">Template</p>
+                                        <h6 class="template-text mb-0">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="templates">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            </div>
+                            <div class="temp w-100">
+                                <div class="row template-inner-div1">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-1">Template ID</p>
+                                        <h6 class="template-text mb-0">#HSA543149AS</h6>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-status-sect">
+                                        <p class="template-hdg mb-1">Status</p>
+                                        <h6 class="status-text3 mb-0">Pending</h6>
+                                    </div>
+                                </div>
+
+                                <div class="row template-inner-div1 mt-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-1">Template</p>
+                                        <h6 class="template-text mb-0">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit.Lorem ipsum dolor sit amet.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="templates">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            </div>
+                            <div class="temp w-100">
+                                <div class="row template-inner-div1">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-1">Template ID</p>
+                                        <h6 class="template-text mb-0">#HSA543149AS</h6>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-status-sect">
+                                        <p class="template-hdg mb-1">Status</p>
+                                        <h6 class="status-text mb-0">Active</h6>
+                                    </div>
+                                </div>
+
+                                <div class="row template-inner-div1 mt-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-0">Template</p>
+                                        <h6 class="template-text mb-0">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit.Lorem ipsum dolor sit amet.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="templates">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                            </div>
+                            <div class="temp w-100">
+                                <div class="row template-inner-div1">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-1">Template ID</p>
+                                        <h6 class="template-text mb-0">#HSA543149AS</h6>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 template-status-sect">
+                                        <p class="template-hdg mb-1">Status</p>
+                                        <h6 class="status-text3 mb-0">Pending</h6>
+                                    </div>
+                                </div>
+
+                                <div class="row template-inner-div1 mt-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 template-id-sect">
+                                        <p class="template-hdg mb-1">Template</p>
+                                        <h6 class="template-text mb-0">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit.Lorem ipsum dolor sit amet.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <div class="d-flex justify-content-end gap-3">
+                        <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn-red">Confirm</button>
                     </div>
                 </div>
             </div>

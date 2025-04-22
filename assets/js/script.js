@@ -45,8 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateStep();
 });
 
-
-// Steps wizard js code in automation modal
+// Steps email wizard js code in automation modal
 
 const steps = document.querySelectorAll('.email-step');
 const contents = document.querySelectorAll('.step-content');
@@ -86,6 +85,45 @@ document.getElementById('backBtn').addEventListener('click', () => {
 
 document.getElementById('create-own').addEventListener('click', () => {
     setActiveStep(3);
+});
+
+// Steps sms wizard js code in automation modal
+
+const steps1 = document.querySelectorAll('.sms-step');
+const contents1 = document.querySelectorAll('.step-content1');
+
+function setActiveStepSms(stepNum) {
+    steps1.forEach((step1, index) => {
+        const circle1 = step1.querySelector('.step-circle');
+        const text1 = step1.querySelector('.step-subtext');
+
+        if (index < stepNum - 1) {
+            step1.classList.add('completed');
+            step1.classList.remove('active');
+            text1.textContent = 'Completed';
+        } else if (index === stepNum - 1) {
+            step1.classList.add('active');
+            step1.classList.remove('completed');
+            text1.textContent = 'In Progress';
+        } else {
+            step1.classList.remove('active', 'completed');
+            text1.textContent = 'Pending';
+        }
+
+        circle1.textContent = index + 1;
+    });
+
+    contents1.forEach((content, idx) => {
+        content.classList.toggle('hidden', idx !== stepNum - 1);
+    });
+}
+
+document.getElementById('smsnextBtn').addEventListener('click', () => {
+    setActiveStepSms(2);
+});
+
+document.getElementById('smsbackBtn').addEventListener('click', () => {
+    setActiveStepSms(1);
 });
 
 // script for active drip-bar toggle 
