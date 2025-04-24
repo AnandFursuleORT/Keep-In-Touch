@@ -20,6 +20,9 @@
                     <div class="menu-div1">
                         <div class="logo">
                             <span><img src="assets/images/logo.svg" alt="brand-logo"></span>
+                            <i class="toggle-btn" id="toggleBtn">
+                                <img src="assets/images/left-red-arrow.svg" alt="">
+                            </i>
                         </div>
                         <div class="sidebar-menu p-4">
                             <ul class="menu-list">
@@ -156,15 +159,9 @@
                             </ul>
                         </div>
                         <div class="profile-menu mt-auto p-4">
-                            <div class="profile sidebar-menu">
-                                <ul class="menu-list3">
-                                    <li class="menu-item">
-                                        <a href="">
-                                            <img src="assets/images/profile.svg" alt="">
-                                            <span class="profile-name">Atharva Mohurle</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="profile">
+                                <img src="assets/images/profile.svg" alt="">
+                                <span class="profile-name">Atharva Mohurle</span>
                             </div>
                         </div>
                         <div class="app-section-menu">
@@ -442,7 +439,7 @@
                                     <img src="assets/images/cancel-circle.svg" class="cancel-drip-btn" id="toggle-btn"
                                         alt="cancel-circle">
                                 </div>
-                                <button class="add-button" data-bs-toggle="modal" data-bs-target="#addDripModal"> <img
+                                <button class="add-button" data-bs-toggle="modal" data-bs-target="#customModal"> <img
                                         src="assets/images/add.svg" alt="">Add Drip
                                 </button>
                             </div>
@@ -452,12 +449,12 @@
                             <div class="header-drip-div d-flex flex-column gap-3">
                                 <div class="heading d-flex align-items-center justify-content-between">
                                     <h4>Drips</h4>
-                                    <button class="add-button" data-bs-toggle="modal" data-bs-target="#addDripModal">
+                                    <button class="add-button" data-bs-toggle="modal" data-bs-target="#customModal">
                                         <img src="assets/images/add.svg" alt="">Add Drip</button>
                                 </div>
 
                                 <div id="bar" class="active-drip-bar ms-auto d-flex">
-                                    <div id="full-content-sm" class="content2">
+                                    <div id="full-content" class="content2">
                                         <span class="indicator">🟢 Active Drip:</span>
                                         <span class="drip-name" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                             data-bs-title="Start Date: 21-03-2025
@@ -472,12 +469,12 @@
                                             data-bs-title="Start Date: 21-03-2025
                                             End Date: 31-05-2025">Drip Name 4</span>
                                     </div>
-                                    <div id="collapsed-content-sm" class="collapsed-view hidden">
-                                        <img src="assets/images/left-arrow.svg" id="expand-btn-sm" alt="left-arrow">
+                                    <div id="collapsed-content" class="collapsed-view hidden">
+                                        <img src="assets/images/left-arrow.svg" id="expand-btn" alt="left-arrow">
                                         <span class="indicator">🟢 Active Drip:</span>
                                     </div>
-                                    <img src="assets/images/cancel-circle.svg" class="cancel-drip-btn"
-                                        id="toggle-btn-sm" alt="cancel-circle">
+                                    <img src="assets/images/cancel-circle.svg" class="cancel-drip-btn" id="toggle-btn"
+                                        alt="cancel-circle">
                                 </div>
                             </div>
                         </div>
@@ -517,9 +514,15 @@
                                 <div class="tab-pane fade show active" id="pills-active" role="tabpanel"
                                     aria-labelledby="pills-active-tab" tabindex="0">
                                     <div class="table-responsive">
-                                        <table id="drip-table" class="table" style="width:100%">
+                                        <table id="example" class="table" style="width:100%">
                                             <thead>
                                                 <tr>
+                                                    <th>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </th>
                                                     <th>Sr.No</th>
                                                     <th>Name</th>
                                                     <th>Code</th>
@@ -533,6 +536,12 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>1</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -555,6 +564,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>2</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -577,6 +592,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>3</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -599,6 +620,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>4</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -621,6 +648,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>5</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -643,6 +676,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>6</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -665,6 +704,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>7</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -687,6 +732,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>8</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -709,6 +760,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>9</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -731,6 +788,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>10</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -753,6 +816,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>11</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -775,6 +844,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>12</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -797,6 +872,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>13</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -819,6 +900,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>14</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -841,6 +928,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>15</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -863,6 +956,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>16</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -885,6 +984,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>17</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -907,6 +1012,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>18</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -929,6 +1040,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>19</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -966,7 +1083,7 @@
         </div>
     </div>
     <!-- add-drip Modal -->
-    <div class="modal fade" id="addDripModal" tabindex="-1" aria-labelledby="addDripmodalLabel" aria-hidden="true">
+    <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg dripModal"> <!-- Larger & Centered -->
             <div class="modal-content add-drip-modal">
                 <div class="modal-body p-0">
@@ -1144,7 +1261,7 @@
                                                 </div>
                                                 <div class="form-check mt-3">
                                                     <input class="form-check-input details-check" type="checkbox"
-                                                        value="" id="sendToAllNumbers">
+                                                        value="" id="flexCheckDefault">
                                                     <label class="form-check-label drip-check-label ms-1"
                                                         for="flexCheckDefault">
                                                         Send to all numbers
@@ -1176,7 +1293,7 @@
     </div>
 
     <!-- add-drip Modal -->
-    <div class="modal" id="detailsModal" tabindex="-1" aria-labelledby="detailsmodalLabel" aria-hidden="true">
+    <div class="modal" id="detailsModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered dripModal">
             <div class="modal-content add-drip-modal">
                 <div class="modal-header p-0 border-0">
@@ -1639,7 +1756,9 @@
                         class="summary-btn">
                         View Summary
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="arrow-left">und" />
+                            <g id="arrow-left">
+                                <path id="Icon" d="M4 9L14 9M14 9L9 14M14 9L9 4" stroke="#B0B9CB" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
                             </g>
                         </svg>
                     </a>
@@ -1697,7 +1816,6 @@
     </div>
 
     <!-- ============================ Reset Modal ======================= -->
-
     <div class="modal fade deleteModal" id="resetModal" tabindex="-1" aria-labelledby="resetModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1727,253 +1845,174 @@
         </div>
     </div>
 
-        <!-- ============================ upload Modal ======================= -->
-        <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content uploadModal">
-                    <div class="modal-header uploadMdal-title">
-                        <div class="d-flex flex-column gap-2">
-                            <h4 class="modal-title delete-modal-title mb-0" id="uploadModalLabel">Upload Document</h4>
-                            <p class="mb-0">Upload your document for validation and reference</p>
-                        </div>
+    <!-- ============================ upload Modal ======================= -->
+    <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content uploadModal">
+                <div class="modal-header uploadMdal-title">
+                    <div class="d-flex flex-column gap-2">
+                        <h4 class="modal-title delete-modal-title mb-0" id="uploadModalLabel">Upload Document</h4>
+                        <p class="mb-0">Upload your document for validation and reference</p>
                     </div>
-                    <div class="modal-body">
-                        <div class="d-flex flex-column gap-4">
-                            <div class="file-upload-div d-flex flex-column align-items-center  gap-4">
-                                <div class="file-upload-icon d-flex ">
-                                    <div class="file-upload-circle1">
-                                        <div class="file-upload-circle2">
-                                            <div class="file-upload-circle3 d-flex">
-                                                <img src="assets/images/Upload.svg" alt="upload">
-                                            </div>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column gap-4">
+                        <div class="file-upload-div d-flex flex-column align-items-center  gap-4">
+                            <div class="file-upload-icon d-flex ">
+                                <div class="file-upload-circle1">
+                                    <div class="file-upload-circle2">
+                                        <div class="file-upload-circle3 d-flex">
+                                            <img src="assets/images/Upload.svg" alt="upload">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="file-upload-text d-flex flex-column align-items-center">
-                                    <div>Drag and Drop here</div>
-                                    <div>or</div>
-                                    <div class="file-upload-wrapper">
-                                        <div class="file-upload-button">Browse File</div>
-                                        <input type="file" />
-                                    </div>
-                                </div>
                             </div>
-                            <div class="upload-details d-flex align-items-center justify-content-between">
-                                <div class="file-size">
-                                    Max file size is 1MB per file.
-                                </div>
-                                <div class="dowmload-file d-flex align-items-center gap-2">
-                                    <img src="assets/images/download-icon-grey.svg" alt="download">
-                                    <span>Download Sample</span>
+                            <div class="file-upload-text d-flex flex-column align-items-center">
+                                <div>Drag and Drop here</div>
+                                <div>or</div>
+                                <div class="file-upload-wrapper">
+                                    <div class="file-upload-button">Browse File</div>
+                                    <input type="file" />
                                 </div>
                             </div>
                         </div>
-
+                        <div class="upload-details d-flex align-items-center justify-content-between">
+                            <div class="file-size">
+                                Max file size is 1MB per file.
+                            </div>
+                            <div class="dowmload-file d-flex align-items-center gap-2">
+                                <img src="assets/images/download-icon-grey.svg" alt="download">
+                                <span>Download Sample</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <div class="d-flex justify-content-end  gap-3">
-                            <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn-red">Upload</button>
-                        </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn-red">Upload</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- automation modal 2 -->
-        <div class="modal fade" id="SMSautomationModal" aria-labelledby="SMSModal" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header details-header">
-                        <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
-                            aria-label="breadcrumb">
-                            <ol class="breadcrumb drip-breadcrumb">
-                                <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
-                                        class="link-item">Drip Details</a></li>
-                                <li class="breadcrumb-item active drip-active-item" aria-current="page">Automation Setup
-                                </li>
-                            </ol>
-                        </nav>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container modal-cont">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="auto-main-div d-flex justify-content-between align-items-baseline">
-                                        <div class="at-hdg-div">
-                                            <h2 class="drip-modal-hdg">Automation Setup</h2>
-                                            <p class="drip-modal-p">Arrange and customize the sequence of actions in
-                                                your
-                                                automation.</p>
-                                        </div>
+    <!-- automation modal 2 -->
+    <div class="modal fade" id="SMSautomationModal" aria-labelledby="SMSModal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
+                                    class="drip-link-item">Drip Details</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Automation Setup
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-cont">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="auto-main-div d-flex justify-content-between align-items-baseline">
+                                    <div class="at-hdg-div">
+                                        <h2 class="drip-modal-hdg">Automation Setup</h2>
+                                        <p class="drip-modal-p">Arrange and customize the sequence of actions in your
+                                            automation.</p>
+                                    </div>
 
-                                        <div class="at-add-div">
-                                            <div class="dropdown">
-                                                <a class="dropdown-toggle add-step-btn" role="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="assets/images/add.svg" alt="add-step">
-                                                    Add Step
-                                                </a>
+                                    <div class="at-add-div">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle add-step-btn" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/add.svg" alt="add-step">
+                                                Add Step
+                                            </a>
 
-                                                <ul class="dropdown-menu add-step-menu">
-                                                    <li class="add-step-li">
-                                                        <a class="dropdown-item" href="#">
-                                                            <img src="assets/images/whatsapp-icon.svg"
-                                                                alt="whatsapp-icon">
-                                                            WhatsApp
-                                                        </a>
-                                                    </li>
-                                                    <li class="add-step-li mt-1">
-                                                        <a class="dropdown-item" href="#">
-                                                            <img src="assets/images/sms-icon.svg" alt="sms-icon">
-                                                            SMS
-                                                        </a>
-                                                    </li>
-                                                    <li class="add-step-li mt-1">
-                                                        <a class="dropdown-item" data-bs-toggle="modal"
-                                                            data-bs-target="#EmailautomationModal">
-                                                            <img src="assets/images/email-icon.svg" alt="email-icon">
-                                                            Email
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            <ul class="dropdown-menu add-step-menu">
+                                                <li class="add-step-li">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        WhatsApp
+                                                    </a>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/sms-icon.svg" alt="sms-icon">
+                                                        SMS
+                                                    </a>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" data-bs-toggle="modal"
+                                                        data-bs-target="#EmailautomationModal">
+                                                        <img src="assets/images/email-icon.svg" alt="email-icon">
+                                                        Email
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="row mt-4">
-                                <div class="col-lg-2 col-md-12 col-sm-12">
-                                    <div class="auto-step-div">
-                                        <span>No Steps</span>
-                                    </div>
+                        <div class="row mt-4">
+                            <div class="col-lg-2 col-md-12 col-sm-12">
+                                <div class="auto-step-div">
+                                    <span>No Steps</span>
                                 </div>
-                                <div class="col-lg-10 col-md-12 col-sm-12">
-                                    <div class="stepper-main-div">
-                                        <!-- Step Indicator -->
-                                        <div class="step-div">
-                                            <div class="sms-stepper mb-4">
-                                                <div class="sms-step" data-step="1">
-                                                    <div class="step-circle">1</div>
-                                                    <div class="progress-step-div">
-                                                        <div class="step-text">Configure</div>
-                                                        <div class="step-subtext">In Progress</div>
-                                                    </div>
+                            </div>
+                            <div class="col-lg-10 col-md-12 col-sm-12">
+                                <div class="stepper-main-div">
+                                    <!-- Step Indicator -->
+                                    <div class="step-div">
+                                        <div class="sms-stepper mb-4">
+                                            <div class="sms-step" data-step="1">
+                                                <div class="step-circle">1</div>
+                                                <div class="progress-step-div">
+                                                    <div class="step-text">Configure</div>
+                                                    <div class="step-subtext">In Progress</div>
                                                 </div>
-                                                <div
-                                                    class="progress-line mx-3 align-self-center border-top flex-grow-1">
-                                                </div>
-                                                <div class="sms-step" data-step="2">
-                                                    <div class="step-circle">2</div>
-                                                    <div class="progress-step-div">
-                                                        <div class="step-text">Design</div>
-                                                        <div class="step-subtext">Pending</div>
-                                                    </div>
+                                            </div>
+                                            <div class="progress-line mx-3 align-self-center border-top flex-grow-1">
+                                            </div>
+                                            <div class="sms-step" data-step="2">
+                                                <div class="step-circle">2</div>
+                                                <div class="progress-step-div">
+                                                    <div class="step-text">Design</div>
+                                                    <div class="step-subtext">Pending</div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <!-- Step 1 Content -->
-                                        <div id="step-1" class="step-content1">
-                                            <div class="step1-div">
-                                                <div class="row mb-3">
-                                                    <div class="col-md-4 col-sm-12">
-                                                        <label class="email-form-label">Drip Execution Date</label>
-                                                        <input type="date" class="form-control execution-input">
-                                                    </div>
-                                                    <div class="col-md-4 col-sm-12">
-                                                        <label class="email-form-label">Execution Time</label>
-                                                        <input type="time" class="form-control execution-time">
-                                                    </div>
-                                                    <div class="col-md-4 col-sm-12">
-                                                        <label class="email-form-label">Sender Id</label>
-                                                        <div class="domain-select-div">
-                                                            <select class="form-select domain-input">
-                                                                <option selected>Select sender ID</option>
-                                                                <option>sender ID 1</option>
-                                                                <option>sender ID 2</option>
-                                                            </select>
-                                                            <img src="assets/images/user-account.svg" class="time-img"
-                                                                alt="sender-img">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3">
-                                                    <div class="col-md-4 col-sm-12">
-                                                        <label class="email-form-label">Flash SMS</label>
-                                                        <div class="domain-select-div">
-                                                            <select class="form-select domain-input">
-                                                                <option selected>Select sender ID</option>
-                                                                <option>sender ID 1</option>
-                                                                <option>sender ID 2</option>
-                                                            </select>
-                                                            <img src="assets/images/user-account.svg" class="time-img"
-                                                                alt="sender-img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4 col-sm-12"></div>
-                                                    <div class="col-md-4 col-sm-12"></div>
-                                                </div>
-                                            </div>
-                                            <div class="tnext-div">
-                                                <a role="button" class="next-btn-template" id="smsnextBtn">
-                                                    Design
-                                                    <img src="assets/images/modal-arrow.svg" alt="right-arrow">
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <!-- Step 2 Content -->
-                                        <div id="step-2" class="step-content1 hidden">
+                                    <!-- Step 1 Content -->
+                                    <div id="step-1" class="step-content1">
+                                        <div class="step1-div">
                                             <div class="row mb-3">
                                                 <div class="col-md-4 col-sm-12">
-                                                    <label class="email-form-label">Template</label>
-                                                    <div class="custom-file-wrapper">
-                                                        <div class="custom-file-label">
-                                                            <span>Template 1</span>
-                                                            <span data-bs-toggle="modal"
-                                                                data-bs-target="#templateModal">Choose Template</span>
-                                                        </div>
-                                                    </div>
+                                                    <label class="email-form-label">Drip Execution Date</label>
+                                                    <input type="date" class="form-control execution-input">
                                                 </div>
-                                                <div class="col-md-8 col-sm-12"></div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-md-12 col-sm-12">
-                                                    <div class="sms-div">
-                                                        <label class="email-form-label">Message Content
-                                                            <span data-bs-toggle="modal"
-                                                                data-bs-target="#dripDetailsModal">
-                                                                <img src="assets/images/info-circle.svg" alt="info-img">
-                                                            </span>
-                                                        </label>
-                                                        <textarea class="form-control sms-input" name="customer"
-                                                            id="customerSms" rows="3"></textarea>
-                                                        <div class="sms-text-div">
-                                                            <span class="sms-place-text">Dear Valued Customer. We have
-                                                                launched a new product
-                                                                called <span class="sms-fill">(#var#)</span> if you
-                                                                require
-                                                                demo please
-                                                                register on
-                                                                <span class="sms-fill">(#var#)</span>. -Bhavana
-                                                                Televentures
-                                                                Limited.</span>
-                                                        </div>
-                                                        <div class="flash-div d-flex gap-2">
-                                                            <img src="assets/images/variable.svg" alt="variable">
-                                                            <img src="assets/images/emoji.svg" alt="emoji">
-                                                        </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <label class="email-form-label">Execution Time</label>
+                                                    <input type="time" class="form-control execution-time">
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <label class="email-form-label">Sender Id</label>
+                                                    <div class="domain-select-div">
+                                                        <select class="form-select domain-input">
+                                                            <option selected>Select sender ID</option>
+                                                            <option>sender ID 1</option>
+                                                            <option>sender ID 2</option>
+                                                        </select>
+                                                        <img src="assets/images/user-account.svg" class="time-img"
+                                                            alt="sender-img">
                                                     </div>
-                                                    <span
-                                                        class="messages-text d-flex justify-content-between align-items-center">
-                                                        <span>Messages over 100 characters will show 'Read More' or cost
-                                                            2
-                                                            credits for 2 SMS.</span>
-                                                        <span>54/100</span>
-                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
@@ -1986,135 +2025,129 @@
                                                             <option>sender ID 2</option>
                                                         </select>
                                                         <img src="assets/images/user-account.svg" class="time-img"
-                                                            alt="clock-img">
+                                                            alt="sender-img">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <input type="text" class="form-control email-input mt-4"
-                                                        placeholder="Enter reply to">
-                                                </div>
+                                                <div class="col-md-4 col-sm-12"></div>
                                                 <div class="col-md-4 col-sm-12"></div>
                                             </div>
+                                        </div>
+                                        <div class="tnext-div">
+                                            <a role="button" class="next-btn-template" id="smsnextBtn">
+                                                Design
+                                                <img src="assets/images/modal-arrow.svg" alt="right-arrow">
+                                            </a>
+                                        </div>
+                                    </div>
 
-                                            <div class="row mb-3">
-                                                <div class="col-md-4 col-sm-12">
-                                                    <label class="email-form-label">Flash SMS</label>
-                                                    <div class="domain-select-div">
-                                                        <select class="form-select domain-input">
-                                                            <option selected>Select sender ID</option>
-                                                            <option>sender ID 1</option>
-                                                            <option>sender ID 2</option>
-                                                        </select>
-                                                        <img src="assets/images/user-account.svg" class="time-img"
-                                                            alt="clock-img">
+                                    <!-- Step 2 Content -->
+                                    <div id="step-2" class="step-content1 hidden">
+                                        <div class="row mb-3">
+                                            <div class="col-md-4 col-sm-12">
+                                                <label class="email-form-label">Template</label>
+                                                <div class="custom-file-wrapper">
+                                                    <div class="custom-file-label">
+                                                        <span>Template 1</span>
+                                                        <span data-bs-toggle="modal"
+                                                            data-bs-target="#templateModal">Choose Template</span>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <input type="text" class="form-control email-input mt-4"
-                                                        placeholder="Enter reply to">
+                                            </div>
+                                            <div class="col-md-8 col-sm-12"></div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="sms-div">
+                                                    <label class="email-form-label">Message Content
+                                                        <span data-bs-toggle="modal" data-bs-target="#formattingModal">
+                                                            <img src="assets/images/info-circle.svg" alt="info-img">
+                                                        </span>
+                                                    </label>
+                                                    <textarea class="form-control sms-input" name="customer"
+                                                        id="customerSms" rows="3"></textarea>
+                                                    <div class="sms-text-div">
+                                                        <span class="sms-place-text">Dear Valued Customer. We have
+                                                            launched a new product
+                                                            called <span class="sms-fill">(#var#)</span> if you require
+                                                            demo please
+                                                            register on
+                                                            <span class="sms-fill">(#var#)</span>. -Bhavana Televentures
+                                                            Limited.</span>
+                                                    </div>
+                                                    <div class="flash-div d-flex gap-2">
+                                                        <img src="assets/images/variable.svg" alt="variable"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            data-bs-title="Add Variable">
+                                                        <img src="assets/images/emoji.svg" alt="emoji"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            data-bs-title="Add Emoji">
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-4 col-sm-12"></div>
+                                                <span
+                                                    class="messages-text d-flex justify-content-between align-items-center">
+                                                    <span>Messages over 100 characters will show 'Read More' or cost 2
+                                                        credits for 2 SMS.</span>
+                                                    <span>54/100</span>
+                                                </span>
                                             </div>
-                                            <div class="tback-div">
-                                                <a role="button" class="back-btn-template" id="smsbackBtn">
-                                                    <img src="assets/images/arrow-left.svg" alt="left-arrow">
-                                                    Back
-                                                </a>
-                                            </div>
-                                            <div class="col-md-8 col-sm-12">
                                         </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-md-12 col-sm-12">
-                                            <div class="sms-div">
-                                                <label class="email-form-label">Message Content
-                                                    <span data-bs-toggle="modal" data-bs-target="#formattingModal">
-                                                        <img src="assets/images/info-circle.svg" alt="info-img">
-                                                    </span>
-                                                </label>
-                                                <textarea class="form-control sms-input" name="customer"
-                                                    id="customerSms" rows="3"></textarea>
-                                                <div class="sms-text-div">
-                                                    <span class="sms-place-text">Dear Valued Customer. We have
-                                                        launched a new product
-                                                        called <span class="sms-fill">(#var#)</span> if you require
-                                                        demo please
-                                                        register on
-                                                        <span class="sms-fill">(#var#)</span>. -Bhavana Televentures
-                                                        Limited.</span>
-                                                </div>
-                                                <div class="flash-div d-flex gap-2">
-                                                    <img src="assets/images/variable.svg" alt="variable"
-                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                        data-bs-title="Add Variable">
-                                                    <img src="assets/images/emoji.svg" alt="emoji"
-                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                        data-bs-title="Add Emoji">
+                                        <div class="row mb-3">
+                                            <div class="col-md-4 col-sm-12">
+                                                <label class="email-form-label">Dynamic Variables</label>
+                                                <div class="domain-select-div">
+                                                    <select class="form-select domain-input">
+                                                        <option selected>Variable 01</option>
+                                                        <option>Variable 02</option>
+                                                        <option>Variable 03</option>
+                                                    </select>
+                                                    <img src="assets/images/coins-swap.svg" class="time-img"
+                                                        alt="clock-img">
                                                 </div>
                                             </div>
-                                            <span
-                                                class="messages-text d-flex justify-content-between align-items-center">
-                                                <span>Messages over 100 characters will show 'Read More' or cost 2
-                                                    credits for 2 SMS.</span>
-                                                <span>54/100</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Dynamic Variables</label>
-                                            <div class="domain-select-div">
-                                                <select class="form-select domain-input">
-                                                    <option selected>Variable 01</option>
-                                                    <option>Variable 02</option>
-                                                    <option>Variable 03</option>
-                                                </select>
-                                                <img src="assets/images/coins-swap.svg" class="time-img"
-                                                    alt="clock-img">
+                                            <div class="col-md-4 col-sm-12">
+                                                <input type="text" class="form-control variable-input mt-4"
+                                                    placeholder="Name">
                                             </div>
+                                            <div class="col-md-4 col-sm-12"></div>
                                         </div>
-                                        <div class="col-md-4 col-sm-12">
-                                            <input type="text" class="form-control variable-input mt-4"
-                                                placeholder="Name">
-                                        </div>
-                                        <div class="col-md-4 col-sm-12"></div>
-                                    </div>
 
-                                    <div class="row mb-3">
-                                        <div class="col-md-4 col-sm-12">
-                                            <div class="domain-select-div">
-                                                <select class="form-select domain-input">
-                                                    <option selected>Variable 02</option>
-                                                    <option>Variable 01</option>
-                                                    <option>Variable 03</option>
-                                                </select>
-                                                <img src="assets/images/coins-swap.svg" class="time-img"
-                                                    alt="clock-img">
+                                        <div class="row mb-3">
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="domain-select-div">
+                                                    <select class="form-select domain-input">
+                                                        <option selected>Variable 02</option>
+                                                        <option>Variable 01</option>
+                                                        <option>Variable 03</option>
+                                                    </select>
+                                                    <img src="assets/images/coins-swap.svg" class="time-img"
+                                                        alt="clock-img">
+                                                </div>
                                             </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <input type="text" class="form-control variable-input"
+                                                    placeholder="Company Name">
+                                            </div>
+                                            <div class="col-md-4 col-sm-12"></div>
                                         </div>
-                                        <div class="col-md-4 col-sm-12">
-                                            <input type="text" class="form-control variable-input"
-                                                placeholder="Company Name">
+                                        <div class="tback-div">
+                                            <a role="button" class="back-btn-template" id="smsbackBtn">
+                                                <img src="assets/images/arrow-left.svg" alt="left-arrow">
+                                                Back
+                                            </a>
                                         </div>
-                                        <div class="col-md-4 col-sm-12"></div>
-                                    </div>
-                                    <div class="tback-div">
-                                        <a role="button" class="back-btn-template" id="smsbackBtn">
-                                            <img src="assets/images/arrow-left.svg" alt="left-arrow">
-                                            Back
-                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                 <div class="modal-footer border-0 justify-content-between">
+                <div class="modal-footer drip-footer border-0 justify-content-between">
                     <a role="button" data-bs-toggle="modal" data-bs-target="#dripDetailsModal" class="back-btn">
                         <img src="assets/images/arrow-left.svg" alt="left-arrow">
                         Back
                     </a>
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#summaryModal" class="summary-btn">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#automationSummaryModal"
+                        class="summary-btn">
                         View Summary
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="arrow-left">
@@ -2123,24 +2156,9 @@
                             </g>
                         </svg>
                     </a>
-            </div>
-            <div class="modal-footer drip-footer border-0 justify-content-between">
-                <a role="button" data-bs-toggle="modal" data-bs-target="#dripDetailsModal" class="back-btn">
-                    <img src="assets/images/arrow-left.svg" alt="left-arrow">
-                    Back
-                </a>
-                <a role="button" data-bs-toggle="modal" data-bs-target="#automationSummaryModal" class="summary-btn">
-                    View Summary
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="arrow-left">
-                            <path id="Icon" d="M4 9L14 9M14 9L9 14M14 9L9 4" stroke="#B0B9CB" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                    </svg>
-                </a>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- ============================ Template Modal ======================= -->
@@ -2298,195 +2316,189 @@
                     <div class="d-flex justify-content-end gap-3">
                         <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
                         <button type="button" class="btn-red">Confirm</button>
-                        >>>>>>> b83987946ffa1d04f38dda7934c82dc056685edb
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        
-            <!-- ============================ Text formatting Modal ======================= -->
-            <div class="modal fade" id="formattingModal" tabindex="-1" aria-labelledby="formattingModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg dripModal">
-                    <div class="modal-content">
-                        <div class="modal-header px-4 border-0">
-                            <h4 class="format-text-hdg mb-0">Text Formatting Shortcuts</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body px-4 py-0">
-                            <p class="text-format">Improve the impact of your SMS messages using these formatting
-                                shortcuts.</p>
+    <!-- ============================ Text formatting Modal ======================= -->
+    <div class="modal fade" id="formattingModal" tabindex="-1" aria-labelledby="formattingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg dripModal">
+            <div class="modal-content">
+                <div class="modal-header px-4 border-0">
+                    <h4 class="format-text-hdg mb-0">Text Formatting Shortcuts</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 py-0">
+                    <p class="text-format">Improve the impact of your SMS messages using these formatting shortcuts.</p>
 
-                            <div class="format-table-div py-3">
-                                <table class="table table-responsive format-table">
-                                    <thead class="table-danger ftg-table-head">
-                                        <tr>
-                                            <th scope="col ftg-table-th1">What</th>
-                                            <th scope="col ftg-table-th1">How</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="table-light">
-                                            <td>• Bulleted List</td>
-                                            <td>- Message</td>
-                                        </tr>
-                                        <tr class="table-light">
-                                            <td>1. Numbered List</td>
-                                            <td>1. Message</td>
-                                        </tr>
-                                        <tr class="table-light">
-                                            <td>I Block Quote</td>
-                                            <td>> Message</td>
-                                        </tr>
-                                        <tr class="table-light">
-                                            <td>
-                                                <div class="inline-div">Inline Code</div>
-                                            </td>
-                                            <td>Message'</td>
-                                        </tr>
-                                        <tr class="table-light">
-                                            <td class="fw-bold">Bold</td>
-                                            <td>*Message*</td>
-                                        </tr>
-                                        <tr class="table-light">
-                                            <td class="fst-italic">Italic</td>
-                                            <td>_Message_</td>
-                                        </tr>
-                                        <tr class="table-light">
-                                            <td>M o n o s p a c e</td>
-                                            <td>```Message```</td>
-                                        </tr>
-                                        <tr class="table-light">
-                                            <td class="table-last-td1 text-decoration-line-through">Strikethrough</td>
-                                            <td class="table-last-td2">~Message~</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <div class="format-table-div py-3">
+                        <table class="table table-responsive format-table">
+                            <thead class="table-danger ftg-table-head">
+                                <tr>
+                                    <th scope="col ftg-table-th1">What</th>
+                                    <th scope="col ftg-table-th1">How</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-light">
+                                    <td>• Bulleted List</td>
+                                    <td>- Message</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>1. Numbered List</td>
+                                    <td>1. Message</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>I Block Quote</td>
+                                    <td>> Message</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>
+                                        <div class="inline-div">Inline Code</div>
+                                    </td>
+                                    <td>Message'</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td class="fw-bold">Bold</td>
+                                    <td>*Message*</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td class="fst-italic">Italic</td>
+                                    <td>_Message_</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>M o n o s p a c e</td>
+                                    <td>```Message```</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td class="table-last-td1 text-decoration-line-through">Strikethrough</td>
+                                    <td class="table-last-td2">~Message~</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- automation modal 4 -->
-            <div class="modal fade" id="automationSummaryModal" aria-labelledby="SummaryModal" aria-hidden="true">
-                <div class="modal-dialog modal-fullscreen">
-                    <div class="modal-content">
-                        <div class="modal-header details-header">
-                            <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
-                                aria-label="breadcrumb">
-                                <ol class="breadcrumb drip-breadcrumb">
-                                    <li class="breadcrumb-item"><a data-bs-toggle="modal"
-                                            data-bs-target="#dripDetailsModal" class="drip-link-item">Drip Details</a>
-                                    </li>
-                                    <li class="breadcrumb-item active drip-active-item" aria-current="page">Automation
-                                        Summary
-                                    </li>
-                                </ol>
-                            </nav>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container modal-cont">
-                                <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-                                        <div class="auto-main-div d-flex justify-content-between align-items-baseline">
-                                            <div class="at-hdg-div">
-                                                <h2 class="drip-modal-hdg">Automation Summary</h2>
-                                                <p class="drip-modal-p">Verify the summary of your automated actions
-                                                    before
-                                                    proceeding.</p>
-                                            </div>
+    <!-- automation modal 4 -->
+    <div class="modal fade" id="automationSummaryModal" aria-labelledby="SummaryModal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
+                                    class="drip-link-item">Drip Details</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Automation Summary
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-cont">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="auto-main-div d-flex justify-content-between align-items-baseline">
+                                    <div class="at-hdg-div">
+                                        <h2 class="drip-modal-hdg">Automation Summary</h2>
+                                        <p class="drip-modal-p">Verify the summary of your automated actions before
+                                            proceeding.</p>
+                                    </div>
 
-                                            <div class="at-add-div">
-                                                <div class="dropdown">
-                                                    <a class="dropdown-toggle add-step-btn" role="button"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <img src="assets/images/add.svg" alt="add-step">
-                                                        Add Step
+                                    <div class="at-add-div">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle add-step-btn" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/add.svg" alt="add-step">
+                                                Add Step
+                                            </a>
+
+                                            <ul class="dropdown-menu add-step-menu">
+                                                <li class="add-step-li">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        WhatsApp
                                                     </a>
-
-                                                    <ul class="dropdown-menu add-step-menu">
-                                                        <li class="add-step-li">
-                                                            <a class="dropdown-item" href="#">
-                                                                <img src="assets/images/whatsapp-icon.svg"
-                                                                    alt="whatsapp-icon">
-                                                                WhatsApp
-                                                            </a>
-                                                        </li>
-                                                        <li class="add-step-li mt-1">
-                                                            <a class="dropdown-item" href="#">
-                                                                <img src="assets/images/sms-icon.svg" alt="sms-icon">
-                                                                SMS
-                                                            </a>
-                                                        </li>
-                                                        <li class="add-step-li mt-1">
-                                                            <a class="dropdown-item" data-bs-toggle="modal"
-                                                                data-bs-target="#EmailautomationModal">
-                                                                <img src="assets/images/email-icon.svg"
-                                                                    alt="email-icon">
-                                                                Email
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/sms-icon.svg" alt="sms-icon">
+                                                        SMS
+                                                    </a>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" data-bs-toggle="modal"
+                                                        data-bs-target="#EmailautomationModal">
+                                                        <img src="assets/images/email-icon.svg" alt="email-icon">
+                                                        Email
+                                                    </a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="row mt-4">
-                                    <div class="col-lg-12 col-md-12 col-sm-12">
-
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="modal-footer drip-footer border-0 justify-content-between">
-                            <a role="button" data-bs-toggle="modal" data-bs-target="#dripDetailsModal" class="back-btn">
-                                <img src="assets/images/arrow-left.svg" alt="left-arrow">
-                                Back
-                            </a>
-                            <a role="button" class="back-btn">
-                                <img src="" alt="dr">
-                                Save as Draft
-                            </a>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="modal-footer drip-footer border-0 justify-content-between">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#dripDetailsModal" class="back-btn">
+                        <img src="assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                    <a role="button" class="back-btn">
+                        <img src="" alt="dr">
+                        Save as Draft
+                    </a>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-            <script src="assets/js/script.js"></script>
-            <script src="assets/js/bootstrap.bundle.min.js"></script>
-            <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
-            <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
-            <script>
-                const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-                const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-            </script>
-            <!-- ============ sidebar menu toggle ============ -->
-            <!-- <script>
-            document.getElementById('toggleBtn').addEventListener('click', function () {
-                document.getElementById('sidebar-menu').classList.toggle('collapsed');
-            });
-        </script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 
-            <!-- ============ datable ============ -->
-            <script>
-                new DataTable('#example', {
-                    layout: {
-                        topStart: null,
-                        topEnd: null,
-                        bottomStart: {
-                            pageLength: {
-                                menu: [10, 25, 50, 100]
-                            }
-                        },
-                    },
-                });
-            </script>
+    <!-- ============ sidebar menu toggle ============ -->
+    <script>
+        document.getElementById('toggleBtn').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        });
+    </script>
+
+    <!-- ============ datable ============ -->
+    <script>
+        new DataTable('#example', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
