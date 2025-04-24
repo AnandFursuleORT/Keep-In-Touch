@@ -639,11 +639,18 @@ input:not(:placeholder-shown)+label {
     height: 72px;
 }
 
-.notification {
+.notification,
+.profile-menu {
     border-radius: 12px;
     border: 1px solid #DEE2E9;
     background: #FAFAFC;
     padding: 11px 16px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #0E285E;
+    text-decoration: none;
+    background-color: #F9D2D3 !important;
 }
 
 .drip-count {
@@ -3087,8 +3094,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     right: 0;
 }
 
-.credit-info,
-.plan-details {
+.credit-info h4,
+.plan-details h4 {
     color: #0E285E;
     font-size: 20px;
     font-weight: 600;
