@@ -20,9 +20,6 @@
                     <div class="menu-div1">
                         <div class="logo">
                             <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
-                            <i class="toggle-btn" id="toggleBtn">
-                                <img src="Assets/images/left-red-arrow.svg" alt="">
-                            </i>
                         </div>
                         <div class="sidebar-menu p-4">
                             <ul class="menu-list">
@@ -421,7 +418,7 @@
 
                         <div class="container">
                             <div class="wallet-div1">
-                                <div class="row">
+                                <div class="row g-3">
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <div class="balance-card d-flex flex-column gap-4">
                                             <div class="card-logo d-flex align-items-center justify-content-between">
@@ -526,7 +523,7 @@
                                 </div>
                             </div>
                             <div class="wallet-div2 mt-4">
-                                <div class="row">
+                                <div class="row g-3">
                                     <div class="col-lg-9 col-md-9 col-sm-12">
                                         <div class="table-div">
                                             <div class="table-head  mb-4">
@@ -799,11 +796,6 @@
         tooltipTriggerList2.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
-    </script>
-    <script>
-        document.getElementById('toggleBtn').addEventListener('click', function () {
-            document.getElementById('sidebar').classList.toggle('collapsed');
-        });
     </script>
     <script>new DataTable('#example', {
             layout: {

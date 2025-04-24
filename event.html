@@ -20,9 +20,6 @@
                     <div class="menu-div1">
                         <div class="logo">
                             <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
-                            <i class="toggle-btn" id="toggleBtn">
-                                <img src="Assets/images/left-red-arrow.svg" alt="">
-                            </i>
                         </div>
                         <div class="sidebar-menu p-4">
                             <ul class="menu-list">
@@ -295,7 +292,7 @@
                                                     </li>
                                                     <li class="menu-item active">
                                                         <a href="event.html">
-                                                            <img src="assets/images/event-icon.svg" alt="Event">
+                                                            <img src="assets/images/event-menu-selected.svg" alt="Event">
                                                             <span>Event</span>
                                                         </a>
                                                     </li>
@@ -701,11 +698,6 @@
         tooltipTriggerList2.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
-    </script>
-    <script>
-        document.getElementById('toggleBtn').addEventListener('click', function () {
-            document.getElementById('sidebar').classList.toggle('collapsed');
-        });
     </script>
     <script>new DataTable('#example', {
             layout: {

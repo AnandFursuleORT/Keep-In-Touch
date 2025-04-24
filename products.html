@@ -20,9 +20,6 @@
                     <div class="menu-div1">
                         <div class="logo">
                             <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
-                            <i class="toggle-btn" id="toggleBtn">
-                                <img src="Assets/images/left-red-arrow.svg" alt="">
-                            </i>
                         </div>
                         <div class="sidebar-menu p-4">
                             <ul class="menu-list">
@@ -186,8 +183,8 @@
                                 <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
-                                        <li class="breadcrumb-item"><a href="#" class="drip-link-item">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#" class="drip-link-item">Product
+                                        <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#" class="link-item">Product
                                                 Management</a></li>
                                         <li class="breadcrumb-item active drip-active-item" aria-current="page">Products
                                         </li>
@@ -433,7 +430,6 @@
                                     <div class="table-div1-tabs d-flex align-items-center gap-3 ">
                                         <div class="table-filter">
                                             <img src="assets/images/filter.svg" alt="filter">
-                                            <span>Filter</span>
                                         </div>
                                         <div class="table-search d-flex align-items-center gap-3">
                                             <input type="search" class="form-control search " id="dt-search"
@@ -763,11 +759,6 @@
         tooltipTriggerList2.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
-    </script>
-    <script>
-        document.getElementById('toggleBtn').addEventListener('click', function () {
-            document.getElementById('sidebar').classList.toggle('collapsed');
-        });
     </script>
     <script>new DataTable('#example', {
             layout: {

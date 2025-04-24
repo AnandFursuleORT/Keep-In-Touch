@@ -137,6 +137,15 @@ document.getElementById("expand-btn").addEventListener("click", function () {
     document.getElementById("full-content").classList.remove("hidden");
     document.getElementById("collapsed-content").classList.add("hidden");
 });
+document.getElementById("toggle-btn-sm").addEventListener("click", function () {
+    document.getElementById("full-content-sm").classList.add("hidden");
+    document.getElementById("collapsed-content-sm").classList.remove("hidden");
+});
+
+document.getElementById("expand-btn-sm").addEventListener("click", function () {
+    document.getElementById("full-content-sm").classList.remove("hidden");
+    document.getElementById("collapsed-content-sm").classList.add("hidden");
+});
 
 // Filter Dropdown code
 
