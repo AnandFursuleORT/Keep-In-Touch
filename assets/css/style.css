@@ -15,12 +15,13 @@ body {
 }
 
 .main-img {
-    background: url("/assets/images/main-img.png");
+    background-image: url("/assets/images/main-img.png");
     background-repeat: no-repeat;
     background-size: 100% 105%;
     background-position: center center;
     display: flex;
-    padding: 40px 25px;
+    justify-content: center;
+    padding: 40px 24px;
     border-radius: 24px;
     height: 100vh;
 }
@@ -76,6 +77,20 @@ form {
     width: 100%;
 }
 
+.input-dropdown {
+    color: #afbdcf !important;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.form-control:focus {
+    color: #001747;
+    border-color: #DEE2E9;
+    outline: 0;
+    box-shadow: none !important;
+}
+
 /* Label style after Input feild is in focus. Can also use input:focus ~ label to select sibling. */
 
 input:focus+label,
@@ -98,7 +113,7 @@ input:not(:placeholder-shown)+label {
     font-family: arial;
     font-size: 16px;
     color: #afbdcf;
-    padding: 14px;
+    padding: 18px;
     position: absolute;
     top: 0;
     left: 0;
@@ -210,7 +225,6 @@ input:not(:placeholder-shown)+label {
     border-radius: 12px;
     border: 1px solid #DEE2E9;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.03);
-    text-align: center;
     width: 100%;
 }
 
@@ -218,8 +232,11 @@ input:not(:placeholder-shown)+label {
     color: #0E285E;
     font-size: 18px;
     font-weight: 600;
-    font-weight: 22px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .dont-have-acct,
@@ -348,6 +365,7 @@ input:not(:placeholder-shown)+label {
     height: 2px;
     background-color: #EBEDF1;
     flex-grow: 1;
+    width: 100%;
 }
 
 .acitve-line .acitve {
@@ -855,22 +873,26 @@ table {
 tbody {
     border: 1px solid #EBEDF1 !important;
     border-top: none;
+    border-radius: 16px !important;
+}
+
+.table-danger {
+    border-color: #EBEDF1 !important;
 }
 
 table th {
     background-color: #FCE9E9 !important;
-    padding: 16px !important;
     text-align: center !important;
-    color: #0E285E;
+    padding: 16px !important;
+    color: #0E285E !important;
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
 }
 
-
 table td {
-    text-align: center !important;
     padding: 16px !important;
+    text-align: center !important;
     color: #67779A !important;
     font-size: 14px;
     font-weight: 400;
@@ -1550,7 +1572,6 @@ table td {
 
 .accordion-button::after {
     background-image: url("/assets/images/down-arrow.svg") !important;
-    background-repeat: no-repeat;
 }
 
 .accordion-button:focus {
@@ -1620,9 +1641,6 @@ table td {
 .clear-date-img {
     vertical-align: baseline;
 }
-
-
-
 
 .filter {
     display: flex;
@@ -2037,16 +2055,20 @@ table td {
 
 .file-size {
     color: #67779A;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 18px;
 }
 
 .dowmload-file {
     color: #67779A;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 18px;
+}
+
+.drip-footer {
+    padding: 16px 80px;
 }
 
 /* ========================== Tag Master =========================== */
@@ -2185,6 +2207,7 @@ table td {
     font-size: 21px;
     font-weight: 600;
     line-height: 32px;
+    text-align: center;
 }
 
 .successfully-text p {
@@ -2458,6 +2481,15 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-image: url("/assets/images/dropdown-arrow.svg");
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+.variable-input {
+    padding: 12px 16px 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .sms-input {
@@ -2820,12 +2852,60 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-bottom: 0;
 }
 
+.text-format {
+    color: #67779A;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.format-text-hdg {
+    color: #0E285E;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.format-table .table-light td {
+    border-right: 1px solid #EBEDF1 !important;
+    border-bottom: 1px solid #EBEDF1 !important;
+    border-left: 1px solid #EBEDF1 !important;
+    color: #0E285E !important;
+    text-align: left !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ftg-table-th1 {
+    text-align: left !important;
+}
+
+.ftg-table-th2 {
+    text-align: left !important;
+}
+
+.table-last-td1 {
+    border-radius: 0 0 0 16px;
+}
+
+.table-last-td2 {
+    border-radius: 0 0 16px 0;
+}
+
+.inline-div {
+    display: flex;
+    padding: 4px 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #EBEDF1;
+    width: 100px;
+}
+
 /* =========================== Events ============================== */
 
 .start-date {
     color: #0E285E;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px;
     display: flex;
@@ -2853,14 +2933,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border: 1px solid #E53A3A;
     background: #FFF;
     padding: 8px 16px;
+    text-decoration: none;
 }
 
 .download-history {
     color: #E53A3A;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 26px;
 }
 
 .wallet-div1 {
@@ -3009,8 +3088,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .credit-info,
-.plan-details,
-h4 {
+.plan-details {
     color: #0E285E;
     font-size: 20px;
     font-weight: 600;

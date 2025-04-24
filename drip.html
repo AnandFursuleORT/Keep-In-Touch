@@ -38,14 +38,14 @@
                                         <span>Wallet</span>
                                     </a>
                                 </li>
-                                <li class="menu-item ">
+                                <li class="menu-item">
                                     <div class="accordion" id="accordionContact">
                                         <div class="accordion-item sidebar-accdn">
                                             <div class="accordion-header">
-
-                                                <button class="accordion-button sidebar-accordion" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseContact"
-                                                    aria-expanded="false" aria-controls="collapseContact">
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseContact" aria-expanded="true"
+                                                    aria-controls="collapseContact">
                                                     <img src="assets/images/contact-menu.svg" alt="">
                                                     <span class="ps-3">Contact</span>
                                                 </button>
@@ -88,10 +88,10 @@
                                     <div class="accordion" id="accordionProduct">
                                         <div class="accordion-item sidebar-accdn">
                                             <div class="accordion-header">
-
-                                                <button class="accordion-button sidebar-accordion" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#collapseaccordionProduct"
-                                                    aria-expanded="false" aria-controls="accordionProduct">
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseaccordionProduct" aria-expanded="false"
+                                                    aria-controls="accordionProduct">
                                                     <img src="assets/images/product-menu.svg" alt="product">
                                                     <span class="ps-3">Product Management</span>
                                                 </button>
@@ -242,14 +242,11 @@
                                             <div class="sidebar-menu p-4">
                                                 <ul class="menu-list">
                                                     <li class="menu-item">
-                                                        <a href="">
+                                                        <a href="#">
                                                             <img src="assets/images/dashboard-menu.svg"
                                                                 alt="dashboard-icon">
-                                                            <a href="#">
-                                                                <img src="assets/images/dashboard-menu.svg"
-                                                                    alt="dashboard-icon">
-                                                                <span>Dashboard</span>
-                                                            </a>
+                                                            <span>Dashboard</span>
+                                                        </a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="wallet.html">
@@ -258,12 +255,12 @@
                                                             <span>Wallet</span>
                                                         </a>
                                                     </li>
-                                                    <li class="menu-item ">
+                                                    <li class="menu-item">
                                                         <div class="accordion" id="accordionContact">
                                                             <div class="accordion-item sidebar-accdn">
                                                                 <div class="accordion-header">
-
-                                                                    <button class="accordion-button sidebar-accordion"
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
                                                                         type="button" data-bs-toggle="collapse"
                                                                         data-bs-target="#collapseContact"
                                                                         aria-expanded="false"
@@ -313,8 +310,8 @@
                                                         <div class="accordion" id="accordionProduct">
                                                             <div class="accordion-item sidebar-accdn">
                                                                 <div class="accordion-header">
-
-                                                                    <button class="accordion-button sidebar-accordion"
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
                                                                         type="button" data-bs-toggle="collapse"
                                                                         data-bs-target="#collapseaccordionProduct"
                                                                         aria-expanded="false"
@@ -1750,12 +1747,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer border-0 justify-content-between">
+                <div class="modal-footer drip-footer border-0 justify-content-between">
                     <a role="button" data-bs-toggle="modal" data-bs-target="#dripDetailsModal" class="back-btn">
                         <img src="assets/images/arrow-left.svg" alt="left-arrow">
                         Back
                     </a>
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#summaryModal" class="summary-btn">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#automationSummaryModal"
+                        class="summary-btn">
                         View Summary
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="arrow-left">
@@ -1789,7 +1787,6 @@
     </div>
 
     <!-- ============================ Delete Modal ======================= -->
-
     <div class="modal fade deleteModal" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1819,7 +1816,6 @@
     </div>
 
     <!-- ============================ Reset Modal ======================= -->
-
     <div class="modal fade deleteModal" id="resetModal" tabindex="-1" aria-labelledby="resetModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -2063,7 +2059,7 @@
                                             <div class="col-md-12 col-sm-12">
                                                 <div class="sms-div">
                                                     <label class="email-form-label">Message Content
-                                                        <span data-bs-toggle="modal" data-bs-target="#dripDetailsModal">
+                                                        <span data-bs-toggle="modal" data-bs-target="#formattingModal">
                                                             <img src="assets/images/info-circle.svg" alt="info-img">
                                                         </span>
                                                     </label>
@@ -2079,8 +2075,12 @@
                                                             Limited.</span>
                                                     </div>
                                                     <div class="flash-div d-flex gap-2">
-                                                        <img src="assets/images/variable.svg" alt="variable">
-                                                        <img src="assets/images/emoji.svg" alt="emoji">
+                                                        <img src="assets/images/variable.svg" alt="variable"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            data-bs-title="Add Variable">
+                                                        <img src="assets/images/emoji.svg" alt="emoji"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            data-bs-title="Add Emoji">
                                                     </div>
                                                 </div>
                                                 <span
@@ -2093,40 +2093,39 @@
                                         </div>
                                         <div class="row mb-3">
                                             <div class="col-md-4 col-sm-12">
-                                                <label class="email-form-label">Flash SMS</label>
+                                                <label class="email-form-label">Dynamic Variables</label>
                                                 <div class="domain-select-div">
                                                     <select class="form-select domain-input">
-                                                        <option selected>Select sender ID</option>
-                                                        <option>sender ID 1</option>
-                                                        <option>sender ID 2</option>
+                                                        <option selected>Variable 01</option>
+                                                        <option>Variable 02</option>
+                                                        <option>Variable 03</option>
                                                     </select>
-                                                    <img src="assets/images/user-account.svg" class="time-img"
+                                                    <img src="assets/images/coins-swap.svg" class="time-img"
                                                         alt="clock-img">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-sm-12">
-                                                <input type="text" class="form-control email-input mt-4"
-                                                    placeholder="Enter reply to">
+                                                <input type="text" class="form-control variable-input mt-4"
+                                                    placeholder="Name">
                                             </div>
                                             <div class="col-md-4 col-sm-12"></div>
                                         </div>
 
                                         <div class="row mb-3">
                                             <div class="col-md-4 col-sm-12">
-                                                <label class="email-form-label">Flash SMS</label>
                                                 <div class="domain-select-div">
                                                     <select class="form-select domain-input">
-                                                        <option selected>Select sender ID</option>
-                                                        <option>sender ID 1</option>
-                                                        <option>sender ID 2</option>
+                                                        <option selected>Variable 02</option>
+                                                        <option>Variable 01</option>
+                                                        <option>Variable 03</option>
                                                     </select>
-                                                    <img src="assets/images/user-account.svg" class="time-img"
+                                                    <img src="assets/images/coins-swap.svg" class="time-img"
                                                         alt="clock-img">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-sm-12">
-                                                <input type="text" class="form-control email-input mt-4"
-                                                    placeholder="Enter reply to">
+                                                <input type="text" class="form-control variable-input"
+                                                    placeholder="Company Name">
                                             </div>
                                             <div class="col-md-4 col-sm-12"></div>
                                         </div>
@@ -2142,12 +2141,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer border-0 justify-content-between">
+                <div class="modal-footer drip-footer border-0 justify-content-between">
                     <a role="button" data-bs-toggle="modal" data-bs-target="#dripDetailsModal" class="back-btn">
                         <img src="assets/images/arrow-left.svg" alt="left-arrow">
                         Back
                     </a>
-                    <a role="button" data-bs-toggle="modal" data-bs-target="#summaryModal" class="summary-btn">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#automationSummaryModal"
+                        class="summary-btn">
                         View Summary
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="arrow-left">
@@ -2162,7 +2162,6 @@
     </div>
 
     <!-- ============================ Template Modal ======================= -->
-
     <div class="modal fade" id="templateModal" tabindex="-1" aria-labelledby="templateModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -2318,6 +2317,152 @@
                         <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
                         <button type="button" class="btn-red">Confirm</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ Text formatting Modal ======================= -->
+    <div class="modal fade" id="formattingModal" tabindex="-1" aria-labelledby="formattingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg dripModal">
+            <div class="modal-content">
+                <div class="modal-header px-4 border-0">
+                    <h4 class="format-text-hdg mb-0">Text Formatting Shortcuts</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 py-0">
+                    <p class="text-format">Improve the impact of your SMS messages using these formatting shortcuts.</p>
+
+                    <div class="format-table-div py-3">
+                        <table class="table table-responsive format-table">
+                            <thead class="table-danger ftg-table-head">
+                                <tr>
+                                    <th scope="col ftg-table-th1">What</th>
+                                    <th scope="col ftg-table-th1">How</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-light">
+                                    <td>• Bulleted List</td>
+                                    <td>- Message</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>1. Numbered List</td>
+                                    <td>1. Message</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>I Block Quote</td>
+                                    <td>> Message</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>
+                                        <div class="inline-div">Inline Code</div>
+                                    </td>
+                                    <td>Message'</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td class="fw-bold">Bold</td>
+                                    <td>*Message*</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td class="fst-italic">Italic</td>
+                                    <td>_Message_</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td>M o n o s p a c e</td>
+                                    <td>```Message```</td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td class="table-last-td1 text-decoration-line-through">Strikethrough</td>
+                                    <td class="table-last-td2">~Message~</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- automation modal 4 -->
+    <div class="modal fade" id="automationSummaryModal" aria-labelledby="SummaryModal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
+                                    class="drip-link-item">Drip Details</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Automation Summary
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-cont">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="auto-main-div d-flex justify-content-between align-items-baseline">
+                                    <div class="at-hdg-div">
+                                        <h2 class="drip-modal-hdg">Automation Summary</h2>
+                                        <p class="drip-modal-p">Verify the summary of your automated actions before
+                                            proceeding.</p>
+                                    </div>
+
+                                    <div class="at-add-div">
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle add-step-btn" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/add.svg" alt="add-step">
+                                                Add Step
+                                            </a>
+
+                                            <ul class="dropdown-menu add-step-menu">
+                                                <li class="add-step-li">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        WhatsApp
+                                                    </a>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" href="#">
+                                                        <img src="assets/images/sms-icon.svg" alt="sms-icon">
+                                                        SMS
+                                                    </a>
+                                                </li>
+                                                <li class="add-step-li mt-1">
+                                                    <a class="dropdown-item" data-bs-toggle="modal"
+                                                        data-bs-target="#EmailautomationModal">
+                                                        <img src="assets/images/email-icon.svg" alt="email-icon">
+                                                        Email
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer drip-footer border-0 justify-content-between">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#dripDetailsModal" class="back-btn">
+                        <img src="assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                    <a role="button" class="back-btn">
+                        <img src="" alt="dr">
+                        Save as Draft
+                    </a>
                 </div>
             </div>
         </div>
