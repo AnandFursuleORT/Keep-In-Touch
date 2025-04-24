@@ -55,7 +55,7 @@
     .site-offcanvas {
         width: 280px !important;
     }
-    
+
     .notification {
         padding: 8px 12px;
     }
@@ -83,7 +83,7 @@
     .table-div {
         padding: 16px;
     }
-    
+
     .table-tabs-link {
         padding: 8px;
         font-size: 12px;
@@ -103,7 +103,7 @@
     }
 
     .heading h4 {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 0;
     }
 
@@ -123,5 +123,104 @@
 
     .drips-image {
         left: 6%;
+    }
+
+    /* wallet css */
+
+    .wallet-div1 {
+        padding: 16px;
+    }
+
+    .download-history-wrapper {
+        padding: 8px 10px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    .add-button {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .download-history {
+        display: none;
+    }
+
+    .credit-usage-div h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .credit-usage-card {
+        padding: 16px;
+    }
+
+    .credit-card {
+        flex-direction: column;
+        align-items: start !important;
+        gap: 8px;
+    }
+
+    .credit span {
+        font-size: 20px;
+    }
+
+    /* Contact listing css */
+
+    .table-div1 {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 8px;
+    }
+
+    .table-div-tabs {
+        gap: 0.5rem !important;
+        flex-wrap: wrap;
+    }
+
+    .table-heading h4 {
+        font-size: 18px;
+    }
+
+    .addContact-modal-hdg h2 {
+        font-size: 20px;
+    }
+
+    .addContactModal .main-container {
+        padding: 16px;
+    }
+
+    .addContact-Personal,
+    .addContact-business {
+        padding: 16px;
+    }
+
+    .upload-details {
+        gap: 8px;
+    }
+
+    /* sign in css */
+
+    .main-img {
+        background-image: none;
+        height: auto;
+        padding: 24px 24px 12px 24px;
+    }
+
+    .img-text {
+        display: none;
+    }
+
+    .sign-in {
+        padding: 8px 24px;
+        gap: 14px;
+    }
+    
+    .form-heading-text h4 {
+        font-size: 24px;
+    }
+
+    form {
+        gap: 16px;
     }
 }
