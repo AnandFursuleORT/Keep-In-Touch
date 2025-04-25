@@ -505,6 +505,9 @@ input:not(:placeholder-shown)+label {
 
 .page-content {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .sidebar.collapsed {
@@ -515,6 +518,7 @@ input:not(:placeholder-shown)+label {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 24px;
 }
 
 .sidebar .logo {
@@ -632,11 +636,32 @@ input:not(:placeholder-shown)+label {
     stroke: #E94B50 !important;
 }
 
+.topbar-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar-widgets {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .topbar {
     padding: 10px 24px;
     border-bottom: 1px solid #DEE2E9;
     background: #FFFFFF;
     height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drip-offcanvas-div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .notification,
@@ -647,7 +672,8 @@ input:not(:placeholder-shown)+label {
     padding: 11px 16px;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
     color: #0E285E;
     text-decoration: none;
     background-color: #F9D2D3 !important;
@@ -731,6 +757,14 @@ input:not(:placeholder-shown)+label {
     align-items: center;
     gap: 8px;
 }
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
 
 /* ============ Active-drip-toggle ============ */
 
@@ -831,6 +865,47 @@ input:not(:placeholder-shown)+label {
     border: 1px solid #EBEDF1;
     background: #FFF;
     padding: 24px;
+}
+
+.table-head {
+    margin-bottom: 24px;
+}
+
+.table-div1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.table-div2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-filter-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.select-tag-div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.table-div-tabs {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.table-search {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .table-heading h4 {
@@ -977,6 +1052,12 @@ table td {
     font-weight: 500;
 }
 
+.table-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .badge {
     text-align: center;
     font-size: 12px;
@@ -986,7 +1067,14 @@ table td {
     border-radius: 8px;
 }
 
-.badge-light-success {
+.table-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     border: 1px solid rgba(22, 170, 76, 0.40);
     background: rgba(183, 234, 202, 0.50);
     color: #16AA4C;
@@ -1188,6 +1276,12 @@ table td {
 
 .modal-list {
     padding-left: 16px !important;
+}
+
+.footer-btn-wrapper {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
 }
 
 .btn-grey {
@@ -1736,6 +1830,30 @@ table td {
     border-bottom-left-radius: 16px;
 }
 
+.filter-offcanvas .offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.filter-offcanvas .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.filter-acdn .accordion-body {
+    padding-top: 0;
+}
+
+.filter-footer-btn {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+
 .title-offcanvas {
     color: #001747;
     font-size: 22px;
@@ -1896,6 +2014,11 @@ table td {
     background-color: #fafafc;
 }
 
+.addContactModal .modal-footer {
+    border: none;
+    justify-content: space-between;
+}
+
 .step-indicator {
     max-width: 400px;
     margin: auto;
@@ -1963,6 +2086,11 @@ table td {
 
 
 /* ========================== upload modal =========================== */
+.uploadMdal-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .uploadMdal-title h4 {
     color: #0E285E;
@@ -1978,11 +2106,30 @@ table td {
     line-height: 24px;
 }
 
+.upload-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .file-upload-div {
     border-radius: 10px;
     border: 1px dashed #0062FF;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
+
+.file-upload-icon {
+    display: flex;
+}
+
+.file-upload-circle3 {
+    display: flex;
+}
+
 
 .file-upload-circle1 {
     border-radius: 57px;
@@ -2002,6 +2149,17 @@ table td {
     padding: 10px;
 }
 
+.file-upload-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .file-upload-wrapper {
     position: relative;
@@ -2072,6 +2230,9 @@ table td {
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .drip-footer {
@@ -2173,7 +2334,7 @@ table td {
     border-bottom-left-radius: 16px;
 }
 
-/* Tag Delete Modal */
+/*  Delete Modal */
 
 .deleteModal .modal-header {
     border-bottom: none !important;
@@ -2203,10 +2364,19 @@ table td {
     padding: 6px;
 }
 
+.delete-modal-body {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 /* ========================== successfully Modal ============================== */
 
 .successfullyModal .modal-header {
     border-bottom: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .successfully-title h4 {
@@ -2216,7 +2386,12 @@ table td {
     line-height: 32px;
     text-align: center;
 }
-
+.successfullyModal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+} d-flex flex-column align-items-center gap-3
 .successfully-text p {
     color: #67779A;
     font-size: 14px;
