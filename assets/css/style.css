@@ -487,6 +487,7 @@ input:not(:placeholder-shown)+label {
     justify-content: space-between;
     border-right: 1px solid #DEE2E9;
     border-bottom: 1px solid #DEE2E9;
+    border-bottom-right-radius: 16px;
 }
 
 .main-content {
@@ -2209,7 +2210,7 @@ table td {
 }
 
 .add-modal {
-    padding: 24px !important;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -3327,6 +3328,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.credit-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .credit-info,
