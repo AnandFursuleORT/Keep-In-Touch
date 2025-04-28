@@ -40,16 +40,16 @@
                                         <div class="accordion-item sidebar-accdn sidebar-accdn-active">
                                             <div class="accordion-header">
 
-                                                <button class="accordion-button sidebar-accordion" type="button"
+                                                <button class="accordion-button sidebar-accordion collapsed" type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#collapseaccordionContact"
                                                     aria-expanded="true" aria-controls="collapseOne">
                                                     <img src="assets/images/contact-menu.svg" alt="">
-                                                    <span class="ps-3">Contact</span>
+                                                    <span>Contact</span>
                                                 </button>
                                             </div>
                                             <div id="collapseaccordionContact" class="accordion-collapse collapse show">
                                                 <div class="accordion-body contact-sub-items">
-                                                    <ul class="menu-list">
+                                                    <ul class="accdn-menu-list">
                                                         <li class="menu-item active">
                                                             <a href="contact-listing.html">
                                                                 <img src="assets/images/contact-listing.svg"
@@ -85,17 +85,16 @@
                                     <div class="accordion" id="accordionProduct">
                                         <div class="accordion-item sidebar-accdn">
                                             <div class="accordion-header">
-
-                                                <button class="accordion-button sidebar-accordion" type="button"
+                                                <button class="accordion-button sidebar-accordion collapsed" type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#collapseaccordionProduct"
                                                     aria-expanded="false" aria-controls="accordionProduct">
                                                     <img src="assets/images/product-menu.svg" alt="product">
-                                                    <span class="ps-3">Product Management</span>
+                                                    <span>Product Management</span>
                                                 </button>
                                             </div>
                                             <div id="collapseaccordionProduct" class="accordion-collapse collapse">
                                                 <div class="accordion-body contact-sub-items">
-                                                    <ul class="menu-list">
+                                                    <ul class="accdn-menu-list">
                                                         <li class="menu-item">
                                                             <a href="products.html">
                                                                 <img src="assets/images/contact-listing1.svg"
@@ -139,28 +138,6 @@
                     </div>
 
                     <div class="menu-div2">
-                        <div class="sidebar-menu">
-                            <ul class="menu-list2">
-                                <li class="menu-item">
-                                    <a href="">
-                                        <img src="Assets/images/help.svg" alt="dashboard-icon">
-                                        <span>Help & Support</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="settings.html">
-                                        <img src="assets/images/setting-menu.svg" alt="dashboard-icon">
-                                        <span>Settings</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="profile-menu mt-auto p-4">
-                            <div class="profile">
-                                <img src="assets/images/profile.svg" alt="">
-                                <span class="profile-name">Atharva Mohurle</span>
-                            </div>
-                        </div>
                         <div class="app-section-menu">
                             <h6 class="app-text">Get the app</h6>
                             <a class="apple-store">
@@ -284,7 +261,7 @@
                                                                 class="accordion-item sidebar-accdn sidebar-accdn-active">
                                                                 <div class="accordion-header">
 
-                                                                    <button class="accordion-button sidebar-accordion"
+                                                                    <button class="accordion-button sidebar-accordion collapsed"
                                                                         type="button" data-bs-toggle="collapse"
                                                                         data-bs-target="#collapseaccordionContact"
                                                                         aria-expanded="true"
@@ -334,8 +311,7 @@
                                                         <div class="accordion" id="accordionProduct">
                                                             <div class="accordion-item sidebar-accdn">
                                                                 <div class="accordion-header">
-
-                                                                    <button class="accordion-button sidebar-accordion"
+                                                                    <button class="accordion-button sidebar-accordion collapsed"
                                                                         type="button" data-bs-toggle="collapse"
                                                                         data-bs-target="#collapseaccordionProduct"
                                                                         aria-expanded="false"
@@ -948,25 +924,25 @@
                                     <div class="row mb-3">
                                         <div class="col-md-4 col-sm-12">
                                             <div class="drip-input-div">
-                                                <label for="dripInput1" class="form-label input-label mb-1">First
+                                                <label for="contact-firstName" class="form-label input-label mb-1">First
                                                     Name*</label>
-                                                <input type="text" class="form-control input-text" id="dripInput1"
+                                                <input type="text" class="form-control input-text" id="contact-firstName"
                                                     placeholder="Enter your First Name">
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <div class="drip-input-div">
-                                                <label for="dripInput1" class="form-label input-label mb-1">Middle
+                                                <label for="contact-middleName" class="form-label input-label mb-1">Middle
                                                     Name</label>
-                                                <input type="text" class="form-control input-text" id="dripInput1"
+                                                <input type="text" class="form-control input-text" id="contact-middleName"
                                                     placeholder="Enter your Middle Name">
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
                                             <div class="drip-input-div">
-                                                <label for="dripInput1" class="form-label input-label mb-1">Last
+                                                <label for="conatct-lastName" class="form-label input-label mb-1">Last
                                                     Name*</label>
-                                                <input type="text" class="form-control input-text" id="dripInput1"
+                                                <input type="text" class="form-control input-text" id="conatct-lastName"
                                                     placeholder="Enter your Last Name">
                                             </div>
                                         </div>
@@ -998,14 +974,14 @@
                                 <div class="addContact-Personal">
                                     <div class="row mb-3">
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Email ID*</label>
+                                            <label for="contact-Email" class="email-form-label">Email ID*</label>
                                             <input type="email" class="form-control addContact-email-input"
-                                                placeholder="Enter sender email id">
+                                                placeholder="Enter sender email id" id="contact-Email">
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Email ID (Optional)</label>
+                                            <label for="contact-Emailopt" class="email-form-label">Email ID (Optional)</label>
                                             <input type="email" class="form-control addContact-email-input"
-                                                placeholder="Enter sender email id">
+                                                placeholder="Enter sender email id" id="contact-Emailopt">
                                         </div>
                                         <div class="col-md-4 col-sm-12 d-flex align-items-center">
                                             <div class="add-email d-flex align-items-center gap-2 pt-4">
@@ -1022,7 +998,7 @@
                             </div>
                             <div class="addContact-business-form-wrapper">
                                 <div class="addContact-business">
-                                    <div class="row mb-3">
+                                    <div class="row mb-2">
                                         <div class="col-md-4 col-sm-12">
                                             <div class="drip-input-div">
                                                 <label for="dripInput1"
@@ -1179,12 +1155,12 @@
 
     <div class="offcanvas offcanvas-end filter-offcanvas" tabindex="-1" id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header ">
+        <div class="offcanvas-header">
             <h5 class="offcanvas-title title-offcanvas" id="offcanvasRightLabel">Filter</h5>
             <img src="assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="offcanvas"
                 aria-label="Close">
         </div>
-        <div class="offcanvas-body ">
+        <div class="offcanvas-body">
             <div class="accordion" id="accordionExample">
                 <!-- date filter code -->
                 <div class="accordion-item filter-acdn">
@@ -1195,8 +1171,7 @@
                         </button>
                     </h2>
                     <div id="f-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body pt-0">
-
+                        <div class="accordion-body">
                             <input type="date" class="filter-date w-100">
                         </div>
                     </div>
@@ -1247,7 +1222,7 @@
                 <!-- City filter code -->
                 <div class="accordion-item filter-acdn">
                     <h2 class="accordion-header">
-                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#f-collapseFour" aria-expanded="true" aria-controls="collapseOne">
                             City
                         </button>
@@ -1291,7 +1266,7 @@
                 <!-- References  Watch filter code -->
                 <div class="accordion-item filter-acdn">
                     <h2 class="accordion-header">
-                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#f-collapseFive" aria-expanded="true" aria-controls="collapseOne">
                             References
                         </button>

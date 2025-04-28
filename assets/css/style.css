@@ -294,9 +294,6 @@ input:not(:placeholder-shown)+label {
     border: 1px solid #67779A;
 }
 
-
-
-
 /* ==================SIGN UP STEPPER======================== */
 
 .step-indicator {
@@ -312,6 +309,7 @@ input:not(:placeholder-shown)+label {
     display: flex;
     align-items: center;
     z-index: 1;
+    width: 100%;
 }
 
 .step span {
@@ -329,7 +327,7 @@ input:not(:placeholder-shown)+label {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     color: #6E6E6E;
     position: relative;
 }
@@ -341,11 +339,6 @@ input:not(:placeholder-shown)+label {
 
 .step.active span {
     color: #0E285E;
-}
-
-.step {
-    text-align: center;
-    position: relative;
 }
 
 .form-step {
@@ -524,7 +517,7 @@ input:not(:placeholder-shown)+label {
 .sidebar .logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 15px;
     font-weight: bold;
     border-bottom: 1px solid #DEE2E9;
@@ -554,9 +547,15 @@ input:not(:placeholder-shown)+label {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 4px;
-    padding-left: 0px !important;
+    padding-left: 0px;
+}
+
+.accdn-menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .menu-item {
@@ -596,7 +595,7 @@ input:not(:placeholder-shown)+label {
 .menu-list .menu-item.active {
     border-radius: 12px;
     border: 1px solid #E94B50;
-    background-color: #FAFAFC !important;
+    background-color: transparent !important;
     display: flex;
     align-items: center;
 }
@@ -612,9 +611,9 @@ input:not(:placeholder-shown)+label {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
+    gap: 12px;
     padding-left: 0px !important;
+    margin-bottom: 0 !important;
 }
 
 .menu-list2 .menu-item.active {
@@ -662,6 +661,11 @@ input:not(:placeholder-shown)+label {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.profile-sidemenu {
+    border-top: 1px solid #DEE2E9;
+    padding: 12px 16px;
 }
 
 .notification,
@@ -734,6 +738,7 @@ input:not(:placeholder-shown)+label {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
+    margin-bottom: 0;
 }
 
 .apple-store {
@@ -868,7 +873,7 @@ input:not(:placeholder-shown)+label {
 }
 
 .table-head {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .table-div1 {
@@ -925,11 +930,17 @@ table.dataTable thead>tr>td.dt-orderable-desc:hover {
 .table-filter {
     display: flex;
     align-items: center;
-    gap: 8px;
     color: #0E285E;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    background: #FFF;
+    padding: 12px 16px;
+}
+
+.table-filter {
+    display: flex;
+    align-items: center;
+    color: #0E285E;
     border-radius: 12px;
     border: 1px solid #DEE2E9;
     background: #FFF;
@@ -969,7 +980,6 @@ table th {
     color: #0E285E !important;
     font-size: 14px;
     font-weight: 600;
-    line-height: 24px;
 }
 
 table td {
@@ -978,21 +988,18 @@ table td {
     color: #67779A !important;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
 }
 
 .dt-length select {
     color: #0E285E;
-    font-size: 0.88rem;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 26px;
     border-radius: 12px !important;
 }
 
-
 .dt-length label {
     color: #0E285E;
-    font-size: 0.88rem;
+    font-size: 14px;
     font-weight: 400 !important;
     line-height: 24px;
 }
@@ -1004,7 +1011,7 @@ table td {
 .page-link {
     padding: 8px 16px;
     color: #0E285E;
-    font-size: 0.88rem;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     border: none;
@@ -1039,7 +1046,7 @@ table td {
 .page-link.active {
     z-index: 3;
     color: #E94B50;
-    font-size: 0.88rem;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     border-radius: 12px;
@@ -1074,7 +1081,7 @@ table td {
     gap: 16px;
 }
 
-d-flex align-items-center justify-content-center gap-3 .badge-light-success {
+.badge-light-success {
     border: 1px solid rgba(22, 170, 76, 0.40);
     background: rgba(183, 234, 202, 0.50);
     color: #16AA4C;
@@ -1115,7 +1122,7 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     color: #E94B50;
     font-size: 14px;
     font-weight: 600;
-    padding-top: 2px;
+    margin-top: 2px;
 }
 
 .link-item:hover {
@@ -1123,7 +1130,7 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-    padding-top: 3px;
+    margin-top: 3px;
 }
 
 .drip-breadcrumb {
@@ -1292,7 +1299,6 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     color: #0E285E;
     font-size: 16px;
     font-weight: 500;
-    line-height: 22px;
 }
 
 .btn-red {
@@ -1302,7 +1308,6 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     color: #FAFAFC;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
     border: none !important;
 }
 
@@ -1322,14 +1327,14 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     background: #E31E24;
 }
 
-.modal.fade .dripModal {
+/* .modal.fade .dripModal {
     transform: translateY(100px) translateX(0);
     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 .modal.show .dripModal {
     transform: translateY(0) translateX(0);
-}
+} */
 
 .tooltip .tooltip-inner {
     color: #FAFAFC;
@@ -1438,14 +1443,6 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-}
-
-.modal-dialog {
-    position: fixed !important;
-    bottom: 0 !important;
-    left: 0% !important;
-    right: 0% !important;
-    margin-bottom: 0 !important;
 }
 
 /* automation setup css */
@@ -1658,17 +1655,21 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
-    background-color: transparent !important;
+    background-color: #FAFAFC !important;
     box-shadow: none !important;
 }
 
 .sidebar-accordion {
-    padding: 12px !important;
+    padding: 12px;
     color: #0E285E;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
     border-radius: 12px !important;
+}
+
+.sidebar-accordion span {
+    padding-left: 16px;
 }
 
 .accordion-button::after {
@@ -1689,7 +1690,7 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
 .sidebar-accdn-active {
     border: 1px solid #E94B50 !important;
     border-radius: 12px !important;
-    background-color: #FAFAFC;
+    background-color: #FAFAFC !important;
 }
 
 .export,
@@ -1717,10 +1718,8 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
 .select-tag {
     border-radius: 12px;
     border: 1px solid #DEE2E9;
-
     color: #0E285E;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: 26px;
 }
@@ -1834,18 +1833,16 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .filter-offcanvas .offcanvas-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .filter-acdn .accordion-body {
-    padding-top: 0;
+    padding: 12px;
 }
 
 .filter-footer-btn {
@@ -1953,8 +1950,11 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     color: #0E285E;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
+}
 
+.filter-acdn-btn.collapsed {
+    border-radius: 12px !important;
+    border: 1px solid #EBEDF1 !important;
 }
 
 .filter-acdn-btn:focus {
@@ -1964,8 +1964,9 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
 
 .filter-acdn-btn:not(.collapsed) {
     background-color: transparent !important;
-    border-radius: 8px 8px 0 0 !important;
     box-shadow: none !important;
+    border: 1px solid #EBEDF1 !important;
+    border-radius: 12px !important;
 }
 
 .filter-check {
@@ -2386,13 +2387,15 @@ d-flex align-items-center justify-content-center gap-3 .badge-light-success {
     line-height: 32px;
     text-align: center;
 }
+
 .successfullyModal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-} d-flex flex-column align-items-center gap-3
-.successfully-text p {
+}
+
+d-flex flex-column align-items-center gap-3 .successfully-text p {
     color: #67779A;
     font-size: 14px;
     font-weight: 500;
@@ -3106,7 +3109,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .table.dataTable thead>tr>th.dt-orderable-desc span.dt-column-order:after {
     display: none;
 }
-
 
 /* =========================== Wallet =============================== */
 

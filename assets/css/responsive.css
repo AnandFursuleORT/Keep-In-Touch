@@ -179,11 +179,11 @@
     }
 
     .table-heading h4 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .addContact-modal-hdg h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .addContactModal .main-container {
@@ -215,12 +215,344 @@
         padding: 8px 24px;
         gap: 14px;
     }
-    
+
     .form-heading-text h4 {
         font-size: 24px;
     }
 
     form {
         gap: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .heading h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .add-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .table-heading h4 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .table-div {
+        padding: 16px;
+    }
+
+    table td {
+        font-size: 12px;
+        padding: 12px !important;
+    }
+
+    .export,
+    .import {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .export img,
+    .import img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .table-filter {
+        padding: 8px 10px;
+    }
+
+    .page-content {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .select-tag-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .title-offcanvas {
+        font-size: 18px;
+    }
+
+    .topbar {
+        height: auto;
+        padding: 7.4px 12px;
+    }
+
+    .link-item {
+        font-size: 12px;
+    }
+
+    .notification,
+    .profile-menu {
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notification img,
+    .profile-menu img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .profile {
+        font-size: 12px;
+    }
+
+    .credits {
+        padding: 8px 12px;
+    }
+
+    .credits img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .topbar-widgets-text {
+        font-size: 12px;
+    }
+
+    .drip-active-item.active {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+
+    .sidebar .logo {
+        padding: 12px 14px;
+        height: auto;
+    }
+
+    .sidebar-menu {
+        padding: 12px;
+    }
+
+    .menu-item a {
+        font-size: 12px;
+        padding: 6px;
+        gap: 8px;
+    }
+
+    .menu-list2 {
+        gap: 4px;
+    }
+
+    .menu-list2 li a {
+        font-size: 10px;
+    }
+
+    .sidebar-accordion {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 6px !important;
+    }
+
+    .sidebar-accordion span {
+        padding-left: 6px;
+    }
+
+    .offcanvas-header {
+        padding: 12px;
+    }
+
+    .filter-offcanvas .offcanvas-body {
+        padding: 12px;
+    }
+
+    .filter-acdn-btn:not(.collapsed) {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn-btn {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .filter-acdn .accordion-body {
+        padding: 8px;
+    }
+
+    .filter-date {
+        padding: 6px 10px;
+    }
+
+    .filter-search {
+        background-size: 14px;
+        padding: 8px 6px 8px 28px;
+    }
+
+    .menu-list .menu-item.active span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .contact-sub-items {
+        padding: 6px !important;
+    }
+
+    .menu-list .menu-item.active {
+        border-radius: 6px;
+    }
+
+    .app-section-menu {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .apple-store {
+        padding: 6px;
+    }
+
+    .play-store {
+        padding: 6px;
+    }
+
+    .table-action img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .page-link {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .dt-length select {
+        font-size: 12px;
+    }
+
+    .select-tag {
+        font-size: 12px;
+    }
+
+    .table th {
+        padding: 12px !important;
+        font-size: 13px;
+    }
+
+    .btn-grey {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .btn-red {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    /* Add contact modal */
+
+    .addContact-modal-hdg h2 {
+        font-size: 20px;
+    }
+
+    .details-header {
+        padding: 8px 80px;
+    }
+
+    .addContactModal .main-container {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .addContact-Personal,
+    .addContact-business {
+        padding: 12px;
+    }
+
+    .input-label {
+        font-size: 12px;
+    }
+
+    .email-form-label {
+        font-size: 12px;
+    }
+
+    .input-text {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .input-text::placeholder {
+        font-size: 12px;
+    }
+
+    .execution-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .domain-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .time-img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .addContact-email-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
+
+    .add-email {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .add-email img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .successfullyModal {
+        border-radius: 24px !important;
+    }
+
+    .successfullyModal-body {
+        gap: 12px;
+    }
+
+    .successfullyModal .modal-header {
+        padding: 12px;
+    }
+
+    .successfullyModal .modal-body {
+        padding: 12px 42px;
+    }
+
+    .successfullyModal-body img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .successfully-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .successfully-text p {
+        font-size: 12px;
+        text-align: center;
     }
 }
