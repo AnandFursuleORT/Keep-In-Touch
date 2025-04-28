@@ -1597,52 +1597,6 @@ table td {
     stroke: #FFFFFF;
 }
 
-/* Wallet page css */
-
-.drip-wallet {
-    color: #0E285E;
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 32px;
-}
-
-.download-btn {
-    display: flex;
-    padding: 8px 16px;
-    align-items: center;
-    gap: 8px;
-    border-radius: 12px;
-    border: 1px solid #E53A3A;
-    background: #FFF;
-    text-decoration: none;
-    color: #E53A3A;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-}
-
-.credit-btn {
-    display: flex;
-    padding: 8px 16px;
-    align-items: center;
-    gap: 8px;
-    border-radius: 12px;
-    border: 1px solid #DEE2E9;
-    background: #E53A3A;
-    color: #FAFAFC;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-    text-decoration: none;
-}
-
-.wallet-info-div {
-    display: flex;
-    padding: 24px;
-    align-items: center;
-    border-radius: 24px;
-    background: #FFF;
-}
 
 /* =============== Contact ==================  */
 
@@ -3118,6 +3072,61 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background: #FFF;
     padding: 8px 16px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.drip-wallet {
+    color: #0E285E;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.wallet-button-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.download-btn {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    border: 1px solid #E53A3A;
+    background: #FFF;
+    text-decoration: none;
+    color: #E53A3A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.credit-btn {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    background: #E53A3A;
+    color: #FAFAFC;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.wallet-info-div {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    border-radius: 24px;
+    background: #FFF;
 }
 
 .download-history {
@@ -3139,7 +3148,15 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-position: center;
     border-radius: 16px;
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
+.card-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card-logo h4 {
@@ -3147,6 +3164,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+}
+
+.credit-points {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.acct-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .credit-left {
@@ -3161,6 +3190,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 16px;
     font-weight: 600;
     line-height: 32px;
+}
+
+.acct-holder-details,
+.card-expiry {
+    display: flex;
+    flex-direction: column;
 }
 
 .acct-holder-text,
@@ -3179,6 +3214,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     line-height: 20px;
 }
 
+.credit-usage-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.credit-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .credit-usage-card,
 .credit-info-card,
 .plan-details-card {
@@ -3186,6 +3233,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border: 1px solid #EBEDF1;
     background: #FFF;
     padding: 24px;
+}
+
+.credit-usage-div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .credit-usage-div h4 {
@@ -3210,6 +3263,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
+}
+
+.credit {
+    display: flex;
+    flex-direction: column;
 }
 
 .sms {
@@ -3269,6 +3327,29 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.credit-info,
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.details-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-view-details {
+    text-align: center;
 }
 
 .credit-info h4,
