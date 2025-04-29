@@ -352,232 +352,377 @@
         padding: 12px;
     }
 
-    .menu-item a
-    {
-    font-size: 12px;
-    padding: 6px;
-    gap: 8px;
-}
+    .menu-item a {
+        font-size: 12px;
+        padding: 6px;
+        gap: 8px;
+    }
 
 
-.menu-list2 {
-    gap: 4px;
-}
+    .menu-list2 {
+        gap: 4px;
+    }
 
-.menu-list2 li a {
-    font-size: 10px;
-}
+    .menu-list2 li a {
+        font-size: 10px;
+    }
 
-.sidebar-accordion {
-    font-size: 12px;
-    line-height: 18px;
-    padding: 6px !important;
-}
+    .sidebar-accordion {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 6px !important;
+    }
 
-.sidebar-accordion span {
-    padding-left: 6px;
-}
+    .sidebar-accordion span {
+        padding-left: 6px;
+    }
 
-.offcanvas-header {
-    padding: 12px;
-}
+    .offcanvas-header {
+        padding: 12px;
+    }
 
-.filter-offcanvas .offcanvas-body {
-    padding: 12px;
-}
+    .filter-offcanvas .offcanvas-body {
+        padding: 12px;
+    }
 
-.filter-acdn-btn:not(.collapsed) {
-    font-size: 12px;
-    padding: 12px;
-}
+    .filter-acdn-btn:not(.collapsed) {
+        font-size: 12px;
+        padding: 12px;
+    }
 
-.filter-acdn-btn {
-    font-size: 12px;
-    padding: 12px;
-}
+    .filter-acdn-btn {
+        font-size: 12px;
+        padding: 12px;
+    }
 
-.filter-acdn .accordion-body {
-    padding: 8px;
-}
+    .filter-acdn .accordion-body {
+        padding: 8px;
+    }
 
-.filter-date {
-    padding: 6px 10px;
-}
+    .filter-date {
+        padding: 6px 10px;
+    }
 
-.filter-search {
-    background-size: 14px;
-    padding: 8px 6px 8px 28px;
-}
+    .filter-search {
+        background-size: 14px;
+        padding: 8px 6px 8px 28px;
+    }
 
-.menu-list .menu-item.active span {
-    font-size: 12px;
-    line-height: 18px;
-}
+    .menu-list .menu-item.active span {
+        font-size: 12px;
+        line-height: 18px;
+    }
 
-.contact-sub-items {
-    padding: 6px !important;
-}
+    .contact-sub-items {
+        padding: 6px !important;
+    }
 
-.menu-list .menu-item.active {
-    border-radius: 6px;
-}
+    .menu-list .menu-item.active {
+        border-radius: 6px;
+    }
 
-.app-section-menu {
-    padding: 12px;
-    gap: 8px;
-}
+    .app-section-menu {
+        padding: 12px;
+        gap: 8px;
+    }
 
-.apple-store {
-    padding: 6px;
-}
+    .apple-store {
+        padding: 6px;
+    }
 
-.play-store {
-    padding: 6px;
-}
+    .play-store {
+        padding: 6px;
+    }
 
-.table-action img {
-    width: 14px;
-    height: 14px;
-}
+    .table-action img {
+        width: 14px;
+        height: 14px;
+    }
 
-.page-link {
-    font-size: 12px;
-    padding: 4px 12px;
-}
+    .page-link {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
 
-.dt-length select {
-    font-size: 12px;
-}
+    .dt-length select {
+        font-size: 12px;
+    }
 
-.select-tag {
-    font-size: 12px;
-}
+    .select-tag {
+        font-size: 12px;
+    }
 
-.table-heading th {
-    padding: 12px !important;
-    font-size: 13px;
-}
+    .table-heading th {
+        padding: 12px !important;
+        font-size: 13px;
+    }
 
-.btn-grey {
-    padding: 6px 10px;
-    font-size: 12px;
-}
+    .btn-grey {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
 
-.btn-red {
-    padding: 6px 10px;
-    font-size: 12px;
-}
+    .btn-red {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
 
-/* Add contact modal */
+    /* Add contact modal */
 
-.addContact-modal-hdg h2 {
-    font-size: 20px;
-}
+    .addContact-modal-hdg h2 {
+        font-size: 20px;
+    }
 
-.details-header {
-    padding: 8px 80px;
-}
+    .details-header {
+        padding: 8px 80px;
+    }
 
-.addContactModal .main-container {
-    padding: 16px;
-    gap: 12px;
-}
+    .addContactModal .main-container {
+        padding: 16px;
+        gap: 12px;
+    }
 
-.addContact-Personal,
-.addContact-business {
-    padding: 12px;
-}
+    .addContact-Personal,
+    .addContact-business {
+        padding: 12px;
+    }
 
-.input-label {
-    font-size: 12px;
-}
+    .input-label {
+        font-size: 12px;
+    }
 
-.email-form-label {
-    font-size: 12px;
-}
+    .email-form-label {
+        font-size: 12px;
+    }
 
-.input-text {
-    padding: 8px 16px 10px 42px;
-    background-size: 14px;
-    font-size: 12px;
-}
+    .input-text {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
 
-.input-text::placeholder {
-    font-size: 12px;
-}
+    .input-text::placeholder {
+        font-size: 12px;
+    }
 
-.execution-input {
-    padding: 8px 16px 10px 42px;
-    background-size: 14px;
-    font-size: 12px;
-}
+    .execution-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
 
-.domain-input {
-    padding: 8px 16px 10px 42px;
-    background-size: 14px;
-    font-size: 12px;
-}
+    .domain-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
 
-.time-img {
-    width: 14px;
-    height: 14px;
-}
+    .time-img {
+        width: 14px;
+        height: 14px;
+    }
 
-.addContact-email-input {
-    padding: 8px 16px 10px 42px;
-    background-size: 14px;
-    font-size: 12px;
-}
+    .addContact-email-input {
+        padding: 8px 16px 10px 42px;
+        background-size: 14px;
+        font-size: 12px;
+    }
 
-.add-email {
-    font-size: 12px;
-    line-height: 18px;
-}
+    .add-email {
+        font-size: 12px;
+        line-height: 18px;
+    }
 
-.add-email img {
-    width: 16px;
-    height: 16px;
-}
+    .add-email img {
+        width: 16px;
+        height: 16px;
+    }
 
-.successfullyModal {
-    border-radius: 24px !important;
-}
+    .successfullyModal {
+        border-radius: 24px !important;
+    }
 
-.successfullyModal-body {
-    gap: 12px;
-}
+    .successfullyModal-body {
+        gap: 12px;
+    }
 
-.successfullyModal .modal-header {
-    padding: 12px;
-}
+    .successfullyModal .modal-header {
+        padding: 12px;
+    }
 
-.successfullyModal .modal-body {
-    padding: 12px 42px;
-}
+    .successfullyModal .modal-body {
+        padding: 12px 42px;
+    }
 
-.successfullyModal-body img {
-    width: 100px;
-    height: 100px;
-}
+    .successfullyModal-body img {
+        width: 100px;
+        height: 100px;
+    }
 
-.successfully-title h4 {
-    font-size: 16px;
-    line-height: 24px;
-}
+    .successfully-title h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
 
-.successfully-text p {
-    font-size: 12px;
-    text-align: center;
-}
+    .successfully-text p {
+        font-size: 12px;
+        text-align: center;
+    }
 
 
-/* Dashboard */
+    /* wallet css */
 
-.profile-name h4 {
-    font-size: 15px;
-}
+    .wallet-div1 {
+        padding: 12px;
+    }
 
-.profile-menu-item a{
-    font-size: 12px;
-}
+    .download-history-wrapper {
+        padding: 8px 12px;
+    }
+
+    .download-history {
+        font-size: 12px;
+    }
+
+    .credit-usage-card,
+    .credit-info-card,
+    .plan-details-card {
+        padding: 12px;
+    }
+
+    .balance-card {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .credit-points img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .credit-left {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .overall-credit {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .acct-holder-text,
+    .Expiry-date-text {
+        font-size: 10px;
+    }
+
+    .credit-usage-div h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .credit-usage-div span {
+        font-size: 10px;
+    }
+
+    .credit-usage-select {
+        font-size: 12px;
+    }
+
+    .sms {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .sms-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit h6 {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .whatsapp {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .whatsapp-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .email {
+        padding: 8px 12px;
+        min-height: 74px;
+    }
+
+    .email-img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .credit-info h4,
+    .plan-details h4 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .credit-info,
+    .plan-details {
+        gap: 12px;
+    }
+
+    .credit-per-sms,
+    .credit-per-email,
+    .credit-per-whatsapp,
+    .details-plan {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .sms-credit,
+    .email-credit,
+    .whatsapp-credit,
+    .details {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* tag master css */
+
+    .add-modal-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    form {
+        gap: 12px;
+    }
+
+    .text-area::placeholder {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .text-area {
+        background-size: 14px;
+    }
+
+    .add-modal {
+        padding: 16px;
+    }
+
+
+
+    /* Dashboard */
+
+    .profile-name h4 {
+        font-size: 15px;
+    }
+
+    .profile-menu-item a {
+        font-size: 12px;
+    }
 }
