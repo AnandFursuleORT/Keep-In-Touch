@@ -63,7 +63,9 @@ form {
     flex-direction: column;
     gap: 24px;
 }
-
+.addProduct-form {
+    gap: 6px;
+}
 /* Input form Style */
 
 .sign-form-input {
@@ -973,7 +975,7 @@ tbody {
     border-color: #EBEDF1 !important;
 }
 
-table th {
+.table-heading th {
     background-color: #FCE9E9 !important;
     text-align: center !important;
     padding: 16px !important;
@@ -982,14 +984,16 @@ table th {
     font-weight: 600;
 }
 
-table td {
+.Table td {
     padding: 16px !important;
     text-align: center !important;
     color: #67779A !important;
     font-size: 14px;
     font-weight: 400;
 }
-
+.daterangepicker td.active {
+    color: #fff !important;
+}
 .dt-length select {
     color: #0E285E;
     font-size: 14px;
@@ -3042,7 +3046,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 /* =========================== Events ============================== */
 
-.start-date {
+.start-date-event {
     color: #0E285E;
     font-size: 14px;
     font-weight: 500;
@@ -3387,4 +3391,41 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-weight: 600;
     line-height: 32px;
     text-decoration: none;
+}
+
+/* ============================= Dashboard ============================ */
+
+.profile-name h4 {
+    color: #0E285E;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0;
+}
+
+.profile-img {
+    height: 30px !important;
+    width: 30px !important;
+}
+
+.profile-menu-item a {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.profile-name a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.daterangepicker {
+    padding: 0 20px !important;
+
 }

@@ -18,8 +18,8 @@
     }
 
     .mobile-logo {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
     }
 
     .details-header {
@@ -56,7 +56,8 @@
         width: 280px !important;
     }
 
-    .notification {
+    .notification,
+    .profile-menu {
         padding: 8px 12px;
     }
 
@@ -245,7 +246,7 @@
         padding: 16px;
     }
 
-    table td {
+    .Table td {
         font-size: 12px;
         padding: 12px !important;
     }
@@ -340,219 +341,232 @@
         padding: 12px;
     }
 
-    .menu-item a {
-        font-size: 12px;
-        padding: 6px;
-        gap: 8px;
-    }
+    .menu-item a
+    {
+    font-size: 12px;
+    padding: 6px;
+    gap: 8px;
+}
 
-    .menu-list2 {
-        gap: 4px;
-    }
 
-    .menu-list2 li a {
-        font-size: 10px;
-    }
+.menu-list2 {
+    gap: 4px;
+}
 
-    .sidebar-accordion {
-        font-size: 12px;
-        line-height: 18px;
-        padding: 6px !important;
-    }
+.menu-list2 li a {
+    font-size: 10px;
+}
 
-    .sidebar-accordion span {
-        padding-left: 6px;
-    }
+.sidebar-accordion {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 6px !important;
+}
 
-    .offcanvas-header {
-        padding: 12px;
-    }
+.sidebar-accordion span {
+    padding-left: 6px;
+}
 
-    .filter-offcanvas .offcanvas-body {
-        padding: 12px;
-    }
+.offcanvas-header {
+    padding: 12px;
+}
 
-    .filter-acdn-btn:not(.collapsed) {
-        font-size: 12px;
-        padding: 12px;
-    }
+.filter-offcanvas .offcanvas-body {
+    padding: 12px;
+}
 
-    .filter-acdn-btn {
-        font-size: 12px;
-        padding: 12px;
-    }
+.filter-acdn-btn:not(.collapsed) {
+    font-size: 12px;
+    padding: 12px;
+}
 
-    .filter-acdn .accordion-body {
-        padding: 8px;
-    }
+.filter-acdn-btn {
+    font-size: 12px;
+    padding: 12px;
+}
 
-    .filter-date {
-        padding: 6px 10px;
-    }
+.filter-acdn .accordion-body {
+    padding: 8px;
+}
 
-    .filter-search {
-        background-size: 14px;
-        padding: 8px 6px 8px 28px;
-    }
+.filter-date {
+    padding: 6px 10px;
+}
 
-    .menu-list .menu-item.active span {
-        font-size: 12px;
-        line-height: 18px;
-    }
+.filter-search {
+    background-size: 14px;
+    padding: 8px 6px 8px 28px;
+}
 
-    .contact-sub-items {
-        padding: 6px !important;
-    }
+.menu-list .menu-item.active span {
+    font-size: 12px;
+    line-height: 18px;
+}
 
-    .menu-list .menu-item.active {
-        border-radius: 6px;
-    }
+.contact-sub-items {
+    padding: 6px !important;
+}
 
-    .app-section-menu {
-        padding: 12px;
-        gap: 8px;
-    }
+.menu-list .menu-item.active {
+    border-radius: 6px;
+}
 
-    .apple-store {
-        padding: 6px;
-    }
+.app-section-menu {
+    padding: 12px;
+    gap: 8px;
+}
 
-    .play-store {
-        padding: 6px;
-    }
+.apple-store {
+    padding: 6px;
+}
 
-    .table-action img {
-        width: 14px;
-        height: 14px;
-    }
+.play-store {
+    padding: 6px;
+}
 
-    .page-link {
-        font-size: 12px;
-        padding: 4px 12px;
-    }
+.table-action img {
+    width: 14px;
+    height: 14px;
+}
 
-    .dt-length select {
-        font-size: 12px;
-    }
+.page-link {
+    font-size: 12px;
+    padding: 4px 12px;
+}
 
-    .select-tag {
-        font-size: 12px;
-    }
+.dt-length select {
+    font-size: 12px;
+}
 
-    .table th {
-        padding: 12px !important;
-        font-size: 13px;
-    }
+.select-tag {
+    font-size: 12px;
+}
 
-    .btn-grey {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
+.table-heading th {
+    padding: 12px !important;
+    font-size: 13px;
+}
 
-    .btn-red {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
+.btn-grey {
+    padding: 6px 10px;
+    font-size: 12px;
+}
 
-    /* Add contact modal */
+.btn-red {
+    padding: 6px 10px;
+    font-size: 12px;
+}
 
-    .addContact-modal-hdg h2 {
-        font-size: 20px;
-    }
+/* Add contact modal */
 
-    .details-header {
-        padding: 8px 80px;
-    }
+.addContact-modal-hdg h2 {
+    font-size: 20px;
+}
 
-    .addContactModal .main-container {
-        padding: 16px;
-        gap: 12px;
-    }
+.details-header {
+    padding: 8px 80px;
+}
 
-    .addContact-Personal,
-    .addContact-business {
-        padding: 12px;
-    }
+.addContactModal .main-container {
+    padding: 16px;
+    gap: 12px;
+}
 
-    .input-label {
-        font-size: 12px;
-    }
+.addContact-Personal,
+.addContact-business {
+    padding: 12px;
+}
 
-    .email-form-label {
-        font-size: 12px;
-    }
+.input-label {
+    font-size: 12px;
+}
 
-    .input-text {
-        padding: 8px 16px 10px 42px;
-        background-size: 14px;
-        font-size: 12px;
-    }
+.email-form-label {
+    font-size: 12px;
+}
 
-    .input-text::placeholder {
-        font-size: 12px;
-    }
+.input-text {
+    padding: 8px 16px 10px 42px;
+    background-size: 14px;
+    font-size: 12px;
+}
 
-    .execution-input {
-        padding: 8px 16px 10px 42px;
-        background-size: 14px;
-        font-size: 12px;
-    }
+.input-text::placeholder {
+    font-size: 12px;
+}
 
-    .domain-input {
-        padding: 8px 16px 10px 42px;
-        background-size: 14px;
-        font-size: 12px;
-    }
+.execution-input {
+    padding: 8px 16px 10px 42px;
+    background-size: 14px;
+    font-size: 12px;
+}
 
-    .time-img {
-        width: 14px;
-        height: 14px;
-    }
+.domain-input {
+    padding: 8px 16px 10px 42px;
+    background-size: 14px;
+    font-size: 12px;
+}
 
-    .addContact-email-input {
-        padding: 8px 16px 10px 42px;
-        background-size: 14px;
-        font-size: 12px;
-    }
+.time-img {
+    width: 14px;
+    height: 14px;
+}
 
-    .add-email {
-        font-size: 12px;
-        line-height: 18px;
-    }
+.addContact-email-input {
+    padding: 8px 16px 10px 42px;
+    background-size: 14px;
+    font-size: 12px;
+}
 
-    .add-email img {
-        width: 16px;
-        height: 16px;
-    }
+.add-email {
+    font-size: 12px;
+    line-height: 18px;
+}
 
-    .successfullyModal {
-        border-radius: 24px !important;
-    }
+.add-email img {
+    width: 16px;
+    height: 16px;
+}
 
-    .successfullyModal-body {
-        gap: 12px;
-    }
+.successfullyModal {
+    border-radius: 24px !important;
+}
 
-    .successfullyModal .modal-header {
-        padding: 12px;
-    }
+.successfullyModal-body {
+    gap: 12px;
+}
 
-    .successfullyModal .modal-body {
-        padding: 12px 42px;
-    }
+.successfullyModal .modal-header {
+    padding: 12px;
+}
 
-    .successfullyModal-body img {
-        width: 100px;
-        height: 100px;
-    }
+.successfullyModal .modal-body {
+    padding: 12px 42px;
+}
 
-    .successfully-title h4 {
-        font-size: 16px;
-        line-height: 24px;
-    }
+.successfullyModal-body img {
+    width: 100px;
+    height: 100px;
+}
 
-    .successfully-text p {
-        font-size: 12px;
-        text-align: center;
-    }
+.successfully-title h4 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.successfully-text p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* Dashboard */
+
+.profile-name h4 {
+    font-size: 15px;
+}
+
+.profile-menu-item a{
+    font-size: 12px;
+}
 }

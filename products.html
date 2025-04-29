@@ -464,9 +464,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="contact-table-div table-responsive">
-                                <table id="example" class="table" style="width:100%">
-                                    <thead>
+                            <div class="product-table-div table-responsive">
+                                <table id="product" class="Table" style="width:100%">
+                                    <thead class="table-heading">
                                         <tr>
                                             <th>Sr.No</th>
                                             <th>Product Name</th>
@@ -605,7 +605,7 @@
     <!-- ======================= Modal for Add  ======================= -->
 
     <div class="modal fade" id="addProductsModal" tabindex="-1" aria-labelledby="addProductsModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content add-modal">
                 <div class="modal-header d-flex align-items-center justify-content-between">
                     <h4 class="modal-title add-modal-title" id="exampleModalLabel">Add Product</h4>
@@ -613,7 +613,7 @@
                         aria-label="Close" aria-label="Close">
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form class="addProduct-form">
                         <div class="drip-input-div">
                             <label for="dripInput1" class="form-label input-label mb-1">Product Name</label>
                             <input type="text" class="form-control input-text" id="dripInput1"
