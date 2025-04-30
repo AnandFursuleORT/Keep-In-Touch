@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid p-0 layout">
         <div class="row g-0">
-            <div class="col-lg-2 col-md-12 col-sm-12 d-none d-lg-block d-md-block sidebar-col">
+            <div class="col-lg-2 col-md-2 col-sm-12 d-none d-lg-block d-md-block sidebar-col">
                 <div class="sidebar" id="sidebar">
                     <div class="menu-div1">
                         <div class="logo">
@@ -43,13 +43,13 @@
                                                 <button class="accordion-button sidebar-accordion collapsed" type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#collapseaccordionContact"
                                                     aria-expanded="true" aria-controls="collapseOne">
-                                                    <img src="assets/images/contact-menu.svg" alt="">
+                                                    <img src="assets/images/contact-dark.svg" alt="">
                                                     <span>Contact</span>
                                                 </button>
                                             </div>
                                             <div id="collapseaccordionContact" class="accordion-collapse collapse show">
                                                 <div class="accordion-body contact-sub-items">
-                                                    <ul class="accdn-menu-list ps-3">
+                                                    <ul class="accdn-menu-list">
                                                         <li class="menu-item active">
                                                             <a href="contact-listing.html">
                                                                 <img src="assets/images/contact-listing.svg"
@@ -59,7 +59,7 @@
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="tag-master.html">
-                                                                <img src="assets/images/tags.svg" alt="dashboard-icon">
+                                                                <img src="assets/images/tags-menu-dark.svg" alt="dashboard-icon">
                                                                 <span>Tags</span>
                                                             </a>
                                                         </li>
@@ -94,7 +94,7 @@
                                             </div>
                                             <div id="collapseaccordionProduct" class="accordion-collapse collapse">
                                                 <div class="accordion-body contact-sub-items">
-                                                    <ul class="accdn-menu-list ps-3">
+                                                    <ul class="accdn-menu-list">
                                                         <li class="menu-item">
                                                             <a href="products.html">
                                                                 <img src="assets/images/contact-listing1.svg"
@@ -152,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-10 col-md-12 col-sm-12">
+            <div class="col-lg-10 col-md-10 col-sm-12">
                 <div class="main-content">
                     <div class="topbar d-none d-md-block d-lg-block">
                         <div class="topbar-div">
@@ -161,7 +161,6 @@
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
                                         <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#" class="link-item">Contact</a></li>
                                         <li class="breadcrumb-item active drip-active-item" aria-current="page">Contact
                                             Listing</li>
                                     </ol>
@@ -893,8 +892,8 @@
                     <nav style="--bs-breadcrumb-divider: url(/assets/images/breadcrumb-arrow.svg);"
                         aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
-                            <li class="breadcrumb-item"><a class="link-item">Home</a></li>
-                            <li class="breadcrumb-item"><a class="link-item">Contact listing</a></li>
+                            <li class="breadcrumb-item"><a href="" class="link-item">Home</a></li>
+                            <li class="breadcrumb-item"><a href="contact-listing.html" class="link-item">Contact listing</a></li>
                             <li class="breadcrumb-item active drip-active-item" aria-current="page">Add Contact</li>
                         </ol>
                     </nav>
@@ -1436,7 +1435,7 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
-    <script>new DataTable('#example', {
+    <script>new DataTable('#contact-table', {
             layout: {
                 topStart: null,
                 topEnd: null,
