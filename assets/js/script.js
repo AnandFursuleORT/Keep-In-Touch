@@ -126,6 +126,45 @@ document.getElementById('smsbackBtn').addEventListener('click', () => {
     setActiveStepSms(1);
 });
 
+// Steps whatsapp wizard js code in automation modal
+
+const steps2 = document.querySelectorAll('.whatsapp-step');
+const contents2 = document.querySelectorAll('.step-content2');
+
+function setActiveStepWhatsApp(stepNum) {
+    steps2.forEach((step2, index) => {
+        const circle2 = step2.querySelector('.step-circle');
+        const text2 = step2.querySelector('.step-subtext');
+
+        if (index < stepNum - 1) {
+            step2.classList.add('completed');
+            step2.classList.remove('active');
+            text2.textContent = 'Completed';
+        } else if (index === stepNum - 1) {
+            step2.classList.add('active');
+            step2.classList.remove('completed');
+            text2.textContent = 'In Progress';
+        } else {
+            step2.classList.remove('active', 'completed');
+            text2.textContent = 'Pending';
+        }
+
+        circle2.textContent = index + 1;
+    });
+
+    contents2.forEach((content, idx) => {
+        content.classList.toggle('hidden', idx !== stepNum - 1);
+    });
+}
+
+document.getElementById('whatsAppnextBtn').addEventListener('click', () => {
+    setActiveStepWhatsApp(2);
+});
+
+document.getElementById('whatsAppbackBtn').addEventListener('click', () => {
+    setActiveStepWhatsApp(1);
+});
+
 // script for active drip-bar toggle 
 
 document.getElementById("toggle-btn").addEventListener("click", function () {

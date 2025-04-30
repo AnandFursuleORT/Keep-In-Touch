@@ -58,14 +58,18 @@ body {
     padding: 0 80px;
 }
 
+
+
 form {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
+
 .addProduct-form {
     gap: 6px;
 }
+
 /* Input form Style */
 
 .sign-form-input {
@@ -125,10 +129,24 @@ input:not(:placeholder-shown)+label {
     pointer-events: none;
 }
 
+.sign-in-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .sign-in-form-input:focus {
     outline: none;
     border: 1px solid #67779A !important;
     box-shadow: none !important;
+}
+
+.form-heading-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .form-heading-text h4 {
@@ -441,7 +459,7 @@ input:not(:placeholder-shown)+label {
 .send-code-btn {
     padding: 16px;
     color: #E94B50;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 20px;
     font-weight: 700;
     border-radius: 12px;
@@ -791,7 +809,7 @@ input:not(:placeholder-shown)+label {
 .content2 {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .indicator {
@@ -813,14 +831,12 @@ input:not(:placeholder-shown)+label {
     color: #0E285E;
     font-size: 14px;
     font-weight: 600;
-    line-height: 20px;
 }
 
 .drip-name {
     color: #4B5F87;
     font-size: 14px;
     font-weight: 600;
-    line-height: 20px;
 }
 
 .add-button {
@@ -865,7 +881,6 @@ input:not(:placeholder-shown)+label {
     color: #0E285E;
     font-size: 22px;
     font-weight: 600;
-    line-height: 32px;
 }
 
 .table-div {
@@ -992,9 +1007,11 @@ tbody {
     font-size: 14px;
     font-weight: 400;
 }
+
 .daterangepicker td.active {
     color: #fff !important;
 }
+
 .dt-length select {
     color: #0E285E;
     font-size: 14px;
@@ -1257,7 +1274,7 @@ tbody {
 
 .add-drip-modal {
     border-radius: 24px !important;
-    padding: 24px !important;
+    padding: 24px;
 }
 
 .detail-img-div {
@@ -1332,14 +1349,12 @@ tbody {
     background: #E31E24;
 }
 
-/* .modal.fade .dripModal {
-    transform: translateY(100px) translateX(0);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+.modal-main-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
 }
-
-.modal.show .dripModal {
-    transform: translateY(0) translateX(0);
-} */
 
 .tooltip .tooltip-inner {
     color: #FAFAFC;
@@ -1526,12 +1541,88 @@ tbody {
 .auto-step-div {
     display: flex;
     padding: 24px;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
     border-radius: 24px;
     border: 1px solid #EBEDF1;
-    background: #FAFAFC;
-    height: 100%;
+    background-color: #FAFAFC;
+    gap: 16px;
+}
+
+.arrow {
+    font-size: 12px;
+    color: #4a5973;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #ebeff5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.completed .circle {
+    background: #fecd27;
+    color: #fff;
+}
+
+.stepsCircleDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px;
+}
+
+.check-label {
+    color: #67779A;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.check-label.active {
+    color: #0E285E;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.line {
+    width: 4px;
+    height: 50px;
+    background: #EBEDF1;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.line.ongoing {
+    background: #fecd27;
+}
+
+.line.active {
+    background: #18BB54;
+}
+
+.step:last-child .line {
+    display: none;
 }
 
 .auto-insert-div {
@@ -1980,8 +2071,9 @@ tbody {
 }
 
 .step-indicator {
-    max-width: 400px;
-    margin: auto;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .addContact-modal-hdg h2 {
@@ -2044,12 +2136,31 @@ tbody {
     pointer-events: none;
 }
 
-
 /* ========================== upload modal =========================== */
 .uploadMdal-title {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: flex-start;
+}
+
+.modal-hdr-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.md-body-div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.file-upload-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .uploadMdal-title h4 {
@@ -2159,7 +2270,7 @@ tbody {
 }
 
 .uploadModal {
-    padding: 24px !important;
+    padding: 24px;
     gap: 24px;
     border-radius: 24px !important
 }
@@ -2197,6 +2308,13 @@ tbody {
 
 .drip-footer {
     padding: 16px 80px;
+}
+
+.insert-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
 }
 
 /* ========================== Tag Master =========================== */
@@ -2354,7 +2472,7 @@ tbody {
     gap: 16px;
 }
 
-d-flex flex-column align-items-center gap-3 .successfully-text p {
+.successfully-text p {
     color: #67779A;
     font-size: 14px;
     font-weight: 500;
@@ -2512,11 +2630,11 @@ d-flex flex-column align-items-center gap-3 .successfully-text p {
 }
 
 .step-text {
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 .step-subtext {
-    font-size: 0.8rem;
+    font-size: 12px;
     color: #6c757d;
 }
 
@@ -2718,6 +2836,39 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-size: auto;
 }
 
+/* whatsapp modal css */
+
+.whatsapp-step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.whatsapp-step.active .step-subtext {
+    color: #246BFD;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.whatsapp-step.completed .step-circle {
+    background-color: #0E285E;
+    color: #FFFFFF;
+}
+
+.whatsapp-step.completed .step-subtext {
+    color: #18BB54;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.write-msg-text {
+    color: #E31E24;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
 
 /* template modal css */
 
@@ -3043,6 +3194,62 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border-radius: 6px;
     background-color: #EBEDF1;
     width: 100px;
+}
+
+/* Summary modal css */
+
+.modal-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.step-summary-div {
+    display: flex;
+    padding: 20px 50px 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid #DEE2E9;
+    background: #FAFAFC;
+}
+
+.summary-label {
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.summary-info {
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.summary-info-green {
+    color: #18BB54;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.action-div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.publish-btn {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background-color: #E94B50;
+    color: #FAFAFC;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 /* =========================== Events ============================== */
