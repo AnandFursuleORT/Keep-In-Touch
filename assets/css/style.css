@@ -570,6 +570,7 @@ input:not(:placeholder-shown)+label {
     flex-direction: column;
     gap: 4px;
     padding-left: 0px;
+    margin-bottom: 0;
 }
 
 .accdn-menu-list {
@@ -577,6 +578,7 @@ input:not(:placeholder-shown)+label {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    padding-left: 16px;
 }
 
 .menu-item {
@@ -1703,9 +1705,9 @@ tbody {
 .accordion-button:not(.collapsed) {
     color: #0E285E;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 24px;
-    background-color: #FAFAFC !important;
+   background-color: transparent !important;
     box-shadow: none !important;
 }
 
@@ -1716,6 +1718,7 @@ tbody {
     font-weight: 500;
     line-height: 24px;
     border-radius: 12px !important;
+    background-color: transparent
 }
 
 .sidebar-accordion span {
@@ -2525,6 +2528,49 @@ tbody {
 .line-div {
     background: #EBEDF1;
     height: 1px;
+}
+
+.profile-info-div {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.profile-img-btn {
+    display: flex;
+}
+.change-btn {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.4px;
+    border-radius: 5.6px 0px 0px 5.6px;
+    border: 1px solid #0E285E;
+    background-color: #0E285E;
+    padding: 8px;
+}
+.change-btn:hover {
+    background-color: #67779a;
+}
+.change-btn:active {
+    background-color: #001747;
+}
+
+.remove-btn {
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.4px;
+    border-radius: 0px 5.6px 5.6px 0px;
+    border: 1px solid #EBEDF1;
+    background-color: #EBEDF1;
+    padding: 8px;
+}
+.remove-btn:hover {
+    background-color: #b0b9cb;
+}
+.remove-btn:active {
+    background-color: #4b5f87;
+    color: #FFF;
 }
 
 /* automation wizard css */
