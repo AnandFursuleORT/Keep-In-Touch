@@ -59,7 +59,8 @@
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="tag-master.html">
-                                                                <img src="./assets/images/tags.svg" alt="dashboard-icon">
+                                                                <img src="./assets/images/tags.svg"
+                                                                    alt="dashboard-icon">
                                                                 <span>Tags</span>
                                                             </a>
                                                         </li>
@@ -175,20 +176,19 @@
                                 <div class="dropdown">
                                     <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="./assets/images/profile.svg" alt="profile">
-                                        <ul class="dropdown-menu ">
-                                            <li class="profile-menu-item profile-name">
-                                                <a class="dropdown-item" href="#"><img
-                                                        src="./assets/images/profile-img.png" class="profile-img"
-                                                        alt="profile">Atharva Mohurle</a>
-                                            </li>
-                                            <li class="profile-menu-item">
-                                                <a class="dropdown-item" target="_blank" href="settings.html"><img
-                                                        src="./assets/images/setting-menu.svg" alt="setting">Settings</a>
-                                            </li>
-                                            <li class="profile-menu-item"><a class="dropdown-item" href="sign-in.html"><img
-                                                        src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
-                                        </ul>
                                     </div>
+                                    <ul class="dropdown-menu ">
+                                        <li class="profile-menu-item profile-name">
+                                            <a class="dropdown-item" href="#"><img src="./assets/images/profile-img.png"
+                                                    class="profile-img" alt="profile">Atharva Mohurle</a>
+                                        </li>
+                                        <li class="profile-menu-item">
+                                            <a class="dropdown-item" href="settings.html"><img
+                                                    src="./assets/images/setting-menu.svg" alt="setting">Settings</a>
+                                        </li>
+                                        <li class="profile-menu-item"><a class="dropdown-item" href="sign-in.html"><img
+                                                    src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                    </ul>
                                 </div>
                                 <div class="help-support">
                                     <img src="./assets/images/help.svg" alt="help">
@@ -214,20 +214,19 @@
                                 <div class="dropdown">
                                     <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="./assets/images/profile.svg" alt="profile">
-                                        <ul class="dropdown-menu ">
-                                            <li class="menu-item profile-name">
-                                                <a class="dropdown-item" href="#"><img
-                                                        src="./assets/images/profile-img.png" class="profile-img"
-                                                        alt="profile">Atharva Mohurle</a>
-                                            </li>
-                                            <li class="profile-menu-item">
-                                                <a class="dropdown-item" target="_blank" href="settings.html"><img
-                                                        src="./assets/images/setting-menu.svg" alt="setting">Settings</a>
-                                            </li>
-                                            <li class="profile-menu-item"><a class="dropdown-item" href="sign-in.html"><img
-                                                        src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
-                                        </ul>
                                     </div>
+                                    <ul class="dropdown-menu ">
+                                        <li class="profile-menu-item profile-name">
+                                            <a class="dropdown-item" href="#"><img src="./assets/images/profile-img.png"
+                                                    class="profile-img" alt="profile">Atharva Mohurle</a>
+                                        </li>
+                                        <li class="profile-menu-item">
+                                            <a class="dropdown-item" href="settings.html"><img
+                                                    src="./assets/images/setting-menu.svg" alt="setting">Settings</a>
+                                        </li>
+                                        <li class="profile-menu-item"><a class="dropdown-item" href="sign-in.html"><img
+                                                    src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                    </ul>
                                 </div>
                                 <div class="help-support">
                                     <img src="./assets/images/help.svg" alt="help">
@@ -496,11 +495,12 @@
                                 </div>
 
                                 <div class="table-search d-flex align-items-center gap-3">
+
+                                    <input type="search" class="form-control search " id="dt-search"
+                                        placeholder="Search">
                                     <div class="table-filter" role="button">
                                         <img src="./assets/images/filter.svg" alt="filter">
                                     </div>
-                                    <input type="search" class="form-control search " id="dt-search"
-                                        placeholder="Search">
                                 </div>
                             </div>
 
@@ -508,7 +508,7 @@
                                 <div class="tab-pane fade show active" id="pills-active" role="tabpanel"
                                     aria-labelledby="pills-active-tab" tabindex="0">
                                     <div class="drip-table-div table-responsive">
-                                        <table id="drip-table" class="Table" style="width:100%">
+                                        <table id="drip-active-table" class="Table" style="width:100%">
                                             <thead class="table-heading">
                                                 <tr>
                                                     <th>Sr.No</th>
@@ -946,9 +946,885 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="pills-event" role="tabpanel"
-                                    aria-labelledby="pills-event-tab" tabindex="0">...</div>
+                                    aria-labelledby="pills-event-tab" tabindex="0">
+                                    <div class="drip-table-div table-responsive">
+                                        <table id="drip-event-table" class="Table" style="width:100%">
+                                            <thead class="table-heading">
+                                                <tr>
+                                                    <th>Sr.No</th>
+                                                    <th>Name</th>
+                                                    <th>Code</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>No. Steps</th>
+                                                    <th>No. Contact</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-warning">Inactive</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-warning">Inactive</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-pending">Pending</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-pending">Pending</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-danger">Expired</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                                 <div class="tab-pane fade" id="pills-draft" role="tabpanel"
-                                    aria-labelledby="pills-draft-tab" tabindex="0">...</div>
+                                    aria-labelledby="pills-draft-tab" tabindex="0">
+                                    <div class="drip-table-div table-responsive">
+                                        <table id="drip-draft-table" class="Table" style="width:100%">
+                                            <thead class="table-heading">
+                                                <tr>
+                                                    <th>Sr.No</th>
+                                                    <th>Name</th>
+                                                    <th>Code</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>No. Steps</th>
+                                                    <th>No. Contact</th>
+                                                    <th>Status</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-warning">Inactive</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-warning">Inactive</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-pending">Pending</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-pending">Pending</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-danger">Expired</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>15</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>17</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td class="table-text-dark">Samuel Schmidt</td>
+                                                    <td>#573d7d</td>
+                                                    <td>23-02-24</td>
+                                                    <td>00:00PM</td>
+                                                    <td>3</td>
+                                                    <td>3</td>
+                                                    <td><span class="badge badge-light-success">Active</span></td>
+                                                    <td>
+                                                        <div
+                                                            class="table-icons-div d-flex align-items-center justify-content-center gap-3">
+                                                            <img src="./assets/images/edit.svg" alt="edit"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Edit Drip">
+                                                            <img src="./assets/images/Group.png" alt=""
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Stop Drip">
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1053,7 +1929,8 @@
                                                         <option value="2">Type2</option>
                                                         <option value="3">Type3</option>
                                                     </select>
-                                                    <img src="./assets/images/Drips.svg" class="drips-image" alt="drips">
+                                                    <img src="./assets/images/Drips.svg" class="drips-image"
+                                                        alt="drips">
                                                 </div>
                                             </div>
                                         </div>
@@ -1242,7 +2119,8 @@
                                                 <li class="add-step-li">
                                                     <a class="dropdown-item" data-bs-toggle="modal"
                                                         data-bs-target="#WhatsAppautomationModal">
-                                                        <img src="./assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        <img src="./assets/images/whatsapp-icon.svg"
+                                                            alt="whatsapp-icon">
                                                         WhatsApp
                                                     </a>
                                                 </li>
@@ -1341,7 +2219,8 @@
                                                 <li class="add-step-li">
                                                     <a class="dropdown-item" data-bs-toggle="modal"
                                                         data-bs-target="#WhatsAppautomationModal">
-                                                        <img src="./assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        <img src="./assets/images/whatsapp-icon.svg"
+                                                            alt="whatsapp-icon">
                                                         WhatsApp
                                                     </a>
                                                 </li>
@@ -1379,7 +2258,7 @@
                                                 <img src="./assets/images/step-circle.svg" alt="check-circle">
                                             </div>
                                             <div class="check-label">1. E-mail</div>
-                                            <div class="line ongoing"></div>
+                                            <div class="automation-line ongoing"></div>
                                         </div>
 
                                         <div class="step">
@@ -1387,7 +2266,7 @@
                                                 <img src="./assets/images/step-circle-uncheck.svg" alt="check-circle">
                                             </div>
                                             <div class="check-label">2. SMS</div>
-                                            <div class="line"></div>
+                                            <div class="automation-line"></div>
                                         </div>
 
                                         <div class="step">
@@ -1848,7 +2727,8 @@
                                                 <li class="add-step-li">
                                                     <a class="dropdown-item" data-bs-toggle="modal"
                                                         data-bs-target="#WhatsAppautomationModal">
-                                                        <img src="./assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        <img src="./assets/images/whatsapp-icon.svg"
+                                                            alt="whatsapp-icon">
                                                         WhatsApp
                                                     </a>
                                                 </li>
@@ -1886,7 +2766,7 @@
                                                 <img src="./assets/images/circle-active.svg" alt="check-circle-active">
                                             </div>
                                             <div class="check-label active">1. E-mail</div>
-                                            <div class="line active"></div>
+                                            <div class="automation-line active"></div>
                                         </div>
 
                                         <div class="step">
@@ -1894,7 +2774,7 @@
                                                 <img src="./assets/images/step-circle.svg" alt="check-circle">
                                             </div>
                                             <div class="check-label">2. SMS</div>
-                                            <div class="line ongoing"></div>
+                                            <div class="automation-line ongoing"></div>
                                         </div>
 
                                         <div class="step">
@@ -2369,7 +3249,8 @@
                                                 <li class="add-step-li">
                                                     <a class="dropdown-item" data-bs-toggle="modal"
                                                         data-bs-target="#WhatsAppautomationModal">
-                                                        <img src="./assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        <img src="./assets/images/whatsapp-icon.svg"
+                                                            alt="whatsapp-icon">
                                                         WhatsApp
                                                     </a>
                                                 </li>
@@ -2407,7 +3288,7 @@
                                                 <img src="./assets/images/circle-active.svg" alt="check-circle-active">
                                             </div>
                                             <div class="check-label active">1. E-mail</div>
-                                            <div class="line active"></div>
+                                            <div class="automation-line active"></div>
                                         </div>
 
                                         <div class="step">
@@ -2415,7 +3296,7 @@
                                                 <img src="./assets/images/circle-active.svg" alt="check-circle">
                                             </div>
                                             <div class="check-label active">2. SMS</div>
-                                            <div class="line active"></div>
+                                            <div class="automation-line active"></div>
                                         </div>
 
                                         <div class="step">
@@ -2476,8 +3357,8 @@
                                                             <option>whatsapp ID 1</option>
                                                             <option>whatsapp ID 2</option>
                                                         </select>
-                                                        <img src="./assets/images/whatsapp-business.svg" class="time-img"
-                                                            alt="sender-img">
+                                                        <img src="./assets/images/whatsapp-business.svg"
+                                                            class="time-img" alt="sender-img">
                                                     </div>
                                                 </div>
                                             </div>
@@ -2723,7 +3604,8 @@
                                             <ul class="dropdown-menu add-step-menu">
                                                 <li class="add-step-li">
                                                     <a class="dropdown-item" href="#">
-                                                        <img src="./assets/images/whatsapp-icon.svg" alt="whatsapp-icon">
+                                                        <img src="./assets/images/whatsapp-icon.svg"
+                                                            alt="whatsapp-icon">
                                                         WhatsApp
                                                     </a>
                                                 </li>
@@ -2961,7 +3843,33 @@
 
     <!-- ============ datable ============ -->
     <script>
-        new DataTable('#drip-table', {
+        new DataTable('#drip-active-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            },
+        });
+    </script>
+    <script>
+        new DataTable('#drip-event-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            },
+        });
+    </script>
+    <script>
+        new DataTable('#drip-draft-table', {
             layout: {
                 topStart: null,
                 topEnd: null,

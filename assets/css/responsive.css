@@ -397,11 +397,11 @@
     }
 
     .nav-pills .table-tabs-link.active {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .table-tabs-link:hover {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .badge {
@@ -417,11 +417,7 @@
         font-size: 10px;
     }
 
-    .sidebar-accordion {
-        font-size: 12px;
-        line-height: 18px;
-        padding: 6px !important;
-    }
+  
 
     .sidebar-accordion span {
         padding-left: 6px;
@@ -509,7 +505,7 @@
 
     .table-heading th {
         padding: 12px !important;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .btn-grey {
@@ -847,12 +843,12 @@
     }
 
     .sign-form-input {
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 12px;
+        padding: 6px 12px;
     }
 
     .input_wrap label {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px 12px;
     }
 
@@ -881,7 +877,7 @@
     }
 
     .send-code-btn {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px;
     }
 
@@ -1401,8 +1397,12 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1280px) {
+    .step span {
+        font-size: 10px;
+    }
+    
     .heading h4 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 28px;
     }
 
@@ -1434,13 +1434,13 @@
         line-height: 26px;
     }
 
-    .table-div {
+    /* .table-div {
         padding: 10px;
-    }
+    } */
 
     .Table td {
-        font-size: 12px;
-        padding: 10px !important;
+        font-size: 11px;
+        padding: 8px !important;
     }
 
     .table-div1 {
@@ -1478,9 +1478,14 @@
         padding: 8px 10px;
     }
 
+    .table-filter img {
+        width: 14px;
+        height: 14px;
+    }
+
     .page-content {
-        padding: 12px;
-        gap: 8px;
+        padding: 24px;
+        gap: 16px;
     }
 
     .select-tag-text {
@@ -1545,8 +1550,7 @@
     }
 
     .sidebar {
-        position: fixed;
-        width: 215px;
+        width: 213px;
     }
 
     .sidebar .logo {
@@ -1560,8 +1564,13 @@
 
     .menu-item a {
         font-size: 12px;
-        padding: 6px;
+        padding: 4px;
         gap: 8px;
+    }
+
+    .menu-item img {
+        height: 14px;
+        width: 14px;
     }
 
     .table-tabs-link {
@@ -1569,10 +1578,6 @@
     }
 
     .nav-pills .table-tabs-link.active {
-        font-size: 18px;
-    }
-
-    .table-tabs-link:hover {
         font-size: 16px;
     }
 
@@ -1592,7 +1597,6 @@
     .sidebar-accordion {
         font-size: 12px;
         line-height: 18px;
-        padding: 6px !important;
     }
 
     .sidebar-accordion span {
@@ -1649,7 +1653,7 @@
     }
 
     .app-section-menu {
-        padding: 12px;
+        padding: 12px 24px;
         gap: 8px;
     }
 
@@ -1680,7 +1684,7 @@
     }
 
     .table-heading th {
-        padding: 12px !important;
+        padding: 10px !important;
         font-size: 13px;
     }
 
@@ -2014,17 +2018,22 @@
     }
 
     .form-heading-text h4 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 28px;
     }
-
-    .sign-form-input {
+    .form-heading-text p{
         font-size: 14px;
-        padding: 8px 12px;
+    }
+     .dont-have-acct-text, .have-acct-text  {
+        font-size: 14px;
+     }
+    .sign-form-input {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 
     .input_wrap label {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px 12px;
     }
 
@@ -2053,7 +2062,7 @@
     }
 
     .send-code-btn {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px;
     }
 
@@ -2067,7 +2076,7 @@
     }
 
     .sign-in-btn {
-        padding: 8px;
+        padding: 6px;
     }
 
     .sign-in-btn a {
@@ -2572,23 +2581,44 @@
     }
 }
 
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
+@media screen and (min-width: 1281px) and (max-width: 1366px) {
     .sidebar {
-        position: fixed;
-        width: 240px;
+
+        width: 230px;
     }
+
+   
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1919px) {
+@media screen and (min-width: 1376px) and (max-width: 1440px) {
     .sidebar {
-        position: fixed;
-        width: 255px;
+
+        width: 240px;
     }
+
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1536px) {
+    .sidebar {
+
+        width: 240px;
+    }
+
+
+}
+
+@media screen and (min-width: 1537px) and (max-width: 1919px) {
+    .sidebar {
+
+        width: 265px;
+    }
+
+
 }
 
 @media screen and (width: 1920px) {
     .sidebar {
-        position: fixed;
         width: 320px;
     }
+   
 }
