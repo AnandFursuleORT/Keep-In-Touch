@@ -131,7 +131,7 @@
     /* wallet css */
 
     .wallet-div1 {
-        padding: 16px;
+        padding: 10px;
     }
 
     .download-history-wrapper {
@@ -230,6 +230,11 @@
     form {
         gap: 16px;
     }
+
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -272,7 +277,7 @@
 
     .Table td {
         font-size: 10px;
-        padding: 10px !important;
+        padding: 5px !important;
     }
 
     .table-div1 {
@@ -602,7 +607,7 @@
     }
 
     .successfullyModal .modal-body {
-        padding: 12px 42px;
+        padding: 16px 42px;
     }
 
     .successfullyModal-body img {
@@ -623,7 +628,7 @@
     /* wallet css */
 
     .wallet-div1 {
-        padding: 12px;
+        padding: 10px;
     }
 
     .download-history-wrapper {
@@ -637,7 +642,7 @@
     .credit-usage-card,
     .credit-info-card,
     .plan-details-card {
-        padding: 12px;
+        padding: 10px;
     }
 
     .balance-card {
@@ -857,7 +862,8 @@
         font-size: 12px !important;
     }
 
-    .next-step {
+    .next-step,
+    .prev-step {
         font-size: 14px;
         padding: 8px;
     }
@@ -868,7 +874,7 @@
     }
 
     .file-upload {
-        font-size: 14px;
+        font-size: 12px;
         padding: 8px 12px;
     }
 
@@ -1041,7 +1047,7 @@
     .add-step-btn {
         font-size: 14px;
         background-size: 14px;
-        padding: 6px 24px 8px 12px;
+        padding: 6px 25px 8px 25px;
     }
 
     .add-step-btn img {
@@ -1144,7 +1150,7 @@
     }
 
     .add-step-li {
-        width: 120px;
+        width: 135px;
     }
 
     .add-step-li .dropdown-item {
@@ -1394,6 +1400,48 @@
     .plain-details p {
         font-size: 14px;
     }
+
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    /*=========================== team Access & Permission ====================*/
+
+    .setting-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .setting-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    /*=========================== Change Password  ====================*/
+
+    .modal-changePasswordModal,
+    .modal-twoFactorAuthModal {
+        padding: 16px;
+    }
+
+    .changePassword-wrapper,
+    .two-factor-auth-wrapper {
+        gap: 12px;
+    }
+
+    .two-factor-auth-wrapper2 {
+        gap: 4px;
+    }
+
+    .two-factor-auth-input {
+        padding: 12px;
+    }
+
+    .setting-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1280px) {
@@ -1407,7 +1455,7 @@
     }
 
     .add-button {
-        padding: 8px 12px;
+        padding: 8px 25px;
         font-size: 12px;
     }
 
@@ -1440,7 +1488,7 @@
 
     .Table td {
         font-size: 11px;
-        padding: 8px !important;
+        padding: 5px !important;
     }
 
     .table-div1 {
@@ -1484,7 +1532,7 @@
     }
 
     .page-content {
-        padding: 24px;
+        padding: 18px;
         gap: 16px;
     }
 
@@ -1782,7 +1830,7 @@
     }
 
     .successfullyModal .modal-body {
-        padding: 12px 42px;
+        padding: 16px 42px;
     }
 
     .successfullyModal-body img {
@@ -1803,7 +1851,7 @@
     /* wallet css */
 
     .wallet-div1 {
-        padding: 12px;
+        padding: 10px;
     }
 
     .download-history-wrapper {
@@ -1817,7 +1865,7 @@
     .credit-usage-card,
     .credit-info-card,
     .plan-details-card {
-        padding: 12px;
+        padding: 10px;
     }
 
     .balance-card {
@@ -2046,7 +2094,8 @@
         font-size: 12px !important;
     }
 
-    .next-step {
+    .next-step,
+    .prev-step {
         font-size: 14px;
         padding: 8px;
     }
@@ -2057,7 +2106,7 @@
     }
 
     .file-upload {
-        font-size: 14px;
+        font-size: 12px;
         padding: 8px 12px;
     }
 
@@ -2230,7 +2279,7 @@
     .add-step-btn {
         font-size: 14px;
         background-size: 14px;
-        padding: 6px 24px 8px 12px;
+        padding: 6px 25px 8px 25px;
     }
 
     .add-step-btn img {
@@ -2333,7 +2382,7 @@
     }
 
     .add-step-li {
-        width: 120px;
+        width: 135px;
     }
 
     .add-step-li .dropdown-item {
@@ -2583,6 +2632,45 @@
     .plain-details p {
         font-size: 14px;
     }
+
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    /*=========================== team Access & Permission ====================*/
+
+    .setting-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .setting-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    /*=========================== Change Password  ====================*/
+
+    .modal-changePasswordModal,
+    .modal-twoFactorAuthModal {
+        padding: 16px;
+    }
+
+    .changePassword-wrapper,
+    .two-factor-auth-wrapper {
+        gap: 12px;
+    }
+
+    .two-factor-auth-input {
+        padding: 12px;
+    }
+
+    .setting-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1366px) {
@@ -2601,7 +2689,7 @@
     }
 
     .add-button {
-        padding: 8px 12px;
+        padding: 8px 25px;
         font-size: 12px;
     }
 
@@ -2634,7 +2722,7 @@
 
     .Table td {
         font-size: 11px;
-        padding: 8px !important;
+        padding: 5px !important;
     }
 
     .table-div1 {
@@ -2678,7 +2766,7 @@
     }
 
     .page-content {
-        padding: 24px;
+        padding: 18px;
         gap: 16px;
     }
 
@@ -2743,7 +2831,7 @@
         line-height: 18px;
     }
 
-  
+
 
     .sidebar .logo {
         padding: 12px 14px;
@@ -2974,7 +3062,7 @@
     }
 
     .successfullyModal .modal-body {
-        padding: 12px 42px;
+        padding: 16px 42px;
     }
 
     .successfullyModal-body img {
@@ -2995,7 +3083,7 @@
     /* wallet css */
 
     .wallet-div1 {
-        padding: 12px;
+        padding: 10px;
     }
 
     .download-history-wrapper {
@@ -3009,7 +3097,7 @@
     .credit-usage-card,
     .credit-info-card,
     .plan-details-card {
-        padding: 12px;
+        padding: 10px;
     }
 
     .balance-card {
@@ -3238,7 +3326,8 @@
         font-size: 12px !important;
     }
 
-    .next-step {
+    .next-step,
+    .prev-step {
         font-size: 14px;
         padding: 8px;
     }
@@ -3422,7 +3511,7 @@
     .add-step-btn {
         font-size: 14px;
         background-size: 14px;
-        padding: 6px 24px 8px 12px;
+        padding: 6px 25px 8px 25px;
     }
 
     .add-step-btn img {
@@ -3525,7 +3614,7 @@
     }
 
     .add-step-li {
-        width: 120px;
+        width: 135px;
     }
 
     .add-step-li .dropdown-item {
@@ -3776,6 +3865,45 @@
         font-size: 14px;
     }
 
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    /*=========================== team Access & Permission ====================*/
+
+    .setting-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .setting-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    /*=========================== Change Password  ====================*/
+
+    .modal-changePasswordModal,
+    .modal-twoFactorAuthModal {
+        padding: 16px;
+    }
+
+    .changePassword-wrapper,
+    .two-factor-auth-wrapper {
+        gap: 12px;
+    }
+
+    .two-factor-auth-input {
+        padding: 12px;
+    }
+
+    .setting-input {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+
 }
 
 @media screen and (min-width: 1376px) and (max-width: 1440px) {
@@ -3783,17 +3911,18 @@
 
         width: 240px;
     }
+
     .step span {
         font-size: 10px;
     }
-    
+
     .heading h4 {
         font-size: 20px;
         line-height: 28px;
     }
 
     .add-button {
-        padding: 8px 12px;
+        padding: 8px 25px;
         font-size: 12px;
     }
 
@@ -3826,7 +3955,7 @@
 
     .Table td {
         font-size: 11px;
-        padding: 8px !important;
+        padding: 5px !important;
     }
 
     .table-div1 {
@@ -3870,7 +3999,7 @@
     }
 
     .page-content {
-        padding: 24px;
+        padding: px;
         gap: 16px;
     }
 
@@ -3935,7 +4064,7 @@
         line-height: 18px;
     }
 
-   
+
 
     .sidebar .logo {
         padding: 12px 14px;
@@ -4166,7 +4295,7 @@
     }
 
     .successfullyModal .modal-body {
-        padding: 12px 42px;
+        padding: 16px 42px;
     }
 
     .successfullyModal-body img {
@@ -4187,7 +4316,7 @@
     /* wallet css */
 
     .wallet-div1 {
-        padding: 12px;
+        padding: 1px;
     }
 
     .download-history-wrapper {
@@ -4201,7 +4330,7 @@
     .credit-usage-card,
     .credit-info-card,
     .plan-details-card {
-        padding: 12px;
+        padding: 10px;
     }
 
     .balance-card {
@@ -4405,12 +4534,16 @@
         font-size: 18px;
         line-height: 28px;
     }
-    .form-heading-text p{
+
+    .form-heading-text p {
         font-size: 14px;
     }
-     .dont-have-acct-text, .have-acct-text  {
+
+    .dont-have-acct-text,
+    .have-acct-text {
         font-size: 14px;
-     }
+    }
+
     .sign-form-input {
         font-size: 12px;
         padding: 6px 12px;
@@ -4426,7 +4559,8 @@
         font-size: 12px !important;
     }
 
-    .next-step {
+    .next-step,
+    .prev-step {
         font-size: 14px;
         padding: 8px;
     }
@@ -4610,7 +4744,7 @@
     .add-step-btn {
         font-size: 14px;
         background-size: 14px;
-        padding: 6px 24px 8px 12px;
+        padding: 6px 25px 8px 25px;
     }
 
     .add-step-btn img {
@@ -4713,7 +4847,7 @@
     }
 
     .add-step-li {
-        width: 120px;
+        width: 135px;
     }
 
     .add-step-li .dropdown-item {
@@ -4962,6 +5096,44 @@
 
     .plain-details p {
         font-size: 14px;
+    }
+
+    .table-dropdown-menu-item img {
+        height: 14px;
+        width: 14px;
+    }
+
+    /*=========================== team Access & Permission ====================*/
+
+    .setting-modal-hdg {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .setting-modal-p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    /*=========================== Change Password  ====================*/
+
+    .modal-changePasswordModal,
+    .modal-twoFactorAuthModal {
+        padding: 16px;
+    }
+
+    .changePassword-wrapper,
+    .two-factor-auth-wrapper {
+        gap: 12px;
+    }
+
+    .two-factor-auth-input {
+        padding: 12px;
+    }
+
+    .setting-input {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 
 }

@@ -41,17 +41,17 @@
                             <div class="circle">1</div>
                             <span class="step-details">Company Details</span>
                         </div>
-                        <div class="acitve-line active"></div>
+                        <div class="active-line active"></div>
                         <div class="step">
                             <div class="circle">2</div>
                             <span class="step-details">Event Details</span>
                         </div>
-                        <div class="acitve-line"></div>
+                        <div class="active-line"></div>
                         <div class="step">
                             <div class="circle">3</div>
                             <span class="step-details">Brand Details</span>
                         </div>
-                        <div class="acitve-line"></div>
+                        <div class="active-line"></div>
                         <div class="step">
                             <div class="circle">4</div>
                             <span class="step-details">Confirm Identity</span>
@@ -128,7 +128,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-danger next-step">Next</button>
+                            <button type="button" class="next-step">Next</button>
                         </div>
 
                         <!-- Step 2, 3, 4 (Hidden by default) -->
@@ -165,7 +165,7 @@
                                         <label>Stall No.</label>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-2">
+                                <div class="col-md-6 mb-3">
                                     <select class="sign-form-input form-control input-dropdown dropdown-arrow">
                                         <option selected>Category</option>
                                         <option value="1">Category</option>
@@ -173,11 +173,15 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="d-flex flex-column gap-3">
-                                <button type="button" class="btn btn-danger next-step">Next</button>
-                                <button type="button" class="skip-step">Skip</button>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex gap-3">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                                <div>
+                                    <button type="button" class="skip-step">Skip</button>
+                                </div>
                             </div>
-
                         </div>
                         <div class="form-step">
                             <div class="input_wrap mb-2">
@@ -190,9 +194,14 @@
                             <div class="file-upload info-btn">
                                 <span>Upload</span>
                             </div>
-                            <div class="d-flex flex-column gap-3">
-                                <button type="button" class="btn btn-danger next-step">Next</button>
-                                <button type="button" class="skip-step">Skip</button>
+                            <div class="d-flex flex-column gap-2">
+                                <div class="d-flex gap-3">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                                <div>
+                                    <button type="button" class="skip-step">Skip</button>
+                                </div>
                             </div>
                         </div>
                         <div class="form-step">
@@ -249,7 +258,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="drip.html" class="sign-up-btn" role="button">Sign Up</a>
+                                <div class="d-flex gap-3">
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <a href="drip.html" class="sign-up-btn" role="button">Sign Up</a>
+                                </div>
                         </div>
 
                         <div class="have-acct">
