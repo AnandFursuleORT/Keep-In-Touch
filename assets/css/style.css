@@ -1041,6 +1041,11 @@ table {
     border-spacing: 0;
 }
 
+.dt-layout-full {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
 /* Keep tbody border without affecting the radius */
 tbody {
     border: 1px solid #EBEDF1 !important;
@@ -1469,7 +1474,10 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
 }
 
 .tooltip .tooltip-arrow::before {
-    border-bottom-color: #67779A !important;
+    /* border-bottom-color: #67779A !important; */
+    border-right-color: #67779A !important;
+    border-left-color: #67779A !important;
+    /* border-top-color: #67779A !important; */
 }
 
 .drip-select1 {
@@ -2453,7 +2461,7 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    /* gap: 16px; */
     border-radius: 24px !important;
 }
 
@@ -2464,7 +2472,10 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
 
 .add-modal .modal-body {
     padding: 0px !important;
+    overflow-x: hidden;
 }
+
+
 
 .add-modal .modal-header {
     border-bottom: none !important;
@@ -2646,6 +2657,14 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     font-weight: 500;
 }
 
+.profile-section,
+.account-section {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 16px;
+}
+
 .setting-tab-hdg h4 {
     color: #0E285E;
     font-size: 18px;
@@ -2670,13 +2689,13 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
 
 .change-btn {
     color: #FFF;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 20.4px;
     border-radius: 5.6px 0px 0px 5.6px;
     border: 1px solid #0E285E;
     background-color: #0E285E;
-    padding: 8px;
+    padding: 2px 4px;
 }
 
 .change-btn:hover {
@@ -2689,13 +2708,13 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
 
 .remove-btn {
     color: #67779A;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 20.4px;
     border-radius: 0px 5.6px 5.6px 0px;
     border: 1px solid #EBEDF1;
     background-color: #EBEDF1;
-    padding: 8px;
+    padding: 2px 4px;
 }
 
 .remove-btn:hover {
@@ -2716,7 +2735,7 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
 .account-content-div {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
 }
 
 .acct-setting-btn {
@@ -3680,6 +3699,30 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     gap: 8px;
 }
 
+.event-booth-input {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("../images/event-booth-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 4% center;
+}
+
+.event-location-input {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("../images/location-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 4% center;
+}
+
 /* =========================== Wallet =============================== */
 
 .download-history-wrapper {
@@ -4090,7 +4133,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .steps .step {
     text-align: center;
-    flex: 0 0 auto;
 }
 
 .steps .step span {
@@ -4133,10 +4175,41 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     margin-bottom: 0;
 }
 
+
+/* ================= add user ======================= */
+.user-role-management {
+    border-radius: 12px;
+    border: 1px solid #E9E9E9;
+    background-color: #FFF;
+    padding: 12px;
+}
+
+.user-role-management-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.user-role-management-header h6,
+.user-role-management-header label {
+    color: #0E285E;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.form-switch {
+    display: flex !important;
+}
+
 /* ===================== Change Password ============= */
 
 .modal-changePasswordModal,
-.modal-twoFactorAuthModal {
+.modal-twoFactorAuthModal,
+.modal-acctActivateModal,
+.modal-loginHistoryModal,
+.modal-chooseLangModal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4148,7 +4221,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .changePassword-wrapper,
-.two-factor-auth-wrapper {
+.two-factor-auth-wrapper,
+.acctActivate-wrapper,
+.loginHistory-wrapper,
+.chooseLang-wrapper {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -4163,7 +4239,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .changePassword-title,
-.two-factor-auth-title {
+.two-factor-auth-title,
+.acctActivate-title,
+.loginHistory-title,
+.chooseLang-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -4171,14 +4250,20 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .changePassword-img img,
-.two-factor-auth-img img {
+.two-factor-auth-img img,
+.acctActivate-img,
+.loginHistory-img,
+.chooseLang-img {
     padding: 12px;
     border-radius: 12px;
     background-color: #FCE9E9;
 }
 
 .changePassword-title h6,
-.two-factor-auth-title h6 {
+.two-factor-auth-title h6,
+.acctActivate-title h6,
+.loginHistory-title h6,
+.chooseLang-title h6 {
     color: #0E285E;
     text-align: center;
     font-size: 18px;
@@ -4188,7 +4273,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .changePassword-title p,
-.two-factor-auth-title {
+.two-factor-auth-title,
+.acctActivate-title p,
+.loginHistory-title p,
+.chooseLang-title p {
     color: #67779A;
     text-align: center;
     font-size: 12px;
@@ -4228,7 +4316,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 /* ================================= twoFactor Authentication Modal =============================== */
-.two-factor-auth-input {
+.two-factor-auth-input,
+.acctActivate-input {
     border-radius: 16px;
     border: 1px solid #EBEDF1;
     background: #FFF;
@@ -4240,7 +4329,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .two-factor-auth-input-text h6,
 .email-setup h6,
-.email-otp-step h6 {
+.email-otp-step h6,
+.acctActivate-input-text h6 {
     color: #0E285E;
     font-size: 14px;
     font-weight: 600;
@@ -4250,7 +4340,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .two-factor-auth-input-text p,
 .email-setup p,
-.email-otp-step p {
+.email-otp-step p,
+.acctActivate-input-text p {
     color: #67779A;
     font-size: 12px;
     font-weight: 500;
@@ -4259,13 +4350,15 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 
-.two-factor-auth-form {
+.two-factor-auth-form,
+.acctActivate-form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 
-.two-factor-auth-otp-button {
+.two-factor-auth-otp-button,
+.acctActivate-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -4288,7 +4381,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     text-decoration: none;
 }
 
-.two-factor-auth-btn {
+.two-factor-auth-btn,
+.acctActivate-btn {
     border-radius: 12px;
     background: #E94B50;
     padding: 6px;
@@ -4301,7 +4395,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 
-.setting-input {
+.settings-input {
     border-radius: 12px;
     border: 1px solid #DEE2E9;
     color: #001747;
@@ -4312,12 +4406,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 100%;
 }
 
-.setting-input:focus {
+.settings-input:focus {
     color: #001747;
     border: 1px solid #246BFD;
 }
 
-.setting-input:focus-visible {
+.settings-input:focus-visible {
     border: 1px solid #246BFD !important;
 }
 
@@ -4330,4 +4424,344 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.delete-input {
+    background-color: #FCE9E9;
+}
+
+/* ================================ pricing plan ===========================  */
+
+.plans-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.current-plan-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.current-plan-details,
+.pricing-plan-details {
+    border-radius: 24px;
+    border: 1px solid var(--Neutrals-Neutral-150, #EBEDF1);
+    background: var(--White, #FFF);
+    padding: 16px;
+}
+
+.current-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-name h6 {
+    color: #0E285E;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.plan-name span {
+    color: #576A8F;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.subscription-expiry {
+    border-radius: 4px;
+    background-color: #FFFAE8;
+    padding: 0px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscription-expiry h6,
+.subscription-expiry-date {
+    color: #946600;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.credit-div {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background-color: #FFF;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.credit-usage-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.credit-usage-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.credit-usage-title h6 {
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0px;
+}
+
+.credit-usage-title a {
+    color: #E31E24;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+.progress {
+    height: 6px;
+}
+
+.progress-bar {
+    border-radius: 64px;
+    background-color: #DA1E28;
+}
+
+.plan-credit-points {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.plan-credit-points span {
+    color: #67779A;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.plan-features {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background-color: #FFF;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.plan-features-title h6 {
+    color: #0E285E;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-features-title h6 {
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0px;
+}
+
+.features h6 {
+    color: #576A8F;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.features span {
+    color: #2F4674;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+
+}
+
+.pricing-table th {}
+
+.pricing-table {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pricing-table thead th {
+    padding: 12px;
+    font-weight: 600;
+    color: #1D3669;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.pricing-table tbody td {
+    padding: 12px;
+    text-align: center;
+    font-weight: 500;
+    color: #1D3669;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.plan-price {
+    color: #E31E24;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.plan-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+}
+
+.plan-duration {
+    color: #67779A;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 73%;
+}
+
+.pricing-table .highlight-col {
+    border-right: 2px solid #E31E24;
+    border-left: 2px solid #E31E24;
+    background-color: #FCE9E9;
+}
+
+.pricing-table thead th.highlight-col {
+    border-top: 2px solid #E31E24;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+
+
+.pricing-table tbody tr:last-child .highlight-col {
+    border-bottom: 2px solid #E31E24;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+
+
+
+.get-started-highlight-btn {
+    border-radius: 12px;
+    border: 1px solid #E94B50;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 4px 8px;
+    background-color: #E31E24;
+}
+
+.get-started-highlight-btn:hover {
+    border: 1px solid #E94B50;
+    color: #E94B50;
+    background-color: transparent;
+}
+
+.get-started-btn {
+    border-radius: 12px;
+    border: 1px solid #E94B50;
+    color: #E94B50;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 4px 8px;
+    background-color: transparent;
+}
+
+.get-started-btn:hover {
+    border: 1px solid #E94B50;
+    color: #FFF;
+    background-color: #E31E24;
+}
+
+.choose-lang {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background-color: #FFF;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.lang-options {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.choose-lang-title h6 {
+    color: #0E285E;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* .modal-body {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+/* Universal scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

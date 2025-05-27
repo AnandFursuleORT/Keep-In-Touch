@@ -76,9 +76,9 @@
                                         <span>Drip</span>
                                     </a>
                                 </li>
-                                <li class="menu-item active">
+                                <li class="menu-item">
                                     <a href="event.html">
-                                        <img src="./assets/images/event-menu-selected.svg" alt="Event">
+                                        <img src="./assets/images/event-icon.svg" alt="Event">
                                         <span>Event</span>
                                     </a>
                                 </li>
@@ -123,9 +123,9 @@
                                         <span>Reports</span>
                                     </a>
                                 </li>
-                                <li class="menu-item">
+                                <li class="menu-item active">
                                     <a href="plans.html">
-                                        <img src="./assets/images/plan-menu.svg" alt="Plans">
+                                        <img src="./assets/images/plans-selected.svg" alt="Plans">
                                         <span>Plans</span>
                                     </a>
                                 </li>
@@ -163,7 +163,7 @@
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
                                         <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
-                                        <li class="breadcrumb-item active drip-active-item" aria-current="page">Event
+                                        <li class="breadcrumb-item active drip-active-item" aria-current="page">Plans
                                         </li>
                                     </ol>
                                 </nav>
@@ -308,10 +308,9 @@
                                                             <span>Drip</span>
                                                         </a>
                                                     </li>
-                                                    <li class="menu-item active">
+                                                    <li class="menu-item">
                                                         <a href="event.html">
-                                                            <img src="./assets/images/event-menu-selected.svg"
-                                                                alt="Event">
+                                                            <img src="./assets/images/event-icon.svg" alt="Event">
                                                             <span>Event</span>
                                                         </a>
                                                     </li>
@@ -360,9 +359,9 @@
                                                             <span>Reports</span>
                                                         </a>
                                                     </li>
-                                                    <li class="menu-item">
+                                                    <li class="menu-item active">
                                                         <a href="plans.html">
-                                                            <img src="./assets/images/plan-menu.svg" alt="Plans">
+                                                            <img src="./assets/images/plans-selected.svg" alt="Plans">
                                                             <span>Plans</span>
                                                         </a>
                                                     </li>
@@ -396,227 +395,241 @@
                             </div>
                         </div>
                     </div>
-                    <div class="page-content d-flex flex-column">
-                        <div class="page-header d-flex align-items-center justify-content-between">
+                    <div class="page-content d-flex flex-column gap-4">
+                        <div class="page-header d-flex align-items-center justify-content-between gap-5">
                             <div class="heading">
-                                <h4>Event</h4>
+                                <h4>Plans</h4>
                             </div>
-                            <button class="add-button" data-bs-toggle="modal" data-bs-target="#addEventModal"> <img
-                                    src="./assets/images/add.svg" alt="">Add Event</button>
                         </div>
-                        <div class="table-div">
-                            <div class="table-head">
-                                <div class="table-div1 d-flex align-items-center justify-content-between">
-                                    <div class="table-div1-tabs d-flex align-items-center gap-3 ">
-                                        <div class="table-filter">
-                                            <img src="./assets/images/filter.svg" alt="filter">
-                                        </div>
-                                        <div class="start-date-event">
-                                            <span>
-                                                Start Date: 17 Oct,2025
-                                            </span>
-                                            <span>
-                                                <img src="./assets/images/cross.svg" alt="">
-                                            </span>
-                                        </div>
-
+                        <div class="plans-details-wrapper">
+                            <div class="current-plan-details">
+                                <div class="current-plan">
+                                    <div class="plan-name">
+                                        <h6>Solo Enterpreneur</h6>
+                                        <span>₹2000/month</span>
                                     </div>
-                                    <div class="table-search d-flex align-items-center gap-3">
-                                        <input type="search" class="form-control search " id="dt-search"
-                                            placeholder="Search">
+                                    <button class="add-button">
+                                        <img src="./assets/images/upgrade.svg" alt="Upgrade">Upgrade
+                                    </button>
+                                </div>
+                                <div class="subscription-expiry">
+                                    <h6>Subscription Expiry</h6>
+                                    <div class="subscription-expiry-date">28/02/2025</div>
+                                </div>
+                                <div class="plan-features-wrapper">
+                                    <div class="row gy-3">
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="credit-div">
+                                                <div class="credit-usage-wrapper">
+                                                    <div class="credit-usage-title">
+                                                        <h6>Credit Usage</h6>
+                                                        <a href="#" role="button">+ Add Credits</a>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar" style="width: 50%"></div>
+                                                    </div>
+                                                    <div class="plan-credit-points">
+                                                        <span>Used: 1800</span>
+                                                        <span>Remaining: 3200</span>
+                                                    </div>
+                                                </div>
+                                                <div class="credit-usage-wrapper">
+                                                    <div class="credit-usage-title">
+                                                        <h6>Contact</h6>
+                                                    </div>
+                                                    <div class="progress" role="progressbar" aria-label="Basic example"
+                                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar" style="width: 75%"></div>
+                                                    </div>
+                                                    <div class="plan-credit-points">
+                                                        <span>Used: 1800</span>
+                                                        <span>Remaining: 3200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+                                            <div class="plan-features">
+                                                <div class="plan-features-title">
+                                                    <h6>Features Included</h6>
+                                                </div>
+                                                <div class="features-include">
+                                                    <div class="features">
+                                                        <h6>VCard Scanner</h6>
+                                                        <span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </div>
+                                                    <div class="features">
+                                                        <h6>Validity</h6>
+                                                        <span>Unlimited</span>
+                                                    </div>
+                                                    <div class="features">
+                                                        <h6>Contact Limit</h6>
+                                                        <span>5000</span>
+                                                    </div>
+                                                    <div class="features">
+                                                        <h6>WhatsApp Support</h6>
+                                                        <span>Limited</span>
+                                                    </div>
+                                                    <div class="features">
+                                                        <h6>Dedicated CRM</h6>
+                                                        <span><img src="./assets/images/green-tick.svg"
+                                                                alt="Tick"></span>
+                                                    </div>
+                                                    <div class="features">
+                                                        <h6>Implementation Support</h6>
+                                                        <span><img src="./assets/images/red-cross.svg"
+                                                                alt="Cross"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="event-table-div table-responsive">
-                                <table id="event-table" class="Table" style="width:100%">
-                                    <thead class="table-heading">
-                                        <tr>
-                                            <th>Sr.No</th>
-                                            <th>Event Name</th>
-                                            <th style="max-width: 80px;">Event Description</th>
-                                            <th>Event Date</th>
-                                            <th>Time</th>
-                                            <th>Location</th>
-                                            <th class="text-nowrap">Booth No</th>
-                                            <th>Status</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                            <td>17 Oct, 2025</td>
-                                            <td>25 Oct, 2025</td>
-                                            <td>Payroll Ease</td>
-                                            <td>1</td>
-                                            <td><span class="badge  badge-light-pending">Upcoming</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <div class="table-dropdown" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
-                                                        <img src="./assets/images/action-table.svg">
-                                                    </div>
-                                                    <ul class="dropdown-menu">
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/edit.svg" alt="edit">Edit</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/delete.svg"
-                                                                    alt="edit">Delete</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item">
-                                                                <img src="./assets/images/qr-code.svg"
-                                                                    alt="qr-code">View QR Code</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                            <td>17 Oct, 2025</td>
-                                            <td>25 Oct, 2025</td>
-                                            <td>Payroll Ease</td>
-                                            <td>1</td>
-                                            <td><span class="badge  badge-light-success">Ongoing</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <div class="table-dropdown" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
-                                                        <img src="./assets/images/action-table.svg">
-                                                    </div>
-                                                    <ul class="dropdown-menu">
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/edit.svg" alt="edit">Edit</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/delete.svg"
-                                                                    alt="edit">Delete</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item">
-                                                                <img src="./assets/images/qr-code.svg"
-                                                                    alt="qr-code">View QR Code</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                            <td>17 Oct, 2025</td>
-                                            <td>25 Oct, 2025</td>
-                                            <td>Payroll Ease</td>
-                                            <td>1</td>
-                                            <td><span class="badge  badge-light-pending">Upcoming</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <div class="table-dropdown" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
-                                                        <img src="./assets/images/action-table.svg">
-                                                    </div>
-                                                    <ul class="dropdown-menu">
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/edit.svg" alt="edit">Edit</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/delete.svg"
-                                                                    alt="edit">Delete</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item">
-                                                                <img src="./assets/images/qr-code.svg"
-                                                                    alt="qr-code">View QR Code</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                            <td>17 Oct, 2025</td>
-                                            <td>25 Oct, 2025</td>
-                                            <td>Payroll Ease</td>
-                                            <td>1</td>
-                                            <td><span class="badge  badge-light-success">Ongoing</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <div class="table-dropdown" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
-                                                        <img src="./assets/images/action-table.svg">
-                                                    </div>
-                                                    <ul class="dropdown-menu">
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/edit.svg" alt="edit">Edit</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/delete.svg"
-                                                                    alt="edit">Delete</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item">
-                                                                <img src="./assets/images/qr-code.svg"
-                                                                    alt="qr-code">View QR Code</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                            <td>17 Oct, 2025</td>
-                                            <td>25 Oct, 2025</td>
-                                            <td>Payroll Ease</td>
-                                            <td>1</td>
-                                            <td><span class="badge  badge-light-warning">Past</span></td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <div class="table-dropdown" data-bs-toggle="dropdown"
-                                                        aria-expanded="false">
-                                                        <img src="./assets/images/action-table.svg">
-                                                    </div>
-                                                    <ul class="dropdown-menu">
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/edit.svg" alt="edit">Edit</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item" href="#"> <img
-                                                                    src="./assets/images/delete.svg"
-                                                                    alt="edit">Delete</a>
-                                                        </li>
-                                                        <li class="table-dropdown-menu-item">
-                                                            <a class="dropdown-item">
-                                                                <img src="./assets/images/qr-code.svg"
-                                                                    alt="qr-code">View QR Code</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="pricing-plan-details">
+                                <div class="table-div">
+                                    <div class="table-head">
+                                        <div class="table-heading">
+                                            <h4>Pricing Plan</h4>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table pricing-table align-middle">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Solo Entrepreneur</th>
+                                                    <th>Small Enterprise</th>
+                                                    <th class="highlight-col">Medium Enterprise</th>
+                                                    <th>Large Enterprise</th>
+                                                    <th>Large Enterprise</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <div class="plan-pricing">
+                                                            <div class="plan-price">₹2000<span
+                                                                    class="plan-duration">/month</span></div>
+                                                            <div><button class="get-started-btn">Get
+                                                                    Started</button></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="plan-pricing">
+                                                            <div class="plan-price">₹5000<span
+                                                                    class="plan-duration">/month</span></div>
+                                                            <div><button class="get-started-btn">Get
+                                                                    Started</button></div>
+                                                        </div>
+                                                    <td class="highlight-col">
+                                                        <div class="plan-pricing">
+                                                            <div class="plan-price">₹10000<span
+                                                                    class="plan-duration">/month</span></div>
+                                                            <div><button class="get-started-highlight-btn">Get
+                                                                    Started</button></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="plan-pricing">
+                                                            <div class="plan-price">₹15000<span
+                                                                    class="plan-duration">/month</span></div>
+                                                            <div><button class="get-started-btn">Get
+                                                                    Started</button></div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="plan-pricing">
+                                                            <div class="plan-price">₹20000<span
+                                                                    class="plan-duration">/month</span></div>
+                                                            <div><button class="get-started-btn">Get
+                                                                    Started</button></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Vcard Scanner</td>
+                                                    <td><span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </td>
+                                                    <td><span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </td>
+                                                    <td class="highlight-col"><span><img
+                                                                src="./assets/images/green-tick.svg" alt=""></span></td>
+                                                    <td><span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </td>
+                                                    <td><span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Validity</td>
+                                                    <td>Unlimited</td>
+                                                    <td>365 Days</td>
+                                                    <td class="highlight-col">365 Days</td>
+                                                    <td>365 Days</td>
+                                                    <td>365 Days</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Contact Management Limit</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td class="highlight-col">5000</td>
+                                                    <td>10000</td>
+                                                    <td>25000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>One time Implementation Support</td>
+                                                    <td><span><img src="./assets/images/red-cross.svg"
+                                                                alt="cross"></span></td>
+                                                    <td><span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </td>
+                                                    <td class="highlight-col"><span><img
+                                                                src="./assets/images/red-cross.svg" alt="cross"></span>
+                                                    </td>
+                                                    <td><span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </td>
+                                                    <td><span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Whatsapp Support</td>
+                                                    <td>Limited</td>
+                                                    <td>Limited</td>
+                                                    <td class="highlight-col">Unlimited</td>
+                                                    <td>Unlimited</td>
+                                                    <td>Unlimited</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Credits</td>
+                                                    <td>100</td>
+                                                    <td>5000</td>
+                                                    <td class="highlight-col">30000</td>
+                                                    <td>75000</td>
+                                                    <td>200000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dedicated CRM</td>
+                                                    <td><span><img src="./assets/images/red-cross.svg"
+                                                                alt="cross"></span></td>
+                                                    <td><span><img src="./assets/images/red-cross.svg"
+                                                                alt="Cross"></span></td>
+                                                    <td class="highlight-col"><span><img
+                                                                src="./assets/images/red-cross.svg" alt="cross"></span>
+                                                    </td>
+                                                    <td><span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </td>
+                                                    <td><span><img src="./assets/images/green-tick.svg" alt=""></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -626,57 +639,27 @@
 
     <!-- ======================= Modal for Add  ======================= -->
 
-    <div class="modal fade" id="addEventModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="addEventModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content add-modal add-EventModal">
+    <div class="modal fade" id="addProductsCategoryModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="addProductsCategoryModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content add-modal">
                 <div class="modal-header d-flex align-items-center justify-content-between">
-                    <h4 class="modal-title add-modal-title" id="exampleModalLabel">Add Event</h4>
+                    <h4 class="modal-title add-modal-title" id="exampleModalLabel">Add Product Category</h4>
                     <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
                         aria-label="Close" aria-label="Close">
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="drip-input-div">
-                            <label for="dripInput1" class="form-label input-label mb-1">Event Name</label>
+                            <label for="dripInput1" class="form-label input-label mb-1">Product Category Name</label>
                             <input type="text" class="form-control input-text" id="dripInput1"
                                 placeholder="Enter your Category Name">
                         </div>
                         <div class="drip-input-div">
-                            <label for="dripInput1" class="form-label input-label mb-1">Event Description</label>
+                            <label for="dripInput1" class="form-label input-label mb-1">Category Description</label>
                             <textarea class="form-control text-area" style="resize: none;"
                                 placeholder="Enter description"
-                                rows="6"></textarea>
-                        </div>
-                        <div class="row ">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label class="email-form-label">Select Time</label>
-                                <input type="time" class="form-control execution-time">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label class="email-form-label">Event Date</label>
-                                <input type="date" class="form-control execution-input">
-                            </div>
-                        </div>
-                        <div class="row ">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label class="email-form-label">Location</label>
-                                <input type="text" class="form-control event-location-input" placeholder="Enter Location">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label class="email-form-label">Booth No</label>
-                                <input type="text" class="form-control event-booth-input" placeholder="Enter Booth No">
-                            </div>
-                        </div>
-                        <div class="drip-select-div">
-                            <label for="dripInput1" class="form-label input-label mb-1">Status</label>
-                            <select id="dripInput1" class="form-select drip-event-select">
-                                <option selected>Choose Status</option>
-                                <option value="1">Event1</option>
-                                <option value="2">Event2</option>
-                                <option value="3">Event3</option>
-                            </select>
-                            <img src="./assets/images/choose-status.svg" class="drips-image" alt="status">
+                                rows="6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
                         </div>
                     </form>
                 </div>
@@ -805,6 +788,7 @@
             </div>
         </div>
     </div>
+
 
      <!-- team Access Permission-->
     <div class="modal fade " id="teamAccessPermission" aria-labelledby="teamAccessPermissionLabel" aria-hidden="true">
@@ -1241,6 +1225,7 @@
             </div>
         </div>
     </div>
+
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>

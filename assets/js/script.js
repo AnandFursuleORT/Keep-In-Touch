@@ -232,44 +232,101 @@ setupSearchAndCheckboxBehavior("EngineSearch", "EngineList");
 
 // ================ Team Acccess & Permission Script For Wizard ==============
 
-// Next button functionality
-document.querySelectorAll(".next-btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const currentStep = document.querySelector(".step-content:not(.d-none)");
-    const nextStep = currentStep.nextElementSibling;
+// // Next button functionality
+// document.querySelectorAll(".next-btn").forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     const currentStep = document.querySelector(".step-content:not(.d-none)");
+//     const nextStep = currentStep.nextElementSibling;
 
-    if (nextStep) {
-      currentStep.classList.add("d-none");
-      nextStep.classList.remove("d-none");
+//     if (nextStep) {
+//       currentStep.classList.add("d-none");
+//       nextStep.classList.remove("d-none");
 
-      const stepNumber = parseInt(nextStep.classList[1].split("-")[1]);
-      document
-        .querySelectorAll(".step")
-        .forEach((s) => s.classList.remove("active"));
-      document
-        .querySelector(`.step[data-step="${stepNumber}"]`)
-        .classList.add("active");
-    }
-  });
-});
+//       const stepNumber = parseInt(nextStep.classList[1].split("-")[1]);
+//       document
+//         .querySelectorAll(".step")
+//         .forEach((s) => s.classList.remove("active"));
+//       document
+//         .querySelector(`.step[data-step="${stepNumber}"]`)
+//         .classList.add("active");
+//     }
+//   });
+// });
 
-// Previous button functionality
-document.querySelectorAll(".prev-btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const currentStep = document.querySelector(".step-content:not(.d-none)");
-    const prevStep = currentStep.previousElementSibling;
+// // Previous button functionality
+// document.querySelectorAll(".prev-btn").forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     const currentStep = document.querySelector(".step-content:not(.d-none)");
+//     const prevStep = currentStep.previousElementSibling;
 
-    if (prevStep) {
-      currentStep.classList.add("d-none");
-      prevStep.classList.remove("d-none");
+//     if (prevStep) {
+//       currentStep.classList.add("d-none");
+//       prevStep.classList.remove("d-none");
 
-      const stepNumber = parseInt(prevStep.classList[1].split("-")[1]);
-      document
-        .querySelectorAll(".step")
-        .forEach((s) => s.classList.remove("active"));
-      document
-        .querySelector(`.step[data-step="${stepNumber}"]`)
-        .classList.add("active");
-    }
-  });
-});
+//       const stepNumber = parseInt(prevStep.classList[1].split("-")[1]);
+//       document
+//         .querySelectorAll(".step")
+//         .forEach((s) => s.classList.remove("active"));
+//       document
+//         .querySelector(`.step[data-step="${stepNumber}"]`)
+//         .classList.add("active");
+//     }
+//   });
+// });
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   // Next button functionality
+//   document.querySelectorAll(".next-btn").forEach((btn) => {
+//     btn.addEventListener("click", () => {
+//       const currentStep = document.querySelector(".step-content:not(.d-none)");
+//       let nextStep = currentStep.nextElementSibling;
+
+//       while (nextStep && !nextStep.classList.contains("step-content")) {
+//         nextStep = nextStep.nextElementSibling;
+//       }
+
+//       if (nextStep) {
+//         currentStep.classList.add("d-none");
+//         nextStep.classList.remove("d-none");
+
+//         const stepClass = Array.from(nextStep.classList).find(cls => cls.startsWith("step-"));
+//         const stepNumber = parseInt(stepClass.split("-")[1]);
+
+//         document.querySelectorAll(".step").forEach((s) => s.classList.remove("active"));
+//         document.querySelector(`.step[data-step="${stepNumber}"]`).classList.add("active");
+
+//         document.querySelectorAll(".active-line").forEach((line, i) => {
+//           line.classList.toggle("active", i < stepNumber - 1);
+//         });
+//       }
+//     });
+//   });
+
+//   // Previous button functionality
+//   document.querySelectorAll(".prev-btn").forEach((btn) => {
+//     btn.addEventListener("click", () => {
+//       const currentStep = document.querySelector(".step-content:not(.d-none)");
+//       let prevStep = currentStep.previousElementSibling;
+
+//       while (prevStep && !prevStep.classList.contains("step-content")) {
+//         prevStep = prevStep.previousElementSibling;
+//       }
+
+//       if (prevStep) {
+//         currentStep.classList.add("d-none");
+//         prevStep.classList.remove("d-none");
+
+//         const stepClass = Array.from(prevStep.classList).find(cls => cls.startsWith("step-"));
+//         const stepNumber = parseInt(stepClass.split("-")[1]);
+
+//         document.querySelectorAll(".step").forEach((s) => s.classList.remove("active"));
+//         document.querySelector(`.step[data-step="${stepNumber}"]`).classList.add("active");
+
+//         document.querySelectorAll(".active-line").forEach((line, i) => {
+//           line.classList.toggle("active", i < stepNumber - 1);
+//         });
+//       }
+//     });
+//   });
+// });

@@ -124,13 +124,13 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="">
+                                    <a href="plans.html">
                                         <img src="./assets/images/plan-menu.svg" alt="Plans">
                                         <span>Plan</span>
                                     </a>
                                 </li>
-                                <li class="menu-item">
-                                    <a href="">
+                                <li class="menu-item" data-bs-toggle="modal" data-bs-target="#teamAccessPermission">
+                                    <a href="#">
                                         <img src="./assets/images/user-management-menu.svg" alt="user management">
                                         <span>User Management</span>
                                     </a>
@@ -373,8 +373,9 @@
                                                             <span>Plans</span>
                                                         </a>
                                                     </li>
-                                                    <li class="menu-item">
-                                                        <a href="user-management.html">
+                                                    <li class="menu-item" data-bs-toggle="modal"
+                                                        data-bs-target="#teamAccessPermission">
+                                                        <a href="#">
                                                             <img src="./assets/images/user-management-menu.svg"
                                                                 alt="user management">
                                                             <span>User Management</span>
@@ -498,7 +499,8 @@
 
                                     <input type="search" class="form-control search " id="dt-search"
                                         placeholder="Search">
-                                    <div class="table-filter" role="button">
+                                    <div class="table-filter" role="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#filterDrip" aria-controls="offcanvasRight">
                                         <img src="./assets/images/filter.svg" alt="filter">
                                     </div>
                                 </div>
@@ -1882,8 +1884,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header details-header">
-                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
-                        aria-label="breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
                             <li class="breadcrumb-item"><a href="drip.html" class="link-item">Drips</a></li>
                             <li class="breadcrumb-item active drip-active-item" aria-current="page">Drip Details</li>
@@ -2084,8 +2085,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header details-header">
-                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
-                        aria-label="breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
                             <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
                                     class="link-item">Drip Details</a></li>
@@ -2185,8 +2185,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header details-header">
-                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
-                        aria-label="breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
                             <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
                                     class="link-item">Drip Details</a></li>
@@ -2636,7 +2635,8 @@
     </div>
 
     <!-- ============================ upload Modal ======================= -->
-    <div class="modal fade" id="uploadModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+    <div class="modal fade" id="uploadModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="uploadModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content uploadModal">
                 <div class="modal-header uploadMdal-title">
@@ -2693,8 +2693,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header details-header">
-                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
-                        aria-label="breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
                             <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
                                     class="link-item">Drip Details</a></li>
@@ -3215,8 +3214,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header details-header">
-                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
-                        aria-label="breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
                             <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
                                     class="link-item">Drip Details</a></li>
@@ -3571,8 +3569,7 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header details-header">
-                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
-                        aria-label="breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
                             <li class="breadcrumb-item"><a data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
                                     class="link-item">Drip Details</a></li>
@@ -3766,8 +3763,8 @@
     </div>
 
     <!-- ============================ Delete step Modal ======================= -->
-    <div class="modal fade deleteModal"  id="deleteStepModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteModalLabel"
-        aria-hidden="true">
+    <div class="modal fade deleteModal" id="deleteStepModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -3794,8 +3791,8 @@
         </div>
     </div>
     <!-- ============================ confirm close ======================= -->
-    <div class="modal fade deleteModal" id="cofirmCloseModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cofirmCloseModal"
-        aria-hidden="true">
+    <div class="modal fade deleteModal" id="cofirmCloseModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="cofirmCloseModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -3823,6 +3820,597 @@
         </div>
     </div>
 
+    <!-- =============================== Filter-offcanvas =========================== -->
+
+    <div class="offcanvas offcanvas-end filter-offcanvas" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" id="filterDrip" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title title-offcanvas" id="offcanvasRightLabel">Filter</h5>
+            <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="accordionExample">
+                <!-- date filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Date
+                        </button>
+                    </h2>
+                    <div id="f-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <input type="date" class="filter-date w-100">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tag filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                            Tags
+                        </button>
+                    </h2>
+                    <div id="f-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <input type="text" id="tagSearch" class="filter-search" placeholder="Search">
+                            </div>
+                            <div id="tagList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="capt" name="rank"
+                                        value="Captains/Masters">
+                                    <label class="form-check-label filter-label" for="capt">Tags Name
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="officers"
+                                        name="rank" value="Officers">
+                                    <label class="form-check-label filter-label" for="officers">Tag Name
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">Tags Name
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">Tags Name
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- City filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#f-collapseFour" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            City
+                        </button>
+                    </h2>
+                    <div id="f-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <input type="text" id="citySearch" class="filter-search" placeholder="Search">
+                            </div>
+                            <div id="cityList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d1" name="Duration"
+                                        value="D1">
+                                    <label class="form-check-label filter-label" for="d1">City 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d2" name="Duration"
+                                        value="D2">
+                                    <label class="form-check-label filter-label" for="d2">City 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d3" name="Duration"
+                                        value="D3">
+                                    <label class="form-check-label filter-label" for="d3">City 3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d4" name="Duration"
+                                        value="D4">
+                                    <label class="form-check-label filter-label" for="d4">City 4</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d5" name="Duration"
+                                        value="D5">
+                                    <label class="form-check-label filter-label" for="d5">City 5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- References  Watch filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#f-collapseFive" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            References
+                        </button>
+                    </h2>
+                    <div id="f-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ">
+                            <div class="mb-3">
+                                <input type="text" id="referenceSearch" class="filter-search" placeholder="Search">
+                            </div>
+                            <div id="referenceList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b1" name="Bridge"
+                                        value="B1">
+                                    <label class="form-check-label filter-label" for="b1">Reference 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b2" name="Bridge"
+                                        value="B2">
+                                    <label class="form-check-label filter-label" for="b2">Reference 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b3" name="Bridge"
+                                        value="B3">
+                                    <label class="form-check-label filter-label" for="b3">Reference 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-footer-btn">
+                <button type="button" class="btn-grey">Reset All</button>
+                <button type="button" class="btn-red">Apply</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- team Access Permission-->
+    <div class="modal fade " id="teamAccessPermission" aria-labelledby="teamAccessPermissionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Team Access &
+                                Permission
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-teamAccessPermission">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="at-hdg-div">
+                                    <h2 class="setting-modal-hdg">Team Access & Permission</h2>
+                                    <p class="setting-modal-p">Manage team members and their access levels,
+                                        assigning specific roles and permissions to control what they can view and
+                                        modify.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-div">
+                            <div class="table-head">
+                                <div class="table-div1 d-flex align-items-center justify-content-between mb-3">
+                                    <div class="table-heading">
+                                        <h4 class="mb-0">
+                                            User List
+                                        </h4>
+                                    </div>
+                                    <div class="table-div1-tabs d-flex align-items-center gap-3 ">
+
+                                        <div class="table-search d-flex align-items-center gap-3">
+                                            <input type="search" class="form-control search " id="dt-search"
+                                                placeholder="Search">
+                                        </div>
+                                        <div>
+                                            <button class="add-button" data-bs-toggle="modal"
+                                                data-bs-target="#addUserModal"> <img src="./assets/images/add.svg"
+                                                    alt="Add">Add User
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-table-div table-responsive">
+                                <table id="product-table" class="Table" style="width:100%">
+                                    <thead class="table-heading">
+                                        <tr>
+                                            <th>Sr.No</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Role</th>
+                                            <th>Status</th>
+                                            <th>Last Login</th>
+                                            <th>Credit Used</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td class="table-text-dark">Samuel Schmidt</td>
+                                            <td>deanna.curtis@example.com</td>
+                                            <td>Administrator</td>
+                                            <td><span class="badge badge-light-success">Active</span></td>
+                                            <td>17:38, 18/10/2022</td>
+                                            <td>500</td>
+                                            <td>
+                                                <div class="table-action">
+                                                    <img src="./assets/images/eye-icon.svg" alt="eye-icon">
+                                                    <img src="./assets/images/edit.svg" alt="Edit">
+                                                    <img src="./assets/images/table-user-icon.svg" alt="">
+                                                    <div class="dropdown">
+                                                        <div class="table-dropdown" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <img src="./assets/images/action-table.svg">
+                                                        </div>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteModal">
+                                                                    <img src="./assets/images/delete.svg"
+                                                                        alt="edit">Delete
+                                                                </a>
+
+                                                            </li>
+                                                            <li class="table-dropdown-menu-item">
+                                                                <a class="dropdown-item" data-bs-toggle="modal"
+                                                                    data-bs-target="#deactivateModal">
+                                                                    <img src="./assets/images/deactivate.svg"
+                                                                        alt="deactivate">Deactivate</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add User Modal-->
+    <div class="modal fade " id="addUserModal" aria-labelledby="addUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="#" class="link-item" data-bs-toggle="modal"
+                                    data-bs-target="#teamAccessPermission">Team Access &
+                                    Permission</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Add User</li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-toggle="modal"
+                        data-bs-target="#teamAccessPermission" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-teamAccessPermission">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="at-hdg-div">
+                                    <h2 class="setting-modal-hdg">Add User</h2>
+                                    <p class="setting-modal-p"> Input the new user's information, assign their role, and
+                                        configure their access permissions within the system.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamAccessPermissionForm">
+                            <!-- Wizard Steps Navigation -->
+                            <!-- <div class="steps mb-4 d-flex justify-content-between align-items-center">
+                            <div class="step active" data-step="1">
+                                <span>1</span>
+                                <p>User Information</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="step" data-step="2">
+                                <span>2</span>
+                                <p>Set Permissions</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="step" data-step="3">
+                                <span>3</span>
+                                <p>Review Details</p>
+                            </div>
+                        </div> -->
+
+                            <div class="step-indicator">
+                                <div class="step active">
+                                    <div class="circle">1</div>
+                                    <span class="step-details">User Information</span>
+                                </div>
+                                <div class="active-line active"></div>
+                                <div class="step">
+                                    <div class="circle">2</div>
+                                    <span class="step-details">Set Permissions</span>
+                                </div>
+                                <div class="active-line"></div>
+                                <div class="step">
+                                    <div class="circle">3</div>
+                                    <span class="step-details">Review Details</span>
+                                </div>
+                            </div>
+                            <!-- Wizard Form -->
+                            <form id="userForm">
+                                <!-- Step 1 -->
+                                <div class="step-content step-1">
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-md-4">
+                                            <div class="drip-input-div">
+                                                <label for="profile-firstName" class="input-label">First
+                                                    Name*</label>
+                                                <input type="text" class="form-control input-text"
+                                                    id="profile-firstName" placeholder="Enter your First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="email-form-label">Sender Email*</label>
+                                            <input type="email" class="form-control email-input"
+                                                placeholder="Enter email id">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class=" input-label ">Role</label>
+                                            <select class="form-select form-control input-text">
+                                                <option>Admin</option>
+                                                <option>User</option>
+                                                <option>Editor</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="inviteLink">
+                                        <label class="form-check-label" for="inviteLink">
+                                            Send Invite Link <small class="text-muted">(A secure password creation link
+                                                will
+                                                be sent)</small>
+                                        </label>
+                                    </div>
+
+                                    <div class="text-end">
+                                        <button type="button" class="next-btn">Next ➔</button>
+                                    </div>
+                                </div>
+
+                                <!-- Step 2 -->
+                                <div class="step-content step-2 d-none">
+                                    <h5>Set Permissions</h5>
+                                    <p>Assign permissions here (demo placeholder)</p>
+                                    <div class="row g-3 mb-3">
+                                        <div class="col-md-4">
+                                            <div class="drip-input-div">
+                                                <label for="profile-firstName" class="input-label">First
+                                                    Name*</label>
+                                                <input type="text" class="form-control input-text"
+                                                    id="profile-firstName" placeholder="Enter your First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="email-form-label">Sender Email*</label>
+                                            <input type="email" class="form-control email-input"
+                                                placeholder="Enter email id">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class=" input-label ">Role</label>
+                                            <select class="form-select form-control input-text">
+                                                <option>Admin</option>
+                                                <option>User</option>
+                                                <option>Editor</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <button type="button" class="btn btn-secondary prev-btn">← Back</button>
+                                        <button type="button" class="btn btn-danger next-btn">Next ➔</button>
+                                    </div>
+                                </div>
+
+                                <!-- Step 3 -->
+                                <div class="step-content step-3 d-none">
+                                    <h5>Review Details</h5>
+                                    <p>Review user details here before submitting.</p>
+
+                                    <div class="d-flex justify-content-between">
+                                        <button type="button" class="btn btn-secondary prev-btn">← Back</button>
+                                        <button type="submit" class="btn btn-success">Submit ✔️</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- /Wizard Form -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="#" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>

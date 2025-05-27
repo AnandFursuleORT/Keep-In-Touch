@@ -124,13 +124,13 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="">
+                                    <a href="plans.html">
                                         <img src="./assets/images/plan-menu.svg" alt="Plans">
                                         <span>Plan</span>
                                     </a>
                                 </li>
-                                <li class="menu-item">
-                                    <a href="">
+                                <li class="menu-item" data-bs-toggle="modal" data-bs-target="#teamAccessPermission">
+                                    <a href="#">
                                         <img src="./assets/images/user-management-menu.svg" alt="user management">
                                         <span>User Management</span>
                                     </a>
@@ -359,8 +359,9 @@
                                                             <span>Plans</span>
                                                         </a>
                                                     </li>
-                                                    <li class="menu-item">
-                                                        <a href="user-management.html">
+                                                    <li class="menu-item" data-bs-toggle="modal"
+                                                        data-bs-target="#teamAccessPermission">
+                                                        <a href="#">
                                                             <img src="./assets/images/user-management-menu.svg"
                                                                 alt="user management">
                                                             <span>User Management</span>
@@ -389,8 +390,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="page-content d-flex flex-column ">
-                        <div class="drip-header d-flex align-items-center gap-5">
+                    <div class="page-content">
+                        <div class="drip-header">
                             <div class="heading">
                                 <h4>Settings</h4>
                             </div>
@@ -592,8 +593,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3 col-md-4 col-sm-12">
-                                                            <div class="acct-setting-btn">
-                                                                <a href="" role="button">Deactivate/Delete Account</a>
+                                                            <div class="acct-setting-btn" data-bs-toggle="modal"
+                                                                data-bs-target="#acctActivateModal">
+                                                                <a href="#" role="button">Deactivate/Delete Account</a>
                                                                 <img src="./assets/images/cheron-right.svg"
                                                                     alt="cherion-right">
                                                             </div>
@@ -610,8 +612,9 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-2 col-md-4 col-sm-12">
-                                                            <div class="acct-setting-btn">
-                                                                <a href="" role="button">Login Activity</a>
+                                                            <div class="acct-setting-btn" data-bs-toggle="modal"
+                                                                data-bs-target="#loginHistoryModal">
+                                                                <a href="#" role="button">Login Activity</a>
                                                                 <img src="./assets/images/cheron-right.svg"
                                                                     alt="cherion-right">
                                                             </div>
@@ -682,8 +685,9 @@
                                                     message features within this
                                                     portal.</p>
                                             </div>
-                                            <div class="acct-setting-btn">
-                                                <a href="" role="button">Choose Language</a>
+                                            <div class="acct-setting-btn" data-bs-toggle="modal"
+                                                data-bs-target="#chooseLangModal">
+                                                <a href="#" role="button">Choose Language</a>
                                                 <img src="./assets/images/cheron-right.svg" alt="language">
                                             </div>
                                         </div>
@@ -872,7 +876,8 @@
                                                         </p>
                                                     </div>
                                                     <div class="col-lg-2 col-md-3 col-sm-12">
-                                                        <div class="acct-setting-btn">
+                                                        <div class="acct-setting-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#chooseLangModal">
                                                             <a href="#" role="button">Choose Language</a>
                                                             <img src="./assets/images/cheron-right.svg" alt="language">
                                                         </div>
@@ -1255,7 +1260,8 @@
                 <div class="modal-header details-header">
                     <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
-                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Team Access &
+                            <li class="breadcrumb-item"><a href="#" class="link-item" data-bs-toggle="modal"
+                                    data-bs-target="#teamAccessPermission">Team Access &
                                     Permission</a></li>
                             <li class="breadcrumb-item active drip-active-item" aria-current="page">Add User</li>
                         </ol>
@@ -1276,24 +1282,24 @@
                         </div>
                         <div class="teamAccessPermissionForm">
                             <!-- Wizard Steps Navigation -->
-                            <!-- <div class="steps mb-4 d-flex justify-content-between align-items-center">
-                            <div class="step active" data-step="1">
-                                <span>1</span>
-                                <p>User Information</p>
+                            <div class="steps d-flex justify-content-between align-items-center">
+                                <div class="step active" data-step="1">
+                                    <span>1</span>
+                                    <p>User Informations</p>
+                                </div>
+                                <div class="active-line"></div>
+                                <div class="step" data-step="2">
+                                    <span>2</span>
+                                    <p>Set Permissions</p>
+                                </div>
+                                <div class="active-line"></div>
+                                <div class="step" data-step="3">
+                                    <span>3</span>
+                                    <p>Review Details</p>
+                                </div>
                             </div>
-                            <div class="line"></div>
-                            <div class="step" data-step="2">
-                                <span>2</span>
-                                <p>Set Permissions</p>
-                            </div>
-                            <div class="line"></div>
-                            <div class="step" data-step="3">
-                                <span>3</span>
-                                <p>Review Details</p>
-                            </div>
-                        </div> -->
 
-                            <div class="step-indicator">
+                            <!-- <div class="step-indicator">
                                 <div class="step active">
                                     <div class="circle">1</div>
                                     <span class="step-details">User Information</span>
@@ -1308,23 +1314,28 @@
                                     <div class="circle">3</div>
                                     <span class="step-details">Review Details</span>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Wizard Form -->
                             <form id="userForm">
                                 <!-- Step 1 -->
                                 <div class="step-content step-1">
                                     <div class="row g-3 mb-3">
                                         <div class="col-md-4">
-                                            <label class="form-label">Name</label>
-                                            <input type="text" class="form-control" placeholder="Savannah Nguyen">
+                                            <div class="drip-input-div">
+                                                <label for="profile-firstName" class="input-label">First
+                                                    Name*</label>
+                                                <input type="text" class="form-control input-text"
+                                                    id="profile-firstName" placeholder="Enter your First Name">
+                                            </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <label class="form-label">E-mail</label>
-                                            <input type="email" class="form-control" placeholder="savannah@example.com">
+                                            <label class="email-form-label">Sender Email*</label>
+                                            <input type="email" class="form-control email-input"
+                                                placeholder="Enter email id">
                                         </div>
                                         <div class="col-md-4">
-                                            <label class="form-label">Role</label>
-                                            <select class="form-select">
+                                            <label class=" input-label ">Role</label>
+                                            <select class="form-select form-control input-text">
                                                 <option>Admin</option>
                                                 <option>User</option>
                                                 <option>Editor</option>
@@ -1341,47 +1352,73 @@
                                         </label>
                                     </div>
 
-                                    <div class="text-end">
-                                        <button type="button" class="btn btn-danger next-btn">Next ➔</button>
+                                    <div class="tnext-div">
+                                        <a role="button" class="next-btn-template" id="next-btn">
+                                            Design
+                                            <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
+                                        </a>
                                     </div>
                                 </div>
 
                                 <!-- Step 2 -->
                                 <div class="step-content step-2 d-none">
-                                    <h5>Set Permissions</h5>
-                                    <p>Assign permissions here (demo placeholder)</p>
+                                    <div class="user-permission-wrapper">
+                                        <div class="user-role-management">
+                                            <div class="user-role-management-header">
+                                                <h6>User & Role Management</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck">Enable All</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                            <label class="form-check-label" for="smsCheck">View
+                                                                Users</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12"></div>
+                                        </div>
 
-                                    <div class="d-flex justify-content-between">
-                                        <button type="button" class="btn btn-secondary prev-btn">← Back</button>
-                                        <button type="button" class="btn btn-danger next-btn">Next ➔</button>
+
                                     </div>
                                 </div>
-
-                                <!-- Step 3 -->
-                                <div class="step-content step-3 d-none">
-                                    <h5>Review Details</h5>
-                                    <p>Review user details here before submitting.</p>
-
-                                    <div class="d-flex justify-content-between">
-                                        <button type="button" class="btn btn-secondary prev-btn">← Back</button>
-                                        <button type="submit" class="btn btn-success">Submit ✔️</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <!-- /Wizard Form -->
                         </div>
 
-                    </div>
-                </div>
+                        <!-- Step 3 -->
+                        <div class="step-content step-3 d-none">
+                            <h5>Review Details</h5>
+                            <p>Review user details here before submitting.</p>
 
-                <div class="modal-footer border-0 justify-content-start">
-                    <a href="#" role="button" class="back-btn">
-                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
-                        Back
-                    </a>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn btn-secondary prev-btn">← Back</button>
+                                <button type="submit" class="btn btn-success">Submit ✔️</button>
+                            </div>
+                        </div>
+                        </form>
+                        <!-- /Wizard Form -->
+                    </div>
+
                 </div>
             </div>
+
+            <div class="modal-footer border-0 justify-content-start">
+                <a href="#" role="button" class="back-btn">
+                    <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                    Back
+                </a>
+            </div>
         </div>
+    </div>
     </div>
 
 
@@ -1418,13 +1455,13 @@
                                         <div class="changePassword-input">
                                             <div class="col-md-12 mb-3">
                                                 <div class="input_wrap">
-                                                    <input type="text" class="setting-input" required placeholder="" />
+                                                    <input type="text" class="settings-input" required placeholder="" />
                                                     <label>New Password</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="input_wrap">
-                                                    <input type="text" class="setting-input" required placeholder="" />
+                                                    <input type="text" class="settings-input" required placeholder="" />
                                                     <label>Cofirm New Password</label>
                                                 </div>
                                             </div>
@@ -1587,7 +1624,7 @@
                                             <div class="row">
                                                 <div class="col-md-12 mb-3">
                                                     <div class="input_wrap">
-                                                        <input type="text" class="setting-input" required
+                                                        <input type="text" class="settings-input" required
                                                             placeholder="" />
                                                         <label>Enter OTP</label>
                                                     </div>
@@ -1615,8 +1652,307 @@
             </div>
         </div>
     </div>
+    <!-- ============================== Account Deactivate / Activate ========================= -->
+    <div class="modal fade " id="acctActivateModal" aria-labelledby="acctActivateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Account Deactivate /
+                                Activate
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-acctActivateModal">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="acctActivate-wrapper">
+                                    <div class="acctActivate-title">
+                                        <div class="acctActivate-img">
+                                            <img src="./assets/images/acct-deactivate.svg" alt="Account">
+                                        </div>
+                                        <div>
+                                            <h6>Account Deactivation/Deletion</h6>
+                                            <p>Choose to temporarily deactivate or permanently delete your account and
+                                                all associated data.</p>
+                                        </div>
 
-    <!-- ============================ Delete Modal ======================= -->
+                                    </div>
+                                    <div class="acctActivate-form">
+                                        <div class="acctActivate-input">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="deactiveAcct">
+                                            </div>
+                                            <div class="acctActivate-input-text">
+                                                <h6 class="mb-0">Deactivate account <span><img
+                                                            src="./assets/images/info-circle.svg" alt="info-circle"
+                                                            data-bs-toggle="tooltip" data-bs-placement="right"
+                                                            data-bs-title="While your data might be preserved, you will
+                                                    not be able to access the portal or its functionalities until you
+                                                    choose to reactivate your account"></span></h6>
+                                                <p class="mb-0">If you proceed with deactivation, your account will be
+                                                    temporarily suspended.</p>
+                                            </div>
+                                        </div>
+                                        <div class="acctActivate-input delete-input">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="deleteAcct">
+                                            </div>
+                                            <div class="acctActivate-input-text ">
+                                                <h6 class="mb-0">Delete account <span><img
+                                                            src="./assets/images/info-circle.svg" alt="info-circle"
+                                                            data-bs-toggle="tooltip" data-bs-placement="right"
+                                                            data-bs-title="This action will permanently delete your account and all
+                                                    associated data from the email automation portal."></span></h6>
+                                                <p class="mb-0"> This process cannot be undone.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="acctActivate-button" data-bs-toggle="modal"
+                                        data-bs-target="#deleteAcctModal">
+                                        <a href="#" role="button" class="acctActivate-btn">Continue</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Login History========================= -->
+    <div class="modal fade " id="loginHistoryModal" aria-labelledby="loginHistoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Change Password
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-loginHistoryModal">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="loginHistory-wrapper">
+                                    <div class="loginHistory-title">
+                                        <div class="loginHistory-img">
+                                            <img src="./assets/images/login-history.svg" alt="Login History">
+                                        </div>
+                                        <div>
+                                            <h6>Login History</h6>
+                                            <p>Check for unauthorized access by reviewing your account's login activity.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="table-div">
+                                        <div class="table-head mb-0">
+                                            <div class="table-div1">
+                                                <div class="table-heading">
+                                                    <h4 class="mb-0">
+                                                        Credits History
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="login-history-table-div table-responsive">
+                                            <table id="login-history-table" class="Table" style="width:100%">
+                                                <thead class="table-heading">
+                                                    <tr>
+                                                        <th>Timestamp</th>
+                                                        <th>IP Address</th>
+                                                        <th>Device</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2023-10-05 09:15:32 UTC</td>
+                                                        <td>192.168.1.1</td>
+                                                        <td>Chrome (Windows 11)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-04 14:30:15 UTC</td>
+                                                        <td>10.0.0.2</td>
+                                                        <td>Safari (iPhone iOS 16)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-03 18:22:47 UTC</td>
+                                                        <td>203.0.113.42</td>
+                                                        <td>Firefox (MacOS Ventura)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-05 09:15:32 UTC</td>
+                                                        <td>192.168.1.1</td>
+                                                        <td>Chrome (Windows 11)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2023-10-05 09:15:32 UTC</td>
+                                                        <td>192.168.1.1</td>
+                                                        <td>Chrome (Windows 11)</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Choose Language ========================= -->
+    <div class="modal fade " id="chooseLangModal" aria-labelledby="chooseLangModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                    <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="settings.html" class="link-item">Settings</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Choose Language
+                            </li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container modal-chooseLangModal">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="chooseLang-wrapper">
+                                    <div class="chooseLang-title">
+                                        <div class="chooseLang-img">
+                                            <img src="./assets/images/choose-lang.svg" alt="Language">
+                                        </div>
+                                        <div>
+                                            <h6>Languages support for whatsapp messages</h6>
+                                            <p>Manage the language used for all WhatsApp message features within this
+                                                portal.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="language-wrapper">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-2 col-sm-12">
+                                                <div class="choose-lang-title">
+                                                    <h6>Choose Language</h6>
+                                                </div>
+                                                <div class="choose-lang">
+                                                    <div class="Search-lang">
+                                                        <input type="search" class="form-control search " id="dt-search"
+                                                            placeholder="Search language">
+                                                    </div>
+                                                    <div class="lang-options">
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="ArabicCheck">
+                                                            <label class="form-check-label"
+                                                                for="smsCheck">Arabic</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="CatalanCheck">
+                                                            <label class="form-check-label"
+                                                                for="smsCheck">Catalan</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="CzechCheck">
+                                                            <label class="form-check-label" for="smsCheck">Czech</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="EnglishCheck">
+                                                            <label class="form-check-label"
+                                                                for="smsCheck">English</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-2 col-sm-12">
+                                                <div class="choose-lang-title">
+                                                    <h6>Selected Language</h6>
+                                                </div>
+                                                <div class="choose-lang">
+                                                    <div class="lang-options">
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="ArabicCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="ArabicCheck">Arabic</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="CatalanCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="CatalanCheck">Catalan</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="CzechCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="CzechCheck">Czech</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="EnglishCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="EnglishCheck">English</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline setting-checkBox">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="FrenchCheck" checked>
+                                                            <label class="form-check-label"
+                                                                for="FrenchCheck">French</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <a href="settings.html" role="button" class="back-btn">
+                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ Delete user Modal ======================= -->
     <div class="modal fade deleteModal" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1646,7 +1982,38 @@
             </div>
         </div>
     </div>
-    <!-- ============================ Delete Modal ======================= -->
+    <!-- ============================ Delete Account Modal ======================= -->
+    <div class="modal fade deleteModal" id="deleteAcctModal" tabindex="-1" aria-labelledby="deleteModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="deleteAcctModal">Confirm Account Deletion</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Are you sure you want to permanently delete your account? This action is
+                                irreversible.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-target="#acctActivateModal"
+                            data-bs-toggle="modal">Cancel</button>
+                        <button type="button" class="btn-red" data-bs-target="#acctActivateModal"
+                            data-bs-toggle="modal">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ Deactivate user Modal ======================= -->
     <div class="modal fade deleteModal" id="deactivateModal" tabindex="-1" aria-labelledby="deactivateModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -1671,6 +2038,36 @@
                             data-bs-toggle="modal">Cancel</button>
                         <button type="button" class="btn-red" data-bs-target="#teamAccessPermission"
                             data-bs-toggle="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ Deactivate Account Modal ======================= -->
+    <div class="modal fade deleteModal" id="deactivateAcctModal" tabindex="-1" aria-labelledby="deactivateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Confirm Account Deactivation</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Are you sure you want to deactivate your account?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-target="#acctActivateModal"
+                            data-bs-toggle="modal">Cancel</button>
+                        <button type="button" class="btn-red" data-bs-target="#acctActivateModal"
+                            data-bs-toggle="modal">Deactivation</button>
                     </div>
                 </div>
             </div>
@@ -1709,7 +2106,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
-    <script>new DataTable('#payment-history-table', {
+    <script>new DataTable('#login-history-table', {
             layout: {
                 topStart: null,
                 topEnd: null,
@@ -1720,8 +2117,57 @@
                 },
             }
         });</script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
 
+    //     // ================ Team Acccess & Permission Script For Wizard ==============
 
+    //     // Next button functionality
+    //     document.querySelectorAll("#next-btn").forEach((btn) => {
+    //         btn.addEventListener("click", () => {
+    //             const currentStep = document.querySelector(".step-content:not(.d-none)");
+    //             const nextStep = currentStep.nextElementSibling;
+
+    //             if (nextStep) {
+    //                 currentStep.classList.add("d-none");
+    //                 nextStep.classList.remove("d-none");
+
+    //                 const stepNumber = parseInt(nextStep.classList[1].split("-")[1]);
+    //                 document
+    //                     .querySelectorAll(".step")
+    //                     .forEach((s) => s.classList.remove("active"));
+    //                 document
+    //                     .querySelector(`.step[data-step="${stepNumber}"]`)
+    //                     .classList.add("active");
+    //             }
+    //         });
+    //     });
+
+    //     // Previous button functionality
+    //     document.querySelectorAll(".prev-btn").forEach((btn) => {
+    //         btn.addEventListener("click", () => {
+    //             const currentStep = document.querySelector(".step-content:not(.d-none)");
+    //             const prevStep = currentStep.previousElementSibling;
+
+    //             if (prevStep) {
+    //                 currentStep.classList.add("d-none");
+    //                 prevStep.classList.remove("d-none");
+
+    //                 const stepNumber = parseInt(prevStep.classList[1].split("-")[1]);
+    //                 document
+    //                     .querySelectorAll(".step")
+    //                     .forEach((s) => s.classList.remove("active"));
+    //                 document
+    //                     .querySelector(`.step[data-step="${stepNumber}"]`)
+    //                     .classList.add("active");
+    //             }
+    //         });
+    //     });
+
+    // </script>
 </body>
 
 </html>
