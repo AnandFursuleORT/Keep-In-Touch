@@ -169,6 +169,10 @@
                                 </nav>
                             </div>
                             <div class="topbar-widgets">
+                                <div class="topbar-search-div">
+                                    <input type="search" class="form-control topbar-search" id="searchUniversal"
+                                        placeholder="Search">
+                                </div>
                                 <div class="notification ">
                                     <img src="./assets/images/notification.svg" alt="notification">
                                 </div>
@@ -627,6 +631,11 @@
                         </div>
 
                     </div>
+                    <footer>
+                        <div class="version">
+                            <h6>Version 1.1</h6>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -682,10 +691,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-table-div table-responsive">
-                                <table id="product-table" class="Table" style="width:100%">
+                            <div class="user-list-div table-responsive">
+                                <table id="user-list-table" class="Table" style="width:100%">
                                     <thead class="table-heading">
                                         <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </th>
                                             <th>Sr.No</th>
                                             <th>Name</th>
                                             <th>Email</th>
@@ -698,6 +713,12 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>1</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -736,6 +757,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>2</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -774,6 +801,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>3</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -812,6 +845,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>4</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -850,6 +889,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>5</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -1003,8 +1048,11 @@
                                         </label>
                                     </div>
 
-                                    <div class="text-end">
-                                        <button type="button" class="next-btn">Next ➔</button>
+                                    <div class="tnext-div">
+                                        <a role="button" class="next-btn-template" id="next-btn">
+                                            Design
+                                            <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
+                                        </a>
                                     </div>
                                 </div>
 
@@ -1074,6 +1122,17 @@
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
     <script>new DataTable('#wallet-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
+    <script>new DataTable('#user-list-table', {
             layout: {
                 topStart: null,
                 topEnd: null,

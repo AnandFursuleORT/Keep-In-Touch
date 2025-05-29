@@ -130,7 +130,7 @@
                                     </a>
                                 </li>
                                 <li class="menu-item" data-bs-toggle="modal" data-bs-target="#teamAccessPermission">
-                                    <a href="#" >
+                                    <a href="#">
                                         <img src="./assets/images/user-management-menu.svg" alt="user management">
                                         <span>User Management</span>
                                     </a>
@@ -157,7 +157,7 @@
             <div class="col-lg-10 col-md-9 col-sm-12">
                 <div class="main-content">
                     <div class="topbar d-none d-md-block d-lg-block">
-                        <div class="topbar-div d-flex align-items-center justify-content-between">
+                        <div class="topbar-div">
                             <div>
                                 <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
                                     aria-label="breadcrumb">
@@ -168,7 +168,11 @@
                                     </ol>
                                 </nav>
                             </div>
-                            <div class="topbar-widgets d-flex align-items-center gap-2">
+                            <div class="topbar-widgets">
+                                <div class="topbar-search-div">
+                                    <input type="search" class="form-control topbar-search" id="searchUniversal"
+                                        placeholder="Search">
+                                </div>
                                 <div class="notification">
                                     <img src="./assets/images/notification.svg" alt="notification">
                                 </div>
@@ -365,8 +369,9 @@
                                                             <span>Plans</span>
                                                         </a>
                                                     </li>
-                                                    <li class="menu-item" data-bs-toggle="modal" data-bs-target="#teamAccessPermission">
-                                                        <a href="#" >
+                                                    <li class="menu-item" data-bs-toggle="modal"
+                                                        data-bs-target="#teamAccessPermission">
+                                                        <a href="#">
                                                             <img src="./assets/images/user-management-menu.svg"
                                                                 alt="user management">
                                                             <span>User Management</span>
@@ -628,7 +633,13 @@
 
                                 </div>
                             </div>
+                            
                         </div>
+                         <footer>
+                            <div class="version">
+                                <h6>Version 1.1</h6>
+                            </div>
+                        </footer>
 
                     </div>
                 </div>
@@ -790,7 +801,7 @@
     </div>
 
 
-     <!-- team Access Permission-->
+    <!-- team Access Permission-->
     <div class="modal fade " id="teamAccessPermission" aria-labelledby="teamAccessPermissionLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
@@ -840,10 +851,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-table-div table-responsive">
-                                <table id="product-table" class="Table" style="width:100%">
+                            <div class="user-list-div table-responsive">
+                                <table id="user-list-table" class="Table" style="width:100%">
                                     <thead class="table-heading">
                                         <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </th>
                                             <th>Sr.No</th>
                                             <th>Name</th>
                                             <th>Email</th>
@@ -856,6 +873,12 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>1</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -894,6 +917,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>2</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -932,6 +961,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>3</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -970,6 +1005,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>4</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -1008,6 +1049,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>5</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -1070,7 +1117,7 @@
                     <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
                             <li class="breadcrumb-item"><a href="#" class="link-item" data-bs-toggle="modal"
-                        data-bs-target="#teamAccessPermission">Team Access &
+                                    data-bs-target="#teamAccessPermission">Team Access &
                                     Permission</a></li>
                             <li class="breadcrumb-item active drip-active-item" aria-current="page">Add User</li>
                         </ol>
@@ -1137,7 +1184,7 @@
                                                     id="profile-firstName" placeholder="Enter your First Name">
                                             </div>
                                         </div>
-                                         <div class="col-md-4">
+                                        <div class="col-md-4">
                                             <label class="email-form-label">Sender Email*</label>
                                             <input type="email" class="form-control email-input"
                                                 placeholder="Enter email id">
@@ -1161,8 +1208,11 @@
                                         </label>
                                     </div>
 
-                                    <div class="text-end">
-                                        <button type="button" class="next-btn">Next ➔</button>
+                                   <div class="tnext-div">
+                                        <a role="button" class="next-btn-template" id="next-btn">
+                                            Design
+                                            <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
+                                        </a>
                                     </div>
                                 </div>
 
@@ -1170,7 +1220,7 @@
                                 <div class="step-content step-2 d-none">
                                     <h5>Set Permissions</h5>
                                     <p>Assign permissions here (demo placeholder)</p>
-                                     <div class="row g-3 mb-3">
+                                    <div class="row g-3 mb-3">
                                         <div class="col-md-4">
                                             <div class="drip-input-div">
                                                 <label for="profile-firstName" class="input-label">First
@@ -1179,7 +1229,7 @@
                                                     id="profile-firstName" placeholder="Enter your First Name">
                                             </div>
                                         </div>
-                                         <div class="col-md-4">
+                                        <div class="col-md-4">
                                             <label class="email-form-label">Sender Email*</label>
                                             <input type="email" class="form-control email-input"
                                                 placeholder="Enter email id">
@@ -1250,7 +1300,7 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
-    <script>new DataTable('#event-table', {
+    <script>new DataTable('#user-list-table', {
             layout: {
                 topStart: null,
                 topEnd: null,

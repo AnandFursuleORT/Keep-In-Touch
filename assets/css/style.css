@@ -567,6 +567,17 @@ input:not(:placeholder-shown)+label {
     flex-direction: column;
     gap: 24px;
 }
+.version {
+    padding: 4px 8px;
+}
+.version h6 {
+    color: #67779A;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0px;
+    text-align: end;
+}
 
 .sidebar.collapsed {
     width: 65px;
@@ -721,13 +732,15 @@ input:not(:placeholder-shown)+label {
 .topbar-div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .topbar-widgets {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-left: auto;
+    justify-content: end;
 }
 
 .topbar {
@@ -775,6 +788,19 @@ input:not(:placeholder-shown)+label {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+.topbar-search-div {
+    min-width: 100%;
+}
+.topbar-search {
+    padding: 11px 16px;
+    background-image: url("../images/search.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: 2% center !important;
+    padding-left: 40px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    background: #FAFAFC;
 }
 
 .topbar-widgets-text {
@@ -913,6 +939,7 @@ input:not(:placeholder-shown)+label {
     color: #FAFAFC;
     font-size: 16px;
     font-weight: 500;
+    min-width: 12%;
 }
 
 .add-button:hover {
@@ -935,7 +962,7 @@ input:not(:placeholder-shown)+label {
 .nav-pills .table-tabs-link.active {
     background-color: transparent !important;
     color: #0E285E;
-    font-size: 16px;
+    /* font-size: 16px; */
     font-weight: 600;
 }
 
@@ -1039,6 +1066,10 @@ thead th:last-child {
 table {
     border-collapse: separate;
     border-spacing: 0;
+}
+
+table td .form-check {
+    padding-left: 22px !important;
 }
 
 .dt-layout-full {
@@ -1383,6 +1414,10 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     padding: 24px;
 }
 
+.create-drip-img {
+    padding: 0px !important;
+}
+
 .detail-img-div {
     display: flex;
     align-items: center;
@@ -1427,6 +1462,7 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     color: #0E285E;
     font-size: 16px;
     font-weight: 500;
+    min-width: 25%;
 }
 
 .btn-red {
@@ -1437,6 +1473,7 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     font-size: 16px;
     font-weight: 500;
     border: none !important;
+    min-width: 25%;
 }
 
 .btn-grey:hover {
@@ -1898,6 +1935,10 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     font-size: 14px;
     font-weight: 500;
     line-height: 26px;
+}
+
+.select-tag option:focus {
+    background-color: red !important;
 }
 
 .filtered-date-display {
@@ -3430,8 +3471,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .template-main-div {
     display: flex;
     flex-direction: column;
-    max-height: 65vh;
-    overflow-y: auto;
+    /* max-height: 65vh;
+    overflow-y: auto; */
 }
 
 .template-div p {
@@ -3655,6 +3696,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
+    justify-content: center;
+    min-width: 10%;
 }
 
 /* =========================== Events ============================== */

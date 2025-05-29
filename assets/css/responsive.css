@@ -97,7 +97,7 @@
     }
 
     .nav-pills .table-tabs-link.active {
-        font-size: 16px;
+        /* font-size: 16px; */
         padding: 8px;
     }
 
@@ -235,6 +235,7 @@
         height: 14px;
         width: 14px;
     }
+
     .pricing-table thead th {
         padding: 10px;
 
@@ -243,7 +244,8 @@
     .pricing-table tbody td {
         padding: 6px;
     }
-     .features img {
+
+    .features img {
         height: 16px;
         width: 16px;
     }
@@ -315,6 +317,12 @@
     .import img {
         width: 14px;
         height: 14px;
+    }
+
+    .topbar-search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
     }
 
     .search {
@@ -414,7 +422,7 @@
     }
 
     .nav-pills .table-tabs-link.active {
-        font-size: 16px;
+        /* font-size: 16px; */
     }
 
     .table-tabs-link:hover {
@@ -1146,7 +1154,7 @@
     }
 
     .drip-footer {
-        padding: 12px 80px;
+        padding: 12px 12px;
     }
 
     .step-text {
@@ -1469,6 +1477,7 @@
     .two-factor-auth-wrapper2 {
         gap: 4px;
     }
+
     .pricing-table thead th {
         padding: 10px;
 
@@ -1477,7 +1486,8 @@
     .pricing-table tbody td {
         padding: 6px;
     }
-     .features img {
+
+    .features img {
         height: 16px;
         width: 16px;
     }
@@ -1494,7 +1504,7 @@
     }
 
     .add-button {
-        padding: 8px 25px;
+        /* padding: 8px 25px; */
         font-size: 12px;
     }
 
@@ -1553,6 +1563,12 @@
     .import img {
         width: 14px;
         height: 14px;
+    }
+
+    .topbar-search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
     }
 
     .search {
@@ -1665,7 +1681,7 @@
     }
 
     .nav-pills .table-tabs-link.active {
-        font-size: 16px;
+        /* font-size: 16px; */
     }
 
     .badge {
@@ -2405,7 +2421,7 @@
     }
 
     .drip-footer {
-        padding: 12px 80px;
+        padding: 12px 12px;
     }
 
     .step-text {
@@ -2452,7 +2468,8 @@
         background-size: 14px;
         font-size: 12px;
     }
-        .event-booth-input,
+
+    .event-booth-input,
     .event-location-input {
         padding: 8px 16px 8px 34px;
         background-size: 14px;
@@ -2737,7 +2754,8 @@
     .pricing-table tbody td {
         padding: 6px;
     }
-     .features img {
+
+    .features img {
         height: 16px;
         width: 16px;
     }
@@ -2818,6 +2836,12 @@
     .import img {
         width: 14px;
         height: 14px;
+    }
+
+    .topbar-search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
     }
 
     .search {
@@ -2928,7 +2952,7 @@
     }
 
     .nav-pills .table-tabs-link.active {
-        font-size: 16px;
+        /* font-size: 16px; */
     }
 
     .badge {
@@ -3668,7 +3692,7 @@
     }
 
     .drip-footer {
-        padding: 12px 80px;
+        padding: 12px 12px;
     }
 
     .step-text {
@@ -3715,7 +3739,8 @@
         background-size: 14px;
         font-size: 12px;
     }
-        .event-booth-input,
+
+    .event-booth-input,
     .event-location-input {
         padding: 8px 16px 8px 34px;
         background-size: 14px;
@@ -3990,7 +4015,8 @@
     .two-factor-auth-wrapper2 {
         gap: 4px;
     }
-     .pricing-table thead th {
+
+    .pricing-table thead th {
         padding: 10px;
 
     }
@@ -3998,7 +4024,8 @@
     .pricing-table tbody td {
         padding: 6px;
     }
-     .features img {
+
+    .features img {
         height: 16px;
         width: 16px;
     }
@@ -4081,6 +4108,12 @@
     .import img {
         width: 14px;
         height: 14px;
+    }
+
+    .topbar-search {
+        padding: 8px 10px 8px 30px;
+        background-size: 14px;
+        font-size: 12px;
     }
 
     .search {
@@ -4191,7 +4224,7 @@
     }
 
     .nav-pills .table-tabs-link.active {
-        font-size: 16px;
+        /* font-size: 16px; */
     }
 
     .badge {
@@ -4931,7 +4964,7 @@
     }
 
     .drip-footer {
-        padding: 12px 80px;
+        padding: 12px 12px;
     }
 
     .step-text {
@@ -4978,7 +5011,8 @@
         background-size: 14px;
         font-size: 12px;
     }
-        .event-booth-input,
+
+    .event-booth-input,
     .event-location-input {
         padding: 8px 16px 8px 34px;
         background-size: 14px;
@@ -5254,7 +5288,8 @@
     .two-factor-auth-wrapper2 {
         gap: 4px;
     }
-     .pricing-table thead th {
+
+    .pricing-table thead th {
         padding: 10px;
 
     }
@@ -5262,7 +5297,8 @@
     .pricing-table tbody td {
         padding: 6px;
     }
-     .features img {
+
+    .features img {
         height: 16px;
         width: 16px;
     }

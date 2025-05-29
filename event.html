@@ -130,7 +130,7 @@
                                     </a>
                                 </li>
                                 <li class="menu-item" data-bs-toggle="modal" data-bs-target="#teamAccessPermission">
-                                    <a href="#" >
+                                    <a href="#">
                                         <img src="./assets/images/user-management-menu.svg" alt="user management">
                                         <span>User Management</span>
                                     </a>
@@ -157,7 +157,7 @@
             <div class="col-lg-10 col-md-9 col-sm-12">
                 <div class="main-content">
                     <div class="topbar d-none d-md-block d-lg-block">
-                        <div class="topbar-div d-flex align-items-center justify-content-between">
+                        <div class="topbar-div">
                             <div>
                                 <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
                                     aria-label="breadcrumb">
@@ -168,7 +168,11 @@
                                     </ol>
                                 </nav>
                             </div>
-                            <div class="topbar-widgets d-flex align-items-center gap-2">
+                            <div class="topbar-widgets">
+                                <div class="topbar-search-div">
+                                    <input type="search" class="form-control topbar-search" id="searchUniversal"
+                                        placeholder="Search">
+                                </div>
                                 <div class="notification">
                                     <img src="./assets/images/notification.svg" alt="notification">
                                 </div>
@@ -366,8 +370,9 @@
                                                             <span>Plans</span>
                                                         </a>
                                                     </li>
-                                                    <li class="menu-item" data-bs-toggle="modal" data-bs-target="#teamAccessPermission">
-                                                        <a href="#" >
+                                                    <li class="menu-item" data-bs-toggle="modal"
+                                                        data-bs-target="#teamAccessPermission">
+                                                        <a href="#">
                                                             <img src="./assets/images/user-management-menu.svg"
                                                                 alt="user management">
                                                             <span>User Management</span>
@@ -408,9 +413,6 @@
                             <div class="table-head">
                                 <div class="table-div1 d-flex align-items-center justify-content-between">
                                     <div class="table-div1-tabs d-flex align-items-center gap-3 ">
-                                        <div class="table-filter">
-                                            <img src="./assets/images/filter.svg" alt="filter">
-                                        </div>
                                         <div class="start-date-event">
                                             <span>
                                                 Start Date: 17 Oct,2025
@@ -424,6 +426,10 @@
                                     <div class="table-search d-flex align-items-center gap-3">
                                         <input type="search" class="form-control search " id="dt-search"
                                             placeholder="Search">
+                                        <div class="table-filter" data-bs-toggle="offcanvas"
+                                            data-bs-target="#filterEvent" aria-controls="offcanvasRight">
+                                            <img src="./assets/images/filter.svg" alt="filter">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -431,6 +437,12 @@
                                 <table id="event-table" class="Table" style="width:100%">
                                     <thead class="table-heading">
                                         <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </th>
                                             <th>Sr.No</th>
                                             <th>Event Name</th>
                                             <th style="max-width: 80px;">Event Description</th>
@@ -444,6 +456,12 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>1</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
@@ -478,6 +496,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>2</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
@@ -512,6 +536,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>3</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
@@ -546,6 +576,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>4</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
@@ -580,6 +616,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>5</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
@@ -618,6 +660,11 @@
                             </div>
                         </div>
                     </div>
+                    <footer>
+                        <div class="version">
+                            <h6>Version 1.1</h6>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -645,8 +692,7 @@
                         <div class="drip-input-div">
                             <label for="dripInput1" class="form-label input-label mb-1">Event Description</label>
                             <textarea class="form-control text-area" style="resize: none;"
-                                placeholder="Enter description"
-                                rows="6"></textarea>
+                                placeholder="Enter description" rows="6"></textarea>
                         </div>
                         <div class="row ">
                             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -661,7 +707,8 @@
                         <div class="row ">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <label class="email-form-label">Location</label>
-                                <input type="text" class="form-control event-location-input" placeholder="Enter Location">
+                                <input type="text" class="form-control event-location-input"
+                                    placeholder="Enter Location">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <label class="email-form-label">Booth No</label>
@@ -691,7 +738,161 @@
         </div>
     </div>
 
+    <!-- =============================== Filter-offcanvas =========================== -->
 
+    <div class="offcanvas offcanvas-end filter-offcanvas" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" id="filterEvent" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title title-offcanvas" id="offcanvasRightLabel">Filter</h5>
+            <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+        </div>
+        <div class="offcanvas-body">
+            <div class="accordion" id="accordionExample">
+                <!-- date filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Date
+                        </button>
+                    </h2>
+                    <div id="f-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <input type="date" class="filter-date w-100">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tag filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#f-collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                            Tags
+                        </button>
+                    </h2>
+                    <div id="f-collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <input type="text" id="tagSearch" class="filter-search" placeholder="Search">
+                            </div>
+                            <div id="tagList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="capt" name="rank"
+                                        value="Captains/Masters">
+                                    <label class="form-check-label filter-label" for="capt">Tags Name
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="officers"
+                                        name="rank" value="Officers">
+                                    <label class="form-check-label filter-label" for="officers">Tag Name
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">Tags Name
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
+                                        name="rank" value="Ratings">
+                                    <label class="form-check-label filter-label" for="ratings">Tags Name
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- City filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#f-collapseFour" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            City
+                        </button>
+                    </h2>
+                    <div id="f-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="mb-3">
+                                <input type="text" id="citySearch" class="filter-search" placeholder="Search">
+                            </div>
+                            <div id="cityList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d1" name="Duration"
+                                        value="D1">
+                                    <label class="form-check-label filter-label" for="d1">City 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d2" name="Duration"
+                                        value="D2">
+                                    <label class="form-check-label filter-label" for="d2">City 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d3" name="Duration"
+                                        value="D3">
+                                    <label class="form-check-label filter-label" for="d3">City 3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d4" name="Duration"
+                                        value="D4">
+                                    <label class="form-check-label filter-label" for="d4">City 4</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="d5" name="Duration"
+                                        value="D5">
+                                    <label class="form-check-label filter-label" for="d5">City 5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- References  Watch filter code -->
+                <div class="accordion-item filter-acdn">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#f-collapseFive" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            References
+                        </button>
+                    </h2>
+                    <div id="f-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ">
+                            <div class="mb-3">
+                                <input type="text" id="referenceSearch" class="filter-search" placeholder="Search">
+                            </div>
+                            <div id="referenceList">
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b1" name="Bridge"
+                                        value="B1">
+                                    <label class="form-check-label filter-label" for="b1">Reference 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b2" name="Bridge"
+                                        value="B2">
+                                    <label class="form-check-label filter-label" for="b2">Reference 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b3" name="Bridge"
+                                        value="B3">
+                                    <label class="form-check-label filter-label" for="b3">Reference 3</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-footer-btn">
+                <button type="button" class="btn-grey">Reset All</button>
+                <button type="button" class="btn-red">Apply</button>
+            </div>
+        </div>
+    </div>
     <!-- ======================= Modal for Added Successfully ======================= -->
 
     <div class="modal fade" id="productCategoryAddedSuccessfully" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -806,7 +1007,7 @@
         </div>
     </div>
 
-     <!-- team Access Permission-->
+    <!-- team Access Permission-->
     <div class="modal fade " id="teamAccessPermission" aria-labelledby="teamAccessPermissionLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
@@ -856,10 +1057,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-table-div table-responsive">
-                                <table id="product-table" class="Table" style="width:100%">
+                            <div class="user-list-table-div table-responsive">
+                                <table id="user-list-table" class="Table" style="width:100%">
                                     <thead class="table-heading">
                                         <tr>
+                                            <th>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </th>
                                             <th>Sr.No</th>
                                             <th>Name</th>
                                             <th>Email</th>
@@ -872,6 +1079,12 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>1</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -910,6 +1123,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>2</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -948,6 +1167,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>3</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -986,6 +1211,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>4</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -1024,6 +1255,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>5</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -1086,7 +1323,7 @@
                     <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
                         <ol class="breadcrumb drip-breadcrumb">
                             <li class="breadcrumb-item"><a href="#" class="link-item" data-bs-toggle="modal"
-                        data-bs-target="#teamAccessPermission">Team Access &
+                                    data-bs-target="#teamAccessPermission">Team Access &
                                     Permission</a></li>
                             <li class="breadcrumb-item active drip-active-item" aria-current="page">Add User</li>
                         </ol>
@@ -1153,7 +1390,7 @@
                                                     id="profile-firstName" placeholder="Enter your First Name">
                                             </div>
                                         </div>
-                                         <div class="col-md-4">
+                                        <div class="col-md-4">
                                             <label class="email-form-label">Sender Email*</label>
                                             <input type="email" class="form-control email-input"
                                                 placeholder="Enter email id">
@@ -1177,8 +1414,11 @@
                                         </label>
                                     </div>
 
-                                    <div class="text-end">
-                                        <button type="button" class="next-btn">Next ➔</button>
+                                   <div class="tnext-div">
+                                        <a role="button" class="next-btn-template" id="next-btn">
+                                            Design
+                                            <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
+                                        </a>
                                     </div>
                                 </div>
 
@@ -1186,7 +1426,7 @@
                                 <div class="step-content step-2 d-none">
                                     <h5>Set Permissions</h5>
                                     <p>Assign permissions here (demo placeholder)</p>
-                                     <div class="row g-3 mb-3">
+                                    <div class="row g-3 mb-3">
                                         <div class="col-md-4">
                                             <div class="drip-input-div">
                                                 <label for="profile-firstName" class="input-label">First
@@ -1195,7 +1435,7 @@
                                                     id="profile-firstName" placeholder="Enter your First Name">
                                             </div>
                                         </div>
-                                         <div class="col-md-4">
+                                        <div class="col-md-4">
                                             <label class="email-form-label">Sender Email*</label>
                                             <input type="email" class="form-control email-input"
                                                 placeholder="Enter email id">
@@ -1266,6 +1506,17 @@
         })
     </script>
     <script>new DataTable('#event-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            }
+        });</script>
+    <script>new DataTable('#user-list-table', {
             layout: {
                 topStart: null,
                 topEnd: null,

@@ -54,6 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Steps email wizard js code in automation modal
+const automationModalEmail= document.getElementById("EmailautomationModal");
+
+automationModalEmail.addEventListener("hidden.bs.modal", () => {
+  setActiveStep(1);
+});
 
 const steps = document.querySelectorAll(".email-step");
 const contents = document.querySelectorAll(".step-content");
@@ -96,6 +101,12 @@ document.getElementById("create-own").addEventListener("click", () => {
 });
 
 // Steps sms wizard js code in automation modal
+const automationModalSMS= document.getElementById("SMSautomationModal");
+
+automationModalSMS.addEventListener("hidden.bs.modal", () => {
+  setActiveStep(1);
+});
+
 
 const steps1 = document.querySelectorAll(".sms-step");
 const contents1 = document.querySelectorAll(".step-content1");
@@ -135,7 +146,10 @@ document.getElementById("smsbackBtn").addEventListener("click", () => {
 });
 
 // Steps whatsapp wizard js code in automation modal
-
+const automationModalWhatsapp= document.getElementById("WhatsAppautomationModal");
+automationModalWhatsapp.addEventListener("hidden.bs.modal", () => {
+  setActiveStep(1);
+});
 const steps2 = document.querySelectorAll(".whatsapp-step");
 const contents2 = document.querySelectorAll(".step-content2");
 
@@ -226,10 +240,6 @@ setupSearchAndCheckboxBehavior("citySearch", "cityList");
 setupSearchAndCheckboxBehavior("referenceSearch", "referenceList");
 setupSearchAndCheckboxBehavior("EngineSearch", "EngineList");
 
-
-
-
-
 // ================ Team Acccess & Permission Script For Wizard ==============
 
 // // Next button functionality
@@ -273,7 +283,6 @@ setupSearchAndCheckboxBehavior("EngineSearch", "EngineList");
 //     }
 //   });
 // });
-
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   // Next button functionality

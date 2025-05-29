@@ -158,7 +158,7 @@
             <div class="col-lg-10 col-md-9 col-sm-12">
                 <div class="main-content">
                     <div class="topbar d-none d-md-block d-lg-block">
-                        <div class="topbar-div d-flex align-items-center justify-content-between">
+                        <div class="topbar-div ">
                             <div>
                                 <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
                                     aria-label="breadcrumb">
@@ -169,7 +169,11 @@
                                     </ol>
                                 </nav>
                             </div>
-                            <div class="topbar-widgets d-flex align-items-center gap-2">
+                            <div class="topbar-widgets">
+                                <div class="topbar-search-div">
+                                    <input type="search" class="form-control topbar-search" id="searchUniversal"
+                                        placeholder="Search">
+                                </div>
                                 <div class="notification">
                                     <img src="./assets/images/notification.svg" alt="notification">
                                 </div>
@@ -433,7 +437,7 @@
                                     <img src="./assets/images/cancel-circle.svg" class="cancel-drip-btn" id="toggle-btn"
                                         alt="cancel-circle">
                                 </div>
-                                <button class="add-button" data-bs-toggle="modal" data-bs-target="#customModal"> <img
+                                <button class="add-button" data-bs-toggle="modal" data-bs-target="#addDripModal"> <img
                                         src="./assets/images/add.svg" alt="">Add Drip
                                 </button>
                             </div>
@@ -443,7 +447,7 @@
                             <div class="header-drip-div d-flex flex-column gap-3">
                                 <div class="heading d-flex align-items-center justify-content-between">
                                     <h4>Drips</h4>
-                                    <button class="add-button" data-bs-toggle="modal" data-bs-target="#customModal">
+                                    <button class="add-button" data-bs-toggle="modal" data-bs-target="#addDripModal">
                                         <img src="./assets/images/add.svg" alt="">Add Drip</button>
                                 </div>
 
@@ -513,6 +517,12 @@
                                         <table id="drip-active-table" class="Table" style="width:100%">
                                             <thead class="table-heading">
                                                 <tr>
+                                                    <th>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </th>
                                                     <th>Sr.No</th>
                                                     <th>Name</th>
                                                     <th>Code</th>
@@ -526,6 +536,12 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>1</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -548,6 +564,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>2</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -570,6 +592,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>3</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -592,6 +620,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>4</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -614,6 +648,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>5</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -636,6 +676,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>6</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -658,6 +704,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>7</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -680,6 +732,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>8</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -702,6 +760,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>9</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -724,6 +788,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>10</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -746,6 +816,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>11</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -768,6 +844,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>12</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -790,6 +872,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>13</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -812,6 +900,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>14</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -834,6 +928,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>15</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -856,6 +956,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>16</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -878,6 +984,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>17</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -900,6 +1012,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>18</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -922,6 +1040,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>19</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -953,6 +1077,12 @@
                                         <table id="drip-event-table" class="Table" style="width:100%">
                                             <thead class="table-heading">
                                                 <tr>
+                                                    <th>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </th>
                                                     <th>Sr.No</th>
                                                     <th>Name</th>
                                                     <th>Code</th>
@@ -966,6 +1096,12 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>1</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -988,6 +1124,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>2</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1010,6 +1152,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>3</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1032,6 +1180,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>4</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1054,6 +1208,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>5</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1076,6 +1236,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>6</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1098,6 +1264,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>7</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1120,6 +1292,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>8</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1142,6 +1320,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>9</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1164,6 +1348,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>10</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1186,6 +1376,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>11</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1208,6 +1404,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>12</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1230,6 +1432,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>13</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1252,6 +1460,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>14</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1274,6 +1488,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>15</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1296,6 +1516,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>16</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1318,6 +1544,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>17</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1340,6 +1572,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>18</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1362,6 +1600,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>19</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1393,6 +1637,12 @@
                                         <table id="drip-draft-table" class="Table" style="width:100%">
                                             <thead class="table-heading">
                                                 <tr>
+                                                    <th>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </th>
                                                     <th>Sr.No</th>
                                                     <th>Name</th>
                                                     <th>Code</th>
@@ -1406,6 +1656,12 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>1</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1428,6 +1684,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>2</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1450,6 +1712,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>3</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1472,6 +1740,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>4</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1494,6 +1768,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>5</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1516,6 +1796,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>6</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1538,6 +1824,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>7</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1560,6 +1852,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>8</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1582,6 +1880,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>9</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1604,6 +1908,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>10</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1626,6 +1936,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>11</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1648,6 +1964,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>12</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1670,6 +1992,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>13</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1692,6 +2020,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>14</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1714,6 +2048,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>15</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1736,6 +2076,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>16</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1758,6 +2104,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>17</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1780,6 +2132,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>18</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1802,6 +2160,12 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="checkDefault">
+                                                        </div>
+                                                    </td>
                                                     <td>19</td>
                                                     <td class="table-text-dark">Samuel Schmidt</td>
                                                     <td>#573d7d</td>
@@ -1830,19 +2194,24 @@
                             </div>
                         </div>
                     </div>
+                    <footer>
+                        <div class="version">
+                            <h6>Version 1.1</h6>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
     </div>
     <!-- add-drip Modal -->
-    <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal fade" id="addDripModal" tabindex="-1" aria-labelledby="addDripModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg dripModal"> <!-- Larger & Centered -->
             <div class="modal-content add-drip-modal">
                 <div class="modal-body p-0">
                     <div class="container">
                         <div class="row align-items-center">
                             <!-- Left Side Image -->
-                            <div class="col-md-6 text-center">
+                            <div class="col-md-6 create-drip-img">
                                 <img src="./assets/images/add-drip-modal.png" alt="Illustration" class="dripMailImg">
                             </div>
                             <!-- Right Side Text -->
@@ -2051,7 +2420,8 @@
             <div class="modal-content add-drip-modal">
                 <div class="modal-header p-0 border-0">
                     <h4 class="modal-dt-hdg">Drip Execution Tag Conditions</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#dripDetailsModal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body ">
                     <div class="container">
@@ -2193,7 +2563,7 @@
                             </li>
                         </ol>
                     </nav>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#cofirmCloseModal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container modal-cont">
@@ -2627,7 +2997,8 @@
                 <div class="modal-footer">
                     <div class="d-flex justify-content-end  gap-3">
                         <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn-red">Confirm</button>
+                        <button type="button" class="btn-red" data-bs-toggle="modal"
+                            data-bs-target="#EmailautomationModal">Confirm</button>
                     </div>
                 </div>
             </div>
@@ -2701,7 +3072,7 @@
                             </li>
                         </ol>
                     </nav>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#cofirmCloseModal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container modal-cont">
@@ -2987,10 +3358,10 @@
 
     <!-- ============================ Template Modal ======================= -->
     <div class="modal fade" id="templateModal" tabindex="-1" aria-labelledby="templateModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header border-0">
-                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Choose Template</h4>
+                    <h4 class="modal-title delete-modal-title" id="templateModalLabel">Choose Template</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -3139,7 +3510,8 @@
                 <div class="modal-footer border-0">
                     <div class="d-flex justify-content-end gap-3">
                         <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn-red">Confirm</button>
+                        <button type="button" class="btn-red" data-bs-toggle="modal"
+                            data-bs-target="#WhatsAppautomationModal">Confirm</button>
                     </div>
                 </div>
             </div>
@@ -3149,7 +3521,7 @@
     <!-- ============================ Text formatting Modal ======================= -->
     <div class="modal fade" id="formattingModal" tabindex="-1" aria-labelledby="formattingModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg dripModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg  dripModal">
             <div class="modal-content">
                 <div class="modal-header px-4 border-0">
                     <h4 class="format-text-hdg mb-0">Text Formatting Shortcuts</h4>
@@ -3222,7 +3594,8 @@
                             </li>
                         </ol>
                     </nav>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#cofirmCloseModal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container modal-cont">
@@ -3590,7 +3963,7 @@
                                             proceeding.</p>
                                     </div>
 
-                                    <div class="at-add-div">
+                                    <!-- <div class="at-add-div">
                                         <div class="dropdown">
                                             <a class="dropdown-toggle add-step-btn" role="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -3621,7 +3994,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -3813,6 +4186,93 @@
                     <div class="d-flex justify-content-end  gap-3">
                         <button type="button" class="btn-grey" data-bs-toggle="modal"
                             data-bs-target="#dripDetailsModal">Cancel</button>
+                        <button type="button" class="btn-red" data-bs-dismiss="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ confirm close ======================= -->
+    <div class="modal fade deleteModal" id="cofirmCloseModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="cofirmCloseModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Confirm Close</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Closing now will discard your input. Do you want to continue?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-toggle="modal"
+                            data-bs-target="#WhatsAppautomationModal">Cancel</button>
+                        <button type="button" class="btn-red" data-bs-dismiss="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ confirm close ======================= -->
+    <div class="modal fade deleteModal" id="cofirmCloseModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="cofirmCloseModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Confirm Close</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Closing now will discard your input. Do you want to continue?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-toggle="modal"
+                            data-bs-target="#SMSautomationModal">Cancel</button>
+                        <button type="button" class="btn-red" data-bs-dismiss="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================ confirm close ======================= -->
+    <div class="modal fade deleteModal" id="cofirmCloseModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="cofirmCloseModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Confirm Close</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Closing now will discard your input. Do you want to continue?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-toggle="modal"
+                            data-bs-target="#EmailautomationModal">Cancel</button>
                         <button type="button" class="btn-red" data-bs-dismiss="modal">Confirm</button>
                     </div>
                 </div>
@@ -4030,6 +4490,12 @@
                                 <table id="product-table" class="Table" style="width:100%">
                                     <thead class="table-heading">
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <th>Sr.No</th>
                                             <th>Name</th>
                                             <th>Email</th>
@@ -4042,6 +4508,12 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>1</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -4080,6 +4552,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>2</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -4118,6 +4596,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>3</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -4156,6 +4640,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>4</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -4194,6 +4684,12 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="checkDefault">
+                                                </div>
+                                            </td>
                                             <td>5</td>
                                             <td class="table-text-dark">Samuel Schmidt</td>
                                             <td>deanna.curtis@example.com</td>
@@ -4347,8 +4843,11 @@
                                         </label>
                                     </div>
 
-                                    <div class="text-end">
-                                        <button type="button" class="next-btn">Next ➔</button>
+                                   <div class="tnext-div">
+                                        <a role="button" class="next-btn-template" id="next-btn">
+                                            Design
+                                            <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
+                                        </a>
                                     </div>
                                 </div>
 
