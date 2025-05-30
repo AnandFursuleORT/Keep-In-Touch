@@ -54,16 +54,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Steps email wizard js code in automation modal
-const automationModalEmail= document.getElementById("EmailautomationModal");
-
+const automationModalEmail = document.getElementById("EmailautomationModal");
 automationModalEmail.addEventListener("hidden.bs.modal", () => {
-  setActiveStep(1);
+  setActiveStepEmail(1);
 });
 
 const steps = document.querySelectorAll(".email-step");
 const contents = document.querySelectorAll(".step-content");
 
-function setActiveStep(stepNum) {
+function setActiveStepEmail(stepNum) {
   steps.forEach((step, index) => {
     const circle = step.querySelector(".step-circle");
     const text = step.querySelector(".step-subtext");
@@ -89,24 +88,22 @@ function setActiveStep(stepNum) {
 }
 
 document.getElementById("nextBtn").addEventListener("click", () => {
-  setActiveStep(2);
+  setActiveStepEmail(2);
 });
 
 document.getElementById("backBtn").addEventListener("click", () => {
-  setActiveStep(1);
+  setActiveStepEmail(1);
 });
 
 document.getElementById("create-own").addEventListener("click", () => {
-  setActiveStep(3);
+  setActiveStepEmail(3);
 });
 
 // Steps sms wizard js code in automation modal
-const automationModalSMS= document.getElementById("SMSautomationModal");
-
+const automationModalSMS = document.getElementById("SMSautomationModal");
 automationModalSMS.addEventListener("hidden.bs.modal", () => {
-  setActiveStep(1);
+  setActiveStepSms(1);
 });
-
 
 const steps1 = document.querySelectorAll(".sms-step");
 const contents1 = document.querySelectorAll(".step-content1");
@@ -146,9 +143,11 @@ document.getElementById("smsbackBtn").addEventListener("click", () => {
 });
 
 // Steps whatsapp wizard js code in automation modal
-const automationModalWhatsapp= document.getElementById("WhatsAppautomationModal");
+const automationModalWhatsapp = document.getElementById(
+  "WhatsAppautomationModal"
+);
 automationModalWhatsapp.addEventListener("hidden.bs.modal", () => {
-  setActiveStep(1);
+  setActiveStepWhatsApp(1);
 });
 const steps2 = document.querySelectorAll(".whatsapp-step");
 const contents2 = document.querySelectorAll(".step-content2");
