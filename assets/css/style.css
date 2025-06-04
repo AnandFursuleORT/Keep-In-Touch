@@ -207,15 +207,14 @@ input:not(:placeholder-shown)+label {
     background: #E94B50;
     padding: 16px 8px;
     text-align: center;
-}
-
-.sign-in-btn a {
-    color: #FFF;
+     color: #FFF;
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
     text-decoration: none;
 }
+
+
 
 .horizontal-line {
     display: flex;

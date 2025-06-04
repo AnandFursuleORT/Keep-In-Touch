@@ -918,9 +918,6 @@
 
     .sign-in-btn {
         padding: 8px;
-    }
-
-    .sign-in-btn a {
         font-size: 14px;
         line-height: 20px;
     }
@@ -2184,10 +2181,7 @@
     }
 
     .sign-in-btn {
-        padding: 6px;
-    }
-
-    .sign-in-btn a {
+        padding: 8px;
         font-size: 14px;
         line-height: 20px;
     }
@@ -3455,10 +3449,7 @@
     }
 
     .sign-in-btn {
-        padding: 6px;
-    }
-
-    .sign-in-btn a {
+        padding: 8px;
         font-size: 14px;
         line-height: 20px;
     }
@@ -4727,10 +4718,7 @@
     }
 
     .sign-in-btn {
-        padding: 6px;
-    }
-
-    .sign-in-btn a {
+        padding: 8px;
         font-size: 14px;
         line-height: 20px;
     }
