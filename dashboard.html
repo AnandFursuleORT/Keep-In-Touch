@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="icon" type="image/x-icon" href="assets/images/KIT-favicon.png">
 </head>
 
@@ -21,19 +21,19 @@
                 <div class="sidebar" id="sidebar">
                     <div class="menu-div1">
                         <div class="logo">
-                            <span><img src="Assets/images/logo.svg" alt="brand-logo"></span>
+                            <img src="./assets/images/logo.svg" alt="brand-logo">
                         </div>
                         <div class="sidebar-menu">
                             <ul class="menu-list">
-                                <li class="menu-item">
-                                    <a href="dashboard.html">
-                                        <img src="Assets/images/dashboard-menu.svg" alt="dashboard-icon">
+                                <li class="menu-item active">
+                                    <a href="">
+                                        <img src="./assets/images/dashboard-menu.svg" alt="dashboard-icon">
                                         <span>Dashboard</span>
                                     </a>
                                 </li>
-                                <li class="menu-item active">
+                                <li class="menu-item">
                                     <a href="wallet.html">
-                                        <img src="assets/images/wallet-selected.svg" alt="dashboard-icon">
+                                        <img src="./assets/images/wallet-menu.svg" alt="Drip">
                                         <span>Wallet</span>
                                     </a>
                                 </li>
@@ -43,25 +43,26 @@
                                             <div class="accordion-header">
                                                 <button class="accordion-button sidebar-accordion collapsed"
                                                     type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseaccordionContact" aria-expanded="false"
-                                                    aria-controls="collapseOne">
-                                                    <img src="assets/images/contact-menu.svg" alt="">
-                                                    <span class="ps-3">Contact</span>
+                                                    data-bs-target="#collapseContact" aria-expanded="true"
+                                                    aria-controls="collapseContact">
+                                                    <img src="./assets/images/contact-menu.svg" alt="">
+                                                    <span>Contact</span>
                                                 </button>
                                             </div>
-                                            <div id="collapseaccordionContact" class="accordion-collapse collapse">
+                                            <div id="collapseContact" class="accordion-collapse collapse">
                                                 <div class="accordion-body contact-sub-items">
-                                                    <ul class="menu-list">
+                                                    <ul class="accdn-menu-list">
                                                         <li class="menu-item">
                                                             <a href="contact-listing.html">
-                                                                <img src="assets/images/contact-listing1.svg"
+                                                                <img src="./assets/images/contact-listing1.svg"
                                                                     alt="dashboard-icon">
                                                                 <span>Contact Listing</span>
                                                             </a>
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="tag-master.html">
-                                                                <img src="assets/images/tags.svg" alt="dashboard-icon">
+                                                                <img src="./assets/images/tags.svg"
+                                                                    alt="dashboard-icon">
                                                                 <span>Tags</span>
                                                             </a>
                                                         </li>
@@ -72,14 +73,14 @@
                                     </div>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="drip.html">
-                                        <img src="assets/images/drip-icon.svg" alt="Drip">
+                                    <a href="#">
+                                        <img src="./assets/images/drip-selected.svg" alt="dashboard-icon">
                                         <span>Drip</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="event.html">
-                                        <img src="assets/images/event-icon.svg" alt="Event">
+                                        <img src="./assets/images/event-icon.svg" alt="Event">
                                         <span>Event</span>
                                     </a>
                                 </li>
@@ -91,23 +92,23 @@
                                                     type="button" data-bs-toggle="collapse"
                                                     data-bs-target="#collapseaccordionProduct" aria-expanded="false"
                                                     aria-controls="accordionProduct">
-                                                    <img src="assets/images/product-menu.svg" alt="product">
-                                                    <span class="ps-3">Product Management</span>
+                                                    <img src="./assets/images/product-menu.svg" alt="product">
+                                                    <span>Product Management</span>
                                                 </button>
                                             </div>
                                             <div id="collapseaccordionProduct" class="accordion-collapse collapse">
                                                 <div class="accordion-body contact-sub-items">
-                                                    <ul class="menu-list">
+                                                    <ul class="accdn-menu-list">
                                                         <li class="menu-item">
                                                             <a href="products.html">
-                                                                <img src="assets/images/contact-listing1.svg"
-                                                                    alt="product">
+                                                                <img src="./assets/images/contact-listing1.svg"
+                                                                    alt="Products">
                                                                 <span>Products</span>
                                                             </a>
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="product-category.html">
-                                                                <img src="assets/images/product-category-menu.svg"
+                                                                <img src="./assets/images/product-category-menu.svg"
                                                                     alt="product">
                                                                 <span>Product Category</span>
                                                             </a>
@@ -119,21 +120,27 @@
                                     </div>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="reports.html">
-                                        <img src="assets/images/reports-menu.svg" alt="Reports">
+                                    <a href="">
+                                        <img src="./assets/images/reports-menu.svg" alt="Reports">
                                         <span>Reports</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="plans.html">
-                                        <img src="assets/images/plan-menu.svg" alt="Plans">
-                                        <span>Plans</span>
+                                        <img src="./assets/images/plan-menu.svg" alt="Plans">
+                                        <span>Plan</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item" data-bs-toggle="modal" data-bs-target="#teamAccessPermission">
+                                    <a href="#">
+                                        <img src="./assets/images/user-management-menu.svg" alt="user management">
+                                        <span>User Management</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="user-management.html">
-                                        <img src="assets/images/user-management-menu.svg" alt="user management">
-                                        <span>User Management</span>
+                                    <a href="reference.html">
+                                        <img src="./assets/images/user-management-menu.svg" alt="Reference">
+                                        <span>Reference</span>
                                     </a>
                                 </li>
                             </ul>
@@ -144,12 +151,12 @@
                         <div class="app-section-menu">
                             <h6 class="app-text">Get the app</h6>
                             <a class="apple-store">
-                                <img src="assets/images/apple.svg" alt="apple-icon">
-                                <img src="assets/images/appleText.svg" alt="apple-text">
+                                <img src="./assets/images/apple.svg" alt="apple-icon">
+                                <img src="./assets/images/appleText.svg" alt="apple-text">
                             </a>
                             <a class="play-store">
-                                <img src="assets/images/google-play-logo.svg" alt="google-play-icon">
-                                <img src="assets/images/playText.svg" alt="google-play-text">
+                                <img src="./assets/images/google-play-logo.svg" alt="google-play-icon">
+                                <img src="./assets/images/playText.svg" alt="google-play-text">
                             </a>
                         </div>
                     </div>

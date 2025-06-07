@@ -533,14 +533,16 @@
         font-size: 12px;
     }
 
-    .btn-grey {
+    .btn-grey,
+    .btn-red {
         padding: 6px 10px;
         font-size: 12px;
     }
 
-    .btn-red {
-        padding: 6px 10px;
-        font-size: 12px;
+    .applyBtn,
+    .cancelBtn {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
     }
 
     /* Add contact modal */
@@ -567,7 +569,8 @@
         font-size: 12px;
     }
 
-    .email-form-label {
+    .email-form-label,
+    .mobile-form-label {
         font-size: 12px;
     }
 
@@ -598,7 +601,8 @@
         height: 14px;
     }
 
-    .addContact-email-input {
+    .addContact-email-input,
+    .addContact-number-input {
         padding: 8px 16px 10px 42px;
         background-size: 14px;
         font-size: 12px;
@@ -659,10 +663,20 @@
         font-size: 12px;
     }
 
+    .request-btn {
+        padding: 8px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .credit-usage-card,
     .credit-info-card,
     .plan-details-card {
         padding: 10px;
+    }
+
+    .credit-info-wrapper {
+        gap: 5px;
     }
 
     .balance-card {
@@ -1788,14 +1802,16 @@
         font-size: 13px;
     }
 
-    .btn-grey {
+    .btn-grey,
+    .btn-red {
         padding: 6px 10px;
         font-size: 12px;
     }
 
-    .btn-red {
-        padding: 6px 10px;
-        font-size: 12px;
+    .applyBtn,
+    .cancelBtn {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
     }
 
     /* Add contact modal */
@@ -1822,7 +1838,8 @@
         font-size: 12px;
     }
 
-    .email-form-label {
+    .email-form-label,
+    .mobile-form-label {
         font-size: 12px;
     }
 
@@ -1853,7 +1870,8 @@
         height: 14px;
     }
 
-    .addContact-email-input {
+    .addContact-email-input,
+    .addContact-number-input {
         padding: 8px 16px 10px 42px;
         background-size: 14px;
         font-size: 12px;
@@ -1914,10 +1932,20 @@
         font-size: 12px;
     }
 
+    .request-btn {
+        padding: 8px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .credit-usage-card,
     .credit-info-card,
     .plan-details-card {
         padding: 10px;
+    }
+
+    .credit-info-wrapper {
+        gap: 5px;
     }
 
     .balance-card {
@@ -3056,14 +3084,16 @@
         font-size: 13px;
     }
 
-    .btn-grey {
+    .btn-grey,
+    .btn-red {
         padding: 6px 10px;
         font-size: 12px;
     }
 
-    .btn-red {
-        padding: 6px 10px;
-        font-size: 12px;
+    .applyBtn,
+    .cancelBtn {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
     }
 
     /* Add contact modal */
@@ -3090,7 +3120,8 @@
         font-size: 12px;
     }
 
-    .email-form-label {
+    .email-form-label,
+    .mobile-form-label {
         font-size: 12px;
     }
 
@@ -3121,7 +3152,8 @@
         height: 14px;
     }
 
-    .addContact-email-input {
+    .addContact-email-input,
+    .addContact-number-input {
         padding: 8px 16px 10px 42px;
         background-size: 14px;
         font-size: 12px;
@@ -3182,10 +3214,20 @@
         font-size: 12px;
     }
 
+    .request-btn {
+        padding: 8px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .credit-usage-card,
     .credit-info-card,
     .plan-details-card {
         padding: 10px;
+    }
+
+    .credit-info-wrapper {
+        gap: 5px;
     }
 
     .balance-card {
@@ -4325,14 +4367,16 @@
         font-size: 13px;
     }
 
-    .btn-grey {
+    .btn-grey,
+    .btn-red {
         padding: 6px 10px;
         font-size: 12px;
     }
 
-    .btn-red {
-        padding: 6px 10px;
-        font-size: 12px;
+    .applyBtn,
+    .cancelBtn {
+        padding: 2px 4px !important;
+        font-size: 12px !important;
     }
 
     /* Add contact modal */
@@ -4359,7 +4403,8 @@
         font-size: 12px;
     }
 
-    .email-form-label {
+    .email-form-label,
+    .mobile-form-label {
         font-size: 12px;
     }
 
@@ -4390,7 +4435,8 @@
         height: 14px;
     }
 
-    .addContact-email-input {
+    .addContact-email-input,
+    .addContact-number-input {
         padding: 8px 16px 10px 42px;
         background-size: 14px;
         font-size: 12px;
@@ -4451,10 +4497,20 @@
         font-size: 12px;
     }
 
+    .request-btn {
+        padding: 8px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .credit-usage-card,
     .credit-info-card,
     .plan-details-card {
         padding: 10px;
+    }
+
+    .credit-info-wrapper {
+        gap: 5px;
     }
 
     .balance-card {

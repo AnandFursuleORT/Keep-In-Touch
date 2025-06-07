@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
     <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
 </head>
 
@@ -134,6 +136,12 @@
                                     <a href="#">
                                         <img src="./assets/images/user-management-menu.svg" alt="user management">
                                         <span>User Management</span>
+                                    </a>
+                                </li>
+                                 <li class="menu-item">
+                                    <a href="reference.html">
+                                        <img src="./assets/images/user-management-menu.svg" alt="Reference">
+                                        <span>Reference</span>
                                     </a>
                                 </li>
                             </ul>
@@ -961,11 +969,11 @@
                             </div>
                         </div>
                     </div>
-                     <footer>
-                            <div class="version">
-                                <h6>Version 1.1</h6>
-                            </div>
-                        </footer>
+                    <footer>
+                        <div class="version">
+                            <h6>Version 1.1</h6>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -1059,7 +1067,50 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="addContact-Personal"></div>
+                                <div class="addContact-Personal">
+                                    <div class="row mb-3">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="contact-Number" class="mobile-form-label">Mobile
+                                                Number</label>
+                                            <div class="add-contact-mobile">
+                                                <div class="col-md-2">
+                                                    <select
+                                                        class="sign-form-input form-control input-dropdown dropdown-arrow">
+                                                        <option>+91</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="email" class="form-control addContact-number-input"
+                                                        placeholder="Enter sender email id" id="contact-Email">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="contact-Number" class="email-form-label">Mobile
+                                                Number 1 (|Optional)</label>
+                                            <div class="add-contact-mobile">
+                                                <div class="col-md-2">
+                                                    <select
+                                                        class="sign-form-input form-control input-dropdown dropdown-arrow">
+                                                        <option>+91</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <input type="email" class="form-control addContact-number-input"
+                                                        placeholder="Enter sender email id" id="contact-Email">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 d-flex align-items-center">
+                                            <div class="add-email d-flex align-items-center gap-2 pt-4">
+                                                <img src="./assets/images/add-icon.svg" alt="add">
+                                                <div>Add Mobile No.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="addContact-Personal">
                                     <div class="row mb-3">
                                         <div class="col-md-4 col-sm-12">
@@ -1262,7 +1313,9 @@
                     </h2>
                     <div id="f-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <input type="date" class="filter-date w-100">
+                            <div class="filter-date-range">
+                                <input type="text" name="daterange" class="filter-date w-100" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1270,7 +1323,7 @@
                 <!-- Tag filter code -->
                 <div class="accordion-item filter-acdn">
                     <h2 class="accordion-header">
-                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#f-collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                             Tags
                         </button>
@@ -1310,7 +1363,7 @@
                     </div>
                 </div>
                 <!-- City filter code -->
-                <div class="accordion-item filter-acdn">
+                <!-- <div class="accordion-item filter-acdn">
                     <h2 class="accordion-header">
                         <button class="accordion-button filter-acdn-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#f-collapseFour" aria-expanded="true"
@@ -1352,7 +1405,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- References  Watch filter code -->
                 <div class="accordion-item filter-acdn">
@@ -1990,6 +2043,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl,
@@ -2027,7 +2082,15 @@
             }
         });</script>
 
-
+    <script>
+        $(function () {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left'
+            }, function (start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+        });
+    </script>
 
     <script>
         const dateInput = document.querySelector('.filter-date');

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
 </head>
 
@@ -133,6 +134,12 @@
                                     <a href="#">
                                         <img src="./assets/images/user-management-menu.svg" alt="user management">
                                         <span>User Management</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="reference.html">
+                                        <img src="./assets/images/user-management-menu.svg" alt="Reference">
+                                        <span>Reference</span>
                                     </a>
                                 </li>
                             </ul>
@@ -566,11 +573,11 @@
                             </div>
                         </div>
                     </div>
-                     <footer>
-                            <div class="version">
-                                <h6>Version 1.1</h6>
-                            </div>
-                        </footer>
+                    <footer>
+                        <div class="version">
+                            <h6>Version 1.1</h6>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
@@ -750,7 +757,9 @@
                     </h2>
                     <div id="f-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <input type="date" class="filter-date w-100">
+                            <div class="filter-date-range">
+                                <input type="text" name="daterange" class="filter-date w-100" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -758,8 +767,9 @@
                 <!-- Tag filter code -->
                 <div class="accordion-item filter-acdn">
                     <h2 class="accordion-header">
-                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#f-collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#f-collapseTwo" aria-expanded="true"
+                            aria-controls="collapseOne">
                             Tags
                         </button>
                     </h2>
@@ -1292,7 +1302,7 @@
                                         </label>
                                     </div>
 
-                                   <div class="tnext-div">
+                                    <div class="tnext-div">
                                         <a role="button" class="next-btn-template" id="next-btn">
                                             Design
                                             <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
@@ -1365,6 +1375,17 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <script>
+        $(function () {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left'
+            }, function (start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+        });
+    </script>
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl,

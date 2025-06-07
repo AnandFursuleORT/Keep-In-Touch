@@ -207,7 +207,7 @@ input:not(:placeholder-shown)+label {
     background: #E94B50;
     padding: 16px 8px;
     text-align: center;
-     color: #FFF;
+    color: #FFF;
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
@@ -566,9 +566,11 @@ input:not(:placeholder-shown)+label {
     flex-direction: column;
     gap: 24px;
 }
+
 .version {
     padding: 4px 8px;
 }
+
 .version h6 {
     color: #67779A;
     font-size: 12px;
@@ -788,9 +790,11 @@ input:not(:placeholder-shown)+label {
     align-items: center;
     gap: 8px;
 }
+
 .topbar-search-div {
     min-width: 100%;
 }
+
 .topbar-search {
     padding: 11px 16px;
     background-image: url("../images/search.svg") !important;
@@ -1453,26 +1457,34 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     gap: 16px;
 }
 
-.btn-grey {
-    padding: 8px 16px;
-    border-radius: 12px;
-    border: 1px solid #DEE2E9;
-    background: #FAFAFC;
-    color: #0E285E;
-    font-size: 16px;
-    font-weight: 500;
-    min-width: 25%;
+.form-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
 }
 
 .btn-red {
-    padding: 8px 16px;
     border-radius: 12px;
-    background: #E94B50;
+    background-color: #E94B50;
     color: #FAFAFC;
     font-size: 16px;
     font-weight: 500;
-    border: none !important;
-    min-width: 25%;
+    line-height: 26px;
+    border: none;
+    min-width: 80px;
+    padding: 6px 16px;
+}
+
+.btn-grey {
+    border-radius: 12px;
+    background-color: #DEE2E9;
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    border: none;
+    min-width: 80px;
+    padding: 6px 16px;
 }
 
 .btn-grey:hover {
@@ -2029,10 +2041,68 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     border: 1px solid #DEE2E9;
     background: #FFF;
     color: #0E285E;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 24px;
     padding: 12px 16px;
+}
+
+.filter-date-range {
+    display: flex;
+    gap: 8px;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background-color: #E94B50 !important;
+}
+
+/* 
+.daterangepicker td.in-range {
+    background-color: #FCE9E9 !important;
+} */
+.applyBtn {
+    border-radius: 12px;
+    background-color: #E94B50;
+    color: #FAFAFC;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    border: none;
+    min-width: 80px;
+    padding: 6px 16px;
+}
+
+.cancelBtn {
+    border-radius: 12px;
+    background-color: #DEE2E9;
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    border: none;
+    min-width: 80px;
+    padding: 6px 16px;
+}
+
+.applyBtn:hover {
+    background: #EE787C !important;
+}
+
+.applyBtn:disabled {
+    background: #EE787C !important;
+}
+
+.cancelBtn:hover {
+    background: #EBEDF1 !important
+}
+
+.cancelBtn:disabled {
+    background: #EBEDF1 !important
+}
+
+.filter-date:focus-visible {
+    outline: none !important;
 }
 
 .filter-date::-webkit-calendar-picker-indicator {
@@ -2272,6 +2342,24 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     border: 1px solid #DEE2E9;
     background: #FAFAFC;
     padding: 24px;
+}
+
+.add-contact-mobile {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.addContact-number-input {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("../images/phone.svg");
+    background-repeat: no-repeat;
+    background-position: 5% center;
 }
 
 .addContact-email-input {
@@ -3392,6 +3480,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     line-height: 24px;
 }
 
+.mobile-form-label {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
 .next-btn-template {
     display: flex;
     padding: 8px 16px;
@@ -3822,6 +3917,19 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     text-decoration: none;
 }
 
+.request-btn {
+    border-radius: 12px;
+    background: #E94B50;
+    padding: 16px 8px;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    border: none;
+}
+
 .wallet-info-div {
     display: flex;
     padding: 24px;
@@ -4033,7 +4141,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .credit-info-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 5px;
 }
 
 .credit-info,
@@ -4219,30 +4327,62 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 
 /* ================= add user ======================= */
-.user-role-management {
+.set-permission-div {
     border-radius: 12px;
     border: 1px solid #E9E9E9;
     background-color: #FFF;
     padding: 12px;
 }
-
-.user-role-management-header {
+.user-permission-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.set-permission-div-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #E9E9E9;
 }
 
-.user-role-management-header h6,
-.user-role-management-header label {
+.set-permission-div-header h6,
+.set-permission-div-header label {
     color: #0E285E;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 24px;
 }
 
 .form-switch {
     display: flex !important;
+}
+
+.permission-wrapper {
+    padding: 12px;
+}
+
+.permission-wrapper .row {
+    border-bottom: 1px solid #DEE2E9;
+    margin-bottom: 8px;
+}
+
+.permission-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.role-switch-label label {
+    color: #0E285E;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.role-switch-label p {
+    color: #67779A;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
 }
 
 /* ===================== Change Password ============= */
@@ -4806,4 +4946,26 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+/* Reference */
+.Reference-section-one {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Reference-div,
+.Reference-div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Reference-wrapper,
+.Reference-wrapper {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 16px;
 }

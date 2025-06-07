@@ -135,6 +135,12 @@
                                         <span>User Management</span>
                                     </a>
                                 </li>
+                                <li class="menu-item">
+                                    <a href="reference.html">
+                                        <img src="./assets/images/user-management-menu.svg" alt="Reference">
+                                        <span>Reference</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -410,7 +416,7 @@
                                     <img src="./assets/images/download-icon.svg" alt="download">
                                     <span class="download-history">Download History</span>
                                 </a>
-                                <button class="add-button" data-bs-toggle="modal" data-bs-target="#"> <img
+                                <button class="add-button" data-bs-toggle="modal" data-bs-target="#addCreditModal"> <img
                                         src="./assets/images/add.svg" alt="add">Add Credits
                                 </button>
                             </div>
@@ -436,8 +442,8 @@
 
                                             </div>
                                             <div class="card-expiry">
-                                                <span class="Expiry-date-text">Expiry-date</span>
-                                                <span class="Expiry-date">29/02/2025</span>
+                                                <span class="Expiry-date-text">Expiry date</span>
+                                                <span class="Expiry-date">20 May 2026</span>
                                             </div>
                                         </div>
                                     </div>
@@ -507,17 +513,22 @@
                                             <div class="credit-info-wrapper">
                                                 <div
                                                     class="sms-credit d-flex align-items-center justify-content-between">
-                                                    <span class="credit-per-sms">1SMS</span>
+                                                    <span class="credit-per-sms">1 SMS</span>
                                                     <span>2 Credits</span>
                                                 </div>
                                                 <div
                                                     class="email-credit d-flex align-items-center justify-content-between">
-                                                    <span class="credit-per-email">1Email</span>
+                                                    <span class="credit-per-email">1 Email</span>
                                                     <span>3 Credits</span>
                                                 </div>
                                                 <div
                                                     class="whatsapp-credit d-flex align-items-center justify-content-between">
-                                                    <span class="credit-per-whatsapp">1Whatsapp</span>
+                                                    <span class="credit-per-whatsapp">1 Whatsapp</span>
+                                                    <span>4 Credits</span>
+                                                </div>
+                                                <div
+                                                    class="whatsapp-credit d-flex align-items-center justify-content-between">
+                                                    <span class="credit-per-whatsapp">1 Business Whatsapp</span>
                                                     <span>4 Credits</span>
                                                 </div>
                                             </div>
@@ -553,41 +564,41 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>1</td>
-                                                        <td>22-01-2025</td>
+                                                        <td>20 May 2026</td>
                                                         <td>1000</td>
-                                                        <td>O Days (08-02-2030)</td>
+                                                        <td>O Days (20 May 2026)</td>
                                                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>2</td>
-                                                        <td>22-01-2025</td>
+                                                        <td>20 May 2026</td>
                                                         <td>1000</td>
-                                                        <td>O Days (08-02-2030)</td>
+                                                        <td>O Days (20 May 2026)</td>
                                                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>3</td>
-                                                        <td>22-01-2025</td>
+                                                        <td>20 May 2026</td>
                                                         <td>1000</td>
-                                                        <td>O Days (08-02-2030)</td>
+                                                        <td>O Days (20 May 2026)</td>
                                                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>4</td>
-                                                        <td>22-01-2025</td>
+                                                        <td>20 May 2026</td>
                                                         <td>1000</td>
-                                                        <td>O Days (08-02-2030)</td>
+                                                        <td>O Days (20 May 2026)</td>
                                                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>5</td>
-                                                        <td>22-01-2025</td>
+                                                        <td>20 May 2026</td>
                                                         <td>1000</td>
-                                                        <td>O Days (08-02-2030)</td>
+                                                        <td>O Days (20 May 2026)</td>
                                                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                         </td>
                                                     </tr>
@@ -618,10 +629,10 @@
                                             </div>
                                             <div class="plan-view-details">
                                                 <div>
-                                                    <a class="btn-grey" href="#" role="button">View Details</a>
+                                                    <a class="btn-grey" href="plans.html" role="button">View Details</a>
                                                 </div>
                                                 <div>
-                                                    <a class="btn-red" href="#" role="button">Upgrade Plan</a>
+                                                    <a class="btn-red" href="plans.html" role="button">Upgrade Plan</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -640,7 +651,36 @@
             </div>
         </div>
     </div>
+    <!-- ======================= Modal for Add  ======================= -->
 
+    <div class="modal fade" id="addCreditModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="addCreditModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content add-modal">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h4 class="modal-title add-modal-title" id="exampleModalLabel">Add Credit</h4>
+                    <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
+                        aria-label="Close" aria-label="Close">
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="drip-input-div">
+                            <label for="dripInput1" class="form-label input-label mb-1">Add Credit</label>
+                            <input type="text" class="form-control input-text" id="dripInput1"
+                                placeholder="Enter Credit">
+                        </div>
+                        <button class="request-btn" type="button">Request Credit</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                    <div class="form-buttons">
+                        <button class="btn-grey" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                        <button class="btn-red">Submit</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
     <!-- team Access Permission-->
     <div class="modal fade " id="teamAccessPermission" aria-labelledby="teamAccessPermissionLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
@@ -724,7 +764,7 @@
                                             <td>deanna.curtis@example.com</td>
                                             <td>Administrator</td>
                                             <td><span class="badge badge-light-success">Active</span></td>
-                                            <td>17:38, 18/10/2022</td>
+                                            <td>17:38, 20 May 2026</td>
                                             <td>500</td>
                                             <td>
                                                 <div class="table-action">
@@ -768,7 +808,7 @@
                                             <td>deanna.curtis@example.com</td>
                                             <td>Administrator</td>
                                             <td><span class="badge badge-light-success">Active</span></td>
-                                            <td>17:38, 18/10/2022</td>
+                                            <td>17:38, 20 May 2026</td>
                                             <td>500</td>
                                             <td>
                                                 <div class="table-action">
@@ -812,7 +852,7 @@
                                             <td>deanna.curtis@example.com</td>
                                             <td>Administrator</td>
                                             <td><span class="badge badge-light-success">Active</span></td>
-                                            <td>17:38, 18/10/2022</td>
+                                            <td>17:38, 20 May 2026</td>
                                             <td>500</td>
                                             <td>
                                                 <div class="table-action">
@@ -856,7 +896,7 @@
                                             <td>deanna.curtis@example.com</td>
                                             <td>Administrator</td>
                                             <td><span class="badge badge-light-success">Active</span></td>
-                                            <td>17:38, 18/10/2022</td>
+                                            <td>17:38, 20 May 2026</td>
                                             <td>500</td>
                                             <td>
                                                 <div class="table-action">
@@ -900,7 +940,7 @@
                                             <td>deanna.curtis@example.com</td>
                                             <td>Administrator</td>
                                             <td><span class="badge badge-light-success">Active</span></td>
-                                            <td>17:38, 18/10/2022</td>
+                                            <td>17:38, 20 May 2026</td>
                                             <td>500</td>
                                             <td>
                                                 <div class="table-action">
