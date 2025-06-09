@@ -4883,7 +4883,7 @@
                 </div>
 
                 <!-- Tag filter code -->
-                <div class="accordion-item filter-acdn">
+                <!-- <div class="accordion-item filter-acdn">
                     <h2 class="accordion-header">
                         <button class="accordion-button filter-acdn-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#f-collapseTwo" aria-expanded="true"
@@ -4924,9 +4924,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- City filter code -->
-                <div class="accordion-item filter-acdn">
+                <!-- <div class="accordion-item filter-acdn">
                     <h2 class="accordion-header">
                         <button class="accordion-button filter-acdn-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#f-collapseFour" aria-expanded="true"
@@ -4968,7 +4968,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- References  Watch filter code -->
                 <div class="accordion-item filter-acdn">
@@ -4988,17 +4988,23 @@
                                 <div class="form-check">
                                     <input class="form-check-input filter-check" type="checkbox" id="b1" name="Bridge"
                                         value="B1">
-                                    <label class="form-check-label filter-label" for="b1">Reference 1</label>
+                                    <label class="form-check-label filter-label" for="b1">WhatsApp</label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input filter-check" type="checkbox" id="b2" name="Bridge"
                                         value="B2">
-                                    <label class="form-check-label filter-label" for="b2">Reference 2</label>
+                                    <label class="form-check-label filter-label" for="b2">Email</label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input filter-check" type="checkbox" id="b3" name="Bridge"
                                         value="B3">
-                                    <label class="form-check-label filter-label" for="b3">Reference 3</span>
+                                    <label class="form-check-label filter-label" for="b3">SMS</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input filter-check" type="checkbox" id="b3" name="Bridge"
+                                        value="B3">
+                                    <label class="form-check-label filter-label" for="b3">WhatsApp Business</span>
                                     </label>
                                 </div>
                             </div>
@@ -5042,7 +5048,7 @@
                         </div>
                         <div class="table-div">
                             <div class="table-head">
-                                <div class="table-div1 d-flex align-items-center justify-content-between mb-3">
+                                <div class="table-div1">
                                     <div class="table-heading">
                                         <h4 class="mb-0">
                                             User List
@@ -5063,16 +5069,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-table-div table-responsive">
-                                <table id="product-table" class="Table" style="width:100%">
+                            <div class="user-list-div table-responsive">
+                                <table id="user-list-table" class="Table" style="width:100%">
                                     <thead class="table-heading">
                                         <tr>
-                                            <td>
+                                            <th>
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value=""
                                                         id="checkDefault">
                                                 </div>
-                                            </td>
+                                            </th>
                                             <th>Sr.No</th>
                                             <th>Name</th>
                                             <th>Email</th>
@@ -5422,7 +5428,7 @@
 
                                     <div class="tnext-div">
                                         <a role="button" class="next-btn-template" id="next-btn">
-                                            Design
+                                            Next
                                             <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
                                         </a>
                                     </div>
@@ -5998,34 +6004,244 @@
                                             </div>
 
                                         </div>
+                                        <div class="user-management-btns">
+                                            <a role="button" class="prev-btn-template" id="prev-btn">
+                                                 <img src="./assets/images/modal-arrow-left.svg" alt="back">
+                                                Back
+                                            </a>
+                                            <a role="button" class="next-btn-template" id="next-btn">
+                                                Next
+                                                <img src="./assets/images/modal-arrow.svg" alt="next">
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <!-- Step 3 -->
+                                <div class="step-content step-3 d-none">
+                                    <div class="Review-details-wrapper">
+                                        <div class="Review-details-div">
+                                            <div class="Review-details-div-header">
+                                                <h6>User Information</h6>
+                                                <span><img src="./assets/images/edit.svg" alt="Edit">Edit</span>
+                                            </div>
+                                            <div class="review-details-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                                        <div class="review-details">
+                                                            <h6>Name</h6>
+                                                            <p>deanna curtis example</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                                        <div class="review-details">
+                                                            <h6>Email</h6>
+                                                            <p>deanna.curtis@example.com</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                                        <div class="review-details">
+                                                            <h6>Role</h6>
+                                                            <p>Administrator</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Review-details-div">
+                                            <div class="Review-details-div-header">
+                                                <h6>User Permission</h6>
+                                                <span><img src="./assets/images/edit.svg" alt="Edit">Edit</span>
+                                            </div>
+                                            <div class="user-permission-details-wrapper">
+                                                <div class="Review-details-div">
+                                                    <div class="Review-details-div-header">
+                                                        <h6>User & Role Management</h6>
+                                                    </div>
+                                                    <div class="review-details-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>Delete/Deactivate Users</h6>
+                                                                    <p>Removes users from the system or temporarily
+                                                                        disables their access.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Review-details-div">
+                                                    <div class="Review-details-div-header">
+                                                        <h6>Contacts & Lists</h6>
+                                                    </div>
+                                                    <div class="review-details-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>Add/Edit Contacts</h6>
+                                                                    <p>Allows users to create new contacts or modify
+                                                                        existing ones.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>Delete Contacts</h6>
+                                                                    <p>Allows users to remove contacts from the system.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Review-details-div">
+                                                    <div class="Review-details-div-header">
+                                                        <h6>Drip Campaigns</h6>
+                                                    </div>
+                                                    <div class="review-details-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>Create/Edit Drip Campaigns</h6>
+                                                                    <p>Allows users to set up or modify automated
+                                                                        sequences of messages.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6> Activate/Deactivate Drips</h6>
+                                                                    <p>Allows users to start or stop automated message
+                                                                        sequences.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6> Delete Drip Campaigns</h6>
+                                                                    <p>Allows users to remove automated message
+                                                                        sequences from system..</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Review-details-div">
+                                                    <div class="Review-details-div-header">
+                                                        <h6>Events Module (Exhibitor only)</h6>
+                                                    </div>
+                                                    <div class="review-details-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>Add/Edit Products</h6>
+                                                                    <p>Allows users to create new or modify existing
+                                                                        product listings..</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Review-details-div">
+                                                    <div class="Review-details-div-header">
+                                                        <h6>Products Module (Exhibitor only)</h6>
+                                                    </div>
+                                                    <div class="review-details-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>View Products</h6>
+                                                                    <p>Allows users to see product details.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Review-details-div">
+                                                    <div class="Review-details-div-header">
+                                                        <h6>Wallet & Credits</h6>
+                                                    </div>
+                                                    <div class="review-details-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>View Wallet & Balance</h6>
+                                                                    <p>Allows users to see their wallet balance and
+                                                                        credit information.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>View Add/Deduct History</h6>
+                                                                    <p>Allows users to view a record of credits added or
+                                                                        deducted from their wallet.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Review-details-div">
+                                                    <div class="Review-details-div-header">
+                                                        <h6>App Settings</h6>
+                                                    </div>
+                                                    <div class="review-details-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>Contact Send Preferences (Primary or All
+                                                                        Numbers)</h6>
+                                                                    <p>Allows users to choose which phone number to use
+                                                                        for sending msgs.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Review-details-div">
+                                                    <div class="Review-details-div-header">
+                                                        <h6></h6>
+                                                    </div>
+                                                    <div class="review-details-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>View Reports</h6>
+                                                                    <p>Allows users to see reports.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                                <div class="review-details">
+                                                                    <h6>Export Reports (CSV, PDF, Excel)</h6>
+                                                                    <p>Allows users to export reports in various
+                                                                        formats.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tnext-div">
+                                            <a role="button" class="next-btn-template" id="">
+                                                Create Role
+                                                <img src="./assets/images/modal-arrow.svg" alt="right-arrow">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- /Wizard Form -->
                         </div>
 
-                        <!-- Step 3 -->
-                        <div class="step-content step-3 d-none">
-                            <h5>Review Details</h5>
-                            <p>Review user details here before submitting.</p>
-
-                            <div class="d-flex justify-content-between">
-                                <button type="button" class="btn btn-secondary prev-btn">← Back</button>
-                                <button type="submit" class="btn btn-success">Submit ✔️</button>
-                            </div>
-                        </div>
-                        </form>
-                        <!-- /Wizard Form -->
                     </div>
+                    <div class="modal-footer border-0 justify-content-start">
+                        <a href="settings.html" role="button" class="back-btn">
+                            <img src="./assets/images/arrow-left.svg" alt="left-arrow">
+                            Back
+                        </a>
+                    </div>
+                </div>
 
-                </div>
-                <div class="modal-footer border-0 justify-content-start">
-                    <a href="#" role="button" class="back-btn">
-                        <img src="./assets/images/arrow-left.svg" alt="left-arrow">
-                        Back
-                    </a>
-                </div>
+
             </div>
-
-
         </div>
     </div>
 
@@ -6037,7 +6253,7 @@
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-      <script>
+    <script>
         $(function () {
             $('input[name="daterange"]').daterangepicker({
                 opens: 'left'
@@ -6111,7 +6327,20 @@
             },
         });
     </script>
-   <script>
+    <script>
+        new DataTable('#user-list-table', {
+            layout: {
+                topStart: null,
+                topEnd: null,
+                bottomStart: {
+                    pageLength: {
+                        menu: [10, 25, 50, 100]
+                    }
+                },
+            },
+        });
+    </script>
+    <script>
 
         // ================ Team Acccess & Permission Script For Wizard ==============
 

@@ -2679,6 +2679,7 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     flex-direction: column;
     gap: 16px;
 }
+
 .ContactDetailModal h6 {
     color: #0E285E;
     font-size: 14px;
@@ -2686,18 +2687,28 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     line-height: 24px;
     margin-bottom: 0px;
 }
+
 .ContactDetailModal h4 {
     color: #0E285E;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
 }
+
 .ContactDetailModal p {
-    color: #67779A  ;
+    color: #67779A;
     font-size: 12px;
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 8px;
+}
+
+.personal-info,
+.Business-info {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 16px
 }
 
 /*  Delete Modal */
@@ -2977,6 +2988,8 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     padding: 2px !important;
     background-color: #DEE2E9 !important;
     background-image: url("../images/Switch.svg") !important;
+    height: 14px;
+    width: 30px !important;
 }
 
 .setting-switch:checked {
@@ -3516,6 +3529,25 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
+}
+
+.user-management-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prev-btn-template {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: #FAFAFC;
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .next-btn-template {
@@ -4333,8 +4365,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .steps .step p {
-    margin: 0;
-    font-size: 0.9rem;
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
 }
 
 .steps .line {
@@ -4358,20 +4392,23 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 
 /* ================= add user ======================= */
-.set-permission-div {
+.set-permission-div,
+.Review-details-div {
     border-radius: 12px;
     border: 1px solid #E9E9E9;
     background-color: #FFF;
     padding: 12px;
 }
 
-.user-permission-wrapper {
+.user-permission-wrapper,
+.Review-details-wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.set-permission-div-header {
+.set-permission-div-header,
+.Review-details-div-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -4379,15 +4416,29 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .set-permission-div-header h6,
-.set-permission-div-header label {
+.set-permission-div-header label,
+.Review-details-div-header h6,
+.Review-details-div-header span {
     color: #0E285E;
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
 }
 
+.Review-details-div-header span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Review-details-div-header span img {
+    height: 14px;
+    width: 14px;
+}
+
 .form-switch {
     display: flex !important;
+    justify-content: center;
 }
 
 .permission-wrapper {
@@ -4416,6 +4467,30 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 12px;
     font-weight: 600;
     line-height: 24px;
+}
+
+.review-details-wrapper {
+    /* background-color: #FAFAFC; */
+    padding: 12px;
+}
+
+.review-details h6 {
+    color: #0E285E;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.review-details p {
+    color: #67779A;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.user-permission-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px;
 }
 
 /* ===================== Change Password ============= */
