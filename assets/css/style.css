@@ -2658,7 +2658,11 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
     line-height: 24px;
     padding: 16px;
     border-bottom: 1px solid #EBEDF1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 
 .contact:last-child {
     border-bottom: none;
@@ -2667,6 +2671,33 @@ table.dataTable thead>tr>td.dt-ordering-desc span.dt-column-order {
 .contact-count-offcanvas {
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
+}
+
+/* ================== contact count Modal ================= */
+.contact-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.ContactDetailModal h6 {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+.ContactDetailModal h4 {
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.ContactDetailModal p {
+    color: #67779A  ;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 8px;
 }
 
 /*  Delete Modal */
@@ -4333,11 +4364,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-color: #FFF;
     padding: 12px;
 }
+
 .user-permission-wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+
 .set-permission-div-header {
     display: flex;
     justify-content: space-between;
@@ -4968,4 +5001,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border: 1px solid #EBEDF1;
     background: #FFF;
     padding: 16px;
+}
+
+.customer-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }

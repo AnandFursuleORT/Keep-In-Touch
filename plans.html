@@ -1116,7 +1116,7 @@
         </div>
     </div>
 
-    <!-- Add User Modal-->
+     <!-- Add User Modal-->
     <div class="modal fade " id="addUserModal" aria-labelledby="addUserModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
@@ -1145,24 +1145,24 @@
                         </div>
                         <div class="teamAccessPermissionForm">
                             <!-- Wizard Steps Navigation -->
-                            <!-- <div class="steps mb-4 d-flex justify-content-between align-items-center">
-                            <div class="step active" data-step="1">
-                                <span>1</span>
-                                <p>User Information</p>
+                            <div class="steps d-flex justify-content-between align-items-center">
+                                <div class="step active" data-step="1">
+                                    <span>1</span>
+                                    <p>User Informations</p>
+                                </div>
+                                <div class="active-line"></div>
+                                <div class="step" data-step="2">
+                                    <span>2</span>
+                                    <p>Set Permissions</p>
+                                </div>
+                                <div class="active-line"></div>
+                                <div class="step" data-step="3">
+                                    <span>3</span>
+                                    <p>Review Details</p>
+                                </div>
                             </div>
-                            <div class="line"></div>
-                            <div class="step" data-step="2">
-                                <span>2</span>
-                                <p>Set Permissions</p>
-                            </div>
-                            <div class="line"></div>
-                            <div class="step" data-step="3">
-                                <span>3</span>
-                                <p>Review Details</p>
-                            </div>
-                        </div> -->
 
-                            <div class="step-indicator">
+                            <!-- <div class="step-indicator">
                                 <div class="step active">
                                     <div class="circle">1</div>
                                     <span class="step-details">User Information</span>
@@ -1177,7 +1177,7 @@
                                     <div class="circle">3</div>
                                     <span class="step-details">Review Details</span>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- Wizard Form -->
                             <form id="userForm">
                                 <!-- Step 1 -->
@@ -1225,54 +1225,593 @@
 
                                 <!-- Step 2 -->
                                 <div class="step-content step-2 d-none">
-                                    <h5>Set Permissions</h5>
-                                    <p>Assign permissions here (demo placeholder)</p>
-                                    <div class="row g-3 mb-3">
-                                        <div class="col-md-4">
-                                            <div class="drip-input-div">
-                                                <label for="profile-firstName" class="input-label">First
-                                                    Name*</label>
-                                                <input type="text" class="form-control input-text"
-                                                    id="profile-firstName" placeholder="Enter your First Name">
+                                    <div class="user-permission-wrapper">
+                                        <div class="set-permission-div">
+                                            <div class="set-permission-div-header">
+                                                <h6>User & Role Management</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck">Enable All</label>
+                                                </div>
                                             </div>
+                                            <div class="permission-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">View
+                                                                    Users</label>
+                                                                <p>
+                                                                    Lists all system users.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Add/Edit
+                                                                    Users</label>
+                                                                <p>
+                                                                    Creates new user accounts or modifies existing ones.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label"
+                                                                    for="smsCheck">Delete/Deactivate Users</label>
+                                                                <p>
+                                                                    Removes users from the system or temporarily
+                                                                    disables
+                                                                    their access.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Manage
+                                                                    Roles
+                                                                    & Permissions</label>
+                                                                <p>
+                                                                    Defines user roles and assigns specific access
+                                                                    rights.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
                                         </div>
-                                        <div class="col-md-4">
-                                            <label class="email-form-label">Sender Email*</label>
-                                            <input type="email" class="form-control email-input"
-                                                placeholder="Enter email id">
+                                        <div class="set-permission-div">
+                                            <div class="set-permission-div-header">
+                                                <h6>Contacts & Lists</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck">Enable All</label>
+                                                </div>
+                                            </div>
+                                            <div class="permission-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">View
+                                                                    Contacts</label>
+                                                                <p>
+                                                                    Allows users to see contact lists and details.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Add/Edit
+                                                                    Contacts</label>
+                                                                <p>
+                                                                    Allows users to create new contacts or modify
+                                                                    existing ones.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label"
+                                                                    for="smsCheck">Import/Export Contacts</label>
+                                                                <p>
+                                                                    Allows users to import contact data from external
+                                                                    files or export it.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Tag
+                                                                    Contacts</label>
+                                                                <p>
+                                                                    Allows users to categorize contacts with labels for
+                                                                    organization and filtering.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Delete
+                                                                    Contacts</label>
+                                                                <p>
+                                                                    Allows users to remove contacts from the system.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
-                                        <div class="col-md-4">
-                                            <label class=" input-label ">Role</label>
-                                            <select class="form-select form-control input-text">
-                                                <option>Admin</option>
-                                                <option>User</option>
-                                                <option>Editor</option>
-                                            </select>
+                                        <div class="set-permission-div">
+                                            <div class="set-permission-div-header">
+                                                <h6>Drip Campaigns</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck" checked>Enable
+                                                        All</label>
+                                                </div>
+                                            </div>
+                                            <div class="permission-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label"
+                                                                    for="smsCheck">Create/Edit Drip Campaigns</label>
+                                                                <p>
+                                                                    Allows users to set up or modify automated sequences
+                                                                    of messages.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label"
+                                                                    for="smsCheck"> Activate/Deactivate Drips</label>
+                                                                <p>
+                                                                    Allows users to start or stop automated message
+                                                                    sequences.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck"> Delete
+                                                                    Drip Campaigns</label>
+                                                                <p>
+                                                                    Allows users to remove automated message sequences
+                                                                    from system.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
                                         </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <button type="button" class="btn btn-secondary prev-btn">← Back</button>
-                                        <button type="button" class="btn btn-danger next-btn">Next ➔</button>
+                                        <div class="set-permission-div">
+                                            <div class="set-permission-div-header">
+                                                <h6>Events Module (Exhibitor only)</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck">Enable All</label>
+                                                </div>
+                                            </div>
+                                            <div class="permission-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">View
+                                                                    Events</label>
+                                                                <p>
+                                                                    Allows users to see event details.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Add/Edit
+                                                                    Products</label>
+                                                                <p>
+                                                                    Allows users to create new or modify existing
+                                                                    product listings.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Delete
+                                                                    Products</label>
+                                                                <p>
+                                                                    Allows users to remove product listings from the
+                                                                    system.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="set-permission-div">
+                                            <div class="set-permission-div-header">
+                                                <h6>Products Module (Retailer only)</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck">Enable All</label>
+                                                </div>
+                                            </div>
+                                            <div class="permission-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Products
+                                                                    Module (Retailer only)</label>
+                                                                <p>
+                                                                    Allows users to see product details.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Add/Edit
+                                                                    Events</label>
+                                                                <p>
+                                                                    Allows users to create new or modify existing event
+                                                                    listings.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Delete
+                                                                    Events</label>
+                                                                <p>
+                                                                    Allows users to remove event listings from the
+                                                                    system.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="set-permission-div">
+                                            <div class="set-permission-div-header">
+                                                <h6>Wallet & Credits</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck">Enable All</label>
+                                                </div>
+                                            </div>
+                                            <div class="permission-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">View
+                                                                    Wallet & Balance</label>
+                                                                <p>
+                                                                    Allows users to see their wallet balance and credit
+                                                                    information.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">View
+                                                                    Add/Deduct History</label>
+                                                                <p>
+                                                                    Allows users to view a record of credits added or
+                                                                    deducted from their wallet.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Delete
+                                                                    Events</label>
+                                                                <p>
+                                                                    Allows users to remove events from the system.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="set-permission-div">
+                                            <div class="set-permission-div-header">
+                                                <h6>App Settings</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck">Enable All</label>
+                                                </div>
+                                            </div>
+                                            <div class="permission-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Language
+                                                                    Preferences</label>
+                                                                <p>
+                                                                    Allows users to set their preferred language for the
+                                                                    application.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">WhatsApp
+                                                                    Preferences</label>
+                                                                <p>
+                                                                    Allows users to customize their WhatsApp settings
+                                                                    within the application.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Contact
+                                                                    Send Preferences (Primary or All Numbers)</label>
+                                                                <p>
+                                                                    Allows users to choose which phone number to use for
+                                                                    sending msgs.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label"
+                                                                    for="smsCheck">Notification Settings</label>
+                                                                <p>
+                                                                    Allows users to configure application notifications.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="set-permission-div">
+                                            <div class="set-permission-div-header">
+                                                <h6>Reports</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input setting-switch" type="checkbox"
+                                                        id="autoDetectSwitch">
+                                                    <label class="form-check-label" for="smsCheck">Enable All</label>
+                                                </div>
+                                            </div>
+                                            <div class="permission-wrapper">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch">
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">View
+                                                                    Reports</label>
+                                                                <p>
+                                                                    Allows users to see reports.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="permission-option">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input setting-switch"
+                                                                    type="checkbox" id="ViewUsersSwitch" checked>
+                                                            </div>
+                                                            <div class="role-switch-label">
+                                                                <label class="form-check-label" for="smsCheck">Export
+                                                                    Reports (CSV, PDF, Excel)</label>
+                                                                <p>
+                                                                    Allows users to export reports in various formats.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
-
-                                <!-- Step 3 -->
-                                <div class="step-content step-3 d-none">
-                                    <h5>Review Details</h5>
-                                    <p>Review user details here before submitting.</p>
-
-                                    <div class="d-flex justify-content-between">
-                                        <button type="button" class="btn btn-secondary prev-btn">← Back</button>
-                                        <button type="submit" class="btn btn-success">Submit ✔️</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <!-- /Wizard Form -->
                         </div>
 
-                    </div>
-                </div>
+                        <!-- Step 3 -->
+                        <div class="step-content step-3 d-none">
+                            <h5>Review Details</h5>
+                            <p>Review user details here before submitting.</p>
 
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn btn-secondary prev-btn">← Back</button>
+                                <button type="submit" class="btn btn-success">Submit ✔️</button>
+                            </div>
+                        </div>
+                        </form>
+                        <!-- /Wizard Form -->
+                    </div>
+
+                </div>
                 <div class="modal-footer border-0 justify-content-start">
                     <a href="#" role="button" class="back-btn">
                         <img src="./assets/images/arrow-left.svg" alt="left-arrow">
@@ -1280,8 +1819,11 @@
                     </a>
                 </div>
             </div>
+
+
         </div>
     </div>
+
 
 
     <script src="./assets/js/script.js"></script>
@@ -1373,7 +1915,53 @@
         });
     </script>
 
+<script>
 
+        // ================ Team Acccess & Permission Script For Wizard ==============
+
+        // // Next button functionality
+        document.querySelectorAll("#next-btn").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const currentStep = document.querySelector(".step-content:not(.d-none)");
+                const nextStep = currentStep.nextElementSibling;
+
+                if (nextStep) {
+                    currentStep.classList.add("d-none");
+                    nextStep.classList.remove("d-none");
+
+                    const stepNumber = parseInt(nextStep.classList[1].split("-")[1]);
+                    document
+                        .querySelectorAll(".step")
+                        .forEach((s) => s.classList.remove("active"));
+                    document
+                        .querySelector(`.step[data-step="${stepNumber}"]`)
+                        .classList.add("active");
+                }
+            });
+        });
+
+        // Previous button functionality
+        document.querySelectorAll(".prev-btn").forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const currentStep = document.querySelector(".step-content:not(.d-none)");
+                const prevStep = currentStep.previousElementSibling;
+
+                if (prevStep) {
+                    currentStep.classList.add("d-none");
+                    prevStep.classList.remove("d-none");
+
+                    const stepNumber = parseInt(prevStep.classList[1].split("-")[1]);
+                    document
+                        .querySelectorAll(".step")
+                        .forEach((s) => s.classList.remove("active"));
+                    document
+                        .querySelector(`.step[data-step="${stepNumber}"]`)
+                        .classList.add("active");
+                }
+            });
+        });
+
+    </script>
 
 </body>
 
