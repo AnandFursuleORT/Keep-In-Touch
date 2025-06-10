@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
+</head>
+
+<body>
+    <div class="container-fluid p-0 layout">
+        <div class="row g-0">
+            <div class="col-lg-2 col-md-3 col-sm-12 d-none d-md-block d-lg-block sidebar-col">
+                <div class="sidebar" id="sidebar">
+                    <div class="menu-div1">
+                        <div class="logo">
+                            <img src="./assets/images/logo.svg" alt="brand-logo">
+                        </div>
+                        <div class="sidebar-menu">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="">
+                                        <img src="./assets/images/dashboard-menu.svg" alt="dashboard-icon">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="wallet.html">
+                                        <img src="./assets/images/wallet-menu.svg" alt="dashboard-icon">
+                                        <span>Wallet</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <div class="accordion" id="accordionContact">
+                                        <div class="accordion-item sidebar-accdn">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseContact" aria-expanded="true"
+                                                    aria-controls="collapseContact">
+                                                    <img src="./assets/images/contact-menu.svg" alt="">
+                                                    <span>Contact</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseContact" class="accordion-collapse collapse">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="accdn-menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="contact-listing.html">
+                                                                <img src="./assets/images/contact-listing1.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Contact Listing</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="tag-master.html">
+                                                                <img src="./assets/images/tags.svg"
+                                                                    alt="dashboard-icon">
+                                                                <span>Tags</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <img src="./assets/images/drip-icon.svg" alt="Drip">
+                                        <span>Drip</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="event.html">
+                                        <img src="./assets/images/event-icon.svg" alt="Event">
+                                        <span>Event</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item ">
+                                    <div class="accordion" id="accordionProduct">
+                                        <div class="accordion-item sidebar-accdn">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseaccordionProduct" aria-expanded="false"
+                                                    aria-controls="accordionProduct">
+                                                    <img src="./assets/images/product-menu.svg" alt="product">
+                                                    <span>Product Management</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseaccordionProduct" class="accordion-collapse collapse">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="accdn-menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="products.html">
+                                                                <img src="./assets/images/contact-listing1.svg"
+                                                                    alt="Products">
+                                                                <span>Products</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="product-category.html">
+                                                                <img src="./assets/images/product-category-menu.svg"
+                                                                    alt="product">
+                                                                <span>Product Category</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        <img src="./assets/images/reports-menu.svg" alt="Reports">
+                                        <span>Reports</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="plans.html">
+                                        <img src="./assets/images/plan-menu.svg" alt="Plans">
+                                        <span>Plan</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item ">
+                                    <div class="accordion" id="accordionUserManagement">
+                                        <div class="accordion-item sidebar-accdn sidebar-accdn-active">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button sidebar-accordion collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseaccordionUserManagement"
+                                                    aria-expanded="false" aria-controls="accordionUserManagement">
+                                                    <img src="./assets/images/product-menu.svg" alt="User">
+                                                    <span>User Management</span>
+                                                </button>
+                                            </div>
+                                            <div id="collapseaccordionUserManagement"
+                                                class="accordion-collapse collapse show">
+                                                <div class="accordion-body contact-sub-items">
+                                                    <ul class="accdn-menu-list">
+                                                        <li class="menu-item active">
+                                                            <a href="Permission.html">
+                                                                <img src="./assets/images/product-category-menu.svg"
+                                                                    alt="User">
+                                                                <span>Permission</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="user.html">
+                                                                <img src="./assets/images/product-category-menu.svg"
+                                                                    alt="User">
+                                                                <span>User</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="reference.html">
+                                        <img src="./assets/images/user-management-menu.svg" alt="Reference">
+                                        <span>Reference</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="support.html">
+                                        <img src="./assets/images/user-management-menu.svg" alt="Support">
+                                        <span>Support</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="menu-div2">
+                        <div class="app-section-menu">
+                            <h6 class="app-text">Get the app</h6>
+                            <a class="apple-store">
+                                <img src="./assets/images/apple.svg" alt="apple-icon">
+                                <img src="./assets/images/appleText.svg" alt="apple-text">
+                            </a>
+                            <a class="play-store">
+                                <img src="./assets/images/google-play-logo.svg" alt="google-play-icon">
+                                <img src="./assets/images/playText.svg" alt="google-play-text">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-12">
+                <div class="main-content">
+                    <div class="topbar d-none d-md-block d-lg-block">
+                        <div class="topbar-div">
+                            <div>
+                                <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
+                                    aria-label="breadcrumb">
+                                    <ol class="breadcrumb drip-breadcrumb">
+                                        <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item"><a class="link-item">Support</a></li>
+                                        <li class="breadcrumb-item active active-item" aria-current="page">Category
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <div class="topbar-widgets">
+                                <div class="topbar-search-div">
+                                    <input type="search" class="form-control topbar-search" id="searchUniversal"
+                                        placeholder="Search">
+                                </div>
+                                <div class="notification ">
+                                    <img src="./assets/images/notification.svg" alt="notification">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/images/profile.svg" alt="profile">
+                                        <ul class="dropdown-menu ">
+                                            <li class="menu-item">
+                                                <a class="dropdown-item" target="_blank" href="settings.html"><img
+                                                        src="./assets/images/setting-menu.svg"
+                                                        alt="setting">Settings</a>
+                                            </li>
+                                            <li class="menu-item"><a class="dropdown-item" href="sign-in.html"><img
+                                                        src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="credits">
+                                    <img src="./assets/images/Coins.svg" alt="coins">
+                                    <span class="topbar-widgets-text">200/200</span>
+                                    <img src="./assets/images/alert-circle.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topbar d-sm-block d-md-none d-lg-none">
+                        <span><img src="./assets/images/KIT-favicon.png" class="mobile-logo" alt="brand-logo"></span>
+
+                        <div class="drip-offcanvas-div">
+                            <div class="topbar-widgets">
+                                <div class="notification">
+                                    <img src="./assets/images/notification.svg" alt="notification">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="profile-menu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/images/profile.svg" alt="profile">
+                                        <ul class="dropdown-menu ">
+                                            <li class="menu-item">
+                                                <a class="dropdown-item" target="_blank" href="settings.html"><img
+                                                        src="./assets/images/setting-menu.svg"
+                                                        alt="setting">Settings</a>
+                                            </li>
+                                            <li class="menu-item"><a class="dropdown-item" href="sign-in.html"><img
+                                                        src="./assets/images/logout.svg" alt="Logout">Log Out</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="credits">
+                                    <img src="./assets/images/Coins.svg" alt="coins">
+                                    <span class="topbar-widgets-text">200/200</span>
+                                    <img src="./assets/images/alert-circle.svg" alt="">
+                                </div>
+                            </div>
+                            <button class="off-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                                aria-controls="offcanvasScrolling">
+                                <img src="./assets/images/offcanvas-right-icon.svg" alt="offcanvasBtn">
+                            </button>
+
+                            <div class="offcanvas offcanvas-end site-offcanvas" data-bs-scroll="true"
+                                data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                                aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header px-3">
+                                    <div class="logo">
+                                        <span><img src="./assets/images/logo.svg" alt="brand-logo"></span>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body p-0">
+                                    <div class="sidebar-mobile" id="sidebar">
+                                        <div class="menu-div1">
+                                            <div class="sidebar-menu">
+                                                <ul class="menu-list">
+                                                    <li class="menu-item">
+                                                        <a href="dashboard.html">
+                                                            <img src="./assets/images/dashboard-menu.svg"
+                                                                alt="dashboard-icon">
+                                                            <span>Dashboard</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="customer-management.html">
+                                                            <img src="./assets/images/user-management-menu.svg"
+                                                                alt="Customer-icon">
+                                                            <span>Customer Management</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <div class="accordion" id="accordionSupport">
+                                                            <div class="accordion-item sidebar-accdn">
+                                                                <div class="accordion-header">
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
+                                                                        type="button" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseaccordionSupport"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapseaccordionSupport">
+                                                                        <img src="./assets/images/contact-menu.svg"
+                                                                            alt="Support">
+                                                                        <span>Support</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseaccordionSupport"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="accdn-menu-list">
+                                                                            <li class="menu-item active">
+                                                                                <a href="category.html">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Category">
+                                                                                    <span>Category</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="subcategory.html">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Sub-category">
+                                                                                    <span>Sub-category</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="ticketmanagement.html">
+                                                                                    <img src="./assets/images/tags.svg"
+                                                                                        alt="Ticket Management">
+                                                                                    <span>Ticket Management</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item ">
+                                                        <div class="accordion" id="accordionUser">
+                                                            <div class="accordion-item sidebar-accdn">
+                                                                <div class="accordion-header">
+                                                                    <button
+                                                                        class="accordion-button sidebar-accordion collapsed"
+                                                                        type="button" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseaccordionUser"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="accordionUser">
+                                                                        <img src="./assets/images/product-menu.svg"
+                                                                            alt="product">
+                                                                        <span>User Management</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div id="collapseaccordionUser"
+                                                                    class="accordion-collapse collapse">
+                                                                    <div class="accordion-body contact-sub-items">
+                                                                        <ul class="accdn-menu-list">
+                                                                            <li class="menu-item">
+                                                                                <a href="role-master.html">
+                                                                                    <img src="./assets/images/contact-listing1.svg"
+                                                                                        alt="Products">
+                                                                                    <span>Role Master</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="add-user.html">
+                                                                                    <img src="./assets/images/product-category-menu.svg"
+                                                                                        alt="product">
+                                                                                    <span>Add User</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="menu-item">
+                                                                                <a href="permisssion.html">
+                                                                                    <img src="./assets/images/product-category-menu.svg"
+                                                                                        alt="product">
+                                                                                    <span>Permission</span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="credit-rate.html">
+                                                            <img src="./assets/images/reports-menu.svg" alt="Reports">
+                                                            <span>Credit Rate</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="settings.html">
+                                                            <img src="./assets/images/setting-menu.svg" alt="setting">
+                                                            <span>Settings</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="menu-div2">
+                                            <div class="app-section-menu">
+                                                <h6 class="app-text">Get the app</h6>
+                                                <a class="apple-store">
+                                                    <img src="./assets/images/apple.svg" alt="apple-icon">
+                                                    <img src="./assets/images/appleText.svg" alt="apple-text">
+                                                </a>
+                                                <a class="play-store">
+                                                    <img src="./assets/images/google-play-logo.svg"
+                                                        alt="google-play-icon">
+                                                    <img src="./assets/images/playText.svg" alt="google-play-text">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="drip-header">
+                            <div class="heading">
+                                <h4>Permission</h4>
+                            </div>
+                        </div>
+
+                        <div class="permission-section">
+                            <div class="permission-wrapper-main">
+                                <div class="permission-div">
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <div class="drip-input-div">
+                                            <label for="domain-email-template" class="input-label">Select Role</label>
+                                            <select id="domain-email-template" class="form-select domain-select">
+                                                <option selected>Select Role</option>
+                                                <option value="1">Role 1</option>
+                                                <option value="2">Role 2</option>
+                                                <option value="3">Role 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-permission-wrapper">
+                                    <div class="set-permission-div">
+                                        <div class="set-permission-div-header">
+                                            <h6>User & Role Management</h6>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input setting-switch" type="checkbox"
+                                                    id="autoDetectSwitch" checked>
+                                                <label class="form-check-label" for="smsCheck">Enable All</label>
+                                            </div>
+                                        </div>
+                                        <div class="permission-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">View
+                                                                Users</label>
+                                                            <p>
+                                                                Lists all system users.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Add/Edit
+                                                                Users</label>
+                                                            <p>
+                                                                Creates new user accounts or modifies existing ones.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label"
+                                                                for="smsCheck">Delete/Deactivate
+                                                                Users</label>
+                                                            <p>
+                                                                Removes users from the system or temporarily
+                                                                disables
+                                                                their access.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Manage
+                                                                Roles
+                                                                & Permissions</label>
+                                                            <p>
+                                                                Defines user roles and assigns specific access
+                                                                rights.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="set-permission-div">
+                                        <div class="set-permission-div-header">
+                                            <h6>Contacts & Lists</h6>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input setting-switch" type="checkbox"
+                                                    id="autoDetectSwitch">
+                                                <label class="form-check-label" for="smsCheck">Enable All</label>
+                                            </div>
+                                        </div>
+                                        <div class="permission-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">View
+                                                                Contacts</label>
+                                                            <p>
+                                                                Allows users to see contact lists and details.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Add/Edit
+                                                                Contacts</label>
+                                                            <p>
+                                                                Allows users to create new contacts or modify
+                                                                existing ones.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Import/Export
+                                                                Contacts</label>
+                                                            <p>
+                                                                Allows users to import contact data from external
+                                                                files or export it.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Tag
+                                                                Contacts</label>
+                                                            <p>
+                                                                Allows users to categorize contacts with labels for
+                                                                organization and filtering.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Delete
+                                                                Contacts</label>
+                                                            <p>
+                                                                Allows users to remove contacts from the system.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="set-permission-div">
+                                        <div class="set-permission-div-header">
+                                            <h6>Drip Campaigns</h6>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input setting-switch" type="checkbox"
+                                                    id="autoDetectSwitch">
+                                                <label class="form-check-label" for="smsCheck" checked>Enable
+                                                    All</label>
+                                            </div>
+                                        </div>
+                                        <div class="permission-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Create/Edit
+                                                                Drip
+                                                                Campaigns</label>
+                                                            <p>
+                                                                Allows users to set up or modify automated sequences
+                                                                of messages.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label"
+                                                                for="smsCheck"> Activate/Deactivate
+                                                                Drips</label>
+                                                            <p>
+                                                                Allows users to start or stop automated message
+                                                                sequences.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck"> Delete
+                                                                Drip Campaigns</label>
+                                                            <p>
+                                                                Allows users to remove automated message sequences
+                                                                from system.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="set-permission-div">
+                                        <div class="set-permission-div-header">
+                                            <h6>Events Module (Exhibitor only)</h6>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input setting-switch" type="checkbox"
+                                                    id="autoDetectSwitch">
+                                                <label class="form-check-label" for="smsCheck">Enable All</label>
+                                            </div>
+                                        </div>
+                                        <div class="permission-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">View
+                                                                Events</label>
+                                                            <p>
+                                                                Allows users to see event details.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Add/Edit
+                                                                Products</label>
+                                                            <p>
+                                                                Allows users to create new or modify existing
+                                                                product listings.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Delete
+                                                                Products</label>
+                                                            <p>
+                                                                Allows users to remove product listings from the
+                                                                system.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="set-permission-div">
+                                        <div class="set-permission-div-header">
+                                            <h6>Products Module (Retailer only)</h6>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input setting-switch" type="checkbox"
+                                                    id="autoDetectSwitch">
+                                                <label class="form-check-label" for="smsCheck">Enable All</label>
+                                            </div>
+                                        </div>
+                                        <div class="permission-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Products
+                                                                Module (Retailer only)</label>
+                                                            <p>
+                                                                Allows users to see product details.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Add/Edit
+                                                                Events</label>
+                                                            <p>
+                                                                Allows users to create new or modify existing event
+                                                                listings.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Delete
+                                                                Events</label>
+                                                            <p>
+                                                                Allows users to remove event listings from the
+                                                                system.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="set-permission-div">
+                                        <div class="set-permission-div-header">
+                                            <h6>Wallet & Credits</h6>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input setting-switch" type="checkbox"
+                                                    id="autoDetectSwitch">
+                                                <label class="form-check-label" for="smsCheck">Enable All</label>
+                                            </div>
+                                        </div>
+                                        <div class="permission-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">View
+                                                                Wallet & Balance</label>
+                                                            <p>
+                                                                Allows users to see their wallet balance and credit
+                                                                information.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">View
+                                                                Add/Deduct History</label>
+                                                            <p>
+                                                                Allows users to view a record of credits added or
+                                                                deducted from their wallet.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Delete
+                                                                Events</label>
+                                                            <p>
+                                                                Allows users to remove events from the system.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="set-permission-div">
+                                        <div class="set-permission-div-header">
+                                            <h6>App Settings</h6>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input setting-switch" type="checkbox"
+                                                    id="autoDetectSwitch">
+                                                <label class="form-check-label" for="smsCheck">Enable All</label>
+                                            </div>
+                                        </div>
+                                        <div class="permission-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Language
+                                                                Preferences</label>
+                                                            <p>
+                                                                Allows users to set their preferred language for the
+                                                                application.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">WhatsApp
+                                                                Preferences</label>
+                                                            <p>
+                                                                Allows users to customize their WhatsApp settings
+                                                                within the application.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Contact
+                                                                Send Preferences (Primary or All Numbers)</label>
+                                                            <p>
+                                                                Allows users to choose which phone number to use for
+                                                                sending msgs.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Notification
+                                                                Settings</label>
+                                                            <p>
+                                                                Allows users to configure application notifications.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="set-permission-div">
+                                        <div class="set-permission-div-header">
+                                            <h6>Reports</h6>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input setting-switch" type="checkbox"
+                                                    id="autoDetectSwitch">
+                                                <label class="form-check-label" for="smsCheck">Enable All</label>
+                                            </div>
+                                        </div>
+                                        <div class="permission-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch">
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">View
+                                                                Reports</label>
+                                                            <p>
+                                                                Allows users to see reports.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="permission-option">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input setting-switch"
+                                                                type="checkbox" id="ViewUsersSwitch" checked>
+                                                        </div>
+                                                        <div class="role-switch-label">
+                                                            <label class="form-check-label" for="smsCheck">Export
+                                                                Reports (CSV, PDF, Excel)</label>
+                                                            <p>
+                                                                Allows users to export reports in various formats.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="Permission-btn">
+                                        <a role="button" class="next-btn-template" id="next-btn">
+                                            Update
+                                            <img src="./assets/images/modal-arrow.svg" alt="next">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="version">
+                            <h6>Version 1.1</h6>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================ Delete user Modal ======================= -->
+    <div class="modal fade deleteModal" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Delete User</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="delete-img-div">
+                            <img src="./assets/images/delete-modal.svg" alt="delete-icon">
+                        </div>
+                        <div class="delete-modal-text">
+                            <p class="mb-0">Are you sure you want to delete the User?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey">Cancel</button>
+                        <button type="button" class="btn-red">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

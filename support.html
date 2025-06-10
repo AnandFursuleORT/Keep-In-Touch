@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
     <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
 </head>
 
@@ -22,17 +23,17 @@
                         <div class="logo">
                             <span><img src="./assets/images/logo.svg" alt="brand-logo"></span>
                         </div>
-                        <div class="sidebar-menu">
+                        <div class="sidebar-menu ">
                             <ul class="menu-list">
                                 <li class="menu-item">
-                                    <a href="dashboard.html">
+                                    <a href="">
                                         <img src="./assets/images/dashboard-menu.svg" alt="dashboard-icon">
                                         <span>Dashboard</span>
                                     </a>
                                 </li>
                                 <li class="menu-item">
                                     <a href="wallet.html">
-                                        <img src="./assets/images/wallet-menu.svg" alt="wallet">
+                                        <img src="./assets/images/wallet-menu.svg" alt="dashboard-icon">
                                         <span>Wallet</span>
                                     </a>
                                 </li>
@@ -40,11 +41,12 @@
                                     <div class="accordion" id="accordionContact">
                                         <div class="accordion-item sidebar-accdn">
                                             <div class="accordion-header">
+
                                                 <button class="accordion-button sidebar-accordion collapsed"
                                                     type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseaccordionContact" aria-expanded="false"
+                                                    data-bs-target="#collapseaccordionContact" aria-expanded="true"
                                                     aria-controls="collapseOne">
-                                                    <img src="./assets/images/contact-menu.svg" alt="">
+                                                    <img src="./assets/images/contact-dark.svg" alt="">
                                                     <span>Contact</span>
                                                 </button>
                                             </div>
@@ -53,14 +55,14 @@
                                                     <ul class="accdn-menu-list">
                                                         <li class="menu-item">
                                                             <a href="contact-listing.html">
-                                                                <img src="./assets/images/contact-listing1.svg"
+                                                                <img src="./assets/images/contact-listing.svg"
                                                                     alt="dashboard-icon">
                                                                 <span>Contact Listing</span>
                                                             </a>
                                                         </li>
                                                         <li class="menu-item">
                                                             <a href="tag-master.html">
-                                                                <img src="./assets/images/tags.svg"
+                                                                <img src="./assets/images/tags-menu-dark.svg"
                                                                     alt="dashboard-icon">
                                                                 <span>Tags</span>
                                                             </a>
@@ -85,7 +87,7 @@
                                 </li>
                                 <li class="menu-item ">
                                     <div class="accordion" id="accordionProduct">
-                                        <div class="accordion-item sidebar-accdn sidebar-accdn-active">
+                                        <div class="accordion-item sidebar-accdn">
                                             <div class="accordion-header">
                                                 <button class="accordion-button sidebar-accordion collapsed"
                                                     type="button" data-bs-toggle="collapse"
@@ -95,7 +97,7 @@
                                                     <span>Product Management</span>
                                                 </button>
                                             </div>
-                                            <div id="collapseaccordionProduct" class="accordion-collapse collapse show">
+                                            <div id="collapseaccordionProduct" class="accordion-collapse collapse">
                                                 <div class="accordion-body contact-sub-items">
                                                     <ul class="accdn-menu-list">
                                                         <li class="menu-item">
@@ -105,9 +107,9 @@
                                                                 <span>Products</span>
                                                             </a>
                                                         </li>
-                                                        <li class="menu-item active">
+                                                        <li class="menu-item">
                                                             <a href="product-category.html">
-                                                                <img src="./assets/images/product-category-selected.svg"
+                                                                <img src="./assets/images/product-category-menu.svg"
                                                                     alt="product">
                                                                 <span>Product Category</span>
                                                             </a>
@@ -130,7 +132,7 @@
                                         <span>Plans</span>
                                     </a>
                                 </li>
-                               <li class="menu-item ">
+                                <li class="menu-item ">
                                     <div class="accordion" id="accordionUserManagement">
                                         <div class="accordion-item sidebar-accdn">
                                             <div class="accordion-header">
@@ -172,9 +174,9 @@
                                         <span>Reference</span>
                                     </a>
                                 </li>
-                                    <li class="menu-item">
-                                    <a href="support.html">
-                                        <img src="./assets/images/user-management-menu.svg" alt="Support">
+                                <li class="menu-item active">
+                                    <a href="reference.html">
+                                        <img src="./assets/images/user-management-menu.svg" alt="Reference">
                                         <span>Support</span>
                                     </a>
                                 </li>
@@ -206,10 +208,8 @@
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
                                         <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#" class="link-item">Product
-                                                Management</a></li>
-                                        <li class="breadcrumb-item active drip-active-item" aria-current="page">Product
-                                            Category</li>
+                                        <li class="breadcrumb-item active drip-active-item" aria-current="page">Contact
+                                            Listing</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -247,12 +247,11 @@
                         </div>
                     </div>
 
-                    <div
-                        class="topbar d-sm-block d-md-none d-lg-none d-flex align-items-center justify-content-between">
+                    <div class="topbar d-sm-block d-md-none d-lg-none">
                         <span><img src="./assets/images/KIT-favicon.png" class="mobile-logo" alt="brand-logo"></span>
 
-                        <div class="drip-offcanvas-div d-flex align-items-center gap-2">
-                            <div class="topbar-widgets d-flex align-items-center gap-2">
+                        <div class="drip-offcanvas-div">
+                            <div class="topbar-widgets">
                                 <div class="notification">
                                     <img src="./assets/images/notification.svg" alt="notification">
                                 </div>
@@ -297,10 +296,10 @@
                                 <div class="offcanvas-body p-0">
                                     <div class="sidebar-mobile" id="sidebar">
                                         <div class="menu-div1">
-                                            <div class="sidebar-menu">
+                                            <div class="sidebar-menu ">
                                                 <ul class="menu-list">
                                                     <li class="menu-item">
-                                                        <a href="dashboard.html">
+                                                        <a href="">
                                                             <img src="./assets/images/dashboard-menu.svg"
                                                                 alt="dashboard-icon">
                                                             <span>Dashboard</span>
@@ -308,39 +307,42 @@
                                                     </li>
                                                     <li class="menu-item">
                                                         <a href="wallet.html">
-                                                            <img src="./assets/images/wallet-menu.svg" alt="wallet">
+                                                            <img src="./assets/images/wallet-menu.svg"
+                                                                alt="dashboard-icon">
                                                             <span>Wallet</span>
                                                         </a>
                                                     </li>
                                                     <li class="menu-item">
                                                         <div class="accordion" id="accordionContact">
-                                                            <div class="accordion-item sidebar-accdn">
+                                                            <div
+                                                                class="accordion-item sidebar-accdn sidebar-accdn-active">
                                                                 <div class="accordion-header">
+
                                                                     <button
                                                                         class="accordion-button sidebar-accordion collapsed"
                                                                         type="button" data-bs-toggle="collapse"
                                                                         data-bs-target="#collapseaccordionContact"
-                                                                        aria-expanded="false"
+                                                                        aria-expanded="true"
                                                                         aria-controls="collapseOne">
-                                                                        <img src="./assets/images/contact-menu.svg"
+                                                                        <img src="./assets/images/contact-dark.svg"
                                                                             alt="">
                                                                         <span>Contact</span>
                                                                     </button>
                                                                 </div>
                                                                 <div id="collapseaccordionContact"
-                                                                    class="accordion-collapse collapse">
+                                                                    class="accordion-collapse collapse show">
                                                                     <div class="accordion-body contact-sub-items">
                                                                         <ul class="accdn-menu-list">
-                                                                            <li class="menu-item">
+                                                                            <li class="menu-item active">
                                                                                 <a href="contact-listing.html">
-                                                                                    <img src="./assets/images/contact-listing1.svg"
+                                                                                    <img src="./assets/images/contact-listing.svg"
                                                                                         alt="dashboard-icon">
                                                                                     <span>Contact Listing</span>
                                                                                 </a>
                                                                             </li>
                                                                             <li class="menu-item">
                                                                                 <a href="tag-master.html">
-                                                                                    <img src="./assets/images/tags.svg"
+                                                                                    <img src="./assets/images/tags-menu-dark.svg"
                                                                                         alt="dashboard-icon">
                                                                                     <span>Tags</span>
                                                                                 </a>
@@ -365,8 +367,7 @@
                                                     </li>
                                                     <li class="menu-item ">
                                                         <div class="accordion" id="accordionProduct">
-                                                            <div
-                                                                class="accordion-item sidebar-accdn sidebar-accdn-active">
+                                                            <div class="accordion-item sidebar-accdn">
                                                                 <div class="accordion-header">
                                                                     <button
                                                                         class="accordion-button sidebar-accordion collapsed"
@@ -380,7 +381,7 @@
                                                                     </button>
                                                                 </div>
                                                                 <div id="collapseaccordionProduct"
-                                                                    class="accordion-collapse collapse show">
+                                                                    class="accordion-collapse collapse">
                                                                     <div class="accordion-body contact-sub-items">
                                                                         <ul class="accdn-menu-list">
                                                                             <li class="menu-item">
@@ -390,9 +391,9 @@
                                                                                     <span>Products</span>
                                                                                 </a>
                                                                             </li>
-                                                                            <li class="menu-item active">
+                                                                            <li class="menu-item">
                                                                                 <a href="product-category.html">
-                                                                                    <img src="./assets/images/product-category-selected.svg"
+                                                                                    <img src="./assets/images/product-category-menu.svg"
                                                                                         alt="product">
                                                                                     <span>Product Category</span>
                                                                                 </a>
@@ -447,196 +448,192 @@
                         </div>
                     </div>
                     <div class="page-content">
-                        <div class="page-header">
+                        <div class="drip-header">
                             <div class="heading">
-                                <h4>Product Category</h4>
+                                <h4>Tickets Management</h4>
                             </div>
-
-
-                            <button class="add-button" data-bs-toggle="modal"
-                                data-bs-target="#addProductsCategoryModal"> <img src="./assets/images/add.svg"
-                                    alt="">Add Category</button>
                         </div>
-                        <div class="table-div">
-                            <div class="table-head">
-                                <div class="table-div1">
-                                    <div class="table-heading">
-                                        <h4 class="mb-0">
-                                            Product Category Listing
-                                        </h4>
-                                    </div>
-                                    <div class="table-div1-tabs d-flex align-items-center gap-3 ">
-                                        <div class="table-search d-flex align-items-center gap-3">
+
+                        <!-- <div class="setting-section-sms">
+                            </div> -->
+                        <div class="setting-wrapper">
+                            <div class="table-div">
+                                <div class="ticket-table-head">
+                                    <div class="ticket-div1">
+                                        <div class="ticket-search">
                                             <input type="search" class="form-control search " id="dt-search"
-                                                placeholder="Search">
+                                                placeholder="Search Ticket">
                                         </div>
-                                        <!-- <div class="table-filter" data-bs-toggle="offcanvas"
-                                            data-bs-target="#filterProductCategory" aria-controls="offcanvasRight">
-                                            <img src="./assets/images/filter.svg" alt="filter">
-                                        </div> -->
+                                        <div class="search-ticket-buttons">
+                                            <div class="export" role="button">
+                                                <img src="./assets/images/export.svg" alt="export">
+                                                <span>Export</span>
+                                            </div>
+                                            <div class="table-filter" data-bs-toggle="offcanvas"
+                                                data-bs-target="#filterTicket" aria-controls="offcanvasRight">
+                                                <img src="./assets/images/filter.svg" alt="filter">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="productCategory-table-div table-responsive">
-                                <table id="product-cateory-table" class="Table" style="width:100%">
-                                    <thead class="table-heading">
-                                        <tr>
-                                            <th>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </th>
-                                            <th>Sr.No</th>
-                                            <th>Product Category Name</th>
-                                            <th>Product Description</th>
-                                            <th>Status</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>1</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem Ipsum</td>
-                                            <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <img src="./assets/images/edit.svg" alt="edit"
-                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                        data-bs-title="Edit">
-                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
-                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
-                                                        title="Delete">
-                                                </div>
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>2</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem Ipsum</td>
-                                             <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <img src="./assets/images/edit.svg" alt="edit"
-                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                        data-bs-title="Edit">
-                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
-                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
-                                                        title="Delete">
-                                                </div>
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>3</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem Ipsum</td>
-                                             <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <img src="./assets/images/edit.svg" alt="edit"
-                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                        data-bs-title="Edit">
-                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
-                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
-                                                        title="Delete">
-                                                </div>
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>4</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem Ipsum</td>
-                                             <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <img src="./assets/images/edit.svg" alt="edit"
-                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                        data-bs-title="Edit">
-                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
-                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
-                                                        title="Delete">
-                                                </div>
-
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="checkDefault">
-                                                </div>
-                                            </td>
-                                            <td>5</td>
-                                            <td class="table-text-dark">Samuel Schmidt</td>
-                                            <td>Lorem Ipsum</td>
-                                             <td>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input setting-switch" type="checkbox"
-                                                        id="autoDetectSwitch">
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-action">
-                                                    <img src="./assets/images/edit.svg" alt="edit"
-                                                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                                        data-bs-title="Edit">
-                                                    <img src="./assets/images/delete.svg" alt="" data-bs-toggle="modal"
-                                                        data-bs-target="#deleteModal" data-bs-placement="bottom"
-                                                        title="Delete">
-                                                </div>
-
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="Ticket-table-div table-responsive">
+                                    <table id="ticketmanagement-table" class="Table" style="width:100%">
+                                        <thead class="table-heading">
+                                            <tr>
+                                                <th>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="checkDefault">
+                                                    </div>
+                                                </th>
+                                                <th>Sr.No</th>
+                                                <th>Title</th>
+                                                <th>Category</th>
+                                                <th>Description</th>
+                                                <th>Priority</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="checkDefault">
+                                                    </div>
+                                                </td>
+                                                <td>1</td>
+                                                <td>Title</td>
+                                                <td>Category</td>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit
+                                                </td>
+                                                <td><span class="badge badge-light-warning">Low</span></td>
+                                                <td>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input setting-switch" type="checkbox"
+                                                            id="autoDetectSwitch">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-action">
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#updateEmailModal" title="update"><img
+                                                                src="./assets/images/eye-icon.svg" alt="eye-icon"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="checkDefault">
+                                                    </div>
+                                                </td>
+                                                <td>2</td>
+                                                <td>Title</td>
+                                                <td>Category</td>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit
+                                                </td>
+                                                <td><span class="badge badge-light-warning">Low</span></td>
+                                                <td>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input setting-switch" type="checkbox"
+                                                            id="autoDetectSwitch">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-action">
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#updateEmailModal" title="update"><img
+                                                                src="./assets/images/eye-icon.svg" alt="eye-icon"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="checkDefault">
+                                                    </div>
+                                                </td>
+                                                <td>3</td>
+                                                <td>Title</td>
+                                                <td>Category</td>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit
+                                                </td>
+                                                <td><span class="badge badge-light-warning">Low</span></td>
+                                                <td>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input setting-switch" type="checkbox"
+                                                            id="autoDetectSwitch">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-action">
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#updateEmailModal" title="update"><img
+                                                                src="./assets/images/eye-icon.svg" alt="eye-icon"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="checkDefault">
+                                                    </div>
+                                                </td>
+                                                <td>4</td>
+                                                <td>Title</td>
+                                                <td>Category</td>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit
+                                                </td>
+                                                <td><span class="badge badge-light-warning">Low</span></td>
+                                                <td>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input setting-switch" type="checkbox"
+                                                            id="autoDetectSwitch">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-action">
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#updateEmailModal" title="update"><img
+                                                                src="./assets/images/eye-icon.svg" alt="eye-icon"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="checkDefault">
+                                                    </div>
+                                                </td>
+                                                <td>5</td>
+                                                <td>Title</td>
+                                                <td>Category</td>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut odit
+                                                </td>
+                                                <td><span class="badge badge-light-warning">Low</span></td>
+                                                <td>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input setting-switch" type="checkbox"
+                                                            id="autoDetectSwitch">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="table-action">
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#updateEmailModal" title="update"><img
+                                                                src="./assets/images/eye-icon.svg" alt="eye-icon"></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -649,164 +646,10 @@
             </div>
         </div>
     </div>
-
-
-    <!-- ======================= Modal for Add  ======================= -->
-
-    <div class="modal fade" id="addProductsCategoryModal" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="addProductsCategoryModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content add-modal">
-                <div class="modal-header d-flex align-items-center justify-content-between">
-                    <h4 class="modal-title add-modal-title" id="exampleModalLabel">Add Product Category</h4>
-                    <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
-                        aria-label="Close" aria-label="Close">
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="drip-input-div">
-                            <label for="dripInput1" class="form-label input-label mb-1">Product Category Name</label>
-                            <input type="text" class="form-control input-text" id="dripInput1"
-                                placeholder="Enter your Category Name">
-                        </div>
-                        <div class="drip-input-div">
-                            <label for="dripInput1" class="form-label input-label mb-1">Category Description</label>
-                            <textarea class="form-control text-area" style="resize: none;"
-                                placeholder="Enter description"
-                                rows="6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="d-flex justify-content-end  gap-3">
-                        <button type="button" class="btn-grey">Back</button>
-                        <button type="button" class="btn-red" data-bs-toggle="modal"
-                            data-bs-target="#productCategoryAddedSuccessfully">Add</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ======================= Modal for Added Successfully ======================= -->
-
-    <div class="modal fade" id="productCategoryAddedSuccessfully" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="productCategoryAddedSuccessfully" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content successfullyModal">
-                <div class="modal-header d-flex align-items-center justify-content-between">
-                    <h4 class="modal-title successfullyModal-title" id="exampleModalLabel"></h4>
-                    <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="modal"
-                        aria-label="Close" aria-label="Close">
-                </div>
-                <div class="modal-body">
-                    <div class="d-flex flex-column align-items-center gap-3">
-                        <div>
-                            <img src="./assets/images/successfully-icon.svg" alt="successfully icon">
-                        </div>
-                        <div class="successfully-title">
-                            <h4 class="mb-0">Product Category Added Successfully</h4>
-                        </div>
-                        <div class="successfully-text">
-                            <p class="mb-0">The product category has been successfully added to your inventory.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ============================ Delete Modal ======================= -->
-
-    <div class="modal fade deleteModal " id="deleteModal" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title delete-modal-title" id="exampleModalLabel">Delete Tag</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="delete-img-div">
-                            <img src="./assets/images/delete-modal.svg" alt="">
-                        </div>
-                        <div class="delete-modal-text">
-                            <p class="mb-0">Are you sure you want to delete the Product?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="d-flex justify-content-end  gap-3">
-                        <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn-red">Delete</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ============================ upload Modal ======================= -->
-    <!-- Modal -->
-    <div class="modal fade " id="uploadModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="uploadModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content uploadModal">
-                <div class="modal-header uploadMdal-title">
-                    <div class="d-flex flex-column gap-2">
-                        <h4 class="modal-title delete-modal-title mb-0" id="uploadModalLabel">Upload Document</h4>
-                        <p class="mb-0">Upload your document for validation and reference</p>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="d-flex flex-column gap-4">
-                        <div class="file-upload-div d-flex flex-column align-items-center  gap-4">
-                            <div class="file-upload-icon d-flex ">
-                                <div class="file-upload-circle1">
-                                    <div class="file-upload-circle2">
-                                        <div class="file-upload-circle3 d-flex">
-                                            <img src="./assets/images/Upload.svg" alt="upload">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="file-upload-text d-flex flex-column align-items-center">
-                                <div>Drag and Drop here</div>
-                                <div>or</div>
-                                <div class="browse-file-div">
-                                    <span>Browse File</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="upload-details d-flex align-items-center justify-content-between">
-                            <div class="file-size">
-                                Max file size is 1MB per file.
-                            </div>
-                            <div class="dowmload-file d-flex align-items-center gap-2">
-                                <img src="./assets/images/download-icon-grey.svg" alt="download">
-                                <span>Download Sample</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <div class="d-flex justify-content-end  gap-3">
-                        <button type="button" class="btn-grey" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn-red">Upload</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- =============================== Filter-offcanvas =========================== -->
 
     <div class="offcanvas offcanvas-end filter-offcanvas" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" id="filterProductCategory" aria-labelledby="offcanvasRightLabel">
+        tabindex="-1" id="filterTicket" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title title-offcanvas" id="offcanvasRightLabel">Filter</h5>
             <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="offcanvas"
@@ -817,8 +660,9 @@
                 <!-- date filter code -->
                 <div class="accordion-item filter-acdn">
                     <h2 class="accordion-header">
-                        <button class="accordion-button filter-acdn-btn" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#f-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button filter-acdn-btn collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#f-collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
                             Date
                         </button>
                     </h2>
@@ -837,82 +681,29 @@
                         <button class="accordion-button filter-acdn-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#f-collapseTwo" aria-expanded="true"
                             aria-controls="collapseOne">
-                            Tags
+                            Priority
                         </button>
                     </h2>
                     <div id="f-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <div class="mb-3">
-                                <input type="text" id="tagSearch" class="filter-search" placeholder="Search">
-                            </div>
                             <div id="tagList">
                                 <div class="form-check">
                                     <input class="form-check-input filter-check" type="checkbox" id="capt" name="rank"
                                         value="Captains/Masters">
-                                    <label class="form-check-label filter-label" for="capt">Tags Name
+                                    <label class="form-check-label filter-label" for="capt">Low
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input filter-check" type="checkbox" id="officers"
                                         name="rank" value="Officers">
-                                    <label class="form-check-label filter-label" for="officers">Tag Name
+                                    <label class="form-check-label filter-label" for="officers">Medium
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input filter-check" type="checkbox" id="ratings"
                                         name="rank" value="Ratings">
-                                    <label class="form-check-label filter-label" for="ratings">Tags Name
+                                    <label class="form-check-label filter-label" for="ratings">High
                                     </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input filter-check" type="checkbox" id="ratings"
-                                        name="rank" value="Ratings">
-                                    <label class="form-check-label filter-label" for="ratings">Tags Name
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- City filter code -->
-                <div class="accordion-item filter-acdn">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button filter-acdn-btn collapsed" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#f-collapseFour" aria-expanded="true"
-                            aria-controls="collapseOne">
-                            City
-                        </button>
-                    </h2>
-                    <div id="f-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="mb-3">
-                                <input type="text" id="citySearch" class="filter-search" placeholder="Search">
-                            </div>
-                            <div id="cityList">
-                                <div class="form-check">
-                                    <input class="form-check-input filter-check" type="checkbox" id="d1" name="Duration"
-                                        value="D1">
-                                    <label class="form-check-label filter-label" for="d1">City 1</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input filter-check" type="checkbox" id="d2" name="Duration"
-                                        value="D2">
-                                    <label class="form-check-label filter-label" for="d2">City 2</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input filter-check" type="checkbox" id="d3" name="Duration"
-                                        value="D3">
-                                    <label class="form-check-label filter-label" for="d3">City 3</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input filter-check" type="checkbox" id="d4" name="Duration"
-                                        value="D4">
-                                    <label class="form-check-label filter-label" for="d4">City 4</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input filter-check" type="checkbox" id="d5" name="Duration"
-                                        value="D5">
-                                    <label class="form-check-label filter-label" for="d5">City 5</label>
                                 </div>
                             </div>
                         </div>
@@ -925,30 +716,21 @@
                         <button class="accordion-button filter-acdn-btn collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#f-collapseFive" aria-expanded="true"
                             aria-controls="collapseOne">
-                            References
+                            Status
                         </button>
                     </h2>
                     <div id="f-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body ">
-                            <div class="mb-3">
-                                <input type="text" id="referenceSearch" class="filter-search" placeholder="Search">
-                            </div>
                             <div id="referenceList">
                                 <div class="form-check">
                                     <input class="form-check-input filter-check" type="checkbox" id="b1" name="Bridge"
                                         value="B1">
-                                    <label class="form-check-label filter-label" for="b1">Reference 1</label>
+                                    <label class="form-check-label filter-label" for="b1">Active</label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input filter-check" type="checkbox" id="b2" name="Bridge"
                                         value="B2">
-                                    <label class="form-check-label filter-label" for="b2">Reference 2</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input filter-check" type="checkbox" id="b3" name="Bridge"
-                                        value="B3">
-                                    <label class="form-check-label filter-label" for="b3">Reference 3</span>
-                                    </label>
+                                    <label class="form-check-label filter-label" for="b2">Inactive</label>
                                 </div>
                             </div>
                         </div>
@@ -962,6 +744,272 @@
         </div>
     </div>
 
+    <!-- view ticket  Modal -->
+    <div class="modal fade" id="updateEmailModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="updateEmailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header details-header">
+                     <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);" aria-label="breadcrumb">
+                        <ol class="breadcrumb drip-breadcrumb">
+                            <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a></li>
+                            <li class="breadcrumb-item"><a href="support.html" class="link-item">Support</a></li>
+                            <li class="breadcrumb-item active drip-active-item" aria-current="page">Ticket Management</li>
+                        </ol>
+                    </nav>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                            <div class="update-form-wrapper">
+                                <div class="ticket-form-header">
+                                    <div>
+                                        <img src="./assets/images/file-verified.svg" style="height: 50px;">
+                                    </div>
+                                    <div class="ticket-form-header-data">
+                                        <div>
+                                            <h5>Title</h5>
+                                        </div>
+                                        <div class="ticket-form-header-details">
+                                            <span>Category: Email/Outlook</span>
+                                            <span>SubCategory: Outlook not opening</span>
+                                            <span>By: DemoClient</span>
+                                            <span>Created: 2025-02-19, 10:53:14 AM</span>
+                                            <!-- <a href="#" data-bs-toggle="offcanvas"
+                                                data-bs-target="#tickethistory"><span>View
+                                                    Ticket History</span></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ticket-view-form">
+                                    <div class="ticket-form-section1">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="drip-input-div">
+                                                    <label for="dripInput1"
+                                                        class="form-label input-label mb-1">Priority</label>
+                                                    <input type="text" class="form-control input-text" id="DomainName"
+                                                        placeholder="Priority">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="drip-input-div">
+                                                    <label for="dripInput1" class="form-label input-label mb-1">Assigned
+                                                        To</label>
+                                                    <input type="text" class="form-control input-text" id="DomainName"
+                                                        placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="drip-input-div">
+                                                    <label for="dripInput1"
+                                                        class="form-label input-label mb-1">Status</label>
+                                                    <input type="text" class="form-control input-text" id="DomainName"
+                                                        placeholder="New">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="drip-input-div">
+                                                    <label for="dripInput1" class="form-label input-label mb-1">Forward
+                                                        To</label>
+                                                    <select id="domain-email-template"
+                                                        class="form-select domain-select">
+                                                        <option selected>Select Employee</option>
+                                                        <option value="1">Employee 1</option>
+                                                        <option value="2">Employee 2</option>
+                                                        <option value="3">Employee 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-form-section2">
+                                        <div class="row">
+                                            <div class="drip-input-div">
+                                                <label for="formFile" class="form-label">Acknowledgments</label>
+                                                <textarea class="form-control text-area" style="resize: none;"
+                                                    placeholder="Share your knowledge" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="ticket-uoload-input">
+                                                    <label for="formFile" class="form-label">Attachments</label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-form-buttons">
+                                            <button class="submit-btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="ticket-view-form">
+                                <div class="ticket-history-body-section1">
+                                    <div class="ticket-history-company">
+                                        <div class="ticket-history-company-header">
+                                            <div class="ticket-history-body-left">
+                                                <img src="./assets/images/profile-img.png" alt="Profile">
+                                            </div>
+                                            <div class="ticket-history-body-right">
+                                                <span class="ticket-history-body-name">Company</span>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-history-body-main-company">
+                                            <span class="ticket-history-body-note">Company Name was reassigned to ABC
+                                                DEF</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-history-customer">
+                                        <div class="ticket-history-customer2">
+                                            <div class="ticket-history-customer-header">
+                                                <div class="ticket-history-body-left">
+                                                    <span class="ticket-history-body-name">Customer</span>
+                                                </div>
+                                                <div class="ticket-history-body-right">
+                                                    <img src="./assets/images/profile-img.png" alt="Profile">
+                                                </div>
+                                            </div>
+                                            <div class="ticket-history-body-main-customer">
+                                                <span class="ticket-history-body-note"><img
+                                                        src="./assets/images/file-verified.svg">File
+                                                    Uploaded</span>
+                                            </div>
+                                            <div class="ticket-history-body-main-customer">
+                                                <span class="ticket-history-body-note">Company Name was reassigned to
+                                                    ABC
+                                                    DEF</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ticket-history-body-section1">
+                                    <div class="ticket-history-company">
+                                        <div class="ticket-history-company-header">
+                                            <div class="ticket-history-body-left">
+                                                <img src="./assets/images/profile-img.png" alt="Profile">
+                                            </div>
+                                            <div class="ticket-history-body-right">
+                                                <span class="ticket-history-body-name">Company</span>
+                                            </div>
+                                        </div>
+                                        <div class="ticket-history-body-main-company">
+                                            <span class="ticket-history-body-note">Company Name was reassigned to ABC
+                                                DEF</span>
+                                        </div>
+                                    </div>
+                                    <div class="ticket-history-customer">
+                                        <div class="ticket-history-customer2">
+                                            <div class="ticket-history-customer-header">
+                                                <div class="ticket-history-body-left">
+                                                    <span class="ticket-history-body-name">Customer</span>
+                                                </div>
+                                                <div class="ticket-history-body-right">
+                                                    <img src="./assets/images/profile-img.png" alt="Profile">
+                                                </div>
+                                            </div>
+                                            <div class="ticket-history-body-main-customer">
+                                                <span class="ticket-history-body-note">Hi</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ticket History Off Canvas-->
+    <div class="offcanvas offcanvas-end filter-offcanvas custom-drawer-width" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" id="tickethistory" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title title-offcanvas" id="offcanvasRightLabel">Ticket History</h5>
+            <img src="./assets/images/cross.svg" style="cursor: pointer;" alt="cross" data-bs-dismiss="offcanvas"
+                aria-label="Close">
+        </div>
+        <div class="offcanvas-body">
+            <div class="ticket-view-form">
+                <div class="ticket-history-body-section1">
+                    <div class="ticket-history-company">
+                        <div class="ticket-history-company-header">
+                            <div class="ticket-history-body-left">
+                                <img src="./assets/images/profile-img.png" alt="Profile">
+                            </div>
+                            <div class="ticket-history-body-right">
+                                <span class="ticket-history-body-name">Company</span>
+                            </div>
+                        </div>
+                        <div class="ticket-history-body-main-company">
+                            <span class="ticket-history-body-note">Company Name was reassigned to ABC
+                                DEF</span>
+                        </div>
+                    </div>
+                    <div class="ticket-history-customer">
+                        <div class="ticket-history-customer2">
+                            <div class="ticket-history-customer-header">
+                                <div class="ticket-history-body-left">
+                                    <span class="ticket-history-body-name">Customer</span>
+                                </div>
+                                <div class="ticket-history-body-right">
+                                    <img src="./assets/images/profile-img.png" alt="Profile">
+                                </div>
+                            </div>
+                            <div class="ticket-history-body-main-customer">
+                                <span class="ticket-history-body-note"><img src="./assets/images/file-verified.svg">File
+                                    Uploaded</span>
+                            </div>
+                            <div class="ticket-history-body-main-customer">
+                                <span class="ticket-history-body-note">Company Name was reassigned to ABC
+                                    DEF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-history-body-section1">
+                    <div class="ticket-history-company">
+                        <div class="ticket-history-company-header">
+                            <div class="ticket-history-body-left">
+                                <img src="./assets/images/profile-img.png" alt="Profile">
+                            </div>
+                            <div class="ticket-history-body-right">
+                                <span class="ticket-history-body-name">Company</span>
+                            </div>
+                        </div>
+                        <div class="ticket-history-body-main-company">
+                            <span class="ticket-history-body-note">Company Name was reassigned to ABC
+                                DEF</span>
+                        </div>
+                    </div>
+                    <div class="ticket-history-customer">
+                        <div class="ticket-history-customer2">
+                            <div class="ticket-history-customer-header">
+                                <div class="ticket-history-body-left">
+                                    <span class="ticket-history-body-name">Customer</span>
+                                </div>
+                                <div class="ticket-history-body-right">
+                                    <img src="./assets/images/profile-img.png" alt="Profile">
+                                </div>
+                            </div>
+                            <div class="ticket-history-body-main-customer">
+                                <span class="ticket-history-body-note">Hi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-footer-btn">
+            </div>
+        </div>
+    </div>
+
+
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -969,15 +1017,6 @@
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script>
-        $(function () {
-            $('input[name="daterange"]').daterangepicker({
-                opens: 'left'
-            }, function (start, end, label) {
-                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-            });
-        });
-    </script>
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl,
@@ -992,7 +1031,7 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
-    <script>new DataTable('#product-cateory-table', {
+    <script>new DataTable('#ticketmanagement-table', {
             layout: {
                 topStart: null,
                 topEnd: null,
@@ -1003,29 +1042,14 @@
                 },
             }
         });</script>
-    <script>new DataTable('#user-list-table', {
-            layout: {
-                topStart: null,
-                topEnd: null,
-                bottomStart: {
-                    pageLength: {
-                        menu: [10, 25, 50, 100]
-                    }
-                },
-            }
-        });</script>
-
-    <!-- ============ script for active drip-bar toggle ============ -->
 
     <script>
-        document.getElementById("toggle-btn").addEventListener("click", function () {
-            document.getElementById("full-content").classList.add("hidden");
-            document.getElementById("collapsed-content").classList.remove("hidden");
-        });
-
-        document.getElementById("expand-btn").addEventListener("click", function () {
-            document.getElementById("full-content").classList.remove("hidden");
-            document.getElementById("collapsed-content").classList.add("hidden");
+        $(function () {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left'
+            }, function (start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
         });
     </script>
 
@@ -1082,7 +1106,6 @@
             }
         });
     </script>
-
 
 </body>
 
