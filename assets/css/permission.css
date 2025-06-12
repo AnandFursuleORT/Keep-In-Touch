@@ -1,0 +1,36 @@
+.permission-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.permission-div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.permission-wrapper-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.permission-wrapper-main {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 16px;
+}
+
+.customer-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.Permission-btn {
+    display: flex;
+    justify-content: end;
+}

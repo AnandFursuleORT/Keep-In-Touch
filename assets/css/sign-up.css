@@ -1,0 +1,198 @@
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.step {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.step span {
+    font-size: 12px;
+    color: #67779A;
+    margin-top: 5px;
+}
+
+.step .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #EBEDF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6E6E6E;
+    position: relative;
+}
+
+.step.active .circle {
+    background: #E94B50;
+    color: white;
+}
+
+.step.active span {
+    color: #0E285E;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.next-step {
+    width: 100%;
+}
+
+.prev-step {
+    width: 100%;
+}
+
+.skip-step {
+    width: 100%;
+}
+
+.active-line {
+    height: 2px;
+    background-color: #EBEDF1;
+    flex-grow: 1;
+    width: 70%;
+}
+
+.acitve-line .acitve {
+    background-color: #E94B50;
+}
+
+.step-details {
+    color: #0E285E;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.next-step {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 16px 8px;
+    border-radius: 12px;
+    background: #E94B50;
+    border: none !important;
+}
+
+.prev-step {
+    color: #0E285E;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 16px 8px;
+    border-radius: 12px;
+    border: 1px solid #E94B50;
+    background: #FAFAFC;
+}
+
+.skip-step {
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 16px 8px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    background: #FAFAFC;
+}
+
+.sign-up-btn {
+    padding: 16px 8px;
+    border-radius: 12px;
+    background: #E94B50;
+    border: none !important;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sign-up-form-input {
+    padding: 16px;
+    color: #67779A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 12px;
+}
+
+.sign-up-form-input:focus {
+    background-color: none !important;
+    border-color: #E94B50 !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.file-upload {
+    padding: 16px;
+    color: #67779A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    margin-bottom: 16px;
+}
+
+.send-code-btn {
+    padding: 16px;
+    color: #E94B50;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    border-radius: 12px;
+    border: 1px solid #E94B50;
+    background-color: transparent;
+}
+
+.info-btn {
+    background-image: url("../images/information-circle.svg");
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+
+.dropdown-arrow {
+    background-image: url("../images/dropdown-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+}
+
+.calender-icon {
+    background-image: url("../images/calender.svg");
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+}
+
+/* Hide default calendar icon */
+.calender-icon::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

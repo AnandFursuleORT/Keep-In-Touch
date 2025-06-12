@@ -249,11 +249,14 @@
         height: 16px;
         width: 16px;
     }
-  
-     .submit-btn,
+
+    .submit-btn,
     .cancel-btn {
         padding: 4px 10px;
         font-size: 12px;
+    }
+    .forget-page-sign-options {
+        display: block;
     }
 }
 
@@ -893,7 +896,7 @@
 
     .sign-form-input {
         font-size: 12px;
-        padding: 6px 12px;
+        padding: 6px 12px !important;
     }
 
     .input_wrap label {
@@ -1514,8 +1517,8 @@
         height: 16px;
         width: 16px;
     }
-  
-    
+
+
     .submit-btn,
     .cancel-btn {
         padding: 4px 10px;
@@ -2184,7 +2187,7 @@
 
     .sign-form-input {
         font-size: 12px;
-        padding: 6px 12px;
+        padding: 6px 12px !important;
     }
 
     .input_wrap label {
@@ -2806,13 +2809,14 @@
         height: 16px;
         width: 16px;
     }
-     .submit-btn,
+
+    .submit-btn,
     .cancel-btn {
         padding: 4px 10px;
         font-size: 12px;
     }
-  
-    
+
+
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1366px) {
@@ -4100,9 +4104,9 @@
         height: 16px;
         width: 16px;
     }
-  
-    
- .submit-btn,
+
+
+    .submit-btn,
     .cancel-btn {
         padding: 4px 10px;
         font-size: 12px;
@@ -4110,10 +4114,10 @@
 
 }
 
-@media screen and (min-width: 1376px) and (max-width: 1440px) {
+@media screen and (min-width: 1366px) and (max-width: 1470px) {
     .sidebar {
 
-        width: 240px;
+        width: 230px;
     }
 
     .step span {
@@ -5396,20 +5400,30 @@
         height: 16px;
         width: 16px;
     }
-   .submit-btn,
+
+    .submit-btn,
     .cancel-btn {
         padding: 4px 10px;
         font-size: 12px;
     }
-    
+
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1536px) {
+@media screen and (min-width: 1471px) and (max-width: 1536px) {
     .sidebar {
 
-        width: 240px;
+        width: 255px;
     }
 
+    .sign-form-input {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .sign-form-input:focus {
+        color: #001747;
+        border: 1px solid #DEE2E9 !important;
+    }
 
 }
 

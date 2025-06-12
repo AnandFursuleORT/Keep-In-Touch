@@ -1,0 +1,73 @@
+
+.contact-count {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.contact-detail {
+    border: 1px solid #EBEDF1;
+    border-radius: 16px;
+    background: #FAFAFC;
+}
+
+.contact {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 16px;
+    border-bottom: 1px solid #EBEDF1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.contact:last-child {
+    border-bottom: none;
+}
+
+.contact-count-offcanvas {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+/* ================== contact count Modal ================= */
+.contact-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ContactDetailModal h6 {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.ContactDetailModal h4 {
+    color: #0E285E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.ContactDetailModal p {
+    color: #67779A;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.personal-info,
+.Business-info {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 16px
+}

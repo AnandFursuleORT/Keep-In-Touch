@@ -7,6 +7,7 @@
     <title>Settings</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reference.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
     <link rel="icon" type="image/x-icon" href="./assets/images/KIT-favicon.png">
@@ -201,13 +202,11 @@
                     <div class="topbar d-none d-md-block d-lg-block">
                         <div class="topbar-div">
                             <div>
-                                <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
+                               <nav style="--bs-breadcrumb-divider: url(../images/breadcrumb-arrow.svg);"
                                     aria-label="breadcrumb">
                                     <ol class="breadcrumb drip-breadcrumb">
-                                        <li class="breadcrumb-item"><a href="dashboard.html" class="link-item">Home</a>
-                                        </li>
-                                        <li class="breadcrumb-item"><a class="link-item">Support</a></li>
-                                        <li class="breadcrumb-item active active-item" aria-current="page">Category
+                                        <li class="breadcrumb-item"><a href="#" class="link-item">Home</a></li>
+                                        <li class="breadcrumb-item active drip-active-item" aria-current="page">Reference
                                         </li>
                                     </ol>
                                 </nav>
@@ -728,9 +727,9 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <div class="setting-form-buttons">
-                        <button class="cancel-btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                        <button class="submit-btn">Test</button>
+                    <div class="d-flex justify-content-end  gap-3">
+                        <button type="button" class="btn-grey" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn-red">Test</button>
                     </div>
                 </div>
             </div>

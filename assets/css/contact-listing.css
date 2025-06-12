@@ -1,0 +1,148 @@
+.export,
+.import {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    background: #FFF;
+    padding: 8px 16px;
+}
+
+.select-tag-text {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.select-tag {
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.select-tag option:focus {
+    background-color: red !important;
+}
+
+.filtered-date-display {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    background: #F5F6F8;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.clear-date-img {
+    vertical-align: baseline;
+}
+
+
+
+/* ========================== add Contact modal =========================== */
+.addContactModal .modal-body {
+    background-color: #fafafc;
+}
+
+.addContactModal .modal-footer {
+    border: none;
+    justify-content: space-between;
+}
+
+/* .step-indicator {
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.addContact-modal-hdg h2 {
+    color: #0E285E;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.addContactModal .main-container {
+    border-radius: 24px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addContact-personal-form-wrapper,
+.addContact-business-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.addContact-Personal,
+.addContact-business {
+    border-radius: 24px;
+    border: 1px solid #DEE2E9;
+    background: #FAFAFC;
+    padding: 24px;
+}
+
+.add-contact-mobile {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.addContact-number-input {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("../images/phone.svg");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+}
+
+.addContact-email-input {
+    padding: 12px 16px 12px 42px;
+    border-radius: 12px;
+    border: 1px solid #DEE2E9;
+    color: #67779A;
+    font-size: 14px;
+    font-weight: 400;
+    background-image: url("../images/message.svg");
+    background-repeat: no-repeat;
+    background-position: 5% center;
+}
+
+
+.add-email {
+    color: #0E285E;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+}

@@ -7,6 +7,7 @@
     <title>Keep In Touch</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/event.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -739,22 +740,24 @@
                         </div>
                         <div class="row ">
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label class="email-form-label">Select Time</label>
+                                <label class="input-label">Select Time</label>
                                 <input type="time" class="form-control execution-time">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label class="email-form-label">Event Date</label>
-                                <input type="date" class="form-control execution-input">
+                                <label class="input-label">Event Date</label>
+                                <!-- <input type="date" class="form-control execution-input"> -->
+                                  <input type="text" name="Date" class="form-control execution-input"
+                                                        value="10/24/1984">
                             </div>
                         </div>
                         <div class="row ">
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label class="email-form-label">Location</label>
+                                <label class="input-label">Location</label>
                                 <input type="text" class="form-control event-location-input"
                                     placeholder="Enter Location">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <label class="email-form-label">Booth No</label>
+                                <label class="input-label">Booth No</label>
                                 <input type="text" class="form-control event-booth-input" placeholder="Enter Booth No">
                             </div>
                         </div>
@@ -1057,6 +1060,20 @@
                 opens: 'left'
             }, function (start, end, label) {
                 console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+        });
+    </script>
+     <script>
+        $(function () {
+            $('input[name="Date"]').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                drops:'up',
+                minYear: 1901,
+                maxYear: parseInt(moment().format('YYYY'), 10)
+            }, function (start, end, label) {
+                var years = moment().diff(start, 'years');
+                alert("You are " + years + " years old!");
             });
         });
     </script>

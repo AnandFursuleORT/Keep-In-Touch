@@ -1,0 +1,31 @@
+/* Reference */
+.Reference-section{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.Reference-div,
+.Reference-div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.Reference-wrapper,
+.Reference-wrapper {
+    border-radius: 16px;
+    border: 1px solid #EBEDF1;
+    background: #FFF;
+    padding: 16px;
+}
+
+.customer-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+

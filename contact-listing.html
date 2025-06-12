@@ -7,6 +7,7 @@
     <title>Drip</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contact-listing.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -1082,15 +1083,20 @@
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Date of Birth</label>
-                                            <input type="date" class="form-control execution-input">
+                                            <label class="input-label">Date of Birth</label>
+                                            <!-- <input type="date" class="form-control execution-input"> -->
+                                            <input type="text" name="Date" class="form-control execution-input"
+                                                value="10/24/1984">
+
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Anniversary Date</label>
-                                            <input type="date" class="form-control execution-input">
+                                            <label class="input-label">Anniversary Date</label>
+                                            <!-- <input type="date" class="form-control execution-input"> -->
+                                            <input type="text" name="Date" class="form-control execution-input"
+                                                value="10/24/1984">
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Opt In Status</label>
+                                            <label class="input-label">Opt In Status</label>
                                             <div class="domain-select-div">
                                                 <select class="form-select domain-input">
                                                     <option selected>Select </option>
@@ -1123,7 +1129,7 @@
 
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label for="contact-Number" class="email-form-label">Mobile
+                                            <label for="contact-Number" class="input-label">Mobile
                                                 Number 1 (|Optional)</label>
                                             <div class="add-contact-mobile">
                                                 <div class="col-md-2">
@@ -1150,12 +1156,12 @@
                                 <div class="addContact-Personal">
                                     <div class="row mb-3">
                                         <div class="col-md-4 col-sm-12">
-                                            <label for="contact-Email" class="email-form-label">Email ID*</label>
+                                            <label for="contact-Email" class="input-label">Email ID*</label>
                                             <input type="email" class="form-control addContact-email-input"
                                                 placeholder="Enter sender email id" id="contact-Email">
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label for="contact-Emailopt" class="email-form-label">Email ID
+                                            <label for="contact-Emailopt" class="input-label">Email ID
                                                 (Optional)</label>
                                             <input type="email" class="form-control addContact-email-input"
                                                 placeholder="Enter sender email id" id="contact-Emailopt">
@@ -1185,7 +1191,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Location</label>
+                                            <label class="input-label">Location</label>
                                             <div class="domain-select-div">
                                                 <select class="form-select domain-input">
                                                     <option selected>Select Location</option>
@@ -1197,7 +1203,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Industry</label>
+                                            <label class="input-label">Industry</label>
                                             <div class="domain-select-div">
                                                 <select class="form-select domain-input">
                                                     <option selected>Select Industry</option>
@@ -1209,7 +1215,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Tags</label>
+                                            <label class="input-label">Tags</label>
                                             <div class="domain-select-div">
                                                 <select class="form-select domain-input">
                                                     <option selected>Select Tags</option>
@@ -1223,15 +1229,19 @@
                                     </div>
                                     <div class="row mb-3">
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Date of Birth</label>
-                                            <input type="date" class="form-control execution-input">
+                                            <label class="input-label">Date of Birth</label>
+                                            <!-- <input type="date" class="form-control execution-input"> -->
+                                            <input type="text" name="Date" class="form-control execution-input"
+                                                value="10/24/1984">
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Anniversary Date</label>
-                                            <input type="date" class="form-control execution-input">
+                                            <label class="input-label">Anniversary Date</label>
+                                            <!-- <input type="date" class="form-control execution-input"> -->
+                                            <input type="text" name="Date" class="form-control execution-input"
+                                                value="10/24/1984">
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Opt In Status</label>
+                                            <label class="input-label">Opt In Status</label>
                                             <div class="domain-select-div">
                                                 <select class="form-select domain-input">
                                                     <option selected>Select </option>
@@ -1301,7 +1311,7 @@
                                 <div class="addContact-business">
                                     <div class="row mb-3">
                                         <div class="col-md-4 col-sm-12">
-                                            <label class="email-form-label">Reference</label>
+                                            <label class="input-label">Reference</label>
                                             <div class="domain-select-div">
                                                 <select class="form-select domain-input">
                                                     <option selected>Select </option>
@@ -1608,6 +1618,20 @@
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+        $(function () {
+            $('input[name="Date"]').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                drops: 'up',
+                minYear: 1901,
+                maxYear: parseInt(moment().format('YYYY'), 10)
+            }, function (start, end, label) {
+                var years = moment().diff(start, 'years');
+                alert("You are " + years + " years old!");
+            });
+        });
+    </script>
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl,
